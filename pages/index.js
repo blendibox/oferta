@@ -27,11 +27,6 @@ export const getStaticProps = async () =>{
   return (
 
 
-    <div key={ia++} >
-    <button on="tap:sidebar.toggle" className="sidebar-trigger">
-    menu
-      </button>
-
 
    { makes.map( (item, i) =>
    
