@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://blendibox.github.io/oferta/
+
+# Sitemaps
+Sitemap: https://blendibox.github.io/oferta/sitemap.xml
