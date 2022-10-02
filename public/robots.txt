@@ -7,7 +7,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://blendibox.github.io/oferta/
+Host: https://comprar.blendibox.com.br
 
 # Sitemaps
-Sitemap: https://blendibox.github.io/oferta/sitemap.xml
+Sitemap: https://comprar.blendibox.com.br/sitemap.xml
