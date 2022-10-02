@@ -1,24 +1,27 @@
 import Head from 'next/head'
 
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-import make from '../data/avon-make.json'
+import make from '../../data/avon-make.json'
+import perfume from '../../data/avon-fragrancias.json'
+import rosto from '../../data/avon-rosto.json'
 
 
 export const config = { amp: true };
 
+
 export const getStaticProps = async () =>{
    return {
     props: {
-      makes: make,
-
+      rostos: rosto,
+    
     }
    }
 }
 
 
- function Home({makes}) {
+ function Avon({makes}) {
 
 //console.log(make);
 
@@ -26,11 +29,9 @@ export const getStaticProps = async () =>{
 
   return (
 
+   <div>
 
-    <div key={ia++} >
-
-
-   { makes.map( (item, i) =>
+   { rosto.map( (item, i) =>
    
  
     <div  className="containner" key={ia++} >
@@ -180,4 +181,4 @@ export const getStaticProps = async () =>{
   )
 }
 
-export default Home
+export default Avon
