@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
-import cabelo from '../../../data/avon-fragrancias.json'
+import cabelo from '../../../data/avon-cabelo.json'
 import NextLink from 'next/link'
 
 

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
-import casa from '../../../data/avon-casa.json'
+import unha from '../../../data/avon-unha.json'
 import NextLink from 'next/link'
 
 
@@ -9,10 +9,10 @@ export const config = { amp: true };
 
 export const getStaticProps = async ({params: {title} }) =>{
 
-	const casas = casa.filter(p =>p.title.toString() == title)
+	const unhas = unha.filter(p =>p.title.toString() == title)
    return {
     props: {
-      item: casas[0],
+      item: unhas[0],
 
     }
    }
@@ -20,13 +20,13 @@ export const getStaticProps = async ({params: {title} }) =>{
 
 
 export const getStaticPaths = async()=>{
-	const paths = casa.map(item =>({
+	const paths = unha.map(item =>({
 		params: {title: item.title.toString()},
 	}))
 	return {paths,fallback: false}
 }
 
- function casa_item({item}) {
+ function unha_item({item}) {
 
   return(
 
@@ -179,4 +179,4 @@ export const getStaticPaths = async()=>{
 }
 
 
-export default casa_item
+export default unha_item
