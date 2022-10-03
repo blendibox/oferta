@@ -47,7 +47,7 @@ export const getStaticPaths = async()=>{
 
           <script    type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(
-
+              [
                 {
                   "@context": "https://schema.org/", 
                   "@type": "Product", 
@@ -68,7 +68,22 @@ export const getStaticPaths = async()=>{
                     "itemCondition": "https://schema.org/UsedCondition",
                     "availability": "https://schema.org/InStock"
                   },
-              }
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "NewsArticle",
+                  "headline": 'Onde comprar ' + item.title + '?',
+                  "image": [
+                    item.image,
+                   ],
+                  "author": [{
+                      "@type": "Person",
+                      "name": "Blendibox",
+                      "url": "http://blendibox.com.br"
+                    }],
+                },
+                
+              ]
             )
              
           }}
