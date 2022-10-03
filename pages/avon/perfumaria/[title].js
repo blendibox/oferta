@@ -60,7 +60,6 @@ export const getStaticPaths = async()=>{
                     "url": item.link + item.afilio,
                     "priceCurrency": "BRL",
                     "price":  price,
-                    "priceValidUntil": "2022-11-20",
                     "itemCondition": "https://schema.org/UsedCondition",
                     "availability": "https://schema.org/InStock"
                   },
