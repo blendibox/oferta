@@ -26,6 +26,8 @@ export const getStaticPaths = async()=>{
 	return {paths,fallback: false}
 }
 
+
+
  function make_item({item}) {
 
   return(
@@ -36,6 +38,29 @@ export const getStaticPaths = async()=>{
 
         <title  >{item.title}</title>
 
+          <script    type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(
+
+                {
+                  "@context": "https://schema.org/", 
+                  "@type": "Product", 
+                  "name": item.title,
+                  "image": item.image,
+                  "url": item.url + item.afilio,
+                  "description": "Procurando onde comprar " + item.title + ' original? '+process.env.GATILHO_MENTAL + ' Oferta exclusiva ' + item.title,
+                  "brand": {
+                    "@type": "Brand",
+                    "name": item.brand
+                  },
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "de " + item.price + " por "+ item.offer
+                  }
+              }
+            )
+             
+          }}
+        />
 
         <meta  name="robots" content="follow, index" />
         <meta  name="description" content={item.title} />
@@ -95,7 +120,6 @@ export const getStaticPaths = async()=>{
 
       <style jsx>{`
 
-
         .button:hover {
           animation-name: shake;
           animation-duration: 0.82s;
@@ -125,15 +149,13 @@ export const getStaticPaths = async()=>{
 
         .containner{
           text-align:center;
-          font-family: Poppins;
+          font-family: 'Poppins Regular';
         }
         h1, h2 {
           margin: 5px;
-           font-family: Poppins;
         }
          h1 {
           font-size: 1.2em;
-           font-family: Poppins;
         }
         h2{
           color:#222222;

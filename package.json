@@ -2,7 +2,6 @@
   "name": "blendibox/oferta",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://comprar.blendibox.com.br/",
   "scripts": {
     "dev": " next dev",
     "build": "next build && next export && next-sitemap",
@@ -20,6 +19,7 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
+    "react-hotjar": "^5.1.0",
     "react-moment": "^1.1.2"
   },
   "devDependencies": {
