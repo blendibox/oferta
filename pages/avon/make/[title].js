@@ -11,8 +11,6 @@ export const getStaticProps = async ({params: {title} }) =>{
 
 	const makes = make.filter(p =>p.title.toString() == title)
 
-
-console.log(makes[0].price);
    const price = makes[0].offer == ''? makes[0].price.replace('R','').replace('$','').replace(',','.'): makes[0].offer.replace('R','').replace('$','').replace(',','.') ;
 
    return {

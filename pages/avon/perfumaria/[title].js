@@ -10,9 +10,13 @@ export const config = { amp: true };
 export const getStaticProps = async ({params: {title} }) =>{
 
 	const perfumes = perfume.filter(p =>p.title.toString() == title)
+    const price = perfumes[0].offer == ''? perfumes[0].price.replace('R','').replace('$','').replace(',','.'): perfumes[0].offer.replace('R','').replace('$','').replace(',','.') ;
+
+
    return {
     props: {
       item: perfumes[0],
+      price:price,
 
     }
    }
@@ -26,7 +30,7 @@ export const getStaticPaths = async()=>{
 	return {paths,fallback: false}
 }
 
- function perfume_item({item}) {
+ function perfume_item({item,price}) {
 
   return(
 
@@ -36,6 +40,35 @@ export const getStaticPaths = async()=>{
 
         <title  >{item.title}</title>
 
+        <script    type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(
+
+                {
+                  "@context": "https://schema.org/", 
+                  "@type": "Product", 
+                  "name": item.title,
+                  "image": item.image,
+                  "url": item.link + item.afilio,
+                  "description": "Procurando onde comprar " + item.title + ' original? '+process.env.GATILHO_MENTAL + ' Oferta exclusiva ' + item.title,
+                  "brand": {
+                    "@type": "Brand",
+                    "name": item.brand
+                  },
+
+                  "offers": {
+                    "@type": "Offer",
+                    "url": item.link + item.afilio,
+                    "priceCurrency": "BRL",
+                    "price":  price,
+                    "priceValidUntil": "2022-11-20",
+                    "itemCondition": "https://schema.org/UsedCondition",
+                    "availability": "https://schema.org/InStock"
+                  },
+              }
+            )
+             
+          }}
+        />
 
         <meta  name="robots" content="follow, index" />
         <meta  name="description" content={item.title} />
