@@ -10,10 +10,15 @@ export const config = { amp: true };
 export const getStaticProps = async ({params: {title} }) =>{
 
 	const makes = make.filter(p =>p.title.toString() == title)
+
+
+console.log(makes[0].price);
+   const price = makes[0].offer == ''? makes[0].price.replace('R','').replace('$','').replace(',','.'): makes[0].offer.replace('R','').replace('$','').replace(',','.') ;
+
    return {
     props: {
       item: makes[0],
-
+      price: price,
     }
    }
 }
@@ -28,7 +33,11 @@ export const getStaticPaths = async()=>{
 
 
 
- function make_item({item}) {
+
+
+
+
+ function make_item({item,price}) {
 
   return(
 
@@ -57,7 +66,7 @@ export const getStaticPaths = async()=>{
                     "@type": "Offer",
                     "url": item.link + item.afilio,
                     "priceCurrency": "BRL",
-                    "price":  (item.offer == ''? item.price.replace('R$ ',''): item.offer.replace('R$ ','') ),
+                    "price":  price,
                     "priceValidUntil": "2022-11-20",
                     "itemCondition": "https://schema.org/UsedCondition",
                     "availability": "https://schema.org/InStock"
