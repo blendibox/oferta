@@ -46,16 +46,22 @@ export const getStaticPaths = async()=>{
                   "@type": "Product", 
                   "name": item.title,
                   "image": item.image,
-                  "url": item.url + item.afilio,
+                  "url": item.link + item.afilio,
                   "description": "Procurando onde comprar " + item.title + ' original? '+process.env.GATILHO_MENTAL + ' Oferta exclusiva ' + item.title,
                   "brand": {
                     "@type": "Brand",
                     "name": item.brand
                   },
+
                   "offers": {
                     "@type": "Offer",
-                    "price": "de " + item.price + " por "+ item.offer
-                  }
+                    "url": item.link + item.afilio,
+                    "priceCurrency": "BRL",
+                    "price":  (item.offer == ''? item.price.replace('R$ ',''): item.offer.replace('R$ ','') ),
+                    "priceValidUntil": "2022-11-20",
+                    "itemCondition": "https://schema.org/UsedCondition",
+                    "availability": "https://schema.org/InStock"
+                  },
               }
             )
              
