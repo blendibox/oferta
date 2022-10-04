@@ -65,7 +65,7 @@ export const getStaticPaths = async()=>{
                     "url": item.link + item.afilio,
                     "priceCurrency": "BRL",
                     "price":  price,
-                    "itemCondition": "https://schema.org/UsedCondition",
+                    "itemCondition": "https://schema.org/NewCondition",
                     "availability": "https://schema.org/InStock"
                   },
                 },
@@ -77,9 +77,9 @@ export const getStaticPaths = async()=>{
                     item.image,
                    ],
                   "author": [{
-                      "@type": "Person",
+                      "@type": "Organization",
                       "name": "Blendibox",
-                      "url": "http://blendibox.com.br"
+                      "url": "http://www.blendibox.com.br"
                     }],
                 },
                 
