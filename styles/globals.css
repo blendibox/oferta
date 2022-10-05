@@ -13,12 +13,23 @@ body {
 }
 h1, h2{
     margin: 5px;
-    font-family: 'Poppins Regular'!important;
+    font-family: Poppins Regular;
 }
 a {
   color: inherit;
   text-decoration: none;
+
 }
+
+  p {
+          font-size: 18px;
+          line-height: 30px;
+          margin-top: 30px;
+
+        }
+ h2{
+          color:#222222;
+        }
 
 * {
   box-sizing: border-box;

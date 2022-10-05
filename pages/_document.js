@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"/>
           <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"/>
           <script async custom-element="amp-video"   src="https://cdn.ampproject.org/v0/amp-video-0.1.js"/>
-           
+
 
         </Head>
 
