@@ -1,13 +1,18 @@
 const Sitemap = () => null;
 import  make  from "../data/avon-make.json";
 
+import  casa  from "../data/avon-casa.json";
+
 export const getServerSideProps = async ({ res }) => {
   // Fetch data and build page content ...
 
 var produtos  = '';
+var result ='';
 
- const product = await make;
 
+
+
+const product = await make;
 
 var produtos =   product.map((post,i) => 
   `<item><title><![CDATA[ ${post.title}]]></title><link><![CDATA[${post.link + post.afilio}]]></link><description><![CDATA[${post.title}]]></description>`+
@@ -20,11 +25,39 @@ var produtos =   product.map((post,i) =>
   );
 
 
-var result ='';
+
  produtos.forEach((post) =>{
      result = result + post;
 
  });
+
+
+
+
+
+const product2 = await casa;
+
+var produtos =   product2.map((post,i) => 
+  `<item><title><![CDATA[ ${post.title}]]></title><link><![CDATA[${post.link + post.afilio}]]></link><description><![CDATA[${post.title}]]></description>`+
+  `<g:image_link>${post.image}</g:image_link><g:price><![CDATA[${post.price}]]></g:price><g:condition>new</g:condition>` +
+  `<g:availability>in stock></g:availability> <g:item_group_id><![CDATA[${post.brand}]]>></g:item_group_id><g:installment><g:months>3</g:months>` +
+  `<g:amount><![CDATA[${post.price} BRL]]></g:amount></g:installment><g:brand><![CDATA[${post.brand}]]></g:brand><g:product_type><![CDATA[Maquiagem ]]></g:product_type> ` +
+  `<g:identifier_exists>FALSE</g:identifier_exists><g:online_only>y</g:online_only>` +
+  `</item>`
+
+  );
+
+
+
+ produtos.forEach((post) =>{
+     result = result + post;
+
+ });
+
+
+
+
+
 
 
 
