@@ -14,6 +14,7 @@ const font = "/Poppins-Regular.woff";
          @font-face {
            font-family: Poppins Regular;
            src: url(${font});
+           font-display: swap;
         }
 
 
