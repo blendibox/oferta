@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 function Layout(props) {
 
-const font = process.env.NEXT_PUBLIC_DOMAIN_URL + "/Poppins-Regular.woff";
+const font = "/Poppins-Regular.woff";
 
 
   return (
