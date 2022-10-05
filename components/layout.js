@@ -13,7 +13,7 @@ const font = process.env.NEXT_PUBLIC_DOMAIN_URL + "/Poppins-Regular.woff";
       <style jsx global>{`
          @font-face {
            font-family: Poppins Regular;
-           src: url( ${font});
+           src: url(${font});
         }
 
 
