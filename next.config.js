@@ -18,6 +18,11 @@ const nextConfig = {
           destination: "/api/feed/rss/:slug",
         },
 
+         {
+          source: "/googleMerchant.xml",
+          destination: "/api/feed/googleMerchant",
+        },
+
       ];
     },
 }

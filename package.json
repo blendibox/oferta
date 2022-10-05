@@ -12,6 +12,11 @@
     "predeploy": "next build",
     "deploy": "gh-pages -b main -d pages"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
     "next": "12.3.1",
     "next-sitemap": "^3.1.23",
@@ -20,7 +25,10 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
     "react-hotjar": "^5.1.0",
-    "react-moment": "^1.1.2"
+    "react-moment": "^1.1.2",
+    "react-xml-parser": "^1.1.8",
+    "xml-js": "1.6.11",
+    "xml2json-light": "^1.0.6"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.7",
