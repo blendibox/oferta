@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { buildFeed } from "../../../components/feed";
 
 
-function async rss ( NextApiRequest,  NextApiResponse) => {
+export default async ( NextApiRequest,  NextApiResponse) => {
 
   const feed = await buildFeed();
 
@@ -23,4 +23,3 @@ function async rss ( NextApiRequest,  NextApiResponse) => {
   NextApiResponse.end(text);
 };
 
-export default  rss;
