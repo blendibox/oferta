@@ -69,7 +69,7 @@ export const getStaticProps = async () =>{
      
      <a  key={ia++} href={item.link + item.afilio + '&action=image'} > 
       <amp-img className="image"
-        alt="Mountains"
+        alt={item.title}
         width="390"
         height="390"
         placeholder="blur"

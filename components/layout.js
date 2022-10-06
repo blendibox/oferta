@@ -9,6 +9,7 @@ const font = "/Poppins-Regular.woff";
 
   return (
 <div className={styles.container}>
+
       {props.children}
       <style jsx global>{`
          @font-face {

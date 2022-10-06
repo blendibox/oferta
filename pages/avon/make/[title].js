@@ -119,7 +119,7 @@ export const getStaticPaths = async()=>{
      
      <a   href={item.link + item.afilio + '&action=image'} > 
       <amp-img className="image"
-        alt="Mountains"
+        alt={item.title}
         width="350"
         height="350"
         placeholder="blur"
