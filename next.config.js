@@ -6,6 +6,13 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+    webpack: (config, { isServer }) => {
+      if (isServer) {
+        //require('./scripts/getpages')
+      }
+  
+      return config
+    },
   async rewrites() {
       return [
         {
@@ -28,3 +35,7 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+
+
+

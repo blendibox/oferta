@@ -18,6 +18,20 @@ const font = "/Poppins-Regular.woff";
            font-display: swap;
         }
 
+        #sidebar{
+          font-family: Poppins Regular;
+          width: 250px;
+          background-color: #FFFFFF;
+         }
+
+        .accordion-header{
+            background-color:#ffffff;
+            border:none;
+           }
+         #menu-accordion{
+          color:#555555;
+         }
+
 
         .button:hover {
           animation-name: shake;
@@ -49,6 +63,7 @@ const font = "/Poppins-Regular.woff";
          .containner{
           text-align:center;
           font-family: Poppins Regular;
+          margin:5px;
         }
         h1, h2 {
           margin: 5px;
@@ -71,7 +86,7 @@ const font = "/Poppins-Regular.woff";
           background-color:#f05395;
           color:#ffffff;
           font-size:1.1em;
-          border-radius:8px;
+          border-radius:2px;
           padding: 5px 5px 5px 5px;
           
         }
