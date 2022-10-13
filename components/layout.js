@@ -18,6 +18,13 @@ const font = "/Poppins-Regular.woff";
            font-display: swap;
         }
 
+        @media only screen and (min-width: 500px){
+          .containner{
+            padding-left:  10%;
+            padding-right: 10%;
+          }
+        }
+
         #sidebar{
           font-family: Poppins Regular;
           width: 250px;
