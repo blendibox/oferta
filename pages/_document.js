@@ -33,10 +33,25 @@ class MyDocument extends Document {
 
         <body>
         <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PS2T3XB&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
-            <Sidebar />
-            <button on="tap:sidebar.toggle" className="sidebar-trigger">
-             &#9776;
-           </button>
+
+            <header
+      className="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
+    >
+      <div
+        role="button"
+        aria-label="open sidebar"
+        on="tap:header-sidebar.toggle"
+        tabIndex="0"
+        className="ampstart-navbar-trigger pr2"
+      >
+        ☰
+      </div>
+
+    </header>
+
+
+        <Sidebar />
+          
 
           <Main />
           <NextScript />

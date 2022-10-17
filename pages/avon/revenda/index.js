@@ -3,7 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 
-import corporal from '../../../data/avon-corporal.json'
+
+import unha from '../../../data/avon-unha.json'
 
 
 
@@ -13,16 +14,16 @@ export const config = { amp: true };
 export const getStaticProps = async () =>{
    return {
     props: {
-      corporals: corporal,
+      unhas: unha,
     
     }
    }
 }
 
 
- function Corporal({corporals}) {
+ function Unhas({makes}) {
 
-//console.log(corporal);
+//console.log(make);
 
  var ia = 3;
 
@@ -30,7 +31,7 @@ export const getStaticProps = async () =>{
 
    <div>
 
-   { corporal.map( (item, i) =>
+   { unha.map( (item, i) =>
    
  
     <div  className="containner" key={ia++} >
@@ -62,12 +63,12 @@ export const getStaticProps = async () =>{
 
  }
   <p  key={ia++}>
-           <a className="button" key={ia++}  href={item.link + item.afilio}> Quero Comprar 
+           <a className="button" key={ia++}  href={item.link + item.afilio }> Quero Comprar  
             <amp-img  className="search" src="../search.png"  placeholder="blur"
             width="25" height="25"></amp-img></a>
       </p>
      
-     <a  key={ia++} href={item.link + item.afilio} > 
+     <a  key={ia++} href={item.link + item.afilio } > 
       <amp-img className="image"
         alt={item.title}
         width="390"
@@ -80,7 +81,7 @@ export const getStaticProps = async () =>{
       </amp-img>
       </a>
        <p  key={ia++}>
-           <a className="button" key={ia++} href={item.link + item.afilio} 
+           <a className="button" key={ia++} href={item.link + item.afilio } 
         
            >
             Quero saber mais  <amp-img  className="search" src="../search.png"  placeholder="blur"
@@ -106,4 +107,4 @@ export const getStaticProps = async () =>{
   )
 }
 
-export default Corporal
+export default Unhas

@@ -62,12 +62,12 @@ export const getStaticProps = async () =>{
 
  }
   <p  key={ia++}>
-           <a className="button" key={ia++}  href={item.link + item.afilio + '&action=buy'}> Quero Comprar 
+           <a className="button" key={ia++}  href={item.link + item.afilio}> Quero Comprar 
             <amp-img  className="search" src="../search.png"  placeholder="blur"
             width="25" height="25"></amp-img></a>
       </p>
      
-     <a  key={ia++} href={item.link + item.afilio + '&action=image'} > 
+     <a  key={ia++} href={item.link + item.afilio} > 
       <amp-img className="image"
        alt={item.title}
         width="390"
@@ -80,7 +80,7 @@ export const getStaticProps = async () =>{
       </amp-img>
       </a>
        <p  key={ia++}>
-           <a className="button" key={ia++} href={item.link + item.afilio + '&action=more'} 
+           <a className="button" key={ia++} href={item.link + item.afilio} 
         
            >
             Quero saber mais  <amp-img  className="search" src="../search.png"  placeholder="blur"
