@@ -27,7 +27,7 @@ export const config = { amp: true };
           </address>
           
           <amp-img
-            src="../big_pro_2.jpg"
+            src="../big_pro_2.webp"
             width="200"
             height="200"
             layout="responsive"
@@ -83,49 +83,49 @@ export const config = { amp: true };
               className="mb4"
             >
               <amp-img
-                src="../big_pro_2.jpg"
+                src="../big_pro_2.webp"
                 width="205"
                 height="205"
                 alt="Want1"
               ></amp-img>
               <amp-img
-                src="../big_pro.jpg"
+                src="../big_pro.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../maleta.jpg"
+                src="../maleta.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../lov_u_touch.jpg"
+                src="../lov_u_touch.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../protetor_solar_cor.jpg"
+                src="../protetor_solar_cor.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../batom_tratamake.jpg"
+                src="../batom_tratamake.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../hialuronico.jpg"
+                src="../hialuronico.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../renew_vitaminado.jpg"
+                src="../renew_vitaminado.webp"
                 width="205"
                 height="205"
                 alt="Want2"
