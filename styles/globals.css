@@ -2,6 +2,7 @@
     font-family: 'Poppins Regular';
     font-style: normal;
     font-weight: normal;
+    font-display: optional;
     src: local('Poppins Regular'), url('../fonts/poppins/Poppins-Regular.woff') format('woff');
     }
 html,
