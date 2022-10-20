@@ -68,7 +68,6 @@ const font = "/Poppins-Regular.woff";
         }
 
          .containner{
-          text-align:center;
           font-family: Poppins Regular;
           margin:5px;
         }
@@ -1244,18 +1243,18 @@ html {
       }
       .h1,
       h1 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
       }
       .h2,
       h2 {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.7rem;
+        line-height: 1.7rem;
       }
       .h3,
       h3 {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
       }
       .h4,
       h4 {
