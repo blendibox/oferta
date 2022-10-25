@@ -28,17 +28,18 @@ class MyDocument extends Document {
           <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"/>
           <script async custom-element="amp-video"   src="https://cdn.ampproject.org/v0/amp-video-0.1.js"/>          
           <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"/>
+          <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"/>
           
           <meta name="msvalidate.01" content="13BC51958165F779625DD28F673D5B4A"/>
           <meta name="verify-admitad" content="547987f230" />
           <meta httpEquiv='content-language' content='pt-br'/> 
           <link rel="preload" href="https://comprar.blendibox.com.br/Poppins-Regular.woff" as="font" crossOrigin="true"/>
 
-
+   
         </Head>
 
         <body>
-        <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PS2T3XB&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+       
 
             <header
       className="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
@@ -63,7 +64,9 @@ class MyDocument extends Document {
           <NextScript />
 
           <Footer>
+
           </Footer>
+
         </body>
       </Html>
     );

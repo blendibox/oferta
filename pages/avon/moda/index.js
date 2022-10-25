@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 import Listagem from  '../../../components/listagem.js'
-import corporal from '../../../data/avon-corporal.json'
+import moda from '../../../data/avon-moda.json'
 
 
 
@@ -13,16 +13,16 @@ export const config = { amp: true };
 export const getStaticProps = async () =>{
    return {
     props: {
-      corporals: corporal,
+      modas: moda,
     
     }
    }
 }
 
 
- function returncorporal({corporals}) {
+ function returnModa({modas}) {
 
-//console.log(corporal);
+//console.log(moda);
 
  var ia = 3;
 
@@ -30,7 +30,7 @@ export const getStaticProps = async () =>{
 
    <div>
 
-   { corporal.map( (item, i) =>
+   { moda.map( (item, i) =>
    
 
     <div  className="containner" key={ia++} >
@@ -62,4 +62,4 @@ export const getStaticProps = async () =>{
   )
 }
 
-export default returncorporal
+export default returnModa

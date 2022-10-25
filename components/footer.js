@@ -7,12 +7,11 @@ const Footer = () => {
   const more = 1;
   return (
     <footer >
-  
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accent-2 py-12 text-primary bg-primary transition-colors duration-150">
-          
-
-        </div>
-   
+      <div className="containner">
+          <hr/>
+          <amp-addthis width="320" height="92" data-pub-id="ra-6352ef93c394f488" data-widget-id="9mgw" data-widget-type="inline"></amp-addthis>
+          <a className="brand" href={ process.env.URLBASE } >Blendibox</a>      
+      </div>
     </footer>
   );
 };

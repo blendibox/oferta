@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": " next dev",
-    "build": "next build && next-sitemap", 
+    "build": "next build && next-sitemap",
     "build-css": "npx tailwindcss -i ./styles/tailwind.module.css  -o ./styles/output.css --watch",
-    "build-bing":"npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
-    "index-bing":"npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/c64210b2794a4cbfbe6a7969e89847ff.txt --key c64210b2794a4cbfbe6a7969e89847ff",
+    "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
+    "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/c64210b2794a4cbfbe6a7969e89847ff.txt --key c64210b2794a4cbfbe6a7969e89847ff",
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
@@ -16,7 +16,7 @@
   },
   "scriptsComments": {
     "build": "next build && next export && next-sitemap",
-    "index-bing":"https://bing.com/indexnow?url=https://comprar.blendibox.com.br/indexnowlist.txt&key=c64210b2794a4cbfbe6a7969e89847ff"
+    "index-bing": "https://bing.com/indexnow?url=https://comprar.blendibox.com.br/indexnowlist.txt&key=c64210b2794a4cbfbe6a7969e89847ff"
   },
   "browser": {
     "fs": false,
@@ -29,6 +29,7 @@
     "next": "12.3.1",
     "next-sitemap": "^3.1.23",
     "node-html-parser": "^5.4.2-0",
+    "raw-loader": "^4.0.2",
     "react": "18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",

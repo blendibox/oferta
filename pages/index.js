@@ -141,6 +141,9 @@ export const config = { amp: true };
 
 <div>Mais detalhes sobre a melhor marca de Maquiagem para Comprar e Revender, você encontra no <b><a href="https://www.avon.com.br/?utmi_pc=74806588"> SITE DA AVON</a></b> </div>
 
+   <hr/>
+          <amp-addthis width="320" height="92" data-pub-id="ra-6352ef93c394f488" data-widget-id="9mgw" data-widget-type="inline"></amp-addthis>
+           <a className="brand" href={ process.env.URLBASE } >Blendibox</a>
 
 
 

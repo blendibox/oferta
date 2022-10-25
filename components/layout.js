@@ -8,7 +8,8 @@ const font = "/Poppins-Regular.woff";
 
 
   return (
-<div className={styles.container}>
+      <div className="containner">
+
 
       {props.children}
       <style jsx global>{`
@@ -22,6 +23,28 @@ const font = "/Poppins-Regular.woff";
           .containner{
             padding-left:  10%;
             padding-right: 10%;
+          }
+        }
+        .cupom{
+          border:dashed;
+          padding:10px;
+        }
+
+        @keyframes shake {
+          10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+          }
+          
+          20%, 80% {
+            transform: translate3d(2px, 0, 0);
+          }
+
+          30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0);
+          }
+
+          40%, 60% {
+            transform: translate3d(4px, 0, 0);
           }
         }
 
@@ -49,25 +72,8 @@ const font = "/Poppins-Regular.woff";
           perspective: 1000px;
         }
 
-        @keyframes shake {
-          10%, 90% {
-            transform: translate3d(-1px, 0, 0);
-          }
-          
-          20%, 80% {
-            transform: translate3d(2px, 0, 0);
-          }
-
-          30%, 50%, 70% {
-            transform: translate3d(-4px, 0, 0);
-          }
-
-          40%, 60% {
-            transform: translate3d(4px, 0, 0);
-          }
-        }
-
-         .containner{
+      
+        .containner{
           font-family: Poppins Regular;
           margin:5px;
         }
@@ -93,7 +99,7 @@ const font = "/Poppins-Regular.woff";
           color:#ffffff;
           font-size:1.1em;
           border-radius:2px;
-          padding: 5px 5px 5px 5px;
+          padding: 10px 10px 10px 10px;
           
         }
         p {
@@ -137,6 +143,7 @@ html {
       figure,
       main {
         display: block;
+        padding: 5px;
       }
       figure {
         margin: 1em 40px;
@@ -161,6 +168,10 @@ html {
         border-bottom: none;
         text-decoration: underline;
         text-decoration: underline dotted;
+      }
+      .brand{
+        color:#ffffff;
+
       }
       b,
       strong {
@@ -1851,16 +1862,8 @@ html {
         font-weight: 400;
       }
 
-
-
-
-
-
-
       `}</style>
-
-
-
+ 
   </div>
   );
 }

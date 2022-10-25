@@ -92,7 +92,7 @@ render() {
 
 
  {
-     (this.props.offer == 'undefined' || this.props.offer == '') ? <h3  >Por {this.props.price}</h3> : (this.props.price == 'undefined' || this.props.price == '') ? <h3  >Por {this.props.offer}</h3>: <h3  > de <span className="caption"  > {this.props.offer}</span> por {this.props.price} </h3>
+     (this.props.offer == 'undefined' || this.props.offer == '') ? <h3  >Por {this.props.price}</h3> : (this.props.price == 'undefined' || this.props.price == '') ? <h3  >Por {this.props.offer}</h3>: <h3  > de <span className="caption"  > {this.props.price}</span> por {this.props.offer} </h3>
      
 
  }
@@ -139,8 +139,10 @@ render() {
 
 
       </div>
+      <hr/>
+<amp-addthis width="320" height="92" data-pub-id="ra-6352ef93c394f488" data-widget-id="9mgw" data-widget-type="inline"></amp-addthis>
 
-
+<a className="brand" href={ process.env.URLBASE } >Blendibox</a>
     </p>
         </article>
 
@@ -163,10 +165,16 @@ render() {
         .AlignCenter{
            text-align:center;
         }
-
+       
+        .brand{
+          color: #ffffff;
+          font-color:#ffffff;
+        }
 
 
         }
+
+
         
        `}</style>
         </main>

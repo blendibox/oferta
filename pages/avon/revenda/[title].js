@@ -52,7 +52,7 @@ export const getStaticPaths = async()=>{
           </address>
           
           <amp-img
-            src="../../../big_pro_2.jpg"
+            src="../../big_pro_2.webp"
             width="200"
             height="200"
             layout="responsive"
@@ -81,7 +81,7 @@ export const getStaticPaths = async()=>{
 <br/>
 
  <a className="button" href="https://www.avon.com.br/institucional/seja-representante/cadastro?codigo-self-appointment=74806588" >
-            Ir para o Cadastro site da Avon<amp-img  className="search" src="../../../arrow-right.png"  placeholder="blur"
+            Ir para o Cadastro site da Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
         
             width="25" height="25"></amp-img></a>
 
@@ -92,7 +92,7 @@ export const getStaticPaths = async()=>{
       Você pode utilizar minha página do Avon Conecta para comprar seus produtos para uso próprio. Assim você conhece a nova ferramenta, e tem a vantagem de receber seus produtos enviados diretamente pela Avon. <br/>
  Clique no botão abaixo para comprar seus produtos no site da Avon. <br/>
  <a className="button" href="https://www.avon.com.br/?utmi_pc=74806588" >
-            Ir às compras no site da Avon<amp-img  className="search" src="../../../arrow-right.png"  placeholder="blur"
+            Ir às compras no site da Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
         
             width="25" height="25"></amp-img></a>
        
@@ -108,49 +108,49 @@ export const getStaticPaths = async()=>{
               className="mb4"
             >
               <amp-img
-                src="../../../big_pro_2.jpg"
+                src="../../big_pro_2.webp"
                 width="205"
                 height="205"
                 alt="Want1"
               ></amp-img>
               <amp-img
-                src="../../../big_pro.jpg"
+                src="../../big_pro.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../../../maleta.jpg"
+                src="../../maleta.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../../../lov_u_touch.jpg"
+                src="../../lov_u_touch.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../../../protetor_solar_cor.jpg"
+                src="../../protetor_solar_cor.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../../../batom_tratamake.jpg"
+                src="../../batom_tratamake.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../../../hialuronico.jpg"
+                src="../../hialuronico.webp"
                 width="205"
                 height="205"
                 alt="Want2"
               ></amp-img>
                <amp-img
-                src="../../../renew_vitaminado.jpg"
+                src="../../renew_vitaminado.webp"
                 width="205"
                 height="205"
                 alt="Want2"
