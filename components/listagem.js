@@ -112,10 +112,9 @@ render() {
     
 
         <p >
-
+          <br/>
          <hr/>
-          <amp-addthis width="320" height="92" data-pub-id="ra-6352ef93c394f488" data-widget-id="9mgw" data-widget-type="inline"></amp-addthis>
-          <a className="brand" href={ process.env.URLBASE } >Blendibox</a>
+
         </p>
 
     
