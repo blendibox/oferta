@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import Listagem from  '../../components/listagem.js'
 import xml from  "raw-loader!../../data/LomadeeDownload.xml"
-
+import rakuten from  "raw-loader!../../data/coupon_proxyXML.xml"
 
 
 export const config = { amp: true };
@@ -16,26 +16,79 @@ export const getStaticProps = async () =>{
 
 
 const coupons = await xml;
+const coupons2 = await rakuten;
 
-const data = await parser.xml2json(coupons); 
+//console.log(coupons2);
+
+const data  = await parser.xml2json(coupons);
+const data2 = await parser.xml2json(coupons2); 
 
    return {
     props: {
       item: data.coupons,
-      erro:'Você não possui permissão para divulgar esse anunciante.'
+      erro:'Você não possui permissão para divulgar esse anunciante.',
+      item2: data2.couponfeed,
     }
    }
 
 }
 
 
+
 var ia = 3;
 
- function returnrosto( props ) {
+ function returnCupons( props ) {
 
   return (
 
    <div>
+
+    { props.item2.link.map( (item, i) =>
+  
+
+  (item.network.id == 8) &&
+
+    
+    <div  className="containner" key={ia++} >
+
+
+         <a   href={item.clickurl } > 
+           <amp-img className="image"
+            alt={item.offerdescription}
+            width="180"
+            height="130"
+            placeholder="blur"
+            src={item.impressionpixel}
+          >         
+          </amp-img>
+        </a>
+        <br/>
+        <small>{item.advertisername}  - {item.promotiontypes.promotiontype['_@ttribute']}</small><br/><br/>
+
+        <h1>{item.offerdescription} *</h1><br/>
+
+        <h2 className="cupom"> <a   href={item.clickurl}> <b> clique para acessar o site </b> </a></h2>
+        <small>Categoria: {item.categories.category['_@ttribute']}</small>
+        <br/><br/>
+
+        <a className="button" href={item.clickurl}> Ir para o site {item.advertisername} 
+        <amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+        
+            width="20" height="20"></amp-img>
+        </a>
+        <br/><br/>
+             
+        <small>* Este cupom de desconto é válido no site    
+        <a   href={item.clickurl } >  {item.advertisername} </a>, até o dia <b> 
+        {item.offerenddate.split('T')[0]} </b> 
+        ou enquanto durarem os estoques, podendo ser invalidado antes do prazo.</small>
+         
+
+      <hr/>
+     </div>
+
+
+   )}
 
      { props.item.coupon.map( (item, i) =>
    
@@ -78,6 +131,14 @@ var ia = 3;
    )}
 
 
+
+
+
+
+
+ 
+
+
  
     
 
@@ -89,4 +150,4 @@ var ia = 3;
   )
 }
 
-export default returnrosto
+export default returnCupons
