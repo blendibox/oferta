@@ -73,6 +73,8 @@ render() {
             >
           </address>
           
+
+
          <a   href={this.props.link  } > 
            <amp-img className="image"
             alt={this.props.title}
@@ -84,6 +86,70 @@ render() {
           >         
           </amp-img>
         </a>
+
+
+      { this.props.image2 && 
+        <section>
+           <hr/>
+            <amp-carousel
+              type="carousel"
+              layout="fixed-height"
+              height="205"
+              controls=""
+              className="mb4"
+            >
+             { (this.props.image2 !== '') && 
+                 <amp-img
+                src={this.props.image2}
+                width="205"
+                height="205"
+                alt="Want1"
+              ></amp-img>
+
+             } 
+             { (this.props.image3 !== '') && 
+                 <amp-img
+                src={this.props.image3}
+                width="205"
+                height="205"
+                alt="Want1"
+              ></amp-img>
+
+             }
+              { (this.props.image4 !== '') && 
+                 <amp-img
+                src={this.props.image4}
+                width="205"
+                height="205"
+                alt="Want1"
+              ></amp-img>
+
+             }
+              { (this.props.image5 !== '') && 
+                 <amp-img
+                src={this.props.image5}
+                width="205"
+                height="205"
+                alt="Want1"
+              ></amp-img>
+
+             }
+              { (this.props.image6 !== '') && 
+                 <amp-img
+                src={this.props.image6}
+                width="205"
+                height="205"
+                alt="Want1"
+              ></amp-img>
+
+             }
+              
+            </amp-carousel>
+            <hr/>
+        </section>
+      }
+      
+
          
       
         </header>
@@ -102,7 +168,7 @@ render() {
       <p className="AlignCenter"> <br/> <a className="button"  href={this.props.link  } 
         
            >
-            Ir para o Site Oficial {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+            Ir para o Site {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
         
             width="20" height="20"></amp-img></a>
           
@@ -113,19 +179,19 @@ render() {
       <div className="">
          
             <br/>
-            <h2> Quais as vantagens de comprar direto no Site Oficial da {this.props.brand.replace('-',' ')}?</h2><br/>
-            O melhor lugar para comprar este produto é no Site oficial da Marca, e vou te explicar por quê: <br/><br/>
-            A primeira vantagem é que, por estar comprando no <b>Site oficial {this.props.brand.replace('-',' ')}</b>, automaticamente é eliminada todas as suas principais   dúvidas,
+            <h2> Quais as vantagens de comprar direto no Site da {this.props.brand.replace('-',' ')}?</h2><br/>
+            O melhor lugar para comprar este produto é no Site da Blendibox, e vou te explicar por quê: <br/><br/>
+            A primeira vantagem é que, por estar comprando no <b>Site {this.props.brand.replace('-',' ')}</b>, automaticamente é eliminada todas as suas principais   dúvidas,
             como por exemplo:<br/>
             <br/> <b>Ter a certeza</b> de que o <b>Produto é Original</b>;
             <br/>Evitar que você precise levar <b>horas e horas</b> checando se o <b>Site é Confiável</b> antes de fechar
              a compra.<br/> 
-             <br/>A segunda vantagem é o <b>Preço mais baixo</b>, por não existir custos de revenda. <br/><br/>
-            <h3> Outras vantagens em compra direto no site oficial {this.props.brand.replace('-',' ')} são:</h3>
-            <br/> <b>Frete mais barato</b> e <b>Entrega mais rápida</b>: As grandes Marcas possuem um sistema lojístico robusto, o que <b>reduz o custo do frete</b> e <b>prazo 
+             <br/>A segunda vantagem é o <b>Preço mais justo</b>, por se tratar de um site que se preocupa em oferecer o melhor custo-benefício. <br/><br/>
+            <h3> Outras vantagens em compra direto no site {this.props.brand.replace('-',' ')} são:</h3>
+            <br/> <b>Frete mais barato</b> e <b>Entrega mais rápida</b>: Grandes Varejistas possuem um sistema lojístico robusto, o que <b>reduz o custo do frete</b> e <b>prazo 
              de entrega</b>;  
              <br/><br/><b>Garantia do fabricante</b>: Produtos de qualidade. Qualquer problema que tiver com o produto, tratará diretamente com a 
-             empresa detendora da Marca.
+             empresa responsável pelo site em que finalizou a compra.
            <br/> <br/><b>Troca ou Reembolso</b>: Caso precise <b>trocar o produto</b>, fará diretamente com a {this.props.brand.replace('-',' ')}. Tudo de acordo com o
              <b> Código de Defesa do Consumidor</b>.
               <br/> <br/>
@@ -134,7 +200,7 @@ render() {
            Agora é só <b>comprar com segurança e tranquilidade</b>, esperar chegar no menor tempo, e curtir aquela sensação de abrir sua encomenda tão 
            esperada! :) <br/><br/>
 
-             <b><a href={this.props.link}>Clique aqui </a></b> e confira todas estas vantagens, mais detalhes (deste e de outros produtos) no <b><a href={this.props.link }>site Oficial {this.props.brand.replace('-',' ')}</a></b>.
+             <b><a href={this.props.link}>Clique aqui </a></b> e confira todas estas vantagens, mais detalhes (deste e de outros produtos) no <b><a href={this.props.link }>site {this.props.brand.replace('-',' ')}</a></b>.
           
 
 
