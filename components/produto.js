@@ -103,7 +103,7 @@ render() {
                 src={this.props.image2}
                 width="205"
                 height="205"
-                alt="Want1"
+                alt={this.props.title}
               ></amp-img>
 
              } 
@@ -112,7 +112,7 @@ render() {
                 src={this.props.image3}
                 width="205"
                 height="205"
-                alt="Want1"
+                alt={this.props.title}
               ></amp-img>
 
              }
@@ -121,7 +121,7 @@ render() {
                 src={this.props.image4}
                 width="205"
                 height="205"
-                alt="Want1"
+                alt={this.props.title}
               ></amp-img>
 
              }
@@ -139,7 +139,7 @@ render() {
                 src={this.props.image6}
                 width="205"
                 height="205"
-                alt="Want1"
+                alt={this.props.title}
               ></amp-img>
 
              }

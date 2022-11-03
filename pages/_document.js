@@ -13,20 +13,16 @@ class MyDocument extends Document {
   render() {
 
     return (
-      <Html>
+      <Html lang="pt">
         <Head>
       
           <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" />
           <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"/>
           <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"/>
-          <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"/>
           <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"/>
           <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"/>
           <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"/>
-          <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"/>
-          <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"/>
-          <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"/>
-          <script async custom-element="amp-video"   src="https://cdn.ampproject.org/v0/amp-video-0.1.js"/>          
+          <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"/>      
           <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"/>
           <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"/>
           
@@ -34,7 +30,7 @@ class MyDocument extends Document {
           <meta name="verify-admitad" content="547987f230" />
           <meta httpEquiv='content-language' content='pt-br'/> 
           <link rel="preload" href="https://comprar.blendibox.com.br/Poppins-Regular.woff" as="font" crossOrigin="true"/>
-
+          <meta name="description" content="Aqui Você encontra dicas dos melhores sites de compras e cupons de desconto imperdíveis"/>
    
         </Head>
 

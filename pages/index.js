@@ -27,18 +27,19 @@ export const config = { amp: true };
           </address>
           
           <amp-img
+           noloading="noloading"
             src="../big_pro_2.webp"
             width="200"
             height="200"
             layout="responsive"
-            alt="The final spritzer"
+            alt="Paleta Big Pro Avon"
            
           ></amp-img>
         </header>
         <p >
          <h1>Quer saber sobre <a href="https://www.avon.com.br/?utmi_pc=74806588">A Melhor marca de Maquiagem para Comprar e Revender</a>?</h1>
 <br/>
-  <h3>Melhor Resposta: Produtos da AVON</h3>
+  <h2>Melhor Resposta: Produtos da AVON</h2>
 <br/>  
      
        As maquiagens e cosméticos da <b> <a href="https://www.avon.com.br/?utmi_pc=74806588">AVON</a></b> são reconhecidas como os mais vendidos no mundo.

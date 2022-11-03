@@ -54,8 +54,9 @@ export const getStaticProps = async () =>{
 
 
       </Head>
-      <h2  key={ia++}>{item.brand}</h2>
+   
        <h1  key={ia++}>{item.title}</h1>
+       <h2  key={ia++}>{item.brand}</h2>
 
  {
      item.offer == 'undefined' ? <h3  key={ia++}>Por {item.price}</h3> : item.pice == 'undefined'? <h3  key={ia++}>Por {item.offer}</h3>: <h3  key={ia++}> de <span className="caption"  key={ia++}> {item.offer}</span> por {item.price} </h3>

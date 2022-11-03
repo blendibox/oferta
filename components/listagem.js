@@ -75,7 +75,7 @@ render() {
        <p className="AlignCenter"> <br/> <a className="button"  href={this.props.link  } 
         
            >
-            Comprar no Site Oficial {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+            Comprar no Site Oficial {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png" alt="ir" placeholder="blur"
         
             width="20" height="20"></amp-img></a>
           
@@ -100,7 +100,7 @@ render() {
       <p className="AlignCenter"> <br/> <a className="button"  href={this.props.link  } 
         
            >
-            Ir para o site  {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+            Ir para o site  {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png" alt="ir" placeholder="blur"
         
             width="20" height="20"></amp-img></a>
 
