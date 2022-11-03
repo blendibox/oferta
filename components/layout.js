@@ -98,6 +98,10 @@ const font = "/Poppins-Regular.woff";
         .image{
          
         }
+        .footer{
+          text-align:center;
+          background-color :#f1f1f1;
+        }
         .button{
           background-color:#036811;
           color:#ffffff;

@@ -92,7 +92,7 @@ export const getStaticPaths = async()=>{
       Você pode utilizar minha página do Avon Conecta para comprar seus produtos para uso próprio. Assim você conhece a nova ferramenta, e tem a vantagem de receber seus produtos enviados diretamente pela Avon. <br/>
  Clique no botão abaixo para comprar seus produtos no site da Avon. <br/><br/>
  <a className="button" href="https://www.avon.com.br/?utmi_pc=74806588" >
-            Ir às Compras no site da Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+            Ir às Compras no Site da Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
         
             width="25" height="25"></amp-img></a>
        
