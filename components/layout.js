@@ -99,12 +99,15 @@ const font = "/Poppins-Regular.woff";
          
         }
         .button{
-          background-color:#f05395;
+          background-color:#036811;
           color:#ffffff;
           font-size:1.1em;
-          border-radius:2px;
+          border-radius:24px;
           padding: 10px 10px 10px 10px;
           
+        }
+        .button > amp-img{
+          top:5px;
         }
         p {
           font-size: 18px;
@@ -174,7 +177,7 @@ html {
         text-decoration: underline dotted;
       }
       .brand{
-        color:#ffffff;
+        color:#050505;
 
       }
       b,

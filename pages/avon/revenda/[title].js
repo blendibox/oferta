@@ -78,21 +78,21 @@ export const getStaticPaths = async()=>{
     <br/>
     Se cadastrar como Consultora de Vendas da Avon é bem simples e rápido: preencha seu cadastro com seus dados pessoais diretamente no site da Avon, siga os passos, e aguarde seu cadastro ser liberado. 
     Algumas vezes o cadasto é liberado para fazer o primeiro pedido no mesmo dia. Clique no botão abaixo para ir ao formulário de cadastro no site da Avon.
-<br/>
+<br/><br/>
 
  <a className="button" href="https://www.avon.com.br/institucional/seja-representante/cadastro?codigo-self-appointment=74806588" >
-            Ir para o Cadastro site da Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+            Ir para o Cadastro na Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
         
-            width="25" height="25"></amp-img></a>
+            width="25" height="25"></amp-img></a><br/><br/>
 
   </div>
    <div className="button_Avon">
       <h2> Como faço para comprar?</h2>    
 <br/>
       Você pode utilizar minha página do Avon Conecta para comprar seus produtos para uso próprio. Assim você conhece a nova ferramenta, e tem a vantagem de receber seus produtos enviados diretamente pela Avon. <br/>
- Clique no botão abaixo para comprar seus produtos no site da Avon. <br/>
+ Clique no botão abaixo para comprar seus produtos no site da Avon. <br/><br/>
  <a className="button" href="https://www.avon.com.br/?utmi_pc=74806588" >
-            Ir às compras no site da Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+            Ir às Compras no site da Avon<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
         
             width="25" height="25"></amp-img></a>
        
