@@ -148,7 +148,7 @@ const Sidebar = () => {
       <nav className="ampstart-sidebar-nav ampstart-nav">
         <ul className="list-reset m0 p0 ampstart-label">
          <li className="ampstart-nav-item">
-            <a className="ampstart-nav-link" href={process.env.NEXT_PUBLIC_DOMAIN_URL + '/cupons'}>Cupons de DESCONTO</a>
+            <a className="ampstart-nav-link" href="https://comprar.blendibox.com.br/cupons">Cupons de DESCONTO</a>
           </li>
           <li className="ampstart-nav-item ampstart-nav-dropdown relative">
             <amp-accordion

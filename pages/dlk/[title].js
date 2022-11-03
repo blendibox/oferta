@@ -41,6 +41,8 @@ export const getStaticPaths = async()=>{
         image={item.image}
         link={item.link + item.afilio}
         price={item.price}
+        imageWidth = {300}
+        imageHeight = {450}
         brand={item.brand}
         offer={item.offer}
         priceGoogle={price}
