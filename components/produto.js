@@ -158,7 +158,7 @@ render() {
 
 
  {
-     (this.props.offer == 'undefined' || this.props.offer == '') ? <h3  >Por {this.props.price}</h3> : (this.props.price == 'undefined' || this.props.price == '') ? <h3  >Por {this.props.offer}</h3>: <h3  > de <span className="caption"  > {this.props.price}</span> por {this.props.offer} </h3>
+     (this.props.offer == 'undefined' || this.props.offer == '') ? <h3 className="price" >Por {this.props.price}</h3> : (this.props.price == 'undefined' || this.props.price == '') ? <h3 className="price" >Por {this.props.offer}</h3>: <h3 className="price" > de <span className="caption"  > {this.props.price}</span> por {this.props.offer} </h3>
      
 
  }
@@ -168,7 +168,7 @@ render() {
       <p className="AlignCenter"> <br/> <a className="button"  href={this.props.link  } 
         
            >
-            Ir para o Site {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+            Ir para o Site {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png" alt="ir"  placeholder="blur"
         
             width="20" height="20"></amp-img></a>
           
@@ -200,7 +200,7 @@ render() {
            Agora é só <b>comprar com segurança e tranquilidade</b>, esperar chegar no menor tempo, e curtir aquela sensação de abrir sua encomenda tão 
            esperada! :) <br/><br/>
 
-             <b><a href={this.props.link}>Clique aqui </a></b> e confira todas estas vantagens, mais detalhes (deste e de outros produtos) no <b><a href={this.props.link }>site {this.props.brand.replace('-',' ')}</a></b>.
+             <b><a href={this.props.link}>Clique aqui  e confira todas estas vantagens</a></b>, mais detalhes (deste e de outros produtos) no <b><a href={this.props.link }>site {this.props.brand.replace('-',' ')}</a></b>.
           
 
 

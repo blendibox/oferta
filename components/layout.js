@@ -66,14 +66,31 @@ const font = "/Poppins-Regular.woff";
           color:#555555;
          }
 
+         @keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 
         .button:hover {
-          animation-name: shake;
-          animation-duration: 0.82s;
-
+          animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
           transform: translate3d(0, 0, 0);
           backface-visibility: hidden;
           perspective: 1000px;
+              box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+
         }
 
       
@@ -103,7 +120,7 @@ const font = "/Poppins-Regular.woff";
           background-color :#f1f1f1;
         }
         .button{
-          background-color:#036811;
+          background-color:#076241;
           color:#ffffff;
           font-size:1.1em;
           border-radius:24px;
@@ -180,9 +197,18 @@ html {
         text-decoration: underline;
         text-decoration: underline dotted;
       }
+      .price{
+        margin: 10px;
+        padding: 5px;
+        align-items: center;
+        text-align: center;
+        background-color: #262323;
+        color: #fff;
+        width: 195px;
+        border-radius: 10px 0 10px 0;
+      }
       .brand{
         color:#050505;
-
       }
       b,
       strong {
