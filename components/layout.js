@@ -137,7 +137,7 @@ const font = "/Poppins-Regular.woff";
 
         }
         .caption {
-          color: #444444;
+          color: #666666;
           margin-top: 0;
           font-size: 14px;
           text-decoration: line-through;

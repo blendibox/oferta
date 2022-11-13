@@ -27,7 +27,7 @@ render() {
                   "name": this.props.title,
                   "image": this.props.image,
                   "url": this.props.link,
-                  "description": "Procurando onde comprar " + this.props.title + ' original? '+process.env.GATILHO_MENTAL + ' Oferta exclusiva ' + this.props.title,
+                  "description": "Procurando onde comprar " + this.props.title + ' original? '+    'Clique aqui e encontre com o melhor preço, a melhor forma de pagamento, a entrega mais rápida e o melhor preço de frete. Clique agora e confira! Observação: Poucas unidades! Oferta válida enquanto durarem os estoques! Corre pois está quase esgotado. ' + ' Oferta exclusiva ' + this.props.title,
                   "brand": {
                     "@type": "Brand",
                     "name": this.props.brand.replace('-',' ')
@@ -158,7 +158,7 @@ render() {
 
 
  {
-     (this.props.offer == 'undefined' || this.props.offer == '') ? <h3 className="price" >Por {this.props.price}</h3> : (this.props.price == 'undefined' || this.props.price == '') ? <h3 className="price" >Por {this.props.offer}</h3>: <h3 className="price" > de <span className="caption"  > {this.props.price}</span> por {this.props.offer} </h3>
+     (this.props.offer == 'undefined' || this.props.offer == '') ? <h2 className="price" >Por {this.props.price}</h2> : (this.props.price == 'undefined' || this.props.price == '') ? <h2 className="price" >Por {this.props.offer}</h2>: <h2 className="price" > de <span className="caption"  > {this.props.price}</span> por {this.props.offer} </h2>
      
 
  }
@@ -187,7 +187,7 @@ render() {
             <br/>Evitar que você precise levar <b>horas e horas</b> checando se o <b>Site é Confiável</b> antes de fechar
              a compra.<br/> 
              <br/>A segunda vantagem é o <b>Preço mais justo</b>, por se tratar de um site que se preocupa em oferecer o melhor custo-benefício. <br/><br/>
-            <h3> Outras vantagens em compra direto no site {this.props.brand.replace('-',' ')} são:</h3>
+            <h2> Outras vantagens em compra direto no site {this.props.brand.replace('-',' ')} são:</h2>
             <br/> <b>Frete mais barato</b> e <b>Entrega mais rápida</b>: Grandes Varejistas possuem um sistema lojístico robusto, o que <b>reduz o custo do frete</b> e <b>prazo 
              de entrega</b>;  
              <br/><br/><b>Garantia do fabricante</b>: Produtos de qualidade. Qualquer problema que tiver com o produto, tratará diretamente com a 
