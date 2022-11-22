@@ -199,6 +199,7 @@ html {
       }
       .price{
         margin: 10px;
+        font-size:1.4em;
         padding: 5px;
         align-items: center;
         text-align: center;
