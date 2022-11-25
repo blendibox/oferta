@@ -7,7 +7,7 @@ export const config = { amp: true };
 
 export const getStaticProps = async ({params: {title} }) =>{
 
-	const nikes = nike.filter(p =>p.title.toString() == title)
+	const nikes = nike.filter(p =>p.url.toString() == title)
 
    const price = nikes[0].offer == ''? nikes[0].price.replace('R','').replace('$','').replace(',','.'): nikes[0].offer.replace('R','').replace('$','').replace(',','.') ;
 
@@ -24,7 +24,7 @@ export const getStaticProps = async ({params: {title} }) =>{
 
 export const getStaticPaths = async()=>{
 	const paths = nike.map(item =>({
-		params: {title: item.title.toString()},
+		params: {title: item.url.toString()},
 	}))
 	return {paths,fallback: false}
 }
