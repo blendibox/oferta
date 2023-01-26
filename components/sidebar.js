@@ -150,6 +150,12 @@ const Sidebar = () => {
          <li className="ampstart-nav-item">
             <a className="ampstart-nav-link" href="https://comprar.blendibox.com.br/cupons">Cupons de DESCONTO</a>
           </li>
+            <li className="ampstart-nav-item">
+            <a className="ampstart-nav-link" href="https://comprar.blendibox.com.br/cupons/nike">Cupons da NIKE</a>
+          </li>
+            <li className="ampstart-nav-item">
+            <a className="ampstart-nav-link" href="https://comprar.blendibox.com.br/cupons/girafa">500 Reais de desconto Smartphone</a>
+          </li>
           <li className="ampstart-nav-item ampstart-nav-dropdown relative">
             <amp-accordion
               layout="container"
