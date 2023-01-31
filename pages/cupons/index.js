@@ -43,7 +43,48 @@ var ia = 3;
 
    <div>
 
-    { props.item2.link.map( (item, i) =>
+    
+     { props.item.coupon.map( (item, i) =>
+   
+
+    <div  className="containner" key={ia++} >
+
+
+         <a   href={item.link ==props.erro? item.store.link: item.link } > 
+           <amp-img className="image"
+            alt={item.store.title}
+            width="180"
+            height="130"
+            placeholder="blur"
+            src={item.store.image1}
+          >         
+          </amp-img>
+        </a>
+        <br/>
+        <small>{item.store.name}  - {item.category.name}</small><br/><br/>
+
+        <h1>{item.title} *</h1><br/>
+
+        <h2 className="cupom">CUPOM: <a   href={item.link ==props.erro? item.store.link: item.link}> <b> {item.code} </b> </a></h2>
+        <small>Categoria: {item.category.name}</small>
+        <br/><br/>
+
+        <a className="button" href={item.link ==props.erro? item.store.link: item.link}> Ir para o site {item.store.name} <amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
+        
+            width="20" height="20"></amp-img>
+        </a>
+        <br/><br/>
+             
+        <small>* Este cupom de desconto é válido no site    <a   href={item.link ==props.erro? item.store.link: item.link } >  {item.store.name} </a>, até o dia <b> {item.vigency.endDate.split(' ')[0]} </b> ou enquanto durarem os estoques, podendo ser invalidado antes do prazo.</small>
+         
+
+      <hr/>
+     </div>
+
+
+   )}
+
+{ props.item2.link.map( (item, i) =>
   
 
   (item.network.id == 8) &&
@@ -89,47 +130,6 @@ var ia = 3;
 
 
    )}
-
-     { props.item.coupon.map( (item, i) =>
-   
-
-    <div  className="containner" key={ia++} >
-
-
-         <a   href={item.link ==props.erro? item.store.link: item.link } > 
-           <amp-img className="image"
-            alt={item.store.title}
-            width="180"
-            height="130"
-            placeholder="blur"
-            src={item.store.image1}
-          >         
-          </amp-img>
-        </a>
-        <br/>
-        <small>{item.store.name}  - {item.category.name}</small><br/><br/>
-
-        <h1>{item.title} *</h1><br/>
-
-        <h2 className="cupom">CUPOM: <a   href={item.link ==props.erro? item.store.link: item.link}> <b> {item.code} </b> </a></h2>
-        <small>Categoria: {item.category.name}</small>
-        <br/><br/>
-
-        <a className="button" href={item.link ==props.erro? item.store.link: item.link}> Ir para o site {item.store.name} <amp-img  className="search" src="../../arrow-right.png"  placeholder="blur"
-        
-            width="20" height="20"></amp-img>
-        </a>
-        <br/><br/>
-             
-        <small>* Este cupom de desconto é válido no site    <a   href={item.link ==props.erro? item.store.link: item.link } >  {item.store.name} </a>, até o dia <b> {item.vigency.endDate.split(' ')[0]} </b> ou enquanto durarem os estoques, podendo ser invalidado antes do prazo.</small>
-         
-
-      <hr/>
-     </div>
-
-
-   )}
-
 
 
 
