@@ -1,7 +1,5 @@
 import Document, { Html, Head, Main, NextScript,Link } from 'next/document';
 import Sidebar from '../components/sidebar';
-import CanonicalURL from '../components/CanonicalURL';
-
 import Footer from '../components/footer';
 
 
@@ -17,8 +15,6 @@ class MyDocument extends Document {
       <Html lang="pt">
         <Head>
 
-            <CanonicalURL />
-            
 
          <link rel="alternate" type="application/rss+xml" href="https://comprar.blendibox.com.br/googleMerchant.xml" />
           <link rel="apple-touch-icon" href="/favicon.ico" />
