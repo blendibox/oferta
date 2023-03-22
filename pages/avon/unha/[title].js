@@ -40,7 +40,7 @@ export const getStaticPaths = async()=>{
     <Produto 
         title={item.title}
         image={item.image}
-        link={item.link + item.afilio}
+        link={item.link}
         price={item.price}
         brand="Avon"
         offer={item.offer}

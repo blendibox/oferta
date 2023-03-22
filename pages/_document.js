@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript,Link } from 'next/document';
 import Sidebar from '../components/sidebar';
+import CanonicalURL from '../components/CanonicalURL';
 
 import Footer from '../components/footer';
 
@@ -16,8 +17,12 @@ class MyDocument extends Document {
       <Html lang="pt">
         <Head>
 
+            <CanonicalURL />
+            
+
          <link rel="alternate" type="application/rss+xml" href="https://comprar.blendibox.com.br/googleMerchant.xml" />
-      
+          <link rel="apple-touch-icon" href="/favicon.ico" />
+          <meta name="theme-color" content="#e7e9eb"/>
           <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" />
           <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"/>
           <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"/>
@@ -36,7 +41,7 @@ class MyDocument extends Document {
           <meta name="description" content="Aqui Você encontra dicas dos melhores sites de compras e cupons de desconto imperdíveis"/>
 
 
-   
+       
         </Head>
 
         <body>

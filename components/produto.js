@@ -21,6 +21,36 @@ render() {
           dangerouslySetInnerHTML=
                {{ __html: JSON.stringify( 
 
+                 {
+                  "@context": "http://schema.org",
+                  "@type": "NewsArticle",
+                  "mainEntityOfPage": "http://cdn.ampproject.org/article-metadata.html",
+                  "headline": this.props.title,
+                  "datePublished": "2023-03-03T12:02:41Z",
+                  "dateModified": "2023-03-03T12:02:41Z",
+                  "description":  "Procurando onde comprar " + this.props.title + ' original? '+    'Clique aqui e encontre com o melhor preço, a melhor forma de pagamento, a entrega mais rápida e o melhor preço de frete. Clique agora e confira! Observação: Poucas unidades! Oferta válida enquanto durarem os estoques! Corre pois está quase esgotado. ' + ' Oferta exclusiva ' + this.props.title,
+                  "author": {
+                    "@type": "Person",
+                    "name": "Juliana"
+                  },
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Blendibox",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://comprar.blendibox.com.br/favicon.ico",
+                      "width": 40,
+                      "height": 40
+                    }
+                  },
+                  "image": {
+                    "@type": "ImageObject",
+                    "url": this.props.image,
+                    "height": 205,
+                    "width": 205
+                  }
+                },
+
                 {
                   "@context": "https://schema.org/", 
                   "@type": "Product", 
@@ -38,9 +68,32 @@ render() {
                     "url": this.props.link,
                     "priceCurrency": "BRL",
                     "price":  this.props.priceGoogle,
+                    "priceValidUntil": "2023-12-12",
                     "itemCondition": "https://schema.org/NewCondition",
                     "availability": "https://schema.org/InStock"
                   },
+
+
+                  "review": [{
+                    "@type": "Review",
+                    "reviewRating": {
+                      "@type": "Rating",
+                      "ratingValue": "5"
+                    },
+                    "author": {
+                      "@type": "Person",
+                      "name": "Juliana"
+                    }
+                   }
+
+                   ],
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "100",
+                    "bestRating": "100",
+                    "ratingCount": "1"
+                  },
+
               }
             )
              

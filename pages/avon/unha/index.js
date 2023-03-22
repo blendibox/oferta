@@ -39,7 +39,7 @@ export const getStaticProps = async () =>{
      <Listagem key={ia++}
         title={item.title}
         image={item.image}
-        link={item.link + item.afilio}
+        link={item.link}
         price={item.price}
         brand="Avon"
         offer={item.offer}

@@ -1304,7 +1304,7 @@ html {
       .h3,
       h3 {
         font-size: 1.3rem;
-        line-height: 1.3rem;
+        line-height: 3.3rem;
       }
       .h4,
       h4 {
