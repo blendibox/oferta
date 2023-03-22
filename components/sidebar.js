@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
-import categories from '../data/categories.json';
+import categories from '../data/categories-avon.json';
+
+import categories18 from '../data/categories-18.json';
 
 const Sidebar = () => {
   return (
@@ -174,6 +176,7 @@ const Sidebar = () => {
                     })}
                 </ul>
               </section>
+
             </amp-accordion>
 
 

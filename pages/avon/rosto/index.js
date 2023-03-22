@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 import Listagem from  '../../../components/listagem.js'
-import rosto from '../../../data/avon-rosto.json'
+import rosto from '../../../data/avon_rosto_.json'
 
 
 

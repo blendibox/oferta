@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 import Listagem from  '../../../components/listagem.js'
-import make from '../../../data/avon-make.json'
+import make from '../../../data/avon_make_.json'
 
 
 

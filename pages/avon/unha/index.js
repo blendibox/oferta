@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 import Listagem from  '../../../components/listagem.js'
-import unha from '../../../data/avon-unha.json'
+import unha from '../../../data/avon_unhas_.json'
 
 
 

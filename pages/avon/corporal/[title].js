@@ -1,6 +1,6 @@
 import  Produto  from '../../../components/produto'
 import styles from '../../../styles/Home.module.css'
-import corporal from '../../../data/avon-corporal.json'
+import corporal from '../../../data/avon_corporal_.json'
 import NextLink from 'next/link'
 
 
@@ -8,7 +8,7 @@ export const config = { amp: true };
 
 export const getStaticProps = async ({params: {title} }) =>{
 
-	const corporals = corporal.filter(p =>p.title.toString() == title)
+	const corporals = corporal.filter(p =>p.url.toString() == title)
 
   const price = corporals[0].offer == ''? corporals[0].price.replace('R','').replace('$','').replace(',','.'): corporals[0].offer.replace('R','').replace('$','').replace(',','.') ;
 
@@ -25,7 +25,7 @@ export const getStaticProps = async ({params: {title} }) =>{
 
 export const getStaticPaths = async()=>{
 	const paths = corporal.map(item =>({
-		params: {title: item.title.toString()},
+		params: {title: item.url.toString()},
 	}))
 	return {paths,fallback: false}
 }

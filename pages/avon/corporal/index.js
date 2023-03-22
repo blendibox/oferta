@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 import Listagem from  '../../../components/listagem.js'
-import corporal from '../../../data/avon-corporal.json'
+import corporal from '../../../data/avon_corporal_.json'
 
 
 

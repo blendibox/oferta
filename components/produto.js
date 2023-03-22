@@ -68,8 +68,8 @@ render() {
           
           <address >
             <time
-              dateTime="2022-10-13"
-              >Outubro 19, 2022</time
+              dateTime="2023-03-19"
+              >Março 19, 2023</time
             >
           </address>
           
@@ -179,8 +179,16 @@ render() {
       <div className="">
          
             <br/>
+             { (  typeof(this.props.descr) != 'undefined') && 
+                <div>
+                <h4 className="justify">&nbsp;{this.props.descr[0]}</h4>
+                </div>
+
+             }
+
+             <br/>
             <h2> Quais as vantagens de comprar direto no Site da {this.props.brand.replace('-',' ')}?</h2><br/>
-            O melhor lugar para comprar este produto é no Site da Blendibox, e vou te explicar por quê: <br/><br/>
+    
             A primeira vantagem é que, por estar comprando no <b>Site {this.props.brand.replace('-',' ')}</b>, automaticamente é eliminada todas as suas principais   dúvidas,
             como por exemplo:<br/>
             <br/> <b>Ter a certeza</b> de que o <b>Produto é Original</b>;

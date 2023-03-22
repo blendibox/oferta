@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 import Listagem from  '../../../components/listagem.js'
-import perfume from '../../../data/avon-fragrancias.json'
+import perfume from '../../../data/avon_perfume_.json'
 
 
 

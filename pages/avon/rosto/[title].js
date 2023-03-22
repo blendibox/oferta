@@ -1,6 +1,6 @@
 import  Produto  from '../../../components/produto'
 import styles from '../../../styles/Home.module.css'
-import rosto from '../../../data/avon-rosto.json'
+import rosto from '../../../data/avon_rosto_.json'
 import NextLink from 'next/link'
 
 
@@ -8,7 +8,7 @@ export const config = { amp: true };
 
 export const getStaticProps = async ({params: {title} }) =>{
 
-	const rostos = rosto.filter(p =>p.title.toString() == title)
+	const rostos = rosto.filter(p =>p.url.toString() == title)
       const price = rostos[0].offer == ''? rostos[0].price.replace('R','').replace('$','').replace(',','.'): rostos[0].offer.replace('R','').replace('$','').replace(',','.') ;
 
 
@@ -24,7 +24,7 @@ export const getStaticProps = async ({params: {title} }) =>{
 
 export const getStaticPaths = async()=>{
 	const paths = rosto.map(item =>({
-		params: {title: item.title.toString()},
+		params: {title: item.url.toString()},
 	}))
 	return {paths,fallback: false}
 }

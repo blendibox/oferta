@@ -8,7 +8,7 @@ export const config = { amp: true };
 
 export const getStaticProps = async ({params: {title} }) =>{
 
-	const objetos = objeto.filter(p =>p.title.toString() == title)
+	const objetos = objeto.filter(p =>p.url.toString() == title)
 
    const price = objetos[0].offer == ''? objetos[0].price.replace('R','').replace('$','').replace(',','.'): objetos[0].offer.replace('R','').replace('$','').replace(',','.') ;
 
@@ -25,7 +25,7 @@ export const getStaticProps = async ({params: {title} }) =>{
 
 export const getStaticPaths = async()=>{
 	const paths = objeto.map(item =>({
-		params: {title: item.title.toString()},
+		params: {title: item.url.toString()},
 	}))
 	return {paths,fallback: false}
 }

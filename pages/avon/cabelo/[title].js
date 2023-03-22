@@ -1,6 +1,6 @@
 import  Produto  from '../../../components/produto'
 import styles from '../../../styles/Home.module.css'
-import cabelo from '../../../data/avon-cabelo.json'
+import cabelo from '../../../data/avon_cabelos_.json'
 import NextLink from 'next/link'
 
 

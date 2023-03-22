@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
 import Listagem from  '../../../components/listagem.js'
-import cabelo from '../../../data/avon-cabelo.json'
+import cabelo from '../../../data/avon_cabelos_.json'
 
 
 

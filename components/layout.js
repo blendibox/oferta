@@ -120,10 +120,10 @@ const font = "/Poppins-Regular.woff";
           background-color :#f1f1f1;
         }
         .button{
-          background-color:#076241;
+          background-color:#000000;
           color:#ffffff;
           font-size:1.1em;
-          border-radius:24px;
+          border-radius:14px;
           padding: 10px 10px 10px 10px;
           
         }
@@ -203,7 +203,7 @@ html {
         padding: 5px;
         align-items: center;
         text-align: center;
-        background-color: #262323;
+        background-color: #af0c6e;
         color: #fff;
         width: 195px;
         border-radius: 10px 0 10px 0;
@@ -365,6 +365,7 @@ html {
       }
       .h4 {
         font-size: 1.125rem;
+
       }
       .h5 {
         font-size: 0.875rem;
