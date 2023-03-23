@@ -21,20 +21,26 @@ export const config = { amp: true };
           
           <address >
             <time
-              dateTime="2022-10-13"
-              >Outubro 13, 2022</time
+              dateTime="2023-03-23"
+              >23 de Março / 2023</time
             >
           </address>
           
+       <a href="https://blendibox.loja.avon.com.br">
+ 
           <amp-img
            noloading="noloading"
-            src="../big_pro_2.webp"
+            src="../images/petit-atitude.jpg"
             width="200"
             height="200"
             layout="responsive"
             alt="Paleta Big Pro Avon"
            
           ></amp-img>
+
+        </a>
+
+
         </header>
         <p >
          <h1>Quer saber sobre <a href="https://www.avon.com.br/?utmi_pc=74806588">A Melhor marca de Maquiagem para Comprar e Revender</a>?</h1>
@@ -85,28 +91,28 @@ export const config = { amp: true };
               className="mb4"
             >
               <amp-img
-                src="../big_pro_2.webp"
+                src="../images/petit-atitude.jpg"
                 width="205"
                 height="205"
-                alt="Paleta Big Pro Avon"
+                alt="Petit Atitude"
               ></amp-img>
               <amp-img
-                src="../big_pro.webp"
+                src="../images/far-away-glamour.jpg"
                 width="205"
                 height="205"
-                alt="Paleta Big Pro Avon"
+                alt="Kit Far Away Glamour"
               ></amp-img>
                <amp-img
-                src="../maleta.webp"
+                src="../images/kit_far_away.jpg"
                 width="205"
                 height="205"
-                alt="Maleta de Maquiagem Avon"
+                alt="Kit Far Away Clássico"
               ></amp-img>
                <amp-img
-                src="../lov_u_touch.webp"
+                src="../images/pur_blanca.jpg"
                 width="205"
                 height="205"
-                alt="Perfume Lov U Touch"
+                alt="Pur Blanca"
               ></amp-img>
                <amp-img
                 src="../protetor_solar_cor.webp"
