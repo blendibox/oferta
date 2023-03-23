@@ -25,14 +25,14 @@ export const config = { amp: true };
               >23 de Março / 2023</time
             >
           </address>
-          
-       <a href="https://blendibox.loja.avon.com.br">
+          <br/>
+       <a className="content" href="https://blendibox.loja.avon.com.br">
  
           <amp-img
            noloading="noloading"
-            src="../images/petit-atitude.jpg"
-            width="200"
-            height="200"
+            src="../images/cp12-banner-login-dia-das-maes-avon.jpg"
+            width="718"
+            height="480"
             layout="responsive"
             alt="Paleta Big Pro Avon"
            
@@ -42,6 +42,7 @@ export const config = { amp: true };
 
 
         </header>
+        <br/>
         <p >
          <h1>Quer saber sobre <a href="https://www.avon.com.br/?utmi_pc=74806588">A Melhor marca de Maquiagem para Comprar e Revender</a>?</h1>
 <br/>
