@@ -83,6 +83,7 @@ export const config = { amp: true };
 
 <br/>
              <section>
+             <br/>
             <h2 className="mb4">Veja alguns Produtos:</h2>
             <amp-carousel
               type="carousel"
@@ -142,10 +143,8 @@ export const config = { amp: true };
               
             </amp-carousel>
           </section>
-           <br/>
-          <small>
-          Produtos nas imagens: Paleta Big pró Avon,  Maleta de Maquiagem Avon, Lov U Touch,  Protetor Solar com Cor,  Batom Tratamake, Sérum Facial Renew e Kit Renew Vitaminado (VItamina C)
-          </small>
+           
+
           <br/><br/>
 
 <div>Mais detalhes sobre a melhor marca de Maquiagem para Comprar e Revender, você encontra no <b><a href="https://www.avon.com.br/?utmi_pc=74806588"> SITE DA AVON</a></b> </div>
