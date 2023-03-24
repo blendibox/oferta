@@ -6,6 +6,11 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  experimental: {
+    amp: {
+      skipValidation: true
+    }
+  },
     webpack: (config, { isServer }) => {
       if (isServer) {
         //require('./scripts/getpages')

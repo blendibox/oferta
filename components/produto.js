@@ -134,11 +134,11 @@ render() {
 
           {  (  typeof(this.props.video) != 'undefined') &&
 
-               <Video   src={this.props.video} autoPlay="autoPlay" loop="loop" muted="muted" controls="controls" layout="responsive"  rotate-to-fullscreen="rotate-to-fullscreen" />
+               <Video   src={this.props.video}      preload="auto"  loop="loop" muted="muted"  layout="responsive"  rotate-to-fullscreen="rotate-to-fullscreen" controls="controls" autoPlay />
           }
 
           {  (  typeof(this.props.video) == 'undefined') &&
-               <Video  src='imagine_como_seria.mp4'  autoPlay="autoPlay" loop="loop" muted="muted" controls="controls" layout="responsive"  rotate-to-fullscreen="rotate-to-fullscreen" />
+               <Video  src='imagine_como_seria.mp4' preload="auto"  loop="loop" muted="muted" layout="responsive"  rotate-to-fullscreen="rotate-to-fullscreen" controls="controls" autoPlay />
           }
 
           </div>
