@@ -13,6 +13,10 @@ module.exports = {
               esModule: false,
             },
           },
+      {
+      test: /\.mp4$/,
+      loader: 'url?limit=10000&mimetype=video/mp4'
+      }
         ],
     }],
   },

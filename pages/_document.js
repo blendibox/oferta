@@ -29,6 +29,8 @@ class MyDocument extends Document {
           <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"/>
           <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"/>
           <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"/>
+         
+          <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
           
           <meta name="msvalidate.01" content="13BC51958165F779625DD28F673D5B4A"/>
           <meta name="verify-admitad" content="547987f230" />

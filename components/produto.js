@@ -2,8 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 
-class Produto extends React.Component {
+import Video from './video'
 
+
+class Produto extends React.Component {
 
 
 render() {
@@ -125,8 +127,33 @@ render() {
               >Março 19, 2023</time
             >
           </address>
-          
 
+          <div>
+
+          <br/>
+
+          {  (  typeof(this.props.video) != 'undefined') &&
+
+               <Video width="1920" height="1080"  src={this.props.video} autoPlay="autoPlay" loop="loop" muted="muted" controls="controls" layout="responsive"  rotate-to-fullscreen="rotate-to-fullscreen" />
+          }
+
+          {  (  typeof(this.props.video) == 'undefined') &&
+               <Video  src='imagine_como_seria.mp4' autoPlay  autoPlay="autoPlay" loop="loop" muted="muted" controls="controls" layout="responsive"  rotate-to-fullscreen="rotate-to-fullscreen" />
+          }
+
+          </div>
+
+           <p className="AlignCenter"> <br/> <a className="button"  href={this.props.link  } 
+        
+           >
+            Ir para o Site {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png" alt="ir"  placeholder="blur"
+        
+            width="20" height="20"></amp-img></a>
+          
+          </p>
+         
+          
+ <br/>
 
          <a   href={this.props.link  } > 
            <amp-img className="image"
@@ -263,7 +290,9 @@ render() {
 
              <b><a href={this.props.link}>Clique aqui  e confira todas estas vantagens</a></b>, mais detalhes (deste e de outros produtos) no <b><a href={this.props.link }>site {this.props.brand.replace('-',' ')}</a></b>.
           
-
+           
+      
+ 
 
       </div>
 
