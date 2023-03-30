@@ -9,7 +9,7 @@ export default async ( NextApiRequest,  NextApiResponse) => {
 
   //var text = feed.rss2().replace('version="2.0"', 'version="2.0" xmlns:g="http://base.google.com/ns/1.0"');
 
- // console.log(xml);
+ console.log(feed);
 
  // text.forEach((post) => {
  //   console.log(post);
