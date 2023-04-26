@@ -238,7 +238,7 @@ render() {
 
 
  {
-     (this.props.offer == 'undefined' || this.props.offer == '') ? <h2 className="price" >Por {this.props.price}</h2> : (this.props.price == 'undefined' || this.props.price == '') ? <h2 className="price" >Por {this.props.offer}</h2>: <h2 className="price" > de <span className="caption"  > {this.props.price}</span> por {this.props.offer} </h2>
+     (this.props.offer == 'undefined' || this.props.offer == '') ? <h2 className="price" >Por {this.props.price}</h2> : (this.props.price == 'undefined' || this.props.price == '') ? <h2 className="price" >Por {this.props.offer}</h2>: <h2 className="price" >Por {this.props.offer} </h2>
      
 
  }

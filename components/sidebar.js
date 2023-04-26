@@ -156,6 +156,9 @@ const Sidebar = () => {
             <a className="ampstart-nav-link" href="https://comprar.blendibox.com.br/cupons">Cupons de DESCONTO</a>
           </li>
           <li className="ampstart-nav-item">
+            <a className="ampstart-nav-link" href="https://comprar.blendibox.com.br/cupons/beleza">Cupons Beleza e Perfumaria</a>
+          </li>
+          <li className="ampstart-nav-item">
             <a className="ampstart-nav-link" href="https://comprar.blendibox.com.br/cupons/girafa">Cupons Eletrônicos</a>
           </li>
 
