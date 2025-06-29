@@ -3,7 +3,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export const revalidate = 60 * 60 * 24 * 7; // revalidate this page every 60 seconds * 60 * 24 * 7 = 7 dias
 
 function Layout(props) {
 

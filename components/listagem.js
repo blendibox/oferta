@@ -72,16 +72,16 @@ render() {
 
  }
           
-       <p className="AlignCenter"> <br/> <a className="button"  href={this.props.link  } 
+       <p className="AlignCenter"> <br/> <Link className="button"  href={this.props.link  } 
         
            >
             Ir para o Site {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png" alt="ir" placeholder="blur"
         
-            width="20" height="20"></amp-img></a>
+            width="20" height="20"></amp-img></Link>
           
       </p>
          <p className="AlignCenter"> <br/> 
-         <a   href={this.props.link  } > 
+         <Link   href={this.props.link  } > 
            <amp-img className="image"
             alt={this.props.title}
             width={ this.props.imageWidth ? this.props.imageWidth : 350}
@@ -90,19 +90,19 @@ render() {
             src={this.props.image.replace('?v=1752766370','')}
           >         
           </amp-img>
-        </a>
+        </Link>
          </p>
       
         </header>
 
 
 
-      <p className="AlignCenter"> <br/> <a className="button"  href={this.props.link  } 
+      <p className="AlignCenter"> <br/> <Link className="button"  href={this.props.link  } 
         
            >
             Ir para o Site  {this.props.brand.replace('-',' ')}<amp-img  className="search" src="../../arrow-right.png" alt="ir" placeholder="blur"
         
-            width="20" height="20"></amp-img></a>
+            width="20" height="20"></amp-img></Link>
 
 
        

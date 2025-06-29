@@ -1,23 +1,20 @@
 /** @type {import('next').NextConfig} */
 
+const path = require('path');
+
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     unoptimized: true
   },
-  experimental: {
-    amp: {
-      skipValidation: true
-    }
+  turbopack: {
+    resolveExtensions: [ '.ts', '.jsx', '.js',  '.json'],
   },
-    webpack: (config, { isServer }) => {
-      if (isServer) {
-        //require('./scripts/getpages')
-      }
-  
-      return config
-    },
+ webpack: (config) => {
+    config.resolve.alias['@components'] = path.resolve(__dirname, 'components');
+    return config;
+  },
+
   async rewrites() {
       return [
         {
