@@ -22,7 +22,7 @@ const nextConfig = {
 	 unoptimized: true,
    },
    turbopack: {
-      resolveExtensions: [ '.ts', '.jsx', '.js',  '.json'],
+      resolveExtensions: [ '.ts', '.jsx', '.js',  '.json','mjs', 'cjs'],
    },
    webpack: (config) => {
       config.resolve.alias['@components'] = path.resolve(__dirname, 'components');
