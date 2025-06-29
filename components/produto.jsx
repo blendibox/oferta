@@ -37,7 +37,7 @@ export default function Produto(props) {
         <main id="content" role="main" className={styles.AlignCenter}>
 		<VideoBubble title="Nome do Produto | 3em1_puffer" />
 		
-  <br/>
+  <br/>  
           <h1 className={styles.title}>Qual o melhor lugar para comprar <b>{title?.replace(/-/g, " ")}?</b></h1>
 
           
@@ -56,6 +56,7 @@ export default function Produto(props) {
               width={imageWidth || 350}
               height={imageHeight || 350}
               src={image}
+			  priority
             />
           </Link>
 
@@ -76,7 +77,7 @@ export default function Produto(props) {
               <br />
               {typeof descr !== "undefined" && (
                 <div>
-                  <h4>&nbsp;{descr[0]}</h4>
+                  <h2>&nbsp;{descr[0]}</h2>
                 </div>
               )}
 
@@ -87,7 +88,7 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 
 				  </p>
 
-				  <h3>💡 E por quê?</h3>
+				  <h2>💡 E por quê?</h2>
 
 				  <ul>
 					<li>
@@ -121,22 +122,22 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 
 É isso mesmo: este post é <b>patrocinado</b>,isso significa que a Loja ou Marca me pagará uma pequena comissão — sem custo extra pra você — e isso me permite continuar testando, pesquisando e compartilhando essas dicas incríveis com <b>VOCÊ</b>, e MUITO mais PESSOAS!
 <br/>
-Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, e evitou dor de cabeça… É hora da etapa que eu mais amo💗! <br/>Compre clicando neste link abaixo: ✨💗</p>
+Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou dor de cabeça… e ainda te fez sentir que eu ajudei de alguma forma 💗! <br/>Compre clicando neste link abaixo: ✨💗</p>
 
                        <Link className={styles.botaoCompra} href={link}>
 					  👉 Clique Aqui e COMPRE {title?.replace("-", " ")}!
 					  </Link>
 				
 
-				  <div  className={styles.assinatura}  >
-			  <div aria-label="Data da publicação">
-			    <Link  href="https://www.blendibox.com.br">
-	            <time dateTime="2025-06-29">*Junho 29, 2025 por Juliana Costa</time>
-				</Link>
-          </div>
 
-				   <Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
-					   Blendibox - 2025
+                  <div aria-label="Data da publicação"><br/>						
+						<time dateTime="2025-06-29">*Junho 29, 2025 por Juliana Costa</time>					
+				  </div>
+				  <div  className={styles.assinatura}  >
+					  
+
+				       <Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
+					       Blendibox - 2025
 					  </Link>
 				  </div>
 				</div>

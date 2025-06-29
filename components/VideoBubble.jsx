@@ -12,7 +12,7 @@ export default function VideoBubble({ title }) {
   const [dragging, setDragging] = useState(false);
   const [position, setPosition] = useState({ x: 10, y: 554 }); // posição inicial (right:10px; bottom:84px)
 
-  const urlWidgetBubble = "https://video.blendibox.com.br";
+  const urlWidgetBubble = "";
   const productName = title || "";
   const videoName = productName.split("|")[1]?.trim() || "";
   const videoUrl = `${urlWidgetBubble}/videos/${videoName}.mp4`;
@@ -157,7 +157,7 @@ export default function VideoBubble({ title }) {
         <button id="pauseBtn" onClick={togglePause}>
           <img
             id="pauseIcon"
-            src={`${urlWidgetBubble}/images/videocommands/${
+            src={`/images/videocommands/${
               isPaused ? "play" : "pause"
             }.png`}
             alt="Play/Pause"
@@ -166,7 +166,7 @@ export default function VideoBubble({ title }) {
         <button id="muteBtn" onClick={toggleMute}>
           <img
             id="muteIcon"
-            src={`${urlWidgetBubble}/images/videocommands/${
+            src={`/images/videocommands/${
               isMuted ? "soundx" : "sound"
             }.png`}
             alt="Mute/Unmute"
