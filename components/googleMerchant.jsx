@@ -35,7 +35,7 @@ const product = await lerTodosProdutos();
 
 
 var produtos =   product.map((post,i) => 
-  `<item><title><![CDATA[ ${post.title}]]></title><link><![CDATA[${post.link + '&utmi_pc=74806588'}]]></link><description><![CDATA[${post.title}]]></description>`+
+  `<item><title><![CDATA[ ${post.title}]]></title><link><![CDATA[${post.link}]]></link><description><![CDATA[${post.title}]]></description>`+
   `<g:image_link>${post.image}</g:image_link><g:price><![CDATA[${post.price}]]></g:price><g:condition>new</g:condition>` +
   `<g:availability>in stock </g:availability><g:id><![CDATA[${post.link.match(/\d{9,9}/g)}]]></g:id><g:item_group_id><![CDATA[]]>></g:item_group_id><g:installment><g:months>3</g:months>` +
   `<g:amount><![CDATA[${post.price} BRL]]></g:amount></g:installment><g:brand><![CDATA[${post.brand}]]></g:brand><g:product_type><![CDATA[Maquiagem ]]></g:product_type> ` +

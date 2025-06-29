@@ -14,7 +14,7 @@ async function lerTodosProdutos() {
     const dados = JSON.parse(conteudo);
     todos = todos.concat(dados);
   }
-console.log('Exemplo de produto:', todos[0]);
+  console.log('Exemplo de produto:', todos[0]);
   return todos;
 }
 
@@ -37,7 +37,7 @@ export const buildFeed = async () => {
   posts.forEach((post) => {
     feed.addItem({
        title: post.title,
-       link:  post.link + '&utmi_pc=74806588' + '&utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant',
+       link:  post.link '&utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant',
        description: post.title,
        date: '',
       
