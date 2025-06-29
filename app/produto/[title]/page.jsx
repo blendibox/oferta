@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 
 
 
+
 function gerarSlug(title) {
   return title
     .toLowerCase()
@@ -19,17 +20,24 @@ function gerarSlug(title) {
 
 // Função utilitária para ler todos os JSONs
 async function lerTodosProdutos() {
-  const dataDir = path.join(process.cwd(), './data/'); 
-  const arquivos = fs.readdirSync(dataDir).filter(file => file.endsWith('.json'));
+  const dataDir = path.join(process.cwd(), './data/');
+  const arquivos = fs.readdirSync(dataDir).filter(file => {
+    const fullPath = path.join(dataDir, file);
+    return fs.statSync(fullPath).isFile() && file.endsWith('.json');
+  });
 
   let todos = [];
 
   for (const file of arquivos) {
     const conteudo = fs.readFileSync(path.join(dataDir, file), 'utf8');
-    const dados = JSON.parse(conteudo);
-    todos = todos.concat(dados);
+    try {
+      const dados = JSON.parse(conteudo);
+      todos = todos.concat(dados);
+    } catch (err) {
+      console.error(`Erro ao parsear ${file}:`, err);
+    }
   }
-//console.log('Exemplo de produto:', todos[0]);
+
   return todos;
 }
 
@@ -41,7 +49,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }) {
-  const { title } = params;
+  const title =  params.title;
   const todos = await lerTodosProdutos();
   console.log(title);
   const produto = todos.find(p => gerarSlug(p.title) === title);

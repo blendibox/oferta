@@ -2,14 +2,16 @@
   "name": "ofertas",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next-sitemap",
+    "build-feed": "node scripts/gerarFeed.js",
+    "build": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.cjs",
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/c64210b2794a4cbfbe6a7969e89847ff.txt --key c64210b2794a4cbfbe6a7969e89847ff",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next build && next-sitemap",
+    "predeploy": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
     "deploy": "gh-pages -b main -d pages"
   },
   "scriptsComments": {
@@ -17,7 +19,7 @@
     "index-bing": "https://bing.com/indexnow?url=https://comprar.blendibox.com.br/indexnowlist.txt&key=c64210b2794a4cbfbe6a7969e89847ff"
   },
   "dependencies": {
-    "next": "15.3.4",
+    "next": "^15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
