@@ -37,7 +37,7 @@ export default function Produto(props) {
         <main id="content" role="main" className={styles.AlignCenter}>
 		<VideoBubble title="Nome do Produto | 3em1_puffer" />
 		
-  <br/>  
+          <br/>  
           <h1 className={styles.title}>Qual o melhor lugar para comprar <b>{title?.replace(/-/g, " ")}?</b></h1>
 
           
