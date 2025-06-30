@@ -62,13 +62,13 @@ export default function Produto(props) {
 
           <div className={styles.AlignCenter}>
 <br/>
-		  {(offer || price) && <div className={styles.grid}> Preço na data do Post:   <b> R${offer || price} *</b></div>}
+		  {(offer || price) && <div className={styles.price}> Preço na data do Post:   <b> R${offer || price} *</b></div>}
 
 
             <div className={styles.AlignCenter}>
               <br />
               <Link className={styles.button} href={link}>
-                Ir para o Site 
+                IR PARA O SITE
             
               </Link>
             </div>
