@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build-feed": "node scripts/gerarFeed.js",
-    "build": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.cjs",
+    "build": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.cjs && terser out/**/*.js -c -m -o out/",
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/c64210b2794a4cbfbe6a7969e89847ff.txt --key c64210b2794a4cbfbe6a7969e89847ff",
     "start": "next start",
@@ -27,6 +27,7 @@
     "@tailwindcss/postcss": "^4",
     "gh-pages": "^6.3.0",
     "next-sitemap": "^3.1.23",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "terser": "^5.43.1"
   }
 }
