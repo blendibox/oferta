@@ -1,11 +1,5 @@
 
-    @font-face {
-           font-family: Poppins Regular;
-           src: url(../fonts/poppins/Poppins-Regular.woff);
-        }
-body{
-	font-family: Poppins Regular;
-}
+
 
 .price {
     margin-left: 30%;
@@ -44,7 +38,10 @@ body{
   color: #ffffff;
 }
 
-
+    @font-face {
+           font-family: Poppins Regular;
+           src: url(../fonts/poppins/Poppins-Regular.woff);
+        }
 
 
 .container {
