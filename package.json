@@ -12,7 +12,6 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
-    "deploy": "gh-pages -b main -d pages"
   },
   "scriptsComments": {
     "build": "next build && next export && next-sitemap",
@@ -25,7 +24,6 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "gh-pages": "^6.3.0",
     "next-sitemap": "^3.1.23",
     "tailwindcss": "^4",
     "terser": "^5.43.1"
