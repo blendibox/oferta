@@ -15,7 +15,7 @@ export default function VideoBubble({ title }) {
   const urlWidgetBubble = "";
   const productName = title || "";
   const videoName = productName.split("|")[1]?.trim() || "";
-  const videoUrl = `${urlWidgetBubble}/videos/${videoName}.mp4`;
+  const videoUrl = `/videos/${videoName}.mp4`;
 
   useEffect(() => {
     if (videoRef.current) {

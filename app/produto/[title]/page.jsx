@@ -66,6 +66,7 @@ export default async function Page({ params }) {
         imageWidth={300}
         imageHeight={450}
         offer={produto.offer}
+		resultado_ia={produto.resultado_ia}
         priceGoogle={produto.priceGoogle}
       />
     </main>

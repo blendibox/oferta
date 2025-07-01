@@ -18,6 +18,7 @@ export default function Produto(props) {
     price,
     offer,
     descr,
+	resultado_ia,
     imageWidth = 300,
     imageHeight = 450,
   } = props;
@@ -33,58 +34,70 @@ export default function Produto(props) {
 			  priceGoogle={priceGoogle}
 			/>
         </Head>
+ <div name="fundo" className={styles.AlignCenterMain} ></div>
+    <main id="content" role="main" className={styles.AlignCenter}>
 
-        <main id="content" role="main" className={styles.AlignCenter}>
 		<VideoBubble title="Nome do Produto | 3em1_puffer" />
 		
           <br/>  
           <h1 className={styles.title}>Qual o melhor lugar para comprar <b>{title?.replace(/-/g, " ")}?</b></h1>
 
-          
-          <div>
 
-            {video ? <Video src={video} image={image} /> : <Video src="imagine_como_seria.mp4" image={image} />}
-          </div>
+		  
+        <div id="inicio" className={styles.containerTexto}>
+		    <div id="fotoproduto" className={styles.fotoproduto}>
+				  <Link href={link} className={styles.AlignCenter}>
+					<Image
+					  className={styles.image}
+					  alt={title}
+					  width={imageWidth || 350}
+					  height={imageHeight || 350}
+					  src={image}
+					  priority
+					/>
+				  </Link>
+				
+				
+		    </div>
 
+         
 
-          <br />
-
-          <Link href={link} className={styles.AlignCenter}>
-            <Image
-              className={styles.image}
-              alt={title}
-              width={imageWidth || 350}
-              height={imageHeight || 350}
-              src={image}
-			  priority
-            />
-          </Link>
-
-          <div className={styles.AlignCenter}>
-<br/>
-		  {(offer || price) && <div className={styles.price}> Preço na data do Post:   <b> R${offer || price} *</b></div>}
-
-
-            <div className={styles.AlignCenter}>
-              <br />
-              <Link className={styles.button} href={link}>
-                IR PARA O SITE
-            
-              </Link>
-            </div>
-
-            <div >
-              <br />
-              {typeof descr !== "undefined" && (
-                <div>
-                  <h2>&nbsp;{descr[0]}</h2>
-                </div>
-              )}
-
+			<div id="comentarios" className={styles.AlignCenter}>
+			    <Link  href={link}>
+				  <div className={styles.balloonBoxContainner}>
+				     <img   className={styles.balloonBoxImage} src="/images/avaliadores/Renata.jpg"></img>
+				     <div className={styles.balloonBox} >				
+					      <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐ <br/>Estou muito feliz com minha compra. A qualidade é incomparável!</p>
+				      </div> 
+				  </div>
+				
+				   <div className={styles.balloonBoxContainner}>
+					  <img   className={styles.balloonBoxImage} src="/images/avaliadores/Cristina.jpg"></img>
+				      <div className={styles.balloonBox} >					
+					     <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐<br/>O design moderno e resistente superou minhas expectativas! faz com que minha filha se sinta uma verdadeira princesa!</p>
+				   </div> 
+				 </div>				
+				 <div className={styles.balloonBoxContainner}>
+					<img   className={styles.balloonBoxImage} src="/images/avaliadores/Helena.jpg"></img>
+				    <div className={styles.balloonBox} >					
+					   <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐<br/> É perfeito! Recomendasíssimo! Com certeza compraria novamente!</p>
+				    </div> 
+				</div>
+	
+				</Link>
+			</div>	
+       <div >
+	   	 <hr className={styles.hr}/>
+		  <div className={styles.AlignCenter}>
+					<br/>
+				  {(offer || price) && <div className={styles.price}> Preço na data do Post:  <b> R$ {offer || price} * </b> 	  
+				  <Link href={link} className={styles.link}>Clique aqui para saber o Valor Atual</Link></div>}
+				  </div>
+         <div id="texto" className={styles.containerTexto} >    
 			  <div className={styles.compraSeguraContainer}>
 				  <p>
-				  Se você estava pesquisando <strong>{title?.replace(/-/g, " ")} </strong> e caiu aqui, que sorte a sua! 💖
-Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação, li avaliações e garanti que este é o melhor lugar para comprar esse produto com tranquilidade, rapidez e o menor preço.
+				  Se você está pesquisando <strong>{title?.replace(/-/g, " ")} </strong> e caiu aqui, que sorte a sua! 💖<br/>
+Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação, li avaliações e garanti que a indicação de te darei aqui, é o melhor lugar para comprar esse produto com tranquilidade, rapidez de entrega e o melhor custo-benefício!
 
 				  </p>
 
@@ -93,7 +106,7 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 				  <ul>
 					<li>
 					  <span className={styles.emoji}>✅</span>
-					  <strong>Garantia de produto original:</strong> Nada de correr riscos com falsificações ou réplicas. Comprando diretamente pelo Site, você tem a certeza de que está levando o produto verdadeiro, com a qualidade que a marca promete!
+					  <strong>Garantia de produto original:</strong> Nada de correr riscos com falsificações ou réplicas. Comprando diretamente pelo botão azul, você tem a certeza de que está levando o produto verdadeiro, com a qualidade que a marca promete!
 					</li>
 					<li>
 					  <span className={styles.emoji}>✅</span>
@@ -118,31 +131,45 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 				  </ul>
 
 				  <p  className={styles.finalDestaque}>Gostou da dica? 💖</p>
-				  <p>Então deixa eu te contar um <b>segredinho:</b> quando você clica e compra pelo link aqui deste post, além de aproveitar todas essas vantagens, você ainda me ajuda muito! 🙏<br/>
+				  <p>Então deixa eu te contar um <b>segredinho:</b> quando você clica e compra pelo botão azul ou peor qualquer link aqui deste post, além de aproveitar todas essas vantagens, você ainda me ajuda muito! 🙏<br/>
 
-É isso mesmo: este post é <b>patrocinado</b>,isso significa que a Loja ou Marca me pagará uma pequena comissão — sem custo extra pra você — e isso me permite continuar testando, pesquisando e compartilhando essas dicas incríveis com <b>VOCÊ</b>, e MUITO mais PESSOAS!
+É isso mesmo: este post é <b>patrocinado</b>, isso significa que a Loja ou Marca me pagará uma pequena comissão — sem custo extra pra você — e isso me permite continuar testando, pesquisando e compartilhando essas dicas incríveis com <b>VOCÊ</b>, e MUITO mais PESSOAS!
 <br/>
-Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou dor de cabeça… e ainda te fez sentir que eu ajudei de alguma forma 💗! <br/>Compre clicando neste link abaixo: ✨💗</p>
+Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou dor de cabeça… e ainda te fez sentir que eu ajudei de alguma forma...  <Link className={styles.link}  href={link}>Compre clicando neste link aqui</Link> ✨💗</p>
 
                        <Link className={styles.botaoCompra} href={link}>
-					  👉 Clique Aqui e COMPRE {title?.replace("-", " ")}!
+					  👉 CLIQUE E SAIBA MAIS!
 					  </Link>
 				
 
 
-                  <div aria-label="Data da publicação"><br/>						
-						<time dateTime="2025-06-29">*Junho 29, 2025 por Juliana Costa</time>					
-				  </div>
-				  <div  className={styles.assinatura}  >
-					  
-
-				       <Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
-					       Blendibox - 2025
-					  </Link>
-				  </div>
+                <div ><br/>	
+					<div className={styles.balloonBoxContainner} >
+					
+						<img   className={styles.balloonBoxImage} src="/images/avaliadores/check.png"></img>
+							<div className={styles.balloonBox} >
+										<Link href='https://www.blendibox.com.br' className={styles.AlignCenter} alt="Ir para Blendibox">
+							<p   className={styles.balloonBoxText}>
+								<b>Blendibox</b>, especializada em bolsas que unem praticidade, estilo e qualidade.
+					Também atuamos com marketing digital desde <b>2012</b> e carregamos uma paixão genuína por comprinhas, pesquisa e <b>testes de produtos</b> de forma, útil e confiável. Compartilhamos o que você está buscando, com <b>Empatia</b> e <b>Transparência</b>.
+					</p>
+					</Link>
+				   </div> 
 				</div>
-             </div>
-          </div>
+				  
+			</div>							
+		</div>
+	 </div>	
+		 <div  className={styles.assinatura} aria-label="Data da publicação" >					  
+            <time dateTime="2025-06-29">*Junho 29, 2025 </time><br/>
+			<Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
+					       Blendibox - 2025 CNPJ: 17.084.837.0001/69
+			</Link>
+			
+		 </div>
+	</div>
+  </div>
+         
         </main>
       </>
     );
