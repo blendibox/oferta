@@ -28,7 +28,6 @@ background-attachment: fixed;
     align-items: center;
     text-align: left;
     color: #222222;
-
     -webkit-border-radius: 10px 0 10px 0;
     -moz-border-radius: 10px 0 10px 0;
   
@@ -72,7 +71,7 @@ background-attachment: fixed;
 
 .balloonBoxImage{
 	border-radius: 50px;
-	max-height:80;
+	max-height:80px;
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-top:50px;
@@ -164,29 +163,17 @@ line-height:1.9em;
 
   .button:hover {
           animation-name: shake;
-          animation-duration: 0.82s;
-          BACKGROUND-COLOR: #004999;
-          transform: translate3d(0, 0, 0);
-          backface-visibility: hidden;
-          perspective: 1000px;
+          animation-duration: 0.50s;
+
+          perspective: 100px;
         }
 
         @keyframes shake {
-          10%, 90% {
-            transform: translate3d(-1px, 0, 0);
-          }
-          
-          20%, 80% {
-            transform: translate3d(2px, 0, 0);
-          }
-
-          30%, 50%, 70% {
-            transform: translate3d(-4px, 0, 0);
-          }
-
-          40%, 60% {
-            transform: translate3d(4px, 0, 0);
-          }
+            0% { transform: rotate(0deg); }
+			  25% { transform: rotate(5deg); }
+			  50% { transform: rotate(0eg); }
+			  75% { transform: rotate(-5deg); }
+			  100% { transform: rotate(0deg); }
         }
 
         .containner{
@@ -541,7 +528,6 @@ line-height:1.9em;
 	position: fixed;
   top: 20px; /* distância do fundo da tela */
   left: 50%;
-  transform: translateX(-50%);
   z-index: 9999;
   display: inline-block;
   margin-top: 1rem;
@@ -557,6 +543,8 @@ line-height:1.9em;
 
 .botaoCompra:hover {
   background-color: #004999;
+     animation-name: shake;
+	  transform: translateX(-50%);
 }
 
 .assinatura {

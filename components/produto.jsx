@@ -133,7 +133,7 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 				  <p  className={styles.finalDestaque}>Gostou da dica? 💖</p>
 				  <p>Então deixa eu te contar um <b>segredinho:</b> quando você clica e compra pelo botão azul ou peor qualquer link aqui deste post, além de aproveitar todas essas vantagens, você ainda me ajuda muito! 🙏<br/>
 
-É isso mesmo: este post é <b>patrocinado</b>, isso significa que a Loja ou Marca me pagará uma pequena comissão — sem custo extra pra você — e isso me permite continuar testando, pesquisando e compartilhando essas dicas incríveis com <b>VOCÊ</b>, e MUITO mais PESSOAS!
+É isso mesmo: este post é <b>patrocinado</b>, isso significa que a Loja ou Marca me pagará uma pequena comissão — sem custo extra pra você — e isso me permite continuar pesquisando, testando  e compartilhando essas dicas incríveis com <b>VOCÊ</b>, e MUITO mais PESSOAS!
 <br/>
 Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou dor de cabeça… e ainda te fez sentir que eu ajudei de alguma forma...  <Link className={styles.link}  href={link}>Compre clicando neste link aqui</Link> ✨💗</p>
 
@@ -151,7 +151,7 @@ Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou dor de c
 										<Link href='https://www.blendibox.com.br' className={styles.AlignCenter} alt="Ir para Blendibox">
 							<p   className={styles.balloonBoxText}>
 								<b>Blendibox</b>, especializada em bolsas que unem praticidade, estilo e qualidade.
-					Também atuamos com marketing digital desde <b>2012</b> e carregamos uma paixão genuína por comprinhas, pesquisa e <b>testes de produtos</b> de forma, útil e confiável. Compartilhamos o que você está buscando, com <b>Empatia</b> e <b>Transparência</b>.
+					Também atuamos com marketing digital desde <b>2012</b> e carregamos uma paixão genuína por comprinhas, <b>Pesquisa</b> e <b>Testes de Produtos</b> de forma genuína, útil e confiável. Compartilhamos o que você está buscando, com <b>Empatia</b> e <b>Transparência</b>.
 					</p>
 					</Link>
 				   </div> 
