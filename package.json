@@ -11,7 +11,8 @@
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/c64210b2794a4cbfbe6a7969e89847ff.txt --key c64210b2794a4cbfbe6a7969e89847ff",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js"
+    "predeploy": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
+	"copy-out": "xcopy out\\* C:\\react\\blendidrop\\afiliado_lomadee\\comprar\\ /E /I /Y && powershell -Command \"Get-ChildItem -Path 'C:\\react\\blendidrop\\afiliado_lomadee\\comprar' -Filter *.html -Recurse | ForEach-Object { (Get-Content $_.FullName) -replace '/_next/static/', '/comprar/_next/static/' | Set-Content $_.FullName }\""
   },
   "scriptsComments": {
     "build": "next build && next export && next-sitemap",
