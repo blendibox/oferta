@@ -9,6 +9,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background-color:#7777ff;
      background-image: url('/images/avaliadores/good_vibes.jpg') ;
 	 background-repeat: no-repeat;
 	 background-position: center top;
@@ -45,6 +46,7 @@ background-attachment: fixed;
 
 .hr{
 	color:	#f2f2f2;
+
 }
 
 .balloonBoxContainner {
@@ -130,6 +132,7 @@ line-height:1.9em;
 	   border-radius: 16px;
   margin: auto;
   min-width: 70%;
+   filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
 }
 
 .search {
@@ -244,7 +247,7 @@ line-height:1.9em;
 }
 
 .title {
-  margin: 80 10 50 10;
+  margin: 80px 10px 50px 10px;
   line-height: 1.05;
   font-size: 2rem;
 }
@@ -532,7 +535,7 @@ line-height:1.9em;
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background-color: #0066cc;
+  background-color: #006900;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -542,7 +545,7 @@ line-height:1.9em;
 }
 
 .botaoCompra:hover {
-  background-color: #004999;
+  background-color: #008900;
      animation-name: shake;
 	  transform: translateX(-50%);
 }

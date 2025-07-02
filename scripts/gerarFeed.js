@@ -34,7 +34,7 @@ function gerarXML(produtos) {
   const items = produtos.map((post) => `
     <item>
       <title><![CDATA[${post.title}]]></title>
-      <link><![CDATA[${post.link}]]></link>
+      <link><![CDATA[https://comprar.blendibox.com.br/produto/${post.slug}]]></link>
       <description><![CDATA[${post.title}]]></description>
       <g:image_link>${post.image}</g:image_link>
       <g:price><![CDATA[${post.price} BRL]]></g:price>

@@ -91,7 +91,7 @@ export default function Produto(props) {
 		  <div className={styles.AlignCenter}>
 					<br/>
 				  {(offer || price) && <div className={styles.price}> Preço na data do Post:  <b> R$ {offer || price} * </b> 	  
-				  <Link href={link} className={styles.link}>Clique aqui para saber o Valor Atual</Link></div>}
+				  <Link href={link} className={styles.link}>Clique Aqui	para saber o Valor Atual</Link></div>}
 				  </div>
          <div id="texto" className={styles.containerTexto} >    
 			  <div className={styles.compraSeguraContainer}>
@@ -131,11 +131,11 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 				  </ul>
 
 				  <p  className={styles.finalDestaque}>Gostou da dica? 💖</p>
-				  <p>Então deixa eu te contar um <b>segredinho:</b> quando você clica e compra pelo botão azul ou peor qualquer link aqui deste post, além de aproveitar todas essas vantagens, você ainda me ajuda muito! 🙏<br/>
+				  <p>Então deixa eu te contar um <b>segredinho:</b> quando você clica e compra pelo botão azul ou por qualquer link aqui deste post, além de aproveitar todas essas vantagens, você ainda me ajuda muito! 🙏<br/>
 
 É isso mesmo: este post é <b>patrocinado</b>, isso significa que a Loja ou Marca me pagará uma pequena comissão — sem custo extra pra você — e isso me permite continuar pesquisando, testando  e compartilhando essas dicas incríveis com <b>VOCÊ</b>, e MUITO mais PESSOAS!
 <br/>
-Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou dor de cabeça… e ainda te fez sentir que eu ajudei de alguma forma...  <Link className={styles.link}  href={link}>Compre clicando neste link aqui</Link> ✨💗</p>
+Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou <b>dor de cabeça…</b> e ainda te fez sentir que eu ajudei de alguma forma...  <Link className={styles.link}  href={link}>Compre clicando neste link aqui</Link> ✨💗</p>
 
                        <Link className={styles.botaoCompra} href={link}>
 					  👉 CLIQUE E SAIBA MAIS!
@@ -150,8 +150,8 @@ Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou dor de c
 							<div className={styles.balloonBox} >
 										<Link href='https://www.blendibox.com.br' className={styles.AlignCenter} alt="Ir para Blendibox">
 							<p   className={styles.balloonBoxText}>
-								<b>Blendibox</b>, especializada em bolsas que unem praticidade, estilo e qualidade.
-					Também atuamos com marketing digital desde <b>2012</b> e carregamos uma paixão genuína por comprinhas, <b>Pesquisa</b> e <b>Testes de Produtos</b> de forma genuína, útil e confiável. Compartilhamos o que você está buscando, com <b>Empatia</b> e <b>Transparência</b>.
+								Somo a <b>Blendibox</b>, especializada em bolsas que unem praticidade, estilo e qualidade.
+					Também atuamos com marketing digital desde <b>2012</b> e carregamos uma paixão por Comércio Eletrônico, <b>Pesquisa</b> e <b>Testes de Produtos</b>, os quais fazemos de forma genuína, útil e inovadora. Compartilhamos tudo o que achamos <b>Relevante</b>, com <b>Empatia</b> e <b>Transparência</b>.
 					</p>
 					</Link>
 				   </div> 
