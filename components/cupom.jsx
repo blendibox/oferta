@@ -34,20 +34,18 @@ export default function Cupom(props) {
 		  </div>
 
          <div className={styles.title}>
-		  <h1 ><Link href={link}>{title} *</Link></h1>
+		  <h1 className={styles.titleA}><Link href={link}>{title} *</Link></h1>
+		    </div>
 		  <br/>
 		  <div className={styles.cupom}>
-		   <h2 className={styles.cupomUrl}>
-		   <div className={styles.cupomLink}>
+		      <h2 className={styles.cupomUrl}>
+		           <div className={styles.cupomLink}>
                     <Link href={link} className={styles.button}><b>{code}</b></Link>
 					</div>
-             </h2>
+               </h2>
            </div>
 		  <br />
-		  
-		  </div>
-
-     
+  
       <small>Categoria: {category}</small>
       <br />
       <br />

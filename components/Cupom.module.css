@@ -33,11 +33,11 @@
 .cupomLink{
 
     padding-left: 80px;
-    font-size: 0.91em;
+	padding-top:20px;
+    font-size: 2em;
 	
 }
 
-.button{}
 
 .AlignCenter{
 	align: center;
@@ -150,6 +150,11 @@
   line-height: 1.15;
   font-size: 1.6rem;
   max-width:500px
+}
+
+.titleA {
+
+  max-width:400px
 }
 
 .title,

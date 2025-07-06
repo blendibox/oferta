@@ -111,8 +111,6 @@ async function lerTodosProdutos() {
 // Para gerar páginas estáticas no build
 export async function generateStaticParams() {
 	
-	if(process.env.LOTE > 0){
-	
 	  const lote = process.env.LOTE || '0'; // ex: LOTE=1
 	  const slugPath = path.join(process.cwd(), `data/slugs/slugs_${lote}.json`);
 
@@ -124,11 +122,9 @@ export async function generateStaticParams() {
 	  const data = fs.readFileSync(slugPath, 'utf-8');
 	  const slugs = JSON.parse(data);
 	  return slugs.map(({ slug }) => ({ title: slug }));
-  }
+  
   
   //no momento da leitura, localizar o slug
-
-	console.log('passou por aqui');
  
  // const todos =  await lerTodosSlugs(); // [{ slug: 'slug1' }, ...]
  /* return slugs.slice(0,1000).map(p => ({
