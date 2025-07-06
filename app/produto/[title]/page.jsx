@@ -3,22 +3,89 @@ import path from 'path';
 import Produto from '../../../components/produto';
 import { notFound } from 'next/navigation';
 
-
-
-
+import slugIndex from '../../../data/slugs/slug-index.json';
 
 function gerarSlug(title) {
   return title
     .toLowerCase()
-    .normalize('NFD') // remove acentuação
+    .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^\w\s-]/g, '') // remove caracteres especiais
+    .replace(/[^\w\s-]/g, '')
     .replace(/\s+/g, '-')
-	.trim()
+    .trim();
 }
 
+/*
+// Lê todos os arquivos JSON da pasta "data" e extrai os slugs
+async function lerTodosSlugs() {
+	
+  const dataDir = path.join(process.cwd(), './data/slugs/');
+  const arquivos = fs.readdirSync(dataDir).filter(file =>
+    fs.statSync(path.join(dataDir, file)).isFile() && file.endsWith('.json')
+  );
 
-// Função utilitária para ler todos os JSONs
+  const slugs = [];
+
+  for (const file of arquivos) {
+    const conteudo = fs.readFileSync(path.join(dataDir, file), 'utf8');
+    try {
+      const produtos = JSON.parse(conteudo);
+      for (const produto of produtos) {
+        const slug = String(produto.slug);
+	
+        slugs.push({ slug: slug });
+      }
+    } catch (err) {
+      console.error(`Erro ao parsear ${file}:`, err);
+    }
+  }
+
+  return slugs;
+}
+*/
+
+// Lê todos os arquivos JSON até encontrar o produto com slug correspondente
+async function encontrarProdutoPorSlug(slug) {
+	console.log('slug: ' + slug);
+  const filename = slugIndex[slug];
+  console.log('filename: ' + filename);
+  if (!filename) return null;
+	try {
+	  const filepath = path.join(process.cwd(), 'data', filename);
+	  const conteudo = fs.readFileSync(filepath, 'utf8');
+	  const produtos = JSON.parse(conteudo);
+
+	  return produtos.find(p => p.slug === slug) || null;
+	  
+   } catch (err) {
+    console.error(`Erro ao buscar slug ${slug} no arquivo ${filename}:`, err);
+    return null;
+  }
+  
+	/*
+  const dataDir = path.join(process.cwd(), './data/');
+  const arquivos = fs.readdirSync(dataDir).filter(file =>
+    fs.statSync(path.join(dataDir, file)).isFile() && file.endsWith('.json')
+  );
+
+  for (const file of arquivos) {
+    const conteudo = fs.readFileSync(path.join(dataDir, file), 'utf8');
+    try {
+      const produtos = JSON.parse(conteudo);
+      for (const produto of produtos) {
+        const produtoSlug = String(produto.slug);
+        if (produtoSlug === slug) {
+          return produto;
+        }
+      }
+    } catch (err) {
+      console.error(`Erro ao parsear ${file}:`, err);
+    }
+  }
+
+  return null;*/
+}
+/*
 async function lerTodosProdutos() {
   const dataDir = path.join(process.cwd(), './data/');
   const arquivos = fs.readdirSync(dataDir).filter(file => {
@@ -40,20 +107,50 @@ async function lerTodosProdutos() {
 
   return todos;
 }
-
+*/
+// Para gerar páginas estáticas no build
 export async function generateStaticParams() {
-  const todos = await lerTodosProdutos();
-  return todos.map(p => ({
-    title: gerarSlug(String(p.title)),
-  }));
+	
+	if(process.env.LOTE > 0){
+	
+	  const lote = process.env.LOTE || '0'; // ex: LOTE=1
+	  const slugPath = path.join(process.cwd(), `data/slugs/slugs_${lote}.json`);
+
+	  if (!fs.existsSync(slugPath)) {
+		console.warn(`❌ Lote ${lote} não encontrado.`);
+		return [];
+	  }
+
+	  const data = fs.readFileSync(slugPath, 'utf-8');
+	  const slugs = JSON.parse(data);
+	  return slugs.map(({ slug }) => ({ title: slug }));
+  }
+  
+  //no momento da leitura, localizar o slug
+
+	console.log('passou por aqui');
+ 
+ // const todos =  await lerTodosSlugs(); // [{ slug: 'slug1' }, ...]
+ /* return slugs.slice(0,1000).map(p => ({
+    title: String(p.slug),
+  }));*/
+  
+  /*
+  const slugs = JSON.parse(fs.readFileSync('data//slugs/slugs-unificado.json', 'utf-8'));
+  return slugs.map(({ slug }) => ({ title: slug }));
+  
+  */
 }
 
-export default async function Page({ params }) {
-  const title =  params.title;
-  const todos = await lerTodosProdutos();
-  console.log(title);
-  const produto = todos.find(p => gerarSlug(p.title) === title);
 
+// Rota dinâmica
+export default async function Page({ params }) {
+  const slug = params.title;
+  
+  console.log('slug: ' + slug)
+  
+  const produto = await encontrarProdutoPorSlug(String(slug));
+console.log(produto);
   if (!produto) return notFound();
 
   return (
@@ -66,7 +163,7 @@ export default async function Page({ params }) {
         imageWidth={300}
         imageHeight={450}
         offer={produto.offer}
-		resultado_ia={produto.resultado_ia}
+        resultado_ia={produto.resultado_ia}
         priceGoogle={produto.priceGoogle}
       />
     </main>

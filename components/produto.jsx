@@ -27,6 +27,7 @@ export default function Produto(props) {
       <>
         <Head>
           <title>{title}</title>
+		   <meta name="description" content={title}></meta>	   
           <SchemaProduto
 			  title={title}
 			  image={image}
@@ -65,20 +66,20 @@ export default function Produto(props) {
 			<div id="comentarios" className={styles.AlignCenter}>
 			    <Link  href={link}>
 				  <div className={styles.balloonBoxContainner}>
-				     <img   className={styles.balloonBoxImage} src="/images/avaliadores/Renata.jpg"></img>
+				     <img   className={styles.balloonBoxImage} alt="foto de Renata" src="/images/avaliadores/3.webp" width="80" height="80"></img>
 				     <div className={styles.balloonBox} >				
 					      <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐ <br/>Estou muito feliz com minha compra. A qualidade é incomparável!</p>
 				      </div> 
 				  </div>
 				
 				   <div className={styles.balloonBoxContainner}>
-					  <img   className={styles.balloonBoxImage} src="/images/avaliadores/Cristina.jpg"></img>
+					  <img   className={styles.balloonBoxImage} alt="foto de Cristina" src="/images/avaliadores/Cristina.jpg" width="80" height="80"></img>
 				      <div className={styles.balloonBox} >					
 					     <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐<br/>O design moderno e resistente superou minhas expectativas! o resultado faz com que quem use se sinta sendo da Realeza!</p>
 				   </div> 
 				 </div>				
 				 <div className={styles.balloonBoxContainner}>
-					<img   className={styles.balloonBoxImage} src="/images/avaliadores/Helena.jpg"></img>
+					<img   className={styles.balloonBoxImage} alt="foto de Helena" src="/images/avaliadores/Helena.jpg" width="80" height="80"></img>
 				    <div className={styles.balloonBox} >					
 					   <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐<br/> É perfeito! Recomendasíssimo! Com certeza compraria novamente!</p>
 				    </div> 
@@ -146,7 +147,7 @@ Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou <b>dor d
                 <div ><br/>	
 					<div className={styles.balloonBoxContainner} >
 					
-						<img   className={styles.balloonBoxImage} src="/images/avaliadores/check.png"></img>
+						<img   className={styles.balloonBoxImage} alt="imagem check" src="/images/avaliadores/check.png" width="80" height="80"></img>
 							<div className={styles.balloonBox} >
 										<Link href='https://www.blendibox.com.br' className={styles.AlignCenter} alt="Ir para Blendibox">
 							<p   className={styles.balloonBoxText}>
@@ -160,12 +161,14 @@ Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou <b>dor d
 			</div>							
 		</div>
 	 </div>	
+	   <div className={styles.AlignCenter}>
 		 <div  className={styles.assinatura} aria-label="Data da publicação" >					  
             <time dateTime="2025-06-29">*Junho 29, 2025 </time><br/>
 			<Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
-					       Blendibox - 2025 CNPJ: 17.084.837.0001/69
+					     © 2025, Blendibox - Todos os direitos reservados.
 			</Link>
 			
+		 </div>
 		 </div>
 	</div>
   </div>

@@ -4,27 +4,34 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:todos": "node scripts/buildLotes.js",
+    "merge:out": "node scripts/mesclarOutros.js",
+    "build-slugs": "node scripts/gerarSlugIndex.js",
     "dev": "next dev --turbopack",
     "build-feed": "node scripts/gerarFeed.js",
-    "build": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
+	"prod":"serve out",
+    "build": "next build && npm run build-slugs && npm run build:todos && npm run merge:out && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/indexnowlist.txt --key c64210b2794a4cbfbe6a7969e89847ff",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
-	"copy-out": "xcopy out\\* C:\\react\\blendidrop\\afiliado_lomadee\\comprar\\ /E /I /Y && powershell -Command \"Get-ChildItem -Path 'C:\\react\\blendidrop\\afiliado_lomadee\\comprar' -Filter *.html -Recurse | ForEach-Object { (Get-Content $_.FullName) -replace '/_next/static/', '/comprar/_next/static/' | Set-Content $_.FullName }\""
+    "copy-out": "xcopy out\\* C:\\react\\blendidrop\\afiliado_lomadee\\comprar\\ /E /I /Y && powershell -Command \"Get-ChildItem -Path 'C:\\react\\blendidrop\\afiliado_lomadee\\comprar' -Filter *.html -Recurse | ForEach-Object { (Get-Content $_.FullName) -replace '/_next/static/', '/comprar/_next/static/' | Set-Content $_.FullName }\""
   },
   "scriptsComments": {
     "build": "next build && next export && next-sitemap",
     "index-bing": "https://bing.com/indexnow?url=https://comprar.blendibox.com.br/indexnowlist.txt&key=c64210b2794a4cbfbe6a7969e89847ff"
   },
   "dependencies": {
+    "fs-extra": "^11.3.0",
     "next": "^15.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "cross-env": "^7.0.3",
     "next-sitemap": "^3.1.23",
     "tailwindcss": "^4"
   }
