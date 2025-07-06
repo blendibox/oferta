@@ -30,6 +30,39 @@ export async function generateStaticParams() {
   }));
 }
 
+
+
+
+
+// ✅ Esta função gera o <title> e <meta description>
+export async function generateMetadata({ params }) {
+    const { slug } = params;
+  const produtos = await lerProdutosDoXML();
+
+  const produto = produtos.find((p, i) =>
+    `${gerarSlug(p.title)}-${i}` === slug
+  );
+
+  if (!produto) return {};
+
+  return {
+    title: `${produto.title} ${produto.store.name} `,
+    description: `CUPOM ${produto.title} EXCLUSIVO PARA VOCÊ no site ${produto.store.name}! Uma cortesia Blendibox!`,
+    alternates: {
+      canonical: `https://comprar.blendibox.com.br/produto/${gerarSlug(produto.title)}-0}`,
+    },
+    openGraph: {
+      title: produto.title,
+      description: `Aproveite este Cupom ${produto.title}. Disponível na ${produto.store.name}.`,
+      images: [produto.image],
+    }
+  };
+}
+
+
+
+
+
 export default async function Page({ params }) {
   const { slug } = params;
   const produtos = await lerProdutosDoXML();

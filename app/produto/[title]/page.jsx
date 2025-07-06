@@ -139,6 +139,28 @@ export async function generateStaticParams() {
 }
 
 
+// ✅ Esta função gera o <title> e <meta description>
+export async function generateMetadata({ params }) {
+  const produto = await encontrarProdutoPorSlug(params.title);
+
+  if (!produto) return {};
+
+  return {
+    title: produto.title,
+    description: `Compre ${produto.title} com ótimo preço na Blendibox!`,
+    alternates: {
+      canonical: `https://comprar.blendibox.com.br/produto/${produto.slug}`,
+    },
+    openGraph: {
+      title: produto.title,
+      description: `Oferta exclusiva de ${produto.title}. Confira na Blendibox.`,
+      images: [produto.image],
+    }
+  };
+}
+
+
+
 // Rota dinâmica
 export default async function Page({ params }) {
   const slug = params.title;

@@ -101,8 +101,23 @@ export default function Produto(props) {
 Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação, li avaliações e garanti que a indicação de te darei aqui, é o melhor lugar para comprar esse produto com tranquilidade, rapidez de entrega e o melhor custo-benefício!
 
 				  </p>
+				   <div id="fotoproduto" className={styles.fotoproduto}>
+				  <Link href={link} className={styles.AlignCenter}>
+					<Image
+					  className={styles.image}
+					  alt={title}
+					  width={imageWidth || 350}
+					  height={imageHeight || 350}
+					  src={image}
+					  priority
+					/>
+				  </Link>
+				  <br/>
+				<Link href={link} className={styles.button}>CLIQUE PARA COMPRAR</Link>
+				
+		    </div>
 
-				  <h2>💡 E por quê?</h2>
+				  <h2 className={styles.title}>💡 E por quê?</h2>
 
 				  <ul>
 					<li>
@@ -139,7 +154,7 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou <b>dor de cabeça…</b> e ainda te fez sentir que eu ajudei de alguma forma...  <Link className={styles.link}  href={link}>Compre clicando neste link aqui</Link> ✨💗</p>
 
                        <Link className={styles.botaoCompra} href={link}>
-					  👉 CLIQUE E SAIBA MAIS!
+					  👉 SAIBA MAIS!
 					  </Link>
 				
 
@@ -163,7 +178,7 @@ Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou <b>dor d
 	 </div>	
 	   <div className={styles.AlignCenter}>
 		 <div  className={styles.assinatura} aria-label="Data da publicação" >					  
-            <time dateTime="2025-06-29">*Junho 29, 2025 </time><br/>
+            <time dateTime="2025-07-07">*JuLHo 07, 2025 </time><br/>
 			<Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
 					     © 2025, Blendibox - Todos os direitos reservados.
 			</Link>
