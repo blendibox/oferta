@@ -10,7 +10,7 @@
   width: 100%;
   height: 100%;
   background-color:#7777ff;
-     background-image: url('/images/avaliadores/good_vibes.jpg') ;
+     background-image: url('/images/avaliadores/good_vibes.webp') ;
 	 background-repeat: no-repeat;
 	 background-position: center top;
   opacity: 0.05; /* Define a transparência da imagem de fundo */
@@ -60,7 +60,7 @@ background-attachment: fixed;
 .balloonBox {
 	padding:10px;
   width: 350px;
-  max-height: 300px;
+  max-height: 330px;
   background: #fff;
   border-radius: 26.5px;
   text-align: center;

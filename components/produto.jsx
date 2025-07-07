@@ -52,9 +52,10 @@ export default function Produto(props) {
 					  className={styles.image}
 					  alt={title}
 					  width={imageWidth || 350}
-					  height={imageHeight || 350}
+					  height={imageHeight || 'auto'}
 					  src={image}
 					  priority
+					  fetchPriority='high'
 					/>
 				  </Link>
 				
@@ -66,20 +67,20 @@ export default function Produto(props) {
 			<div id="comentarios" className={styles.AlignCenter}>
 			    <Link  href={link}>
 				  <div className={styles.balloonBoxContainner}>
-				     <img   className={styles.balloonBoxImage} alt="foto de Renata" src="/images/avaliadores/3.webp" width="80" height="80"></img>
+				     <img   className={styles.balloonBoxImage} alt="foto de Renata" src="/images/avaliadores/2.webp" width="80" height="80"></img>
 				     <div className={styles.balloonBox} >				
 					      <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐ <br/>Estou muito feliz com minha compra. A qualidade é incomparável!</p>
 				      </div> 
 				  </div>
 				
 				   <div className={styles.balloonBoxContainner}>
-					  <img   className={styles.balloonBoxImage} alt="foto de Cristina" src="/images/avaliadores/Cristina.jpg" width="80" height="80"></img>
+					  <img   className={styles.balloonBoxImage} alt="foto de Cristina" src="/images/avaliadores/viviane.webp" width="80" height="80"></img>
 				      <div className={styles.balloonBox} >					
 					     <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐<br/>O design moderno e resistente superou minhas expectativas! o resultado faz com que quem use se sinta sendo da Realeza!</p>
 				   </div> 
 				 </div>				
 				 <div className={styles.balloonBoxContainner}>
-					<img   className={styles.balloonBoxImage} alt="foto de Helena" src="/images/avaliadores/Helena.jpg" width="80" height="80"></img>
+					<img   className={styles.balloonBoxImage} alt="foto de Helena" src="/images/avaliadores/4.webp" width="80" height="80"></img>
 				    <div className={styles.balloonBox} >					
 					   <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐<br/> É perfeito! Recomendasíssimo! Com certeza compraria novamente!</p>
 				    </div> 
@@ -107,7 +108,7 @@ Eu fiz o trabalho pesado por você — pesquisei, comparei, conferi reputação,
 					  className={styles.image}
 					  alt={title}
 					  width={imageWidth || 350}
-					  height={imageHeight || 350}
+					  height={imageHeight || 'auto'}
 					  src={image}
 					  priority
 					/>
@@ -162,12 +163,12 @@ Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou <b>dor d
                 <div ><br/>	
 					<div className={styles.balloonBoxContainner} >
 					
-						<img   className={styles.balloonBoxImage} alt="imagem check" src="/images/avaliadores/check.png" width="80" height="80"></img>
+						<img   className={styles.balloonBoxImage} alt="imagem check" src="/images/avaliadores/check.png" width="80" height="80" ></img>
 							<div className={styles.balloonBox} >
 										<Link href='https://www.blendibox.com.br' className={styles.AlignCenter} alt="Ir para Blendibox">
 							<p   className={styles.balloonBoxText}>
-								Somo a <b>Blendibox</b>, especializada em bolsas que unem praticidade, estilo e qualidade.
-					Também atuamos com marketing digital desde <b>2012</b> e carregamos uma paixão por Comércio Eletrônico, <b>Pesquisa</b> e <b>Testes de Produtos</b>, os quais fazemos de forma genuína, útil e inovadora. Compartilhamos tudo o que achamos <b>Relevante</b>, com <b>Empatia</b> e <b>Transparência</b>.
+								Somos a <b>Blendibox</b>, especializada em bolsas que unem praticidade, estilo e qualidade.
+					Também atuamos com marketing digital desde <b>2012</b> e carregamos uma paixão por Comércio Eletrônico, <b>Pesquisa</b> e <b>Testes de Produtos</b>, os quais fazemos de forma genuína, útil e inovadora. Compartilhamos tudo o que achamos <b>Relevante</b> para você, com <b>Empatia</b> e <b>Transparência</b>.
 					</p>
 					</Link>
 				   </div> 
@@ -178,9 +179,9 @@ Se essa dica te <b>poupou tempo</b>, te ajudou a <b>decidir</b>, evitou <b>dor d
 	 </div>	
 	   <div className={styles.AlignCenter}>
 		 <div  className={styles.assinatura} aria-label="Data da publicação" >					  
-            <time dateTime="2025-07-07">*JuLHo 07, 2025 </time><br/>
+            <time dateTime="2025-07-07">*Julho 07, 2025 </time><br/>
 			<Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
-					     © 2025, Blendibox - Todos os direitos reservados.
+					     © 2025, Blendibox.
 			</Link>
 			
 		 </div>

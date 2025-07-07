@@ -46,9 +46,9 @@ async function lerTodosSlugs() {
 
 // Lê todos os arquivos JSON até encontrar o produto com slug correspondente
 async function encontrarProdutoPorSlug(slug) {
-	console.log('slug: ' + slug);
+//	console.log('slug: ' + slug);
   const filename = slugIndex[slug];
-  console.log('filename: ' + filename);
+ // console.log('filename: ' + filename);
   if (!filename) return null;
 	try {
 	  const filepath = path.join(process.cwd(), 'data', filename);
@@ -165,10 +165,10 @@ export async function generateMetadata({ params }) {
 export default async function Page({ params }) {
   const slug = params.title;
   
-  console.log('slug: ' + slug)
+  //console.log('slug: ' + slug)
   
   const produto = await encontrarProdutoPorSlug(String(slug));
-console.log(produto);
+//console.log(produto);
   if (!produto) return notFound();
 
   return (
