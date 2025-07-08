@@ -37,10 +37,10 @@ export default function Cupom(props) {
 		  <h1 className={styles.titleA}><Link href={link}>{title} *</Link></h1>
 		    </div>
 		  <br/>
-		  <div className={styles.cupom}>
+		  <div className={styles.cupom_black}>
 		      <h2 className={styles.cupomUrl}>
 		           <div className={styles.cupomLink}>
-                    <Link href={link} className={styles.button}><b>{code}</b></Link>
+                    <Link href={link} className={styles.button}><b>{code || `Ir para ${storeName} `}</b></Link>
 					</div>
                </h2>
            </div>
@@ -51,7 +51,7 @@ export default function Cupom(props) {
       <br />
 
       <Link className={styles.button} href={link}>
-        Ir para o site {storeName}
+        Ir para o Site da Loja {storeName}
          </Link>
 
       <br />

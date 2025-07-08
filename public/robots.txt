@@ -6,8 +6,23 @@ Disallow: /404
 User-agent: *
 Allow: /
 
-# Host
-Host: https://comprar.blendibox.com.br
-
 # Sitemaps
 Sitemap: https://comprar.blendibox.com.br/sitemap.xml
+Sitemap: https://comprar.blendibox.com.br/sitemap-0.xml
+Sitemap: https://comprar.blendibox.com.br/sitemap-1.xml
+Sitemap: https://comprar.blendibox.com.br/sitemap-2.xml
+Sitemap: https://comprar.blendibox.com.br/sitemap-3.xml
+Sitemap: https://comprar.blendibox.com.br/sitemap-4.xml
+Sitemap: https://comprar.blendibox.com.br/sitemap-5.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_1.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_2.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_3.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_4.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_5.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_6.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_7.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_8.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_9.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_10.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_11.xml
+Sitemap: https://comprar.blendibox.com.br/googleMerchant_12.xml

@@ -23,6 +23,18 @@
     align-items: center;
 }
 
+.cupom_black{
+	background:url('/images/cupons/cupom_black.png');
+	background-repeat: no-repeat;
+    background-position: center; 
+	width:500px;
+	height:500px;
+    display:flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+    align-items: center;
+}
+
 .cupomUrl{
 
    align-items: center;
@@ -32,7 +44,7 @@
 
 .cupomLink{
 
-    padding-left: 80px;
+    padding-left:127px;
 	padding-top:20px;
     font-size: 2em;
 	
