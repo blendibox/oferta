@@ -1,4 +1,6 @@
 [
+{"slug":"folha-lixa-branca-225x275mm-gr-220-a-219-1-un-norton"},
+{"slug":"folha-lixa-branca-225x275mm-gr-240-a-219-1-un-norton"},
 {"slug":"folha-lixa-branca-225x275mm-gr-320-a-219-1-un-norton"},
 {"slug":"folha-lixa-vermelha-225x275mm-gr-120-a-257-1-un-norton"},
 {"slug":"folha-lixa-vermelha-225x275mm-gr-60-a-257-1-un-norton"},
@@ -2489,6 +2491,7 @@
 {"slug":"painel-wall-40mm-x-2750x1200mm-eternit"},
 {"slug":"osb-tapume-12mm-x-2200x1220mm-lp-brasil"},
 {"slug":"osb-multi-uso-moveleiro-induplac-8mm-x-2440x1220mm-lp-brasil"},
+{"slug":"osb-multi-uso-moveleiro-induplac-12mm-x-2440x1220mm-lp-brasil"},
 {"slug":"caibro-cedrinho-aparelhado-45cmx45cm-x-35m-pica-pau"},
 {"slug":"caibro-cedrinho-aparelhado-45cmx45cm-x-45m-pica-pau"},
 {"slug":"caibro-cedrinho-aparelhado-45cmx45cm-x-25m-pica-pau"},
@@ -4127,7 +4130,7 @@
 {"slug":"mdf-lume-matt-18mm-2750x1850mm-2-faces-guararapes"},
 {"slug":"mdf-lume-matt-6mm-2750x1850mm-2-faces-com-1-face-branco-guararapes"},
 {"slug":"mdf-louro-freijo-poro-supermatt-6mm-2750x1850mm-2-faces-com-1-face-branco-eucatex"},
-{"slug":"mdf-louro-freijo-trende-25mm-2750x1850mm-2-faces-arauco"},
+{"slug":"mdf-louro-freijo-trend-25mm-2750x1850mm-2-faces-arauco"},
 {"slug":"mdf-linho-belga-sense-15mm-2750x1850mm-2-faces-duratex"},
 {"slug":"meia-chapa-linho-belga-sense-18mm-2750x910mm-2-faces-duratex"},
 {"slug":"mdf-licor-sethos-18mm-2750x1850mm-2-faces-arauco"},
@@ -9995,8 +9998,5 @@
 {"slug":"tapa-furo-adesivo-13mm-concreto-metropolitan-estuco-50un-marfim-tapa-furos"},
 {"slug":"tapa-furo-adesivo-13mm-toronto-jateado-50un-marfim-tapa-furos"},
 {"slug":"tapa-furo-adesivo-13mm-cobre-corten-chess-50un-marfim-tapa-furos"},
-{"slug":"tapa-furo-adesivo-13mm-trancoso-design-50un-marfim-tapa-furos"},
-{"slug":"tapa-furo-adesivo-13mm-titanio-trama-50un-marfim-tapa-furos"},
-{"slug":"tapa-furo-adesivo-13mm-inhotim-essencial-wood-50un-marfim-tapa-furos"},
-{"slug":"tapa-furo-adesivo-13mm-milano-silk-50un-marfim-tapa-furos"}
+{"slug":"tapa-furo-adesivo-13mm-trancoso-design-50un-marfim-tapa-furos"}
 ]

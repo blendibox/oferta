@@ -12,7 +12,7 @@
 	"prod":"serve out",
     "build": "next build && npm run build-slugs && npm run build:todos && npm run merge:out && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
-    "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/indexnowlist.txt --key c64210b2794a4cbfbe6a7969e89847ff",
+    "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/indexnowlist.txt --key dfd57212201542f4bc9309373db011ad",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "next build && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
@@ -20,7 +20,7 @@
   },
   "scriptsComments": {
     "build": "next build && next export && next-sitemap",
-    "index-bing": "https://bing.com/indexnow?url=https://comprar.blendibox.com.br/indexnowlist.txt&key=c64210b2794a4cbfbe6a7969e89847ff"
+    "index-bing": "https://bing.com/indexnow?url=https://comprar.blendibox.com.br/indexnowlist.txt&key=dfd57212201542f4bc9309373db011ad"
   },
   "dependencies": {
     "fs-extra": "^11.3.0",
