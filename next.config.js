@@ -7,10 +7,11 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dominios = JSON.parse(
+let dominios = JSON.parse(
   fs.readFileSync(path.join(__dirname, "data/config/dominiosImagens.json"), "utf-8").replace(/^\uFEFF/, "") // remove bom
 );
 
+dominios.push('https://cdn.shopify.com'); //usado por awin galvic
 
 const nextConfig = {
 	output: 'export',
