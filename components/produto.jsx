@@ -35,9 +35,9 @@ export default function Produto(props) {
 			  priceGoogle={priceGoogle}
 			/>
         </Head>
- <div name="fundo" className={styles.AlignCenterMain} ></div>
-    <main id="content" role="main" className={styles.AlignCenter}>
 
+    <main id="content" role="main" className={styles.AlignCenter}>
+ <div name="fundo" className={styles.AlignCenterMain} ></div>
 		<VideoBubble title="Nome do Produto | 3em1_puffer" />
 		
           <br/>  
@@ -64,7 +64,7 @@ export default function Produto(props) {
 
          
 
-			<div id="comentarios" className={styles.AlignCenter}>
+			<div id="comentarios" className={styles.comentarios}>
 			    <Link  href={link}>
 				  <div className={styles.balloonBoxContainner}>
 				     <img   className={styles.balloonBoxImage} alt="foto de Renata" src="/images/avaliadores/2.webp" width="80" height="80"></img>

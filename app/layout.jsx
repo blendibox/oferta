@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
 		   <meta name="verify-admitad" content="547987f230" ></meta>
 		   <meta name="lomadee" content="2324685" ></meta>
 		   <meta name="lomadee-verification" content="23108504" ></meta>
+		   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		</head>   
       <body>
         {children}

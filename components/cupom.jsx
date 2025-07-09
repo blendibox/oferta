@@ -27,7 +27,7 @@ export default function Cupom(props) {
         </Head>
 		 
     <main id="content" role="main" className={styles.container}>
-
+<div className={styles.compraSeguraContainer} >
 		  <div className={styles.title}><Link href={link}>
 			{storeName} - {category}
 			</Link>
@@ -75,6 +75,7 @@ export default function Cupom(props) {
 		 </div>
 
       <hr />
+	  </div>
 	  </main>
     </>
   );
