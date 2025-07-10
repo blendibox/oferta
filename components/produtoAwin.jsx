@@ -71,7 +71,7 @@ export default function ProdutoAwin(props) {
       </Link>
 	 
 	  <hr className=" mt-12 "/>
-	  <p>* Valor na data de publicação - 09/07/2025</p>
+	  <p>* Valor na data de publicação - 10/07/2025</p>
 	  </div>
     </div>
          
