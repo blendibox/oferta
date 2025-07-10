@@ -5,6 +5,7 @@ import path from 'path';
 
 const dataDir = path.join(process.cwd(), 'data/');
 const outputPath = path.join(process.cwd(), 'data/slugs/slug-index.json');
+const publicPath = path.join(process.cwd(), 'public/slug-index.json');
 
 const slugIndex = {};
 
@@ -28,4 +29,5 @@ for (const file of arquivos) {
 }
 
 fs.writeFileSync(outputPath, JSON.stringify(slugIndex, null, 2), 'utf8');
-console.log(`✅ Índice de slugs gerado com sucesso em: ${outputPath}`);
+fs.writeFileSync(publicPath, JSON.stringify(slugIndex, null, 2), 'utf8');
+console.log(`✅ Índice de slugs gerado com sucesso em: ${outputPath} e em ${publicPath} `);

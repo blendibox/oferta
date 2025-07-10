@@ -10,7 +10,7 @@
     "dev": "next dev --turbopack",
     "build-feed": "node scripts/gerarFeed.js",
 	"prod":"serve out",
-	"buid-teste":"next build",
+	"build-teste":"next build",
     "build": " npm run build-slugs  && next build  && npm run build:todos && npm run merge:out && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/indexnowlist.txt --key dfd57212201542f4bc9309373db011ad",

@@ -74,7 +74,7 @@ export default function Produto(props) {
 				  </div>
 				
 				   <div className={styles.balloonBoxContainner}>
-					  <img   className={styles.balloonBoxImage} alt="foto de Cristina" src="/images/avaliadores/viviane.webp" width="80" height="80"></img>
+					  <img   className={styles.balloonBoxImage} alt="foto de Cristina" src="/images/avaliadores/Viviane.webp" width="80" height="80"></img>
 				      <div className={styles.balloonBox} >					
 					     <p   className={styles.balloonBoxText}>⭐⭐⭐⭐⭐<br/>O design moderno e resistente superou minhas expectativas! o resultado faz com que quem use se sinta sendo da Realeza!</p>
 				   </div> 
