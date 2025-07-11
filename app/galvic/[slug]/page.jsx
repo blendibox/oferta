@@ -1,4 +1,4 @@
-import { lerProdutosXMLGoogle, gerarSlug } from '../../../lib/awin';
+import { lerProdutosXMLGoogle,  } from '../../../lib/awin';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 	
   const produtos = await lerProdutosXMLGoogle('GALVIC');
   
-    
+    console.log(produtos);
   const loteAtual = parseInt(process.env.LOTE || '1');
   const tamanhoLote = 10000; // ou o valor desejado
   const inicio = (loteAtual - 1) * tamanhoLote;
@@ -20,7 +20,7 @@ export async function generateStaticParams() {
   const produtosDoLote = produtos.slice(inicio, fim);
 
   return produtosDoLote.map((produto) => ({
-    slug: gerarSlug(produto['g:title'], produto['g:id']),
+    slug: produto['slug'],
   }));
 
   /*return produtos.map((produto) => ({
@@ -31,7 +31,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const produtos = await lerProdutosXMLGoogle('GALVIC');
   const produto = produtos.find(p =>
-    gerarSlug(p['g:title'], p['g:id']) === params.slug
+    p['slug'] === params.slug
   );
 
   if (!produto) return {};
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
 export default async function ProdutoPage({ params }) {
   const produtos = await lerProdutosXMLGoogle('GALVIC');
   const produto = produtos.find(p =>
-    gerarSlug(p['g:title'], p['g:id']) === params.slug
+    p['slug'] === params.slug
   );
 
   if (!produto) return notFound();

@@ -1,4 +1,4 @@
-import { lerProdutosXML, gerarSlug } from '../../../lib/awin';
+import { lerProdutosJSON } from '../../../lib/awin';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -11,7 +11,7 @@ export async function generateStaticParams() {
   }
 
 	
-  const produtos = await lerProdutosXML('STANLEY');
+  const produtos = await lerProdutosJSON('STANLEY');
   
     
   const loteAtual = parseInt(process.env.LOTE || '1');
@@ -22,7 +22,7 @@ export async function generateStaticParams() {
   const produtosDoLote = produtos.slice(inicio, fim);
 
   return produtosDoLote.map((produto) => ({
-    slug: gerarSlug(produto['text']['name'], produto['pId']),
+    slug: produto['slug'],
   }));
 
   /*return produtos.map((produto) => ({
@@ -31,9 +31,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const produtos = await lerProdutosXML('STANLEY');
+  const produtos = await lerProdutosJSON('STANLEY');
   const produto = produtos.find(p =>
-    gerarSlug(p['text']['name'], p['pId']) === params.slug
+    p['slug'] === params.slug
   );
 
   if (!produto) return {};
@@ -47,9 +47,9 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-  const produtos = await lerProdutosXML('STANLEY');
+  const produtos = await lerProdutosJSON('STANLEY');
   const produto = produtos.find(p =>
-    gerarSlug(p['text']['name'], p['pId']) === params.slug
+    p['slug'] === params.slug
   );
 
   if (!produto) return notFound();

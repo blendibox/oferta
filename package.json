@@ -34,13 +34,14 @@
     "build:todos-os-tipos": "npm run build:galvic && npm run build:oboticario && npm run build:mizuno && npm run build:nike &&  npm run build:stanley && npm run build:kippling && npm run build:belezanaweb && npm run build:cupom && npm run build:promo && npm run build:produto ",
     "merge:todos-os-tipos": "npm run merge:galvic && npm run merge:oboticario && npm run merge:mizuno && npm run merge:nike &&  npm run merge:stanley && npm run merge:kippling && npm run merge:belezanaweb && npm run merge:cupom && npm run merge:promo && npm run merge:produto ",
 
-
+    "build-xml-to-json": "node scripts/gerarProdutosJson.js",
     "build-slugs": "node scripts/gerarSlugIndex.js",
     "dev": "next dev --turbopack",
     "build-feed": "node scripts/gerarFeed.js",
 	"prod":"serve out",
 	"build-teste":"next build",
-    "build": " npm run build-slugs && npm run build:todos-os-tipos && npm run merge:todos-os-tipos && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
+	
+    "build": " npm run build-slugs && npm run build-xml-to-json && npm run build:todos-os-tipos && npm run merge:todos-os-tipos && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/indexnowlist.txt --key dfd57212201542f4bc9309373db011ad",
     "start": "next start",
