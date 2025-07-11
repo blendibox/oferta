@@ -40,8 +40,8 @@ export async function generateStaticParams() {
 
   const produtosDoLote = produtos.slice(inicio, fim);
 
-  return produtosDoLote.map((produto) => ({
-    slug: gerarSlug(produto['text']['name'], produto['pId']),
+  return produtosDoLote.map((produto,i) => ({
+    slug: `${gerarSlug(p.title)}-${i}`,
   }));
   
   /*
