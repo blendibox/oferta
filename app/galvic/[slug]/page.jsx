@@ -4,11 +4,28 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
+	
+    if (process.env.BUILD_TARGET !== 'galvic') {
+    return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
+  }   
+	
   const produtos = await lerProdutosXMLGoogle('GALVIC');
+  
+    
+  const loteAtual = parseInt(process.env.LOTE || '1');
+  const tamanhoLote = 10000; // ou o valor desejado
+  const inicio = (loteAtual - 1) * tamanhoLote;
+  const fim = inicio + tamanhoLote;
 
-  return produtos.map((produto) => ({
-    slug: gerarSlug(produto['g:title'], produto['g:id']),
+  const produtosDoLote = produtos.slice(inicio, fim);
+
+  return produtosDoLote.map((produto) => ({
+    slug: gerarSlug(produto['text']['name'], produto['pId']),
   }));
+
+  /*return produtos.map((produto) => ({
+    slug: gerarSlug(produto['g:title'], produto['g:id']),
+  }));*/
 }
 
 export async function generateMetadata({ params }) {

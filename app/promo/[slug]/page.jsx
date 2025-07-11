@@ -26,11 +26,29 @@ export async function lerProdutosDoXML() {
 
 
 export async function generateStaticParams() {
+	
+
+   if (process.env.BUILD_TARGET !== 'promo') {
+    return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
+  }   
+  
   const produtos = await lerProdutosDoXML();
- 
-  const retorno = produtos.map((p, i) => ({
-    slug: gerarSlug(p.advertisername + ' use este cupom ') + '-' + i
+  
+    
+  const loteAtual = parseInt(process.env.LOTE || '1');
+  const tamanhoLote = 10000; // ou o valor desejado
+  const inicio = (loteAtual - 1) * tamanhoLote;
+  const fim = inicio + tamanhoLote;
+
+  const produtosDoLote = produtos.slice(inicio, fim);
+
+  return produtosDoLote.map((produto) => ({
+    slug: gerarSlug(produto['text']['name'], produto['pId']),
   }));
+ 
+  /*const retorno = produtos.map((p, i) => ({
+    slug: gerarSlug(p.advertisername + ' use este cupom ') + '-' + i
+  }));*/
   
 
   return retorno;

@@ -11,7 +11,10 @@ let dominios = JSON.parse(
   fs.readFileSync(path.join(__dirname, "data/config/dominiosImagens.json"), "utf-8").replace(/^\uFEFF/, "") // remove bom
 );
 
-dominios.push('https://cdn.shopify.com'); //usado por awin galvic
+dominios.push('images2.productserve.com'); //usado por awin BELEZANAWEB, MIZUNO, NIKE
+dominios.push('cdn.shopify.com'); //usado por awin GALVIC
+dominios.push('kipling.vteximg.com.br'); //usado por awin KIPPLING 
+dominios.push('stanley.fbitsstatic.net'); //usado por awin STANLEY
 
 const nextConfig = {
 	output: 'export',

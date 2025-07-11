@@ -15,34 +15,7 @@ function gerarSlug(title) {
     .trim();
 }
 
-/*
-// Lê todos os arquivos JSON da pasta "data" e extrai os slugs
-async function lerTodosSlugs() {
-	
-  const dataDir = path.join(process.cwd(), './data/slugs/');
-  const arquivos = fs.readdirSync(dataDir).filter(file =>
-    fs.statSync(path.join(dataDir, file)).isFile() && file.endsWith('.json')
-  );
 
-  const slugs = [];
-
-  for (const file of arquivos) {
-    const conteudo = fs.readFileSync(path.join(dataDir, file), 'utf8');
-    try {
-      const produtos = JSON.parse(conteudo);
-      for (const produto of produtos) {
-        const slug = String(produto.slug);
-	
-        slugs.push({ slug: slug });
-      }
-    } catch (err) {
-      console.error(`Erro ao parsear ${file}:`, err);
-    }
-  }
-
-  return slugs;
-}
-*/
 
 // Lê todos os arquivos JSON até encontrar o produto com slug correspondente
 async function encontrarProdutoPorSlug(slug) {
@@ -62,54 +35,15 @@ async function encontrarProdutoPorSlug(slug) {
     return null;
   }
   
-	/*
-  const dataDir = path.join(process.cwd(), './data/');
-  const arquivos = fs.readdirSync(dataDir).filter(file =>
-    fs.statSync(path.join(dataDir, file)).isFile() && file.endsWith('.json')
-  );
 
-  for (const file of arquivos) {
-    const conteudo = fs.readFileSync(path.join(dataDir, file), 'utf8');
-    try {
-      const produtos = JSON.parse(conteudo);
-      for (const produto of produtos) {
-        const produtoSlug = String(produto.slug);
-        if (produtoSlug === slug) {
-          return produto;
-        }
-      }
-    } catch (err) {
-      console.error(`Erro ao parsear ${file}:`, err);
-    }
-  }
-
-  return null;*/
 }
-/*
-async function lerTodosProdutos() {
-  const dataDir = path.join(process.cwd(), './data/');
-  const arquivos = fs.readdirSync(dataDir).filter(file => {
-    const fullPath = path.join(dataDir, file);
-    return fs.statSync(fullPath).isFile() && file.endsWith('.json');
-  });
 
-  let todos = [];
-
-  for (const file of arquivos) {
-    const conteudo = fs.readFileSync(path.join(dataDir, file), 'utf8');
-    try {
-      const dados = JSON.parse(conteudo);
-      todos = todos.concat(dados);
-    } catch (err) {
-      console.error(`Erro ao parsear ${file}:`, err);
-    }
-  }
-
-  return todos;
-}
-*/
 // Para gerar páginas estáticas no build
 export async function generateStaticParams() {
+	
+  if (process.env.BUILD_TARGET !== 'produto') {
+    return [{ title: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
+  } 	  
 	
 	  const lote = process.env.LOTE || '1'; // ex: LOTE=1
 	  const slugPath = path.join(process.cwd(), `data/slugs/slugs_${lote}.json`);

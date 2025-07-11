@@ -3,10 +3,20 @@ import fs from 'fs';
 import path from 'path';
 import fse from 'fs-extra';
 
+const tipo = process.argv[2]; // "produto", "mizuno", etc.
+
+if (!tipo) {
+  console.error('❌ Você deve informar o tipo. Ex: node scripts/mesclarOutros.js produto');
+  process.exit(1);
+}
+
+const regex = new RegExp(`^out-${tipo}-lote-\\d+$`);
+
 const diretorioFinal = path.join(process.cwd(), 'out');
 const diretoriosLote = fs
   .readdirSync(process.cwd())
-  .filter(dir => /^out-lote-\d+$/.test(dir)) // Ex: out-lote-1, out-lote-2
+  .filter(dir => regex.test(dir))
+ // .filter(dir => /^out-[a-z0-9]+-lote-\d+$/i.test(dir)) // contempla todas iniciando com out-xxx-lote-xx
   .map(dir => path.join(process.cwd(), dir));
 
 // Garante que a pasta final esteja limpa

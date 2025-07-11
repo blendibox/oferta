@@ -4,14 +4,43 @@
   "private": true,
   "type": "module",
   "scripts": {
+	
+	"build:mizuno": "node scripts/buildLotes.js mizuno",
+	"build:oboticario": "node scripts/buildLotes.js oboticario",
+	"build:nike": "node scripts/buildLotes.js nike",
+	"build:galvic": "node scripts/buildLotes.js galvic",
+	"build:stanley": "node scripts/buildLotes.js stanley",
+	"build:kippling": "node scripts/buildLotes.js kippling",
+	"build:belezanaweb": "node scripts/buildLotes.js belezanaweb",
+	"build:cupom": "node scripts/buildLotes.js cupom",
+	"build:promo": "node scripts/buildLotes.js promo",
+	"build:produto": "node scripts/buildLotes.js produto",
+	
     "build:todos": "node scripts/buildLotes.js",
     "merge:out": "node scripts/mesclarOutros.js",
+	
+	
+	"merge:mizuno": "node scripts/mesclarOutros.js mizuno",
+	"merge:oboticario": "node scripts/mesclarOutros.js oboticario",
+	"merge:nike": "node scripts/mesclarOutros.js nike",
+	"merge:galvic": "node scripts/mesclarOutros.js galvic",
+	"merge:stanley": "node scripts/mesclarOutros.js stanley",
+	"merge:kippling": "node scripts/mesclarOutros.js kippling",
+	"merge:belezanaweb": "node scripts/mesclarOutros.js belezanaweb",
+	"merge:cupom": "node scripts/mesclarOutros.js cupom",
+	"merge:promo": "node scripts/mesclarOutros.js promo", 
+	"merge:produto": "node scripts/mesclarOutros.js produto",
+	
+    "build:todos-os-tipos": " npm run build:oboticario && npm run build:mizuno && npm run build:nike && npm run build:galvic && npm run build:stanley && npm run build:kippling && npm run build:belezanaweb && npm run build:cupom && npm run build:promo && npm run build:produto ",
+    "merge:todos-os-tipos": " npm run merge:oboticario && npm run merge:mizuno && npm run merge:nike && npm run merge:galvic && npm run merge:stanley && npm run merge:kippling && npm run merge:belezanaweb && npm run merge:cupom && npm run merge:promo && npm run merge:produto ",
+
+
     "build-slugs": "node scripts/gerarSlugIndex.js",
     "dev": "next dev --turbopack",
     "build-feed": "node scripts/gerarFeed.js",
 	"prod":"serve out",
 	"build-teste":"next build",
-    "build": " npm run build-slugs  && next build  && npm run build:todos && npm run merge:out && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
+    "build": " npm run build-slugs && npm run build:todos-os-tipos && npm run merge:todos-os-tipos && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap --output ./public/indexnowlist.txt",
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/indexnowlist.txt --key dfd57212201542f4bc9309373db011ad",
     "start": "next start",

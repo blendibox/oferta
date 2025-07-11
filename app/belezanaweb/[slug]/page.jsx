@@ -5,11 +5,30 @@ import { notFound } from 'next/navigation';
 import ProdutoAwin from '../../../components/produtoAwin';
 
 export async function generateStaticParams() {
-  const produtos = await lerProdutosXML('BELEZANAWEB');
+	
 
-  return produtos.map((produto) => ({
+    if (process.env.BUILD_TARGET !== 'belezanaweb') {
+    return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
+  }
+
+  const produtos = await lerProdutosXML('BELEZANAWEB');
+  
+    
+  const loteAtual = parseInt(process.env.LOTE || '1');
+  const tamanhoLote = 10000; // ou o valor desejado
+  const inicio = (loteAtual - 1) * tamanhoLote;
+  const fim = inicio + tamanhoLote;
+
+  const produtosDoLote = produtos.slice(inicio, fim);
+
+  return produtosDoLote.map((produto) => ({
     slug: gerarSlug(produto['text']['name'], produto['pId']),
   }));
+
+ /* return produtos.map((produto) => ({
+    slug: gerarSlug(produto['text']['name'], produto['pId']),
+  }));
+  */
 }
 
 export async function generateMetadata({ params }) {

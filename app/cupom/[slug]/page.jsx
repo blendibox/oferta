@@ -24,10 +24,30 @@ async function lerProdutosDoXML() {
 }
 
 export async function generateStaticParams() {
+
+    if (process.env.BUILD_TARGET !== 'cupom') {
+    return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
+  }
+
+	
   const produtos = await lerProdutosDoXML();
+  
+    
+  const loteAtual = parseInt(process.env.LOTE || '1');
+  const tamanhoLote = 10000; // ou o valor desejado
+  const inicio = (loteAtual - 1) * tamanhoLote;
+  const fim = inicio + tamanhoLote;
+
+  const produtosDoLote = produtos.slice(inicio, fim);
+
+  return produtosDoLote.map((produto) => ({
+    slug: gerarSlug(produto['text']['name'], produto['pId']),
+  }));
+  
+  /*
   return produtos.map((p, i) => ({
     slug: gerarSlug(p.title) + '-' + i
-  }));
+  }));*/
 }
 
 
