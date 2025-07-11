@@ -31,8 +31,8 @@
 	"merge:promo": "node scripts/mesclarOutros.js promo", 
 	"merge:produto": "node scripts/mesclarOutros.js produto",
 	
-    "build:todos-os-tipos": " npm run build:oboticario && npm run build:mizuno && npm run build:nike && npm run build:galvic && npm run build:stanley && npm run build:kippling && npm run build:belezanaweb && npm run build:cupom && npm run build:promo && npm run build:produto ",
-    "merge:todos-os-tipos": " npm run merge:oboticario && npm run merge:mizuno && npm run merge:nike && npm run merge:galvic && npm run merge:stanley && npm run merge:kippling && npm run merge:belezanaweb && npm run merge:cupom && npm run merge:promo && npm run merge:produto ",
+    "build:todos-os-tipos": "npm run build:galvic && npm run build:oboticario && npm run build:mizuno && npm run build:nike &&  npm run build:stanley && npm run build:kippling && npm run build:belezanaweb && npm run build:cupom && npm run build:promo && npm run build:produto ",
+    "merge:todos-os-tipos": "npm run merge:galvic && npm run merge:oboticario && npm run merge:mizuno && npm run merge:nike &&  npm run merge:stanley && npm run merge:kippling && npm run merge:belezanaweb && npm run merge:cupom && npm run merge:promo && npm run merge:produto ",
 
 
     "build-slugs": "node scripts/gerarSlugIndex.js",

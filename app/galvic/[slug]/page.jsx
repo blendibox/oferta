@@ -20,7 +20,7 @@ export async function generateStaticParams() {
   const produtosDoLote = produtos.slice(inicio, fim);
 
   return produtosDoLote.map((produto) => ({
-    slug: gerarSlug(produto['text']['name'], produto['pId']),
+    slug: gerarSlug(produto['g:title'], produto['g:id']),
   }));
 
   /*return produtos.map((produto) => ({
