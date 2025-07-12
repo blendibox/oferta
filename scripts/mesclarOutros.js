@@ -20,10 +20,11 @@ const diretoriosLote = fs
   .map(dir => path.join(process.cwd(), dir));
 
 // Garante que a pasta final esteja limpa
-if (fs.existsSync(diretorioFinal)) {
+/*if (fs.existsSync(diretorioFinal)) {
   console.log('🧹 Limpando diretório final: /out');
   fs.rmSync(diretorioFinal, { recursive: true, force: true });
-}
+}*/
+
 fs.mkdirSync(diretorioFinal);
 
 console.log(`📦 Mesclando ${diretoriosLote.length} lotes para /out...`);
