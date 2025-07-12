@@ -5,15 +5,6 @@ import { notFound } from 'next/navigation';
 
 import slugIndex from '../../../data/slugs/slug-index.json';
 
-function gerarSlug(title) {
-  return title
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^\w\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .trim();
-}
 
 
 
@@ -57,19 +48,6 @@ export async function generateStaticParams() {
 	  const slugs = JSON.parse(data);
 	  return slugs.map(({ slug }) => ({ title: slug }));
   
-  
-  //no momento da leitura, localizar o slug
- 
- // const todos =  await lerTodosSlugs(); // [{ slug: 'slug1' }, ...]
- /* return slugs.slice(0,1000).map(p => ({
-    title: String(p.slug),
-  }));*/
-  
-  /*
-  const slugs = JSON.parse(fs.readFileSync('data//slugs/slugs-unificado.json', 'utf-8'));
-  return slugs.map(({ slug }) => ({ title: slug }));
-  
-  */
 }
 
 

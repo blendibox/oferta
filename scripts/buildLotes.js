@@ -38,6 +38,7 @@ if ( tipo == 'produto'){
 	  // copia a pasta out
 	  fs.cpSync('out', outDir, { recursive: true });
 	}
+	
 }else{
 	// 🔄 Leitura dinâmica do XML da marca atual (ex: mizuno)
 
@@ -51,14 +52,22 @@ if ( tipo == 'produto'){
 	  const xmlData = fs.readFileSync(xmlPath, 'utf8');
 	  const { parseStringPromise } = await import('xml2js');
 	  const parsed = await parseStringPromise(xmlData, { explicitArray: false });
+	  
+	
 
       let produtos = [];
       // xml com formatos diferentes
 	  if(tipo == 'galvic'){ 
-	     //lerProdutosXMLGoogle
+	       //lerProdutosXMLGoogle
 		    produtos = parsed.rss?.channel?.item || [];
+	  }else if(tipo == 'cupom'){
+            //ler cupons lomadee
+	        produtos = parsed.coupons?.coupon || [];
+	  }else if(tipo == 'promo'){
+		   //ler cupons rakuten
+		    produtos = parsed.couponfeed?.link || [];
 	  }else{
-		  //lerProdutosXML
+		   //lerProdutosXML
 		    produtos = parsed.cafProductFeed.datafeed.prod || []; 
 	  }
 	 

@@ -1,29 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import { parseStringPromise } from 'xml2js';
 import CupomCard from '../../components/CupomCard';
 import CupomCard2 from '../../components/CupomCard2';
-
-
-async function lerProdutosDoXML() {
-  const xmlPath = path.join(process.cwd(), 'data/cupons/LomadeeDownload.xml');
-  const xmlData = fs.readFileSync(xmlPath, 'utf8');
-  const json = await parseStringPromise(xmlData, { explicitArray: false });
-
-  const cupons = json.coupons?.coupon || [];
-  return Array.isArray(cupons) ? cupons : [cupons];
-}
-
-
-export async function lerProdutosDoXML2() {
-  const xmlPath = path.join(process.cwd(), 'data/cupons/RakutenResponse.xml');
-  const xmlData = fs.readFileSync(xmlPath, 'utf8');
-  const json = await parseStringPromise(xmlData, { explicitArray: false });
-
-  const cupons = json.couponfeed?.link || [];
-  return Array.isArray(cupons) ? cupons : [cupons];
-}
-
+import { lerProdutosJSON } from '../../lib/awin';
 
 
 // ✅ Esta função gera o <title> e <meta description>
@@ -45,8 +22,8 @@ export async function generateMetadata() {
 
 
 export default async function Home() {
-  const produtos = await lerProdutosDoXML();
-  const produtos2 = await lerProdutosDoXML2();
+  const produtos = await lerProdutosJSON('CUPOM');
+  const produtos2 = await lerProdutosJSON('PROMO');
 
   return (
     <div className="m-6 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

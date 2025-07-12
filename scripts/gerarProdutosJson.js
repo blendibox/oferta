@@ -28,6 +28,8 @@ async function converterTodosXMLs() {
     console.warn('Nenhum arquivo .xml encontrado em data/awin');
     return;
   }
+  
+   const slugIndex = {}; // ← Aqui armazenamos os slugs gerados
 
   for (const arquivo of arquivos) {
     const caminhoXML = path.join(pastaXML, arquivo);
@@ -45,6 +47,12 @@ async function converterTodosXMLs() {
 	  
 	  if(nomeBase == 'GALVIC'){
 		  produtos =  json.rss?.channel?.item || [];
+	  }else if(nomeBase == 'CUPOM'){
+            //ler cupons lomadee
+	        produtos = json.coupons?.coupon || [];
+	  }else if(nomeBase == 'PROMO'){
+		   //ler cupons rakuten
+		    produtos = json.couponfeed?.link|| [];
 	  }else{
 		  produtos = json.cafProductFeed?.datafeed?.prod || [];
 	  }
@@ -52,12 +60,19 @@ async function converterTodosXMLs() {
       const arr = Array.isArray(produtos) ? produtos : [produtos];
 
      // Adiciona campo "slug"
-      const produtosComSlug = produtos.map((p) => {
-        const nome = p['g:title']  || p['text']['name'] ;
-        const id   = p['g:id']     || p['pId']          ;
+      const produtosComSlug = produtos.map((p,i) => {
+		  
+		  
+        const nome = p['g:title']  || (p['text']?p['text']['name']:"")  || p['title'] || (p['advertisername'] + ' use este cupom ') ;
+        const id   = p['g:id']    || p['pId']   || i       ;
+		
+		const slug = gerarSlug(nome, id);
+		
+		slugIndex[slug] = `${nomeBase}.json`;
+		
         return {
           ...p,
-          slug: gerarSlug(nome, id),
+          slug: slug,
         };
       });
 
@@ -70,6 +85,28 @@ async function converterTodosXMLs() {
   }
 
   console.log('✅ Conversão concluída!');
+  
+   // Salva o índice de slugs
+	const caminhoIndex = path.join(process.cwd(), 'public', 'slug-index.json');
+
+	// 🟡 Carrega índice anterior (se existir)
+	let slugIndexAnterior = {};
+	if (fs.existsSync(caminhoIndex)) {
+	  try {
+		const data = fs.readFileSync(caminhoIndex, 'utf-8');
+		slugIndexAnterior = JSON.parse(data);
+	  } catch (e) {
+		console.warn('⚠️ Não foi possível ler slug-index.json existente. Criando novo.');
+	  }
+	}
+
+	// 🧠 Mescla os slugs antigos com os novos (os novos sobrescrevem, se houver conflito)
+	const slugIndexFinal = { ...slugIndexAnterior, ...slugIndex };
+
+	fs.writeFileSync(caminhoIndex, JSON.stringify(slugIndexFinal, null, 2), 'utf-8');
+
+
+	console.log('📄 Índice atualizado em: public/slug-index.json');
 }
 
 converterTodosXMLs();

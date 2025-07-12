@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { lerProdutosJSON } from '../../../lib/awin';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,22 +13,26 @@ export async function generateStaticParams() {
     return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
   } 
 	
-  const produtos = await lerProdutosJSON('OBOTICARIO');
+    
+  const indexPath = path.join(process.cwd(), 'public', 'slug-index.json');
+  const slugIndex = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+
+  const slugsProduto = Object.entries(slugIndex)
+    .filter(([_, arquivo]) =>  /^oboticario\.json$/i.test(arquivo))
+    .map(([slug]) => slug);
   
+    
   const loteAtual = parseInt(process.env.LOTE || '1');
-  const tamanhoLote = 1000; // ou o valor desejado
+  const tamanhoLote = 10000; // ou o valor desejado
   const inicio = (loteAtual - 1) * tamanhoLote;
   const fim = inicio + tamanhoLote;
 
-  const produtosDoLote = produtos.slice(inicio, fim);
+  const slugsDoLote  = slugsProduto.slice(inicio, fim);
 
-  return produtosDoLote.map((produto) => ({
-    slug: produto['slug'],
+  return slugsDoLote.map((slug) => ({
+    slug
   }));
-
- /* return produtos.map((produto) => ({
-    slug: gerarSlug(produto['text']['name'], produto['pId']),
-  }));*/
+ 
 }
 
 export async function generateMetadata({ params }) {

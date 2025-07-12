@@ -1,0 +1,910 @@
+[
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": [
+        {
+          "_": "Vestuário",
+          "$": {
+            "id": "1"
+          }
+        },
+        {
+          "_": "Sapatos",
+          "$": {
+            "id": "25"
+          }
+        }
+      ]
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Todo Sale Feminino Com 40% Off Mais 15% Off Extra - Cupom: WOMAN15",
+    "offerstartdate": "2025-01-28T21:31Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "couponcode": "WOMAN15",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1190940.60&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1190940.60&type=3&subid=0",
+    "advertiserid": "48175",
+    "advertisername": "Ellus Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "ellus-brazil-use-este-cupom--0"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": [
+        {
+          "_": "Vestuário",
+          "$": {
+            "id": "1"
+          }
+        },
+        {
+          "_": "Sapatos",
+          "$": {
+            "id": "25"
+          }
+        }
+      ]
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Sale Até 50% Off Mais Progressivo!",
+    "offerstartdate": "2025-01-28T21:31Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1190940.61&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1190940.61&type=3&subid=0",
+    "advertiserid": "48175",
+    "advertisername": "Ellus Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "ellus-brazil-use-este-cupom--1"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": [
+        {
+          "_": "Vestuário",
+          "$": {
+            "id": "1"
+          }
+        },
+        {
+          "_": "Sapatos",
+          "$": {
+            "id": "25"
+          }
+        }
+      ]
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Frete Grátis Acima De R$999 Mais 30% De Cashback Na Próxima Compra!",
+    "offerstartdate": "2025-01-28T21:31Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1190940.62&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1190940.62&type=3&subid=0",
+    "advertiserid": "48175",
+    "advertisername": "Ellus Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "ellus-brazil-use-este-cupom--2"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": [
+        {
+          "_": "Vestuário",
+          "$": {
+            "id": "1"
+          }
+        },
+        {
+          "_": "Sapatos",
+          "$": {
+            "id": "25"
+          }
+        }
+      ]
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "15% Off Na Primeira Compra - Cupom: BEMVINDOELL",
+    "offerstartdate": "2025-01-28T21:31Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "couponcode": "BEMVINDOELL",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1190940.63&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1190940.63&type=3&subid=0",
+    "advertiserid": "48175",
+    "advertisername": "Ellus Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "ellus-brazil-use-este-cupom--3"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Beleza e Perfumes",
+        "$": {
+          "id": "6"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Liquidação",
+        "$": {
+          "id": "3"
+        }
+      }
+    },
+    "offerdescription": "Primeira compra com cupom de  8% off ( cupom)!",
+    "offerstartdate": "2024-02-29T15:20Z",
+    "offerenddate": "2030-03-01T03:00Z",
+    "couponcode": "PRIMEIRA8",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1723277.472&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1723277.472&type=3&subid=0",
+    "advertiserid": "49110",
+    "advertisername": "Amobeleza",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "amobeleza-use-este-cupom--4"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Beleza e Perfumes",
+        "$": {
+          "id": "6"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Ganhe 10% Off Em Todas as Compras Do Site Cupom: AMO10",
+    "offerstartdate": "2024-07-25T13:16Z",
+    "offerenddate": "2030-07-25T03:00Z",
+    "couponcode": "AMO10",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1723277.562&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1723277.562&type=3&subid=0",
+    "advertiserid": "49110",
+    "advertisername": "Amobeleza",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "amobeleza-use-este-cupom--5"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Beleza e Perfumes",
+        "$": {
+          "id": "6"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Ganhe 20% Extra Nas Compras Da Marca Magic Beauty Cupom: AMOMAGIC",
+    "offerstartdate": "2024-07-25T13:26Z",
+    "offerenddate": "2030-07-26T00:00Z",
+    "couponcode": "AMOMAGIC",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1723277.570&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1723277.570&type=3&subid=0",
+    "advertiserid": "49110",
+    "advertisername": "Amobeleza",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "amobeleza-use-este-cupom--6"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Beleza e Perfumes",
+        "$": {
+          "id": "6"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Site Recheado De Brindes Nas Compras Acima De R$269 Mais Use O Cupom AMO10 E Ganhe Mais 10%off Em Todas as Compras No Site Acima De R$99 Ganhe Miniatura L'oréal Professionnel Nas Compras Online Acima De R$269 Mais Miniatura Redken Acima De R$299 Melhor Preço Da I!",
+    "offerstartdate": "2025-03-18T17:36Z",
+    "offerenddate": "2031-03-18T03:00Z",
+    "couponcode": "AMO10",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1723277.679&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1723277.679&type=3&subid=0",
+    "advertiserid": "49110",
+    "advertisername": "Amobeleza",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "amobeleza-use-este-cupom--7"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Vestuário - Mulher",
+        "$": {
+          "id": "4"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Sale Até 50% Off Mais Desconto Progressivo - Cupom: PROGBOB",
+    "offerstartdate": "2025-01-28T21:54Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "couponcode": "PROGBOB",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1187086.47&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1187086.47&type=3&subid=0",
+    "advertiserid": "48176",
+    "advertisername": "Bobstore Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "bobstore-brazil-use-este-cupom--8"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Vestuário - Mulher",
+        "$": {
+          "id": "4"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Liquidação",
+        "$": {
+          "id": "3"
+        }
+      }
+    },
+    "offerdescription": "Sweet lace - 5 peças com 20% off!",
+    "offerstartdate": "2023-03-28T16:41Z",
+    "offerenddate": "2029-03-28T03:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1159687.14&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1159687.14&type=3&subid=0",
+    "advertiserid": "49074",
+    "advertisername": "Loungerie",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "loungerie-use-este-cupom--9"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Vestuário - Mulher",
+        "$": {
+          "id": "4"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Liquidação",
+        "$": {
+          "id": "3"
+        }
+      }
+    },
+    "offerdescription": "Peças em algodão - 3 peças com 15% off!",
+    "offerstartdate": "2023-03-28T16:41Z",
+    "offerenddate": "2029-03-28T03:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1159687.15&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1159687.15&type=3&subid=0",
+    "advertiserid": "49074",
+    "advertisername": "Loungerie",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "loungerie-use-este-cupom--10"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Vestuário - Mulher",
+        "$": {
+          "id": "4"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Liquidação",
+        "$": {
+          "id": "3"
+        }
+      }
+    },
+    "offerdescription": "Outlet Loungerie com até 70% OFF peças exclusivas do site!",
+    "offerstartdate": "2023-03-28T16:41Z",
+    "offerenddate": "2029-03-28T03:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1159687.16&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1159687.16&type=3&subid=0",
+    "advertiserid": "49074",
+    "advertisername": "Loungerie",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "loungerie-use-este-cupom--11"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Sapatos",
+        "$": {
+          "id": "25"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Geral Promoçã",
+        "$": {
+          "id": "1"
+        }
+      }
+    },
+    "offerdescription": "Moda Masculina!",
+    "offerstartdate": "2023-04-10T14:46Z",
+    "offerenddate": "2029-04-10T03:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1330804.3&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1330804.3&type=3&subid=0",
+    "advertiserid": "50290",
+    "advertisername": "New Balance BRL",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "new-balance-brl-use-este-cupom--12"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Sapatos",
+        "$": {
+          "id": "25"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Frete grátis",
+        "$": {
+          "id": "7"
+        }
+      }
+    },
+    "offerdescription": "Frete grátis em compras acima de R$299,90. Promoção aplicada no carrinho!",
+    "offerstartdate": "2023-04-10T14:46Z",
+    "offerenddate": "2029-04-10T03:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1330804.4&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1330804.4&type=3&subid=0",
+    "advertiserid": "50290",
+    "advertisername": "New Balance BRL",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "new-balance-brl-use-este-cupom--13"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Sapatos",
+        "$": {
+          "id": "25"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Liquidação",
+        "$": {
+          "id": "3"
+        }
+      }
+    },
+    "offerdescription": "10% OFF Primeira Compra - 10% de desconto para novos usuários (CÓDIGO)!",
+    "offerstartdate": "2023-04-10T14:46Z",
+    "offerenddate": "2029-04-10T03:00Z",
+    "couponcode": "PRIMEIRACOMPRA",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1330804.5&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1330804.5&type=3&subid=0",
+    "advertiserid": "50290",
+    "advertisername": "New Balance BRL",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "new-balance-brl-use-este-cupom--14"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Sapatos",
+        "$": {
+          "id": "25"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Geral Promoçã",
+        "$": {
+          "id": "1"
+        }
+      }
+    },
+    "offerdescription": "Lifestyle New Balance!",
+    "offerstartdate": "2023-10-04T14:05Z",
+    "offerenddate": "2029-10-04T03:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1330804.11&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1330804.11&type=3&subid=0",
+    "advertiserid": "50290",
+    "advertisername": "New Balance BRL",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "new-balance-brl-use-este-cupom--15"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Sapatos",
+        "$": {
+          "id": "25"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Geral Promoçã",
+        "$": {
+          "id": "1"
+        }
+      }
+    },
+    "offerdescription": "Running New Balance!",
+    "offerstartdate": "2023-10-04T14:05Z",
+    "offerenddate": "2029-10-04T03:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1330804.12&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1330804.12&type=3&subid=0",
+    "advertiserid": "50290",
+    "advertisername": "New Balance BRL",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "new-balance-brl-use-este-cupom--16"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Vestuário - Homem",
+        "$": {
+          "id": "3"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Sale  NB - desconto progressivo de até 30% [Cupom: SALENB]",
+    "offerstartdate": "2025-06-27T18:39Z",
+    "offerenddate": "2025-08-01T03:00Z",
+    "couponcode": "SALENB",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1330804.42&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1330804.42&type=3&subid=0",
+    "advertiserid": "50290",
+    "advertisername": "New Balance BRL",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "new-balance-brl-use-este-cupom--17"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": [
+        {
+          "_": "Vestuário",
+          "$": {
+            "id": "1"
+          }
+        },
+        {
+          "_": "Sapatos",
+          "$": {
+            "id": "25"
+          }
+        }
+      ]
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Sale: 30% Off Acima De R$1000 - Cupom: SALE30",
+    "offerstartdate": "2025-01-28T20:53Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "couponcode": "SALE30",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1187104.67&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1187104.67&type=3&subid=0",
+    "advertiserid": "48173",
+    "advertisername": "Richards Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "richards-brazil-use-este-cupom--18"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": [
+        {
+          "_": "Vestuário",
+          "$": {
+            "id": "1"
+          }
+        },
+        {
+          "_": "Sapatos",
+          "$": {
+            "id": "25"
+          }
+        }
+      ]
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Frete Grátis Acima De R$999 Mais 30% De Cashback Na Próxima Compra!",
+    "offerstartdate": "2025-01-28T20:53Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1187104.68&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1187104.68&type=3&subid=0",
+    "advertiserid": "48173",
+    "advertisername": "Richards Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "richards-brazil-use-este-cupom--19"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": [
+        {
+          "_": "Vestuário",
+          "$": {
+            "id": "1"
+          }
+        },
+        {
+          "_": "Sapatos",
+          "$": {
+            "id": "25"
+          }
+        }
+      ]
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "15% Off Na Primeira Compra - Cupom: BEMVINDORCH",
+    "offerstartdate": "2025-01-28T20:53Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "couponcode": "BEMVINDORCH",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1187104.69&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1187104.69&type=3&subid=0",
+    "advertiserid": "48173",
+    "advertisername": "Richards Brazil",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "richards-brazil-use-este-cupom--20"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Escritório e Pequenas Empresas",
+        "$": {
+          "id": "30"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Liquidação",
+        "$": {
+          "id": "3"
+        }
+      }
+    },
+    "offerdescription": "PRIMEIRA COMPRA COM CUPOM DE 10% - CUMULATIVOS COM AS PROMOÇÕES  (Cupom)!",
+    "offerstartdate": "2021-09-14T03:00Z",
+    "offerenddate": "2028-02-22T03:00Z",
+    "couponcode": "PRIMEIRACOMPRA",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1169376.29&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1169376.29&type=3&subid=0",
+    "advertiserid": "47223",
+    "advertisername": "Tok Stok",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "tok-stok-use-este-cupom--21"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Vestuário - Mulher",
+        "$": {
+          "id": "4"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "Frete Grátis Acima De R$750 Mais 30% De Giftback No Próximo Pedido!",
+    "offerstartdate": "2025-01-28T21:50Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1186055.54&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1186055.54&type=3&subid=0",
+    "advertiserid": "48172",
+    "advertisername": "Salinas Rio",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "salinas-rio-use-este-cupom--22"
+  },
+  {
+    "$": {
+      "type": "TEXT"
+    },
+    "categories": {
+      "category": {
+        "_": "Vestuário - Mulher",
+        "$": {
+          "id": "4"
+        }
+      }
+    },
+    "promotiontypes": {
+      "promotiontype": {
+        "_": "Desconto",
+        "$": {
+          "id": "5"
+        }
+      }
+    },
+    "offerdescription": "15% Off Na Primeira Compra!",
+    "offerstartdate": "2025-01-28T21:50Z",
+    "offerenddate": "2031-01-28T02:00Z",
+    "clickurl": "https://click.linksynergy.com/fs-bin/click?id=4yv1y2Xuono&offerid=1186055.55&type=3&subid=0",
+    "impressionpixel": "https://ad.linksynergy.com/fs-bin/show?id=4yv1y2Xuono&bids=1186055.55&type=3&subid=0",
+    "advertiserid": "48172",
+    "advertisername": "Salinas Rio",
+    "network": {
+      "_": "Brazil Network",
+      "$": {
+        "id": "8"
+      }
+    },
+    "slug": "salinas-rio-use-este-cupom--23"
+  }
+]

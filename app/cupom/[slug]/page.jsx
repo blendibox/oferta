@@ -1,36 +1,22 @@
 import fs from 'fs';
 import path from 'path';
-import { parseStringPromise } from 'xml2js';
 import Cupom from '../../../components/cupom';
 import { notFound } from 'next/navigation';
+import { lerProdutosJSON } from '../../../lib/awin';
 
-function gerarSlug(title) {
-  return title
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^\w\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .trim();
-}
-
-async function lerProdutosDoXML() {
-  const xmlPath = path.join(process.cwd(), 'data/cupons/LomadeeDownload.xml');
-  const xmlData = fs.readFileSync(xmlPath, 'utf8');
-  const json = await parseStringPromise(xmlData, { explicitArray: false });
-
-  const cupons = json.coupons?.coupon || [];
-  return Array.isArray(cupons) ? cupons : [cupons];
-}
 
 export async function generateStaticParams() {
 
-    if (process.env.BUILD_TARGET !== 'cupom') {
+   if (process.env.BUILD_TARGET !== 'cupom') {
     return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
   }
 
-	
-  const produtos = await lerProdutosDoXML();
+  const indexPath = path.join(process.cwd(), 'public', 'slug-index.json');
+  const slugIndex = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+
+  const slugsProduto = Object.entries(slugIndex)
+    .filter(([_, arquivo]) =>  /^cupom\.json$/i.test(arquivo))
+    .map(([slug]) => slug);
   
     
   const loteAtual = parseInt(process.env.LOTE || '1');
@@ -38,10 +24,10 @@ export async function generateStaticParams() {
   const inicio = (loteAtual - 1) * tamanhoLote;
   const fim = inicio + tamanhoLote;
 
-  const produtosDoLote = produtos.slice(inicio, fim);
+  const slugsDoLote  = slugsProduto.slice(inicio, fim);
 
-  return produtosDoLote.map((produto,i) => ({
-    slug: `${gerarSlug(p.title)}-${i}`,
+  return slugsDoLote.map((slug) => ({
+    slug
   }));
   
   /*
@@ -57,11 +43,13 @@ export async function generateStaticParams() {
 // ✅ Esta função gera o <title> e <meta description>
 export async function generateMetadata({ params }) {
     const { slug } = params;
-  const produtos = await lerProdutosDoXML();
+  const produtos = await lerProdutosJSON('CUPOM');
+  
 
   const produto = produtos.find((p, i) =>
-    `${gerarSlug(p.title)}-${i}` === slug
+   p.slug === slug
   );
+  console.log(produto);
 
   if (!produto) return {};
 
@@ -69,7 +57,7 @@ export async function generateMetadata({ params }) {
     title: `${produto.title} ${produto.store.name} `,
     description: `CUPOM ${produto.title} EXCLUSIVO PARA VOCÊ no site ${produto.store.name}! Uma cortesia Blendibox!`,
     alternates: {
-      canonical: `https://comprar.blendibox.com.br/produto/${gerarSlug(produto.title)}-0}`,
+      canonical: `https://comprar.blendibox.com.br/produto/${produto.slug}`,
     },
     openGraph: {
       title: produto.title,
@@ -85,10 +73,10 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { slug } = params;
-  const produtos = await lerProdutosDoXML();
+  const produtos = await lerProdutosJSON('CUPOM');
 
   const produto = produtos.find((p, i) =>
-    `${gerarSlug(p.title)}-${i}` === slug
+    p.slug === slug
   );
 
   if (!produto) return notFound();
