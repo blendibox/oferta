@@ -1,4 +1,11 @@
 import "./globals.css";
+import MenuPrincipal from '../components/MenuPrincipal';
+import ResultadosFiltrados from '../components/ResultadosFiltrados';
+
+export const metadata = {
+  title: 'Blendibox Ofertas',
+};
+
 
 export default function RootLayout({ children }) {
   return (
@@ -12,9 +19,15 @@ export default function RootLayout({ children }) {
 		   <meta name="lomadee-verification" content="23108504" ></meta>
 		   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		</head>   
-      <body>
-        {children}
-      </body>
+        <body>
+	       <MenuPrincipal />
+		   <div className="max-w-7xl mx-auto px-4">
+              <ResultadosFiltrados />
+		      <main className="mt-8">
+                {children}
+		      </main>
+           </div>
+        </body>
     </html>
   );
 }

@@ -1,0 +1,3344 @@
+{
+  "Saúde e beleza": {
+    "slug": "saude-e-beleza",
+    "subcategorias": {
+      "Cuidados pessoais": {
+        "slug": "saude-e-beleza/cuidados-pessoais",
+        "subcategorias": {
+          "Cuidados com os cabelos": {
+            "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
+            "subcategorias": {
+              "Xampu e condicionador": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/xampu-e-condicionador",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Tintura para cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/tintura-para-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Kits de cuidados com os cabelos": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/kits-de-cuidados-com-os-cabelos",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Utensílios de penteado": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado",
+                "subcategorias": {
+                  "Pentes e escovas": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado/pentes-e-escovas",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Pranchas modeladoras": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado/pranchas-modeladoras",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Secadores de cabelo": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado/secadores-de-cabelo",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Chapinhas": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado/chapinhas",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Conjuntos de aparelhos para modelagem dos cabelos": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado/conjuntos-de-aparelhos-para-modelagem-dos-cabelos",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                },
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Acessórios para utensílios de penteado": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/acessorios-para-utensilios-de-penteado",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
+                "subcategorias": {
+                  "Acessórios para secadores de cabelo": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/acessorios-para-utensilios-de-penteado/acessorios-para-secadores-de-cabelo",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Pregadores e rolos para cabelo": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/acessorios-para-utensilios-de-penteado/pregadores-e-rolos-para-cabelo",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                }
+              },
+              "Produtos de penteado": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/produtos-de-penteado",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Alisadores de cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/alisadores-de-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Acessórios para tintura de cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/acessorios-para-tintura-de-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Corretivos para perda de cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/corretivos-para-perda-de-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Tesouras de cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/tesouras-de-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Tratamentos para calvície": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/tratamentos-para-calvicie",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Toucas térmicas": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/toucas-termicas",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Removedores de tinta de cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/removedores-de-tinta-de-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            }
+          },
+          "Cosméticos": {
+            "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos",
+            "subcategorias": {
+              "Cuidados com a pele": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
+                "subcategorias": {
+                  "Cuidados com os lábios": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/cuidados-com-os-labios",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Bloqueadores solares": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/bloqueadores-solares",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Kits anti-idade de cuidados com a pele": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/kits-anti-idade-de-cuidados-com-a-pele",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Máscaras e peelings faciais": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/mascaras-e-peelings-faciais",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Produtos para bronzeamento": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/produtos-para-bronzeamento",
+                    "subcategorias": {
+                      "Autobronzeador": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/produtos-para-bronzeamento/autobronzeador",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Óleo bronzeador": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/produtos-para-bronzeamento/oleo-bronzeador",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    },
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Removedores de maquiagem": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/removedores-de-maquiagem",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Cremes de limpeza para o rosto": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/cremes-de-limpeza-para-o-rosto",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Creme hidratante": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/creme-hidratante",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Óleos corporais": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/oleos-corporais",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Tonificantes e adstringentes": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/tonificantes-e-adstringentes",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Tratamentos e kits para acne": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/tratamentos-e-kits-para-acne",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Talco": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/talco",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Máscara comprimida para cuidado da pele": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/mascara-comprimida-para-cuidado-da-pele",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Repelente de insetos": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/repelente-de-insetos",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Kits para limpeza facial": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/kits-para-limpeza-facial",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                }
+              },
+              "Maquiagem": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem",
+                "subcategorias": {
+                  "Maquiagem para o rosto": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto",
+                    "subcategorias": {
+                      "Bases e corretivos": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto/bases-e-corretivos",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Blushes e bronzers": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto/blushes-e-bronzers",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Iluminadores": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto/iluminadores",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Pó facial": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto/po-facial",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Primers faciais": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto/primers-faciais",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    },
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Maquiagem para os olhos": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos",
+                    "subcategorias": {
+                      "Sombras": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/sombras",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Delineador para olhos": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/delineador-para-olhos",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Rímel": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/rimel",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Lápis para sobrancelhas": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/lapis-para-sobrancelhas",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Cílios postiços": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/cilios-posticos",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Primers de máscara para cílios": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/primers-de-mascara-para-cilios",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Tratamentos para crescimento dos cílios e das sobrancelhas": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/tratamentos-para-crescimento-dos-cilios-e-das-sobrancelhas",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Primer para olhos": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/primer-para-olhos",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    },
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Maquiagem para os lábios": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios",
+                    "subcategorias": {
+                      "Batons": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios/batons",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Primers labiais": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios/primers-labiais",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Delineador labial": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios/delineador-labial",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Brilhos labiais": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios/brilhos-labiais",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Corantes para bochecha e lábios": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios/corantes-para-bochecha-e-labios",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    },
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Maquiagem corporal": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-corporal",
+                    "subcategorias": {
+                      "Bases e tintas corporais": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-corporal/bases-e-tintas-corporais",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Glitter para o corpo e cabelo": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-corporal/glitter-para-o-corpo-e-cabelo",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    },
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Sprays de acabamento para maquiagem": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/sprays-de-acabamento-para-maquiagem",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Tatuagens temporárias": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/tatuagens-temporarias",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                },
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Cuidados com as unhas": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas",
+                "subcategorias": {
+                  "Esmaltes": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/esmaltes",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Gotas e sprays secantes para as unhas": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/gotas-e-sprays-secantes-para-as-unhas",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Removedores de esmalte": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/removedores-de-esmalte",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Unhas postiças": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/unhas-posticas",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Diluente para esmalte": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/diluente-para-esmalte",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Cremes e óleos para cutículas": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/cremes-e-oleos-para-cuticulas",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Cola para unhas": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/cola-para-unhas",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                },
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Ferramentas cosméticas": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas",
+                "subcategorias": {
+                  "Ferramentas de maquiagem": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem",
+                    "subcategorias": {
+                      "Esponjas de maquiagem": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/esponjas-de-maquiagem",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Pincéis de maquiagem": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/pinceis-de-maquiagem",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Curvex": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/curvex",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Refis para curvex": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/refis-para-curvex",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Espelhos de maquiagem": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/espelhos-de-maquiagem",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Acessórios para cílios postiços": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/acessorios-para-cilios-posticos",
+                        "subcategorias": {
+                          "Cola para cílios postiços": {
+                            "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/acessorios-para-cilios-posticos/cola-para-cilios-posticos",
+                            "arquivos": [
+                              "BELEZANAWEB.json"
+                            ]
+                          },
+                          "Aplicadores para cílios postiços": {
+                            "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/acessorios-para-cilios-posticos/aplicadores-para-cilios-posticos",
+                            "arquivos": [
+                              "BELEZANAWEB.json"
+                            ]
+                          }
+                        },
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Moldes para sobrancelha": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/moldes-para-sobrancelha",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Estojos de maquiagem com refil": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/estojos-de-maquiagem-com-refil",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    },
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Ferramentas para cuidados com a pele": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-cuidados-com-a-pele",
+                    "subcategorias": {
+                      "Sistemas e pincéis de limpeza de pele": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-cuidados-com-a-pele/sistemas-e-pinceis-de-limpeza-de-pele",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Cabeças de escovas para limpeza de pele": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-cuidados-com-a-pele/cabecas-de-escovas-para-limpeza-de-pele",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Lixa para pés": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-cuidados-com-a-pele/lixa-para-pes",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Aplicadores de loção e filtro solar": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-cuidados-com-a-pele/aplicadores-de-locao-e-filtro-solar",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    },
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Ferramentas para unhas": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas",
+                    "subcategorias": {
+                      "Cortadores de unhas": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas/cortadores-de-unhas",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Empurradores de cutículas": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas/empurradores-de-cuticulas",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Lixas comuns e lixas metálicas de unhas": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas/lixas-comuns-e-lixas-metalicas-de-unhas",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Alicates de cutículas": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas/alicates-de-cuticulas",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Secadores de unhas": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas/secadores-de-unhas",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      },
+                      "Conjuntos de utensílios para manicure": {
+                        "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas/conjuntos-de-utensilios-para-manicure",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Banho e corpo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
+                "subcategorias": {
+                  "Sabonete": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/sabonete",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Sabonetes para o corpo": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/sabonetes-para-o-corpo",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Sabonete líquido para as mãos": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/sabonete-liquido-para-as-maos",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Escovas de banho": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/escovas-de-banho",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Esponjas e escovas de banho": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/esponjas-e-escovas-de-banho",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Sais de banho e banho de espuma": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/sais-de-banho-e-banho-de-espuma",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Lenços umedecidos para adultos": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/lencos-umedecidos-para-adultos",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Desinfetante de mãos": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/desinfetante-de-maos",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Toucas de banho": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo/toucas-de-banho",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                }
+              },
+              "Conjuntos de maquiagem": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/conjuntos-de-maquiagem",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Perfume e colônia": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/perfume-e-colonia",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Limpadores de utensílios cosméticos": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/limpadores-de-utensilios-cosmeticos",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            },
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ]
+          },
+          "Barbearia e embelezamento": {
+            "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
+            "subcategorias": {
+              "Loção pós-barba": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/locao-pos-barba",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Máquinas e tesouras para cortar cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/maquinas-e-tesouras-para-cortar-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Pincéis de barba": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/pinceis-de-barba",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Kits de barbear": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/kits-de-barbear",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Cremes de barbear": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/cremes-de-barbear",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Clareadores de pelos para o corpo e rosto": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/clareadores-de-pelos-para-o-corpo-e-rosto",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Depilação": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/depilacao",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
+                "subcategorias": {
+                  "Cremes depilatórios": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/depilacao/cremes-depilatorios",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                }
+              },
+              "Acessórios para aparadores de cabelo": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/acessorios-para-aparadores-de-cabelo",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Navalhas e lâminas de barbear": {
+                "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento/navalhas-e-laminas-de-barbear",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            }
+          },
+          "Suprimentos para a higiene feminina": {
+            "slug": "saude-e-beleza/cuidados-pessoais/suprimentos-para-a-higiene-feminina",
+            "subcategorias": {
+              "Desodorantes femininos": {
+                "slug": "saude-e-beleza/cuidados-pessoais/suprimentos-para-a-higiene-feminina/desodorantes-femininos",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Produtos para higiene íntima": {
+                "slug": "saude-e-beleza/cuidados-pessoais/suprimentos-para-a-higiene-feminina/produtos-para-higiene-intima",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            }
+          },
+          "Bolas de algodão": {
+            "slug": "saude-e-beleza/cuidados-pessoais/bolas-de-algodao",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ]
+          },
+          "Desodorantes e antitranspirantes": {
+            "slug": "saude-e-beleza/cuidados-pessoais/desodorantes-e-antitranspirantes",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ]
+          },
+          "Cuidados com os pés": {
+            "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-pes",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
+            "subcategorias": {
+              "Desodorantes para os pés": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-pes/desodorantes-para-os-pes",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            }
+          },
+          "Massagem e relaxamento": {
+            "slug": "saude-e-beleza/cuidados-pessoais/massagem-e-relaxamento",
+            "subcategorias": {
+              "Massageadores": {
+                "slug": "saude-e-beleza/cuidados-pessoais/massagem-e-relaxamento/massageadores",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Óleos de massagem": {
+                "slug": "saude-e-beleza/cuidados-pessoais/massagem-e-relaxamento/oleos-de-massagem",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            },
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ]
+          },
+          "Cuidados bucais": {
+            "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais",
+            "subcategorias": {
+              "Escovas de dente": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/escovas-de-dente",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Protetores bucais": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/protetores-bucais",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              },
+              "Acessórios para escova de dente": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/acessorios-para-escova-de-dente",
+                "subcategorias": {
+                  "Capas para escovas de dente": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/acessorios-para-escova-de-dente/capas-para-escovas-de-dente",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  },
+                  "Cabeças de reposição para escovas de dente": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/acessorios-para-escova-de-dente/cabecas-de-reposicao-para-escovas-de-dente",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                }
+              }
+            },
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ]
+          },
+          "Pinças": {
+            "slug": "saude-e-beleza/cuidados-pessoais/pincas",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ]
+          },
+          "Cuidados com a visão": {
+            "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-a-visao",
+            "subcategorias": {
+              "Cuidados com lentes de contato": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-a-visao/cuidados-com-lentes-de-contato",
+                "subcategorias": {
+                  "Kit de cuidados para lentes de contato": {
+                    "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-a-visao/cuidados-com-lentes-de-contato/kit-de-cuidados-para-lentes-de-contato",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ]
+                  }
+                }
+              },
+              "Acessórios para óculos": {
+                "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-a-visao/acessorios-para-oculos",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            }
+          }
+        },
+        "arquivos": [
+          "BELEZANAWEB.json"
+        ]
+      },
+      "Cuidados com a saúde": {
+        "slug": "saude-e-beleza/cuidados-com-a-saude",
+        "subcategorias": {
+          "Preparo físico e nutrição": {
+            "slug": "saude-e-beleza/cuidados-com-a-saude/preparo-fisico-e-nutricao",
+            "subcategorias": {
+              "Vitaminas e suplementos": {
+                "slug": "saude-e-beleza/cuidados-com-a-saude/preparo-fisico-e-nutricao/vitaminas-e-suplementos",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            }
+          },
+          "Acessórios para monitor biométrico": {
+            "slug": "saude-e-beleza/cuidados-com-a-saude/acessorios-para-monitor-biometrico",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ]
+          },
+          "Primeiros socorros": {
+            "slug": "saude-e-beleza/cuidados-com-a-saude/primeiros-socorros",
+            "subcategorias": {
+              "Antissépticos e suprimentos para limpeza": {
+                "slug": "saude-e-beleza/cuidados-com-a-saude/primeiros-socorros/antissepticos-e-suprimentos-para-limpeza",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ]
+              }
+            }
+          }
+        },
+        "arquivos": [
+          "BELEZANAWEB.json"
+        ]
+      }
+    },
+    "arquivos": [
+      "BELEZANAWEB.json"
+    ]
+  },
+  "Malas e bolsas": {
+    "slug": "malas-e-bolsas",
+    "subcategorias": {
+      "Nécessaires de cosmética e higiene": {
+        "slug": "malas-e-bolsas/necessaires-de-cosmetica-e-higiene",
+        "arquivos": [
+          "BELEZANAWEB.json"
+        ]
+      }
+    }
+  },
+  "Moda Masculina": {
+    "slug": "moda-masculina",
+    "subcategorias": {
+      "Moda íntima": {
+        "slug": "moda-masculina/moda-intima",
+        "subcategorias": {
+          "Meias": {
+            "slug": "moda-masculina/moda-intima/meias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Cuecas": {
+            "slug": "moda-masculina/moda-intima/cuecas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pijamas": {
+            "slug": "moda-masculina/moda-intima/pijamas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Roupões": {
+            "slug": "moda-masculina/moda-intima/roupoes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Roupas": {
+        "slug": "moda-masculina/roupas",
+        "subcategorias": {
+          "Blusas": {
+            "slug": "moda-masculina/roupas/blusas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Calças": {
+            "slug": "moda-masculina/roupas/calcas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bermudas": {
+            "slug": "moda-masculina/roupas/bermudas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Camisetas": {
+            "slug": "moda-masculina/roupas/camisetas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Casacos": {
+            "slug": "moda-masculina/roupas/casacos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Camisas": {
+            "slug": "moda-masculina/roupas/camisas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Calçados": {
+        "slug": "moda-masculina/calcados",
+        "subcategorias": {
+          "Sapatos": {
+            "slug": "moda-masculina/calcados/sapatos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tênis": {
+            "slug": "moda-masculina/calcados/tenis",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pantufas": {
+            "slug": "moda-masculina/calcados/pantufas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chinelos": {
+            "slug": "moda-masculina/calcados/chinelos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Botas": {
+            "slug": "moda-masculina/calcados/botas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sandálias": {
+            "slug": "moda-masculina/calcados/sandalias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Acessórios": {
+        "slug": "moda-masculina/acessorios",
+        "subcategorias": {
+          "Cintos": {
+            "slug": "moda-masculina/acessorios/cintos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chapéus": {
+            "slug": "moda-masculina/acessorios/chapeus",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Relógios": {
+            "slug": "moda-masculina/acessorios/relogios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Óculos": {
+            "slug": "moda-masculina/acessorios/oculos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bolsas": {
+            "slug": "moda-masculina/acessorios/bolsas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Carteiras": {
+            "slug": "moda-masculina/acessorios/carteiras",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Gorros": {
+            "slug": "moda-masculina/acessorios/gorros",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Cachecóis e lenços": {
+            "slug": "moda-masculina/acessorios/cachecois-e-lencos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Luvas": {
+            "slug": "moda-masculina/acessorios/luvas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Malas": {
+            "slug": "moda-masculina/acessorios/malas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chaveiros": {
+            "slug": "moda-masculina/acessorios/chaveiros",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Moda Praia": {
+        "slug": "moda-masculina/moda-praia",
+        "subcategorias": {
+          "Sungas": {
+            "slug": "moda-masculina/moda-praia/sungas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Serviços": {
+    "slug": "servicos",
+    "subcategorias": {
+      "Cartão Presente Virtual": {
+        "slug": "servicos/cartao-presente-virtual",
+        "arquivos": [
+          "CEA.json"
+        ]
+      }
+    }
+  },
+  "Moda Feminina": {
+    "slug": "moda-feminina",
+    "subcategorias": {
+      "Acessórios": {
+        "slug": "moda-feminina/acessorios",
+        "subcategorias": {
+          "Relógios": {
+            "slug": "moda-feminina/acessorios/relogios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Cintos": {
+            "slug": "moda-feminina/acessorios/cintos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chapéus": {
+            "slug": "moda-feminina/acessorios/chapeus",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Brincos": {
+            "slug": "moda-feminina/acessorios/brincos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Colares": {
+            "slug": "moda-feminina/acessorios/colares",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Papelaria": {
+            "slug": "moda-feminina/acessorios/papelaria",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Anéis": {
+            "slug": "moda-feminina/acessorios/aneis",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Gorros": {
+            "slug": "moda-feminina/acessorios/gorros",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pulseiras": {
+            "slug": "moda-feminina/acessorios/pulseiras",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bolsas": {
+            "slug": "moda-feminina/acessorios/bolsas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Nécessaire": {
+            "slug": "moda-feminina/acessorios/necessaire",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Acessórios de cabelo": {
+            "slug": "moda-feminina/acessorios/acessorios-de-cabelo",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Óculos": {
+            "slug": "moda-feminina/acessorios/oculos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Apoios de pescoço": {
+            "slug": "moda-feminina/acessorios/apoios-de-pescoco",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Lenços": {
+            "slug": "moda-feminina/acessorios/lencos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bonés": {
+            "slug": "moda-feminina/acessorios/bones",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chaveiros": {
+            "slug": "moda-feminina/acessorios/chaveiros",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Cachecóis e lenços": {
+            "slug": "moda-feminina/acessorios/cachecois-e-lencos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Roupas": {
+        "slug": "moda-feminina/roupas",
+        "subcategorias": {
+          "Blusas": {
+            "slug": "moda-feminina/roupas/blusas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Calças": {
+            "slug": "moda-feminina/roupas/calcas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Casacos": {
+            "slug": "moda-feminina/roupas/casacos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Shorts": {
+            "slug": "moda-feminina/roupas/shorts",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Macacões": {
+            "slug": "moda-feminina/roupas/macacoes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Saias": {
+            "slug": "moda-feminina/roupas/saias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Vestidos": {
+            "slug": "moda-feminina/roupas/vestidos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Moda Íntima": {
+        "slug": "moda-feminina/moda-intima",
+        "subcategorias": {
+          "Cintas e modeladores": {
+            "slug": "moda-feminina/moda-intima/cintas-e-modeladores",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sutiãs": {
+            "slug": "moda-feminina/moda-intima/sutias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Calcinhas": {
+            "slug": "moda-feminina/moda-intima/calcinhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pijamas": {
+            "slug": "moda-feminina/moda-intima/pijamas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Meias": {
+            "slug": "moda-feminina/moda-intima/meias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Roupões": {
+            "slug": "moda-feminina/moda-intima/roupoes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bodies": {
+            "slug": "moda-feminina/moda-intima/bodies",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Protetores": {
+            "slug": "moda-feminina/moda-intima/protetores",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Calçados": {
+        "slug": "moda-feminina/calcados",
+        "subcategorias": {
+          "Rasteirinhas": {
+            "slug": "moda-feminina/calcados/rasteirinhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sapatilhas": {
+            "slug": "moda-feminina/calcados/sapatilhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Scarpin": {
+            "slug": "moda-feminina/calcados/scarpin",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tênis": {
+            "slug": "moda-feminina/calcados/tenis",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chinelos": {
+            "slug": "moda-feminina/calcados/chinelos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Botas": {
+            "slug": "moda-feminina/calcados/botas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tamancos": {
+            "slug": "moda-feminina/calcados/tamancos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sandálias": {
+            "slug": "moda-feminina/calcados/sandalias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sapatos": {
+            "slug": "moda-feminina/calcados/sapatos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pantufas": {
+            "slug": "moda-feminina/calcados/pantufas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Moda Praia": {
+        "slug": "moda-feminina/moda-praia",
+        "subcategorias": {
+          "Biquínis": {
+            "slug": "moda-feminina/moda-praia/biquinis",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Maiôs": {
+            "slug": "moda-feminina/moda-praia/maios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Saídas de Praia": {
+            "slug": "moda-feminina/moda-praia/saidas-de-praia",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tops": {
+            "slug": "moda-feminina/moda-praia/tops",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Calcinhas": {
+            "slug": "moda-feminina/moda-praia/calcinhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Infantil": {
+    "slug": "infantil",
+    "subcategorias": {
+      "Roupas": {
+        "slug": "infantil/roupas",
+        "subcategorias": {
+          "Calças": {
+            "slug": "infantil/roupas/calcas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Blusas": {
+            "slug": "infantil/roupas/blusas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Casacos": {
+            "slug": "infantil/roupas/casacos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Conjuntos": {
+            "slug": "infantil/roupas/conjuntos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bermudas": {
+            "slug": "infantil/roupas/bermudas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Vestidos": {
+            "slug": "infantil/roupas/vestidos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Macacões": {
+            "slug": "infantil/roupas/macacoes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Saias": {
+            "slug": "infantil/roupas/saias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bodies": {
+            "slug": "infantil/roupas/bodies",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Fantasias": {
+            "slug": "infantil/roupas/fantasias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Camisetas": {
+            "slug": "infantil/roupas/camisetas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Shorts": {
+            "slug": "infantil/roupas/shorts",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Jaquetas & Moletons": {
+            "slug": "infantil/roupas/jaquetas-and-moletons",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Tops": {
+            "slug": "infantil/roupas/tops",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Calças & Leggings": {
+            "slug": "infantil/roupas/calcas-and-leggings",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Maiôs & Biquinis": {
+            "slug": "infantil/roupas/maios-and-biquinis",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Sungas": {
+            "slug": "infantil/roupas/sungas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Saias & Vestidos & Macacões": {
+            "slug": "infantil/roupas/saias-and-vestidos-and-macacoes",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "SCCP": {
+            "slug": "infantil/roupas/sccp",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Agasalho": {
+            "slug": "infantil/roupas/agasalho",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Moda Praia": {
+        "slug": "infantil/moda-praia",
+        "subcategorias": {
+          "Sungas": {
+            "slug": "infantil/moda-praia/sungas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Biquínis": {
+            "slug": "infantil/moda-praia/biquinis",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Maiôs": {
+            "slug": "infantil/moda-praia/maios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Blusas de proteção": {
+            "slug": "infantil/moda-praia/blusas-de-protecao",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Saídas de praia": {
+            "slug": "infantil/moda-praia/saidas-de-praia",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Moda íntima": {
+        "slug": "infantil/moda-intima",
+        "subcategorias": {
+          "Meias": {
+            "slug": "infantil/moda-intima/meias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Cuecas": {
+            "slug": "infantil/moda-intima/cuecas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pijamas": {
+            "slug": "infantil/moda-intima/pijamas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Calcinhas": {
+            "slug": "infantil/moda-intima/calcinhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sutiãs": {
+            "slug": "infantil/moda-intima/sutias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "infantil/acessorios",
+        "subcategorias": {
+          "Apoio de pescoço": {
+            "slug": "infantil/acessorios/apoio-de-pescoco",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chapéus": {
+            "slug": "infantil/acessorios/chapeus",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bolsas": {
+            "slug": "infantil/acessorios/bolsas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Gorros e Luvas": {
+            "slug": "infantil/acessorios/gorros-e-luvas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Acessórios de cabelo": {
+            "slug": "infantil/acessorios/acessorios-de-cabelo",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bolsas & Mochilas": {
+            "slug": "infantil/acessorios/bolsas-and-mochilas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Outros": {
+            "slug": "infantil/acessorios/outros",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Caneleiras": {
+            "slug": "infantil/acessorios/caneleiras",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Bonés & Viseiras": {
+            "slug": "infantil/acessorios/bones-and-viseiras",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Luvas": {
+            "slug": "infantil/acessorios/luvas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Meias": {
+            "slug": "infantil/acessorios/meias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Calçados": {
+        "slug": "infantil/calcados",
+        "subcategorias": {
+          "Sandálias": {
+            "slug": "infantil/calcados/sandalias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chinelos": {
+            "slug": "infantil/calcados/chinelos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Rasteirinhas": {
+            "slug": "infantil/calcados/rasteirinhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tênis": {
+            "slug": "infantil/calcados/tenis",
+            "arquivos": [
+              "CEA.json",
+              "NIKE.json"
+            ]
+          },
+          "Botas": {
+            "slug": "infantil/calcados/botas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pantufas": {
+            "slug": "infantil/calcados/pantufas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sapatos": {
+            "slug": "infantil/calcados/sapatos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sapatilhas": {
+            "slug": "infantil/calcados/sapatilhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Chinelos & Sandálias": {
+            "slug": "infantil/calcados/chinelos-and-sandalias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Chuteiras": {
+            "slug": "infantil/calcados/chuteiras",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Snkrs": {
+            "slug": "infantil/calcados/snkrs",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Diversão": {
+        "slug": "infantil/diversao",
+        "subcategorias": {
+          "Pelúcias": {
+            "slug": "infantil/diversao/pelucias",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Beleza": {
+    "slug": "beleza",
+    "subcategorias": {
+      "Perfumes": {
+        "slug": "beleza/perfumes",
+        "subcategorias": {
+          "Perfumes Femininos": {
+            "slug": "beleza/perfumes/perfumes-femininos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Perfumes Masculinos": {
+            "slug": "beleza/perfumes/perfumes-masculinos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Perfumes Infantis": {
+            "slug": "beleza/perfumes/perfumes-infantis",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Corpo e Banho": {
+        "slug": "beleza/corpo-e-banho",
+        "subcategorias": {
+          "Hidratantes": {
+            "slug": "beleza/corpo-e-banho/hidratantes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bronzeadores": {
+            "slug": "beleza/corpo-e-banho/bronzeadores",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Unhas": {
+            "slug": "beleza/corpo-e-banho/unhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tratamento": {
+            "slug": "beleza/corpo-e-banho/tratamento",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sabonetes": {
+            "slug": "beleza/corpo-e-banho/sabonetes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Óleo": {
+            "slug": "beleza/corpo-e-banho/oleo",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Desodorantes": {
+            "slug": "beleza/corpo-e-banho/desodorantes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Protetor solar": {
+            "slug": "beleza/corpo-e-banho/protetor-solar",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Maquiagem": {
+        "slug": "beleza/maquiagem",
+        "subcategorias": {
+          "Demaquilante": {
+            "slug": "beleza/maquiagem/demaquilante",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Acessórios": {
+            "slug": "beleza/maquiagem/acessorios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Base": {
+            "slug": "beleza/maquiagem/base",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Corretivo": {
+            "slug": "beleza/maquiagem/corretivo",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Máscara de cílios": {
+            "slug": "beleza/maquiagem/mascara-de-cilios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Blush": {
+            "slug": "beleza/maquiagem/blush",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Delineador": {
+            "slug": "beleza/maquiagem/delineador",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Lápis": {
+            "slug": "beleza/maquiagem/lapis",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Pó Facial": {
+            "slug": "beleza/maquiagem/po-facial",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Gloss": {
+            "slug": "beleza/maquiagem/gloss",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Batom": {
+            "slug": "beleza/maquiagem/batom",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Fixador": {
+            "slug": "beleza/maquiagem/fixador",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Iluminador": {
+            "slug": "beleza/maquiagem/iluminador",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Primer": {
+            "slug": "beleza/maquiagem/primer",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sombras": {
+            "slug": "beleza/maquiagem/sombras",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Bronzer": {
+            "slug": "beleza/maquiagem/bronzer",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Sobrancelhas": {
+            "slug": "beleza/maquiagem/sobrancelhas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        },
+        "arquivos": [
+          "CEA.json"
+        ]
+      },
+      "Skincare": {
+        "slug": "beleza/skincare",
+        "arquivos": [
+          "CEA.json"
+        ],
+        "subcategorias": {
+          "Hidratantes": {
+            "slug": "beleza/skincare/hidratantes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Máscaras faciais": {
+            "slug": "beleza/skincare/mascaras-faciais",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Cuidados labiais": {
+            "slug": "beleza/skincare/cuidados-labiais",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Acessórios": {
+            "slug": "beleza/skincare/acessorios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Protetor solar": {
+            "slug": "beleza/skincare/protetor-solar",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tônicos": {
+            "slug": "beleza/skincare/tonicos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Esfoliantes": {
+            "slug": "beleza/skincare/esfoliantes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Limpeza facial": {
+            "slug": "beleza/skincare/limpeza-facial",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Cabelos": {
+        "slug": "beleza/cabelos",
+        "subcategorias": {
+          "Finalizadores": {
+            "slug": "beleza/cabelos/finalizadores",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Condicionador": {
+            "slug": "beleza/cabelos/condicionador",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Shampoo": {
+            "slug": "beleza/cabelos/shampoo",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Tratamento": {
+            "slug": "beleza/cabelos/tratamento",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Escovas e pentes": {
+            "slug": "beleza/cabelos/escovas-e-pentes",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Acessórios de Cabelo": {
+            "slug": "beleza/cabelos/acessorios-de-cabelo",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Eletrônicos": {
+    "slug": "eletronicos",
+    "subcategorias": {
+      "Celulares": {
+        "slug": "eletronicos/celulares",
+        "subcategorias": {
+          "Acessórios": {
+            "slug": "eletronicos/celulares/acessorios",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Games": {
+        "slug": "eletronicos/games",
+        "subcategorias": {
+          "Jogos": {
+            "slug": "eletronicos/games/jogos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Casa": {
+    "slug": "casa",
+    "subcategorias": {
+      "Decoração e Utilidades": {
+        "slug": "casa/decoracao-e-utilidades",
+        "subcategorias": {
+          "Difusores e Aromatizadores": {
+            "slug": "casa/decoracao-e-utilidades/difusores-e-aromatizadores",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Objetos de Decoração": {
+            "slug": "casa/decoracao-e-utilidades/objetos-de-decoracao",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Almofadas e Capas": {
+            "slug": "casa/decoracao-e-utilidades/almofadas-e-capas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Velas": {
+            "slug": "casa/decoracao-e-utilidades/velas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      },
+      "Mesa e Cozinha": {
+        "slug": "casa/mesa-e-cozinha",
+        "subcategorias": {
+          "Copos e Taças": {
+            "slug": "casa/mesa-e-cozinha/copos-e-tacas",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Garrafas e Jarras": {
+            "slug": "casa/mesa-e-cozinha/garrafas-e-jarras",
+            "arquivos": [
+              "CEA.json"
+            ]
+          },
+          "Potes e Porta-Mantimentos": {
+            "slug": "casa/mesa-e-cozinha/potes-e-porta-mantimentos",
+            "arquivos": [
+              "CEA.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Esporte": {
+    "slug": "esporte",
+    "arquivos": [
+      "CEA.json"
+    ]
+  },
+  "Escolares": {
+    "slug": "escolares",
+    "arquivos": [
+      "KIPPLING.json"
+    ]
+  },
+  "Mochilas": {
+    "slug": "mochilas",
+    "arquivos": [
+      "KIPPLING.json"
+    ]
+  },
+  "Acessórios": {
+    "slug": "acessorios",
+    "arquivos": [
+      "KIPPLING.json"
+    ]
+  },
+  "Calçados": {
+    "slug": "calcados",
+    "arquivos": [
+      "KIPPLING.json"
+    ]
+  },
+  "Bolsas": {
+    "slug": "bolsas",
+    "arquivos": [
+      "KIPPLING.json"
+    ]
+  },
+  "Malas": {
+    "slug": "malas",
+    "arquivos": [
+      "KIPPLING.json"
+    ]
+  },
+  "Masculino": {
+    "slug": "masculino",
+    "subcategorias": {
+      "Calçados": {
+        "slug": "masculino/calcados",
+        "subcategorias": {
+          "Tênis": {
+            "slug": "masculino/calcados/tenis",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Chuteiras": {
+            "slug": "masculino/calcados/chuteiras",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Snkrs": {
+            "slug": "masculino/calcados/snkrs",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Chinelos & Sandálias": {
+            "slug": "masculino/calcados/chinelos-and-sandalias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      },
+      "Roupas": {
+        "slug": "masculino/roupas",
+        "subcategorias": {
+          "Camisetas": {
+            "slug": "masculino/roupas/camisetas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Shorts": {
+            "slug": "masculino/roupas/shorts",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Jaquetas & Moletons": {
+            "slug": "masculino/roupas/jaquetas-and-moletons",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Calças & Leggings": {
+            "slug": "masculino/roupas/calcas-and-leggings",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "SCCP": {
+            "slug": "masculino/roupas/sccp",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "masculino/acessorios",
+        "subcategorias": {
+          "Bolsas & Mochilas": {
+            "slug": "masculino/acessorios/bolsas-and-mochilas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Meias": {
+            "slug": "masculino/acessorios/meias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Feminino": {
+    "slug": "feminino",
+    "subcategorias": {
+      "Roupas": {
+        "slug": "feminino/roupas",
+        "subcategorias": {
+          "Shorts": {
+            "slug": "feminino/roupas/shorts",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Calças & Leggings": {
+            "slug": "feminino/roupas/calcas-and-leggings",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Tops": {
+            "slug": "feminino/roupas/tops",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Camisetas": {
+            "slug": "feminino/roupas/camisetas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Jaquetas & Moletons": {
+            "slug": "feminino/roupas/jaquetas-and-moletons",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Maiôs & Biquinis": {
+            "slug": "feminino/roupas/maios-and-biquinis",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Segunda Pele & Compressão": {
+            "slug": "feminino/roupas/segunda-pele-and-compressao",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Saias & Vestidos & Macacões": {
+            "slug": "feminino/roupas/saias-and-vestidos-and-macacoes",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "SCCP": {
+            "slug": "feminino/roupas/sccp",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      },
+      "Calçados": {
+        "slug": "feminino/calcados",
+        "subcategorias": {
+          "Tênis": {
+            "slug": "feminino/calcados/tenis",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Snkrs": {
+            "slug": "feminino/calcados/snkrs",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Chinelos & Sandálias": {
+            "slug": "feminino/calcados/chinelos-and-sandalias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Chuteiras": {
+            "slug": "feminino/calcados/chuteiras",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "feminino/acessorios",
+        "subcategorias": {
+          "Bolsas & Mochilas": {
+            "slug": "feminino/acessorios/bolsas-and-mochilas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Meias": {
+            "slug": "feminino/acessorios/meias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Unissex": {
+    "slug": "unissex",
+    "subcategorias": {
+      "Acessórios": {
+        "slug": "unissex/acessorios",
+        "subcategorias": {
+          "Bolsas & Mochilas": {
+            "slug": "unissex/acessorios/bolsas-and-mochilas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Luvas": {
+            "slug": "unissex/acessorios/luvas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Meias": {
+            "slug": "unissex/acessorios/meias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Bonés & Viseiras": {
+            "slug": "unissex/acessorios/bones-and-viseiras",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Bolas": {
+            "slug": "unissex/acessorios/bolas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Caneleiras": {
+            "slug": "unissex/acessorios/caneleiras",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Outros": {
+            "slug": "unissex/acessorios/outros",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "SCCP": {
+            "slug": "unissex/acessorios/sccp",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      },
+      "Roupas": {
+        "slug": "unissex/roupas",
+        "subcategorias": {
+          "Meias": {
+            "slug": "unissex/roupas/meias",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Camisetas": {
+            "slug": "unissex/roupas/camisetas",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Shorts": {
+            "slug": "unissex/roupas/shorts",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Jaquetas & Moletons": {
+            "slug": "unissex/roupas/jaquetas-and-moletons",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      },
+      "Calçados": {
+        "slug": "unissex/calcados",
+        "subcategorias": {
+          "Tênis": {
+            "slug": "unissex/calcados/tenis",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Snkrs": {
+            "slug": "unissex/calcados/snkrs",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Perfumaria": {
+    "slug": "perfumaria",
+    "subcategorias": {
+      "Feminino": {
+        "slug": "perfumaria/feminino",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Kits para Presente": {
+        "slug": "perfumaria/kits-para-presente",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Masculino": {
+        "slug": "perfumaria/masculino",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Unissex": {
+        "slug": "perfumaria/unissex",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Infantil": {
+        "slug": "perfumaria/infantil",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  },
+  "Maquiagem": {
+    "slug": "maquiagem",
+    "subcategorias": {
+      "Boca": {
+        "slug": "maquiagem/boca",
+        "subcategorias": {
+          "Gloss e Brilho Labial": {
+            "slug": "maquiagem/boca/gloss-e-brilho-labial",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Batom": {
+            "slug": "maquiagem/boca/batom",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Batom Líquido": {
+            "slug": "maquiagem/boca/batom-liquido",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Lip Tint": {
+            "slug": "maquiagem/boca/lip-tint",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Lápis e Delineador": {
+            "slug": "maquiagem/boca/lapis-e-delineador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Rosto": {
+        "slug": "maquiagem/rosto",
+        "subcategorias": {
+          "Base": {
+            "slug": "maquiagem/rosto/base",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Primer": {
+            "slug": "maquiagem/rosto/primer",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Demaquilante": {
+            "slug": "maquiagem/rosto/demaquilante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pó": {
+            "slug": "maquiagem/rosto/po",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Iluminador": {
+            "slug": "maquiagem/rosto/iluminador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Blush": {
+            "slug": "maquiagem/rosto/blush",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "BB Cream e CC Cream": {
+            "slug": "maquiagem/rosto/bb-cream-e-cc-cream",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Corretivo": {
+            "slug": "maquiagem/rosto/corretivo",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Fixador": {
+            "slug": "maquiagem/rosto/fixador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Olhos": {
+        "slug": "maquiagem/olhos",
+        "subcategorias": {
+          "Lápis e Delineador": {
+            "slug": "maquiagem/olhos/lapis-e-delineador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Máscara de Cílios": {
+            "slug": "maquiagem/olhos/mascara-de-cilios",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Sombra e Pigmento": {
+            "slug": "maquiagem/olhos/sombra-e-pigmento",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Kits e Looks": {
+        "slug": "maquiagem/kits-e-looks",
+        "subcategorias": {
+          "Completos": {
+            "slug": "maquiagem/kits-e-looks/completos",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pincéis": {
+            "slug": "maquiagem/kits-e-looks/pinceis",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Pincéis": {
+        "slug": "maquiagem/pinceis",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Acessórios": {
+        "slug": "maquiagem/acessorios",
+        "subcategorias": {
+          "Organizador de Maquiagem": {
+            "slug": "maquiagem/acessorios/organizador-de-maquiagem",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Apontador": {
+            "slug": "maquiagem/acessorios/apontador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Sobrancelhas": {
+        "slug": "maquiagem/sobrancelhas",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Paleta": {
+        "slug": "maquiagem/paleta",
+        "subcategorias": {
+          "Sombra": {
+            "slug": "maquiagem/paleta/sombra",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Completa": {
+            "slug": "maquiagem/paleta/completa",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Corpo e Banho": {
+    "slug": "corpo-e-banho",
+    "subcategorias": {
+      "Kits de Tratamento": {
+        "slug": "corpo-e-banho/kits-de-tratamento",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Hidratante": {
+        "slug": "corpo-e-banho/hidratante",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Óleo Corporal": {
+        "slug": "corpo-e-banho/oleo-corporal",
+        "subcategorias": {
+          "Hidratante": {
+            "slug": "corpo-e-banho/oleo-corporal/hidratante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Banho": {
+            "slug": "corpo-e-banho/oleo-corporal/banho",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Massagem": {
+            "slug": "corpo-e-banho/oleo-corporal/massagem",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Cuidados Pós-Banho": {
+        "slug": "corpo-e-banho/cuidados-pos-banho",
+        "subcategorias": {
+          "Desodorante": {
+            "slug": "corpo-e-banho/cuidados-pos-banho/desodorante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Body Spray": {
+            "slug": "corpo-e-banho/cuidados-pos-banho/body-spray",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "corpo-e-banho/acessorios",
+        "subcategorias": {
+          "Ambiente": {
+            "slug": "corpo-e-banho/acessorios/ambiente",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Nécessaire": {
+            "slug": "corpo-e-banho/acessorios/necessaire",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Soluções para Roupa": {
+            "slug": "corpo-e-banho/acessorios/solucoes-para-roupa",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Soluções para Corpo": {
+            "slug": "corpo-e-banho/acessorios/solucoes-para-corpo",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Toilette": {
+            "slug": "corpo-e-banho/acessorios/toilette",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Cuidados para o Banho": {
+        "slug": "corpo-e-banho/cuidados-para-o-banho",
+        "subcategorias": {
+          "Sabonete": {
+            "slug": "corpo-e-banho/cuidados-para-o-banho/sabonete",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Esfoliante": {
+            "slug": "corpo-e-banho/cuidados-para-o-banho/esfoliante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Barba": {
+        "slug": "corpo-e-banho/barba",
+        "subcategorias": {
+          "Pós-Barba": {
+            "slug": "corpo-e-banho/barba/pos-barba",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Produtos para o Barbear": {
+            "slug": "corpo-e-banho/barba/produtos-para-o-barbear",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Aparelhos para Barbear": {
+            "slug": "corpo-e-banho/barba/aparelhos-para-barbear",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Cuidados com a Barba": {
+            "slug": "corpo-e-banho/barba/cuidados-com-a-barba",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Protetor Solar e Bronzeamento": {
+        "slug": "corpo-e-banho/protetor-solar-e-bronzeamento",
+        "subcategorias": {
+          "Protetor Solar Corporal": {
+            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/protetor-solar-corporal",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pós-Sol": {
+            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/pos-sol",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Protetor Solar Facial": {
+            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/protetor-solar-facial",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Cuidados Íntimos": {
+        "slug": "corpo-e-banho/cuidados-intimos",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Depilação": {
+        "slug": "corpo-e-banho/depilacao",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  },
+  "Cuidados para Pele": {
+    "slug": "cuidados-para-pele",
+    "subcategorias": {
+      "Rosto": {
+        "slug": "cuidados-para-pele/rosto",
+        "subcategorias": {
+          "Hidratante": {
+            "slug": "cuidados-para-pele/rosto/hidratante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Antiacne": {
+            "slug": "cuidados-para-pele/rosto/antiacne",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Limpeza": {
+            "slug": "cuidados-para-pele/rosto/limpeza",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Anti-idade": {
+            "slug": "cuidados-para-pele/rosto/anti-idade",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Clareador de Manchas": {
+            "slug": "cuidados-para-pele/rosto/clareador-de-manchas",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Protetor Solar Facial": {
+            "slug": "cuidados-para-pele/rosto/protetor-solar-facial",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Máscara": {
+            "slug": "cuidados-para-pele/rosto/mascara",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Esfoliante": {
+            "slug": "cuidados-para-pele/rosto/esfoliante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Tônico e Adstringente": {
+            "slug": "cuidados-para-pele/rosto/tonico-e-adstringente",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Kits de Tratamento": {
+        "slug": "cuidados-para-pele/kits-de-tratamento",
+        "subcategorias": {
+          "Rosto": {
+            "slug": "cuidados-para-pele/kits-de-tratamento/rosto",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Corpo": {
+            "slug": "cuidados-para-pele/kits-de-tratamento/corpo",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Corpo": {
+        "slug": "cuidados-para-pele/corpo",
+        "subcategorias": {
+          "Hidratante": {
+            "slug": "cuidados-para-pele/corpo/hidratante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Mãos": {
+        "slug": "cuidados-para-pele/maos",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Lábios": {
+        "slug": "cuidados-para-pele/labios",
+        "subcategorias": {
+          "Hidratante": {
+            "slug": "cuidados-para-pele/labios/hidratante",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Anti-Idade": {
+            "slug": "cuidados-para-pele/labios/anti-idade",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "cuidados-para-pele/acessorios",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Olhos": {
+        "slug": "cuidados-para-pele/olhos",
+        "subcategorias": {
+          "Olheiras": {
+            "slug": "cuidados-para-pele/olhos/olheiras",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Anti-idade": {
+            "slug": "cuidados-para-pele/olhos/anti-idade",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Pés": {
+        "slug": "cuidados-para-pele/pes",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  },
+  "Cabelos": {
+    "slug": "cabelos",
+    "subcategorias": {
+      "Leave-in e Creme para Pentear": {
+        "slug": "cabelos/leave-in-e-creme-para-pentear",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Finalizador": {
+        "slug": "cabelos/finalizador",
+        "subcategorias": {
+          "Protetor Térmico": {
+            "slug": "cabelos/finalizador/protetor-termico",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Óleo Capilar": {
+            "slug": "cabelos/finalizador/oleo-capilar",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Sérum": {
+            "slug": "cabelos/finalizador/serum",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Spray Fixador": {
+            "slug": "cabelos/finalizador/spray-fixador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Volumador": {
+            "slug": "cabelos/finalizador/volumador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Kits de Tratamento": {
+        "slug": "cabelos/kits-de-tratamento",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Condicionador": {
+        "slug": "cabelos/condicionador",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Acessórios": {
+        "slug": "cabelos/acessorios",
+        "subcategorias": {
+          "Escovas e Pentes": {
+            "slug": "cabelos/acessorios/escovas-e-pentes",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Shampoo": {
+        "slug": "cabelos/shampoo",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Tratamento": {
+        "slug": "cabelos/tratamento",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      },
+      "Modelador": {
+        "slug": "cabelos/modelador",
+        "subcategorias": {
+          "Bálsamo e Creme": {
+            "slug": "cabelos/modelador/balsamo-e-creme",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pomada e Pasta": {
+            "slug": "cabelos/modelador/pomada-e-pasta",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Ativador de Cachos": {
+            "slug": "cabelos/modelador/ativador-de-cachos",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Cuidados Pessoais": {
+    "slug": "cuidados-pessoais",
+    "subcategorias": {
+      "Corpo e Banho": {
+        "slug": "cuidados-pessoais/corpo-e-banho",
+        "subcategorias": {
+          "Kits de Tratamento": {
+            "slug": "cuidados-pessoais/corpo-e-banho/kits-de-tratamento",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "cuidados-pessoais/acessorios",
+        "subcategorias": {
+          "Toilette": {
+            "slug": "cuidados-pessoais/acessorios/toilette",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Bem Estar & Saúde": {
+    "slug": "bem-estar-and-saude",
+    "subcategorias": {
+      "Beleza Pet": {
+        "slug": "bem-estar-and-saude/beleza-pet",
+        "subcategorias": {
+          "Kits Pet": {
+            "slug": "bem-estar-and-saude/beleza-pet/kits-pet",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Shampoo": {
+            "slug": "bem-estar-and-saude/beleza-pet/shampoo",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Hidratantes": {
+            "slug": "bem-estar-and-saude/beleza-pet/hidratantes",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Condicionadores": {
+            "slug": "bem-estar-and-saude/beleza-pet/condicionadores",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Perfumes e Colônias": {
+            "slug": "bem-estar-and-saude/beleza-pet/perfumes-e-colonias",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Banhos a seco": {
+            "slug": "bem-estar-and-saude/beleza-pet/banhos-a-seco",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Lenços Umedecidos": {
+            "slug": "bem-estar-and-saude/beleza-pet/lencos-umedecidos",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Casa": {
+        "slug": "bem-estar-and-saude/casa",
+        "subcategorias": {
+          "Kits para Casa": {
+            "slug": "bem-estar-and-saude/casa/kits-para-casa",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Velas e Aromatizadores": {
+            "slug": "bem-estar-and-saude/casa/velas-e-aromatizadores",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Decoração": {
+            "slug": "bem-estar-and-saude/casa/decoracao",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Mesa e banho": {
+            "slug": "bem-estar-and-saude/casa/mesa-e-banho",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Perfumes": {
+    "slug": "perfumes",
+    "subcategorias": {
+      "Kits para Presente": {
+        "slug": "perfumes/kits-para-presente",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+import fs from 'fs';
+import path from 'path';
+import slugify from 'slugify';
+
+const pastaOrigem = path.join(process.cwd(), 'out', 'data');
+const destino = path.join(process.cwd(), 'public', 'categorias.json');
+
+const arquivos = fs.readdirSync(pastaOrigem).filter(file => file.endsWith('.json'));
+const categorias = {};
+
+function slug(str) {
+  return slugify(str, { lower: true, strict: true });
+}
+
+for (const nomeArquivo of arquivos) {
+  const caminho = path.join(pastaOrigem, nomeArquivo);
+  const conteudo = JSON.parse(fs.readFileSync(caminho, 'utf-8'));
+
+  for (const produto of conteudo) {
+    const caminhoCategoria = produto?.cat?.mCat;
+    if (!caminhoCategoria) continue;
+
+    const partes = caminhoCategoria.split('>').map(s => s.trim());
+    let atual = categorias;
+
+    for (let i = 0; i < partes.length; i++) {
+      const nome = partes[i];
+
+      if (!atual[nome]) {
+        atual[nome] = {
+          slug: partes.slice(0, i + 1).map(slug).join('/'),
+        };
+      }
+
+      if (i === partes.length - 1) {
+        // último nível → incluir o arquivo de origem
+        if (!atual[nome].arquivos) atual[nome].arquivos = new Set();
+        atual[nome].arquivos.add(nomeArquivo);
+      } else {
+        if (!atual[nome].subcategorias) atual[nome].subcategorias = {};
+        atual = atual[nome].subcategorias;
+      }
+    }
+  }
+}
+
+// ⚠️ Convert Set → Array para salvar no JSON
+function converterSets(obj) {
+  for (const chave in obj) {
+    if (obj[chave].arquivos) {
+      obj[chave].arquivos = Array.from(obj[chave].arquivos);
+    }
+    if (obj[chave].subcategorias) {
+      converterSets(obj[chave].subcategorias);
+    }
+  }
+}
+converterSets(categorias);
+
+// 💾 Salvar o JSON final
+fs.writeFileSync(destino, JSON.stringify(categorias, null, 2), 'utf-8');
+
+console.log('✅ categorias.json gerado com sucesso em /public/categorias.json');
