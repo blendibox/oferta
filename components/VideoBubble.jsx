@@ -154,6 +154,11 @@ export default function VideoBubble({ title }) {
       </button>
 
       <div className={styles["video-controls"]}>
+	    <button id="comprarBtn" className="inline-block mt-4 bg-emerald-600 text-white px-4 py-2 rounded text-xl">
+         <Link href="https://www.blendibox.com.br/bolsa-puffer-3-em-1-de-ombro-transversal-e-mochila-blendibox/p">
+		  COMPRAR
+		 </Link>
+        </button>
         <button id="pauseBtn" onClick={togglePause}>
           <img
             id="pauseIcon"

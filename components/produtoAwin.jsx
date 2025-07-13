@@ -29,10 +29,10 @@ export default function ProdutoAwin(props) {
 			title={produto['text']['name']}
 		  >     
 		 <Image
-			src={produto['uri']['awImage']}
+			src={produto['uri']['mImage']}
 			alt={produto['text']['name']}
-			width={600}
-			height={600}
+			width={406}
+			height={406}
 			className="rounded "
 		  />
 	     </Link>
@@ -40,9 +40,9 @@ export default function ProdutoAwin(props) {
 		  <Link
 			href={produto['uri']['awTrack']}
 			className="inline-block mt-4  px-4 py-2 rounded underline decoration-emerald-500"
-			title={produto['brand'] || "MIZUNO"}
+			title={produto['brand'] || mybrand}
 		  >
-		 <b>{produto['brand'] || "MIZUNO"}</b>
+		 <b>{produto['brand'] || mybrand}</b>
 
           </Link>		 
 		  </h2>
@@ -57,8 +57,8 @@ export default function ProdutoAwin(props) {
 		 <Image
 			src={produto['uri']['awImage']}
 			alt={produto['text']['name']}
-			width={300}
-			height={300}
+			width={250}
+			height={250}
 			className="rounded "
 		  />
 	     </Link>
