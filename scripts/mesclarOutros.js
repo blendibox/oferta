@@ -25,7 +25,7 @@ const diretoriosLote = fs
   fs.rmSync(diretorioFinal, { recursive: true, force: true });
 }*/
 
-fs.mkdirSync(diretorioFinal);
+//fs.mkdirSync(diretorioFinal);
 
 console.log(`📦 Mesclando ${diretoriosLote.length} lotes para /out...`);
 

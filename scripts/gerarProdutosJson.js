@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { parseStringPromise } from 'xml2js';
-
+import { decode } from 'html-entities';
 
 // Função para gerar slug
 function gerarSlug(texto, id) {
@@ -63,7 +63,17 @@ async function converterTodosXMLs() {
       const produtosComSlug = produtos.map((p,i) => {
 		  
 		  
-        const nome = p['g:title']  || (p['text']?p['text']['name']:"")  || p['title'] || (p['advertisername'] + ' use este cupom ') ;
+		const nome = decode(
+		  p['g:title'] || p['text']?.['name'] || p['title'] || (p['advertisername'] + ' use este cupom ')
+		);
+		
+		if (p['g:title']) p['g:title'] = decode(p['g:title']);
+		if (p['g:description']) p['g:description'] = decode(p['g:description']);
+		if (p['title']) p['title'] = decode(p['title']);
+		if (p['text']) p['text']['desc'] = decode(p['text']['desc']);
+        if (p['text']) p['text']['name'] = decode(p['text']['name']);
+		if (p['advertisername']) p['advertisername'] = decode(p['advertisername']);
+		
         const id   = p['g:id']    || p['pId']   || i       ;
 		
 		const slug = gerarSlug(nome, id);

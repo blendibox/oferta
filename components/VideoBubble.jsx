@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import styles from "./Produto.module.css";
+import Link from 'next/link';
 
 export default function VideoBubble({ title }) {
   const bubbleRef = useRef(null);
@@ -116,7 +117,7 @@ export default function VideoBubble({ title }) {
   return (
     <div key="videobubble"
       ref={bubbleRef}
-	  title="Clique para Expandir"
+	 
       className={[
         styles["video-bubble"],
         expanded ? styles.expanded : "",
@@ -149,16 +150,19 @@ export default function VideoBubble({ title }) {
         id="closeBtn"
         className={styles["close-btn"]}
         onClick={closeBubble}
+		 title="Clique para Fechar"
       >
         ✕
       </button>
 
       <div className={styles["video-controls"]}>
-	    <button id="comprarBtn" className="inline-block mt-4 bg-emerald-600 text-white px-4 py-2 rounded text-xl">
-         <Link href="https://www.blendibox.com.br/bolsa-puffer-3-em-1-de-ombro-transversal-e-mochila-blendibox/p">
+	 
+         <Link id="comprarBtn" className="inline-block bg-emerald-600 text-white px-4 py-2 rounded text-xl"
+		 alt="Clique para Comprar"
+		  href="https://www.blendibox.com.br/bolsa-puffer-3-em-1-de-ombro-transversal-e-mochila-blendibox/p">
 		  COMPRAR
 		 </Link>
-        </button>
+    
         <button id="pauseBtn" onClick={togglePause}>
           <img
             id="pauseIcon"
