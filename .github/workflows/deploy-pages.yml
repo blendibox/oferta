@@ -19,6 +19,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Ensure out/data directory exists
+        run: mkdir -p ./out/data
+        
       - name: Checkout code
         uses: actions/checkout@v4
 

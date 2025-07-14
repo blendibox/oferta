@@ -25,7 +25,7 @@ export default function MenuPrincipal() {
 			  <Link
 				href={`/categoria/${dados.slug}`}
 				className={`flex justify-between items-center px-3 py-1 text-sm hover:bg-gray-700 rounded ${
-				  dados.subcategorias ? 'bg-gray-800 text-white font-semibold' : 'text-gray-300'
+				  dados.subcategorias ? 'bg-gray-800 text-white font-semibold' : 'text-gray-300 bg-white'
 				}`}
 			  >
 				<span>{nome}</span>
@@ -59,11 +59,11 @@ export default function MenuPrincipal() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
-                <Link href="/" className="text-white font-bold text-lg">
-                  Blendibox
+                <Link href="/" className="text-white font-bold text-sm">
+                  Compare Preço Blendibox
                 </Link>
                 <div className="hidden md:block ml-10">
-                  <div className="flex space-x-4 flex-wrap">
+                  <div className="flex space-x-2 flex-wrap">
                     {Object.entries(categorias).map(([categoria, dados]) => (
                       <div key={categoria} className="relative group">
                         <Link
@@ -95,21 +95,25 @@ export default function MenuPrincipal() {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3 flex-wrap">
-              {Object.entries(categorias).map(([categoria, dados]) => (
-                <div key={categoria}>
-                  <Link
-                    href={`/categoria/${dados.slug}`}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700"
-                  >
-                    {categoria}
-                  </Link>
-                  {dados.subcategorias && renderSubcategorias(dados.subcategorias)}
-                </div>
-              ))}
-            </div>
-          </Disclosure.Panel>
+         <Disclosure.Panel as="div" className="md:hidden">
+		  {({ close }) => (
+			<div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+			  {Object.entries(categorias).map(([categoria, dados]) => (
+				<div key={categoria}>
+				  <Link
+					href={`/categoria/${dados.slug}`}
+					onClick={() => close()}
+					className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700"
+				  >
+					{categoria}
+				  </Link>
+				  {dados.subcategorias && renderSubcategorias(dados.subcategorias, 1, close)}
+				</div>
+			  ))}
+			</div>
+		  )}
+		</Disclosure.Panel>
+		  
         </>
       )}
     </Disclosure>

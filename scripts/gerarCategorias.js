@@ -2,6 +2,16 @@ import fs from 'fs';
 import path from 'path';
 import slugify from 'slugify';
 
+const dataDir = './out/data';
+
+if (fs.existsSync(dataDir)) {
+  const files = fs.readdirSync(dataDir);
+  // continue processing files
+} else {
+  console.warn(`Directory ${dataDir} does not exist. Skipping...`);
+  // Optionally, create the directory with fs.mkdirSync(dataDir, { recursive: true });
+}
+
 const pastaOrigem = path.join(process.cwd(), 'out', 'data');
 const destino = path.join(process.cwd(), 'public', 'categorias.json');
 

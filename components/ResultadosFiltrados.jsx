@@ -15,6 +15,45 @@ function extrairPreco(valor) {
   return valor;
 }
 
+function normalizarParaComparacao(str) {
+  return str
+    .normalize('NFD')                     // remove acentos
+    .replace(/[\u0300-\u036f]/g, '')      // remove marcas diacríticas
+    .replace(/-/g, ' ')                   // converte hífen em espaço
+    .replace(/\s+/g, ' ')                 // colapsa múltiplos espaços
+    .trim()                               // remove espaços das bordas
+    .toLowerCase();                       // padroniza para minúsculas
+}
+
+function deslugify(slug) {
+	
+ // Lista de termos que devem manter o hífen
+  const manterHifen = ['anti-idade', 'auto-estima', 'pos-sol', 'meia-calça', 'leave-in','pos-barba','leave-in e creme para pentear'];
+  const preposicoesMinusculas = ['de', 'da', 'do', 'das', 'dos', 'para', 'e'];
+  const conectores = { and: '&' };
+  
+    if (manterHifen.includes(slug)) {
+		return slug
+		  .split('-')
+		  .map((palavra, i) => {
+			  if (conectores[palavra]) return conectores[palavra];
+			  if (preposicoesMinusculas.includes(palavra) && i !== 0) return palavra;
+			  return palavra.charAt(0).toUpperCase() + palavra.slice(1);
+			})
+		  .join('-'); // mantém o hífen
+	  }
+
+  return slug
+    .split('-')
+    .map((palavra, i) => {
+      if (conectores[palavra]) return conectores[palavra];
+      if (preposicoesMinusculas.includes(palavra) && i !== 0) return palavra;
+      return palavra.charAt(0).toUpperCase() + palavra.slice(1);
+    })
+    .join(' ');
+  
+}
+
 function buscarCategoriaPorSlug(slugArray, categorias, caminho = []) {
   for (const [nome, dados] of Object.entries(categorias)) {
     const slugCompleto = dados.slug || [...caminho, nome.toLowerCase()].join('/');
@@ -32,6 +71,10 @@ function buscarCategoriaPorSlug(slugArray, categorias, caminho = []) {
 export default function ResultadosFiltrados() {
   const pathname = usePathname();
   const slugAtual = pathname.replace(/^\/categoria\//, '').split('/').filter(Boolean);
+  const caminhoCategoria = slugAtual
+  .map(slug => deslugify(slug))
+  .join(' > ')
+  .toLowerCase();
 
   const [categorias, setCategorias] = useState({});
   const [produtos, setProdutos] = useState([]);
@@ -84,9 +127,13 @@ export default function ResultadosFiltrados() {
 				// Galvic: detecta se é o formato com "g:title"
 				const isGalvic = !!p['g:title'];
 				
-				   const precoBruto = isGalvic
-              ? extrairPreco(p['g:price'])
-              : extrairPreco(p?.price?.buynow);
+				const precoBruto = isGalvic
+				  ? extrairPreco(p['g:price'])
+				  : extrairPreco(p?.price?.buynow);
+			  
+			    const categoriaTexto = isGalvic
+				  ? '' // ou p['g:categoria'] se existir
+				  : (p?.cat?.mCat || '').toLowerCase();
 
 				const padronizado = {
 					nome: isGalvic ? p['g:title'] : p?.text?.name || '',
@@ -98,10 +145,16 @@ export default function ResultadosFiltrados() {
 					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
 					marca: isGalvic ? p['g:brand'] : nomeMarca,
 					origem: nomeMarca,
+					categoria: categoriaTexto
 				  };
 
 				return { ...p, _padronizado: padronizado };
-		   });
+		   })
+		     // 🧠 Aqui está o filtro por categoria!
+            .filter(p =>
+			  normalizarParaComparacao(p._padronizado?.categoria || '').startsWith(normalizarParaComparacao(caminhoCategoria))
+			);
+		   ;
 
 		   todos.push(...normalizados);
 		  } catch (e) {
@@ -150,18 +203,20 @@ export default function ResultadosFiltrados() {
   
   
   if (!categoriaSelecionada) {
-  return <p className="p-6 text-center text-gray-500">Carregando categoria...</p>;
+  return <p className="p-6 text-center text-gray-500"></p>;
 }
 
 
 console.log('📂 URL slugAtual:', slugAtual);
 console.log('📁 Todas categorias:', categorias);
 console.log('🔍 Categoria encontrada:', categoriaSelecionada);
+console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
+
 
   return (
     <div className="mt-6">
       <h2 className="text-2xl font-semibold mb-4 capitalize">
-        {slugAtual.join(' > ')}
+        { caminhoCategoria}
       </h2>
 
       {/* Filtros */}
@@ -185,7 +240,6 @@ console.log('🔍 Categoria encontrada:', categoriaSelecionada);
           onChange={(e) => setMarca(e.target.value)}
           className="border px-3 py-1 rounded bg-white"
         >
-          <option value="">Todas as marcas</option>
           {marcasDisponiveis.map((m) => (
             <option key={m} value={m}>
 			  {m.charAt(0).toUpperCase() + m.slice(1)}
