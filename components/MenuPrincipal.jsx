@@ -24,7 +24,7 @@ export default function MenuPrincipal() {
            <div key={nome} className="group relative">
 			  <Link
 				href={`/categoria/${dados.slug}`}
-				className={`flex justify-between items-center px-3 py-1 text-sm hover:bg-emerald-700 rounded ${
+				className={`flex justify-between items-center px-3 py-1 text-sm hover:bg-emerald-700  ${
 				  dados.subcategorias ? 'relative z-10 bg-emerald-500 text-white font-semibold' : 'text-emerald-500 bg-white hover:text-white '
 				}`}
 			  >
@@ -35,7 +35,7 @@ export default function MenuPrincipal() {
 			  </Link>
 
 			  {dados.subcategorias && (
-				<div className="hidden group-hover:block absolute left-full top-0 z-50  w-48 bg-white text-black shadow z-50 rounded">
+				<div className="hidden group-hover:block absolute left-full top-0 z-50  w-48 bg-white text-black shadow z-50 ">
 				  {renderSubcategorias(dados.subcategorias)}
 				</div>
 			  )}
@@ -60,7 +60,7 @@ export default function MenuPrincipal() {
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
                 <Link href="/" className="text-white font-bold text-2xl uppercase">
-                  <i>COMPARE PREÇOS</i>
+                  <i>COMPARE PREÇOS<b className="text-white">✱</b></i>
                 </Link>
                 <div className="hidden md:block ml-10">
                   <div className="flex space-x-2 flex-wrap">

@@ -141,7 +141,7 @@ export default function ResultadosFiltrados() {
 					preco: parseFloat(
 						precoBruto.replace(/[^\d,.-]/g, '').replace(',', '.')
 					  ),
-					imagem: isGalvic ? p['g:image_link'] : p?.uri?.awImage,
+					imagem: isGalvic ? p['g:image_link'] : p?.uri?.mImage,
 					slug: p.slug || '',
 					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
 					marca: isGalvic ? p['g:brand'] : nomeMarca,
@@ -224,7 +224,7 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
         <VideoBubble title="Nome do Produto | 3em1_puffer" />
       {/* Filtros */}
       <div className="flex flex-wrap gap-4 mb-6">
-        <label for='minimo' className="mt-2">Preço mínimo:</label>
+        <label htmlFor='minimo' className="mt-2">Preço mínimo:</label>
 		<input
 		  id='minimo'
           type="number"
@@ -234,7 +234,7 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
           onChange={(e) => setMinPrice(e.target.value)}
           className="border border-emerald-700 px-3 py-1 rounded bg-white"
         />
-		<label for='maximo' className="mt-2">Preço máximo:</label>
+		<label htmlFor='maximo' className="mt-2">Preço máximo:</label>
         <input
 		 id='maximo'
           type="number"
@@ -244,7 +244,7 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
           onChange={(e) => setMaxPrice(e.target.value)}
           className="border border-emerald-700 px-3 py-1 rounded bg-white"
         />
-			<label for='marca' className="mt-2">Marca:</label>
+			<label htmlFor='marca' className="mt-2">Marca:</label>
         <select
 		  id='marca'
           value={marca}
@@ -265,7 +265,7 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
       ) : produtosVisiveis.length === 0 ? (
         <p>Nenhum produto encontrado com os filtros aplicados.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
 			{produtosVisiveis.map((p, i) => (
 			  <div key={p.slug || i} className="bg-white p-4 rounded shadow hover:shadow-md transition">
 				<Link
@@ -275,24 +275,19 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 				  alt={p._padronizado?.nome}
 				  width={400}
 				  height={400}
-				  className="w-full h-48 object-cover mb-2 rounded"
+				  className="w-full h-48 object-cover mb-2 rounded saturate-[1.08] contrast-[1.08]"
 				/>
 				</Link>
 				<h3 className="font-bold text-lg">{p._padronizado?.nome}</h3>
 				<p className="text-sm text-gray-600">
 				  R$ {p._padronizado?.preco?.toFixed(2)}
 				</p>
-				<Link
-					  href={`/${p._padronizado?.origem}/${p._padronizado?.slug}`}
-					  className="text-emerald-700 underline text-sm mt-2 inline-block  hover:text-emerald-500"
-					>
-				  Ver Produto
-				</Link> 
+
 				<Link alt="ir para loja {p._padronizado?.marca}"
 					  href={p._padronizado?.link}
 					  className="ml-2 p-2 text-white bg-emerald-700 rounded text-sm mt-2 inline-block hover:bg-emerald-500"
 					>
-				  Onde Comprar
+				  Ver Produto
 				</Link>
 			  </div>
 			))}

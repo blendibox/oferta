@@ -7,7 +7,6 @@ import slugIndex from '../../../data/slugs/slug-index.json';
 
 
 
-
 // Lê todos os arquivos JSON até encontrar o produto com slug correspondente
 async function encontrarProdutoPorSlug(slug) {
 //	console.log('slug: ' + slug);
@@ -48,6 +47,19 @@ export async function generateStaticParams() {
 	  const slugs = JSON.parse(data);
 	  return slugs.map(({ slug }) => ({ title: slug }));
   
+  
+  //no momento da leitura, localizar o slug
+ 
+ // const todos =  await lerTodosSlugs(); // [{ slug: 'slug1' }, ...]
+ /* return slugs.slice(0,1000).map(p => ({
+    title: String(p.slug),
+  }));*/
+  
+  /*
+  const slugs = JSON.parse(fs.readFileSync('data//slugs/slugs-unificado.json', 'utf-8'));
+  return slugs.map(({ slug }) => ({ title: slug }));
+  
+  */
 }
 
 
@@ -86,15 +98,17 @@ export default async function Page({ params }) {
   return (
     <main>
       <Produto
-        title={produto.title}
-        image={produto.image}
+	    image={produto.image}
+        title={produto.title}       
         link={produto.link}
-        price={produto.price}
+		slug={produto.slug}
+        offer={produto.offer}      
+		price={produto.price}
+        priceGoogle={produto.priceGoogle}
         imageWidth={300}
         imageHeight={450}
-        offer={produto.offer}
-        resultado_ia={produto.resultado_ia}
-        priceGoogle={produto.priceGoogle}
+		resultado_ia={produto.resultado_ia}
+        
       />
     </main>
   );

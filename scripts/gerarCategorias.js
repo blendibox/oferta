@@ -18,8 +18,13 @@ const destino = path.join(process.cwd(), 'public', 'categorias.json');
 const arquivos = fs.readdirSync(pastaOrigem).filter(file => file.endsWith('.json'));
 const categorias = {};
 
+
 function slug(str) {
-  return slugify(str, { lower: true, strict: true });
+  return slugify(str?.trim() || '', {
+    lower: true,
+    strict: true,
+    locale: 'pt', // ajuda com acentuação em português
+  });
 }
 
 for (const nomeArquivo of arquivos) {
@@ -38,7 +43,7 @@ for (const nomeArquivo of arquivos) {
 
       if (!atual[nome]) {
         atual[nome] = {
-          slug: partes.slice(0, i + 1).map(slug).join('/'),
+          slug: partes.slice(0, i + 1).map(slug).filter(Boolean).join('/'),
         };
       }
 
