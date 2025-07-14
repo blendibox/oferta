@@ -26,7 +26,7 @@ export default async function Home() {
   const produtos2 = await lerProdutosJSON('PROMO');
 
   return (
-    <div className="m-6 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="m-2 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <div className="items-center gap-8 rounded-lg bg-white p-6 shadow-md">
         <h1 className="font-sans font-black text-center text-4xl italic text-white rounded-lg bg-emerald-500 bold p-6 m-6">
           Vem que tem <b>CUPOM</b>!*

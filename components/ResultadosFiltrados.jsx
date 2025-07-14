@@ -4,8 +4,9 @@ import { useEffect, useMemo, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import slugify from 'slugify';
 import Image from 'next/image';
-
-
+import Link from 'next/link';
+import VideoBubble from './VideoBubble'
+import BreadcrumbCategoria from './BreadcrumbCategoria';
 
 // Utilitário para tratar preço em diferentes formatos
 function extrairPreco(valor) {
@@ -140,7 +141,7 @@ export default function ResultadosFiltrados() {
 					preco: parseFloat(
 						precoBruto.replace(/[^\d,.-]/g, '').replace(',', '.')
 					  ),
-					imagem: isGalvic ? p['g:image_link'] : p?.uri?.mImage,
+					imagem: isGalvic ? p['g:image_link'] : p?.uri?.awImage,
 					slug: p.slug || '',
 					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
 					marca: isGalvic ? p['g:brand'] : nomeMarca,
@@ -206,39 +207,49 @@ export default function ResultadosFiltrados() {
   return <p className="p-6 text-center text-gray-500"></p>;
 }
 
-
+/*
 console.log('📂 URL slugAtual:', slugAtual);
 console.log('📁 Todas categorias:', categorias);
 console.log('🔍 Categoria encontrada:', categoriaSelecionada);
 console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 
-
+*/
   return (
     <div className="mt-6">
       <h2 className="text-2xl font-semibold mb-4 capitalize">
-        { caminhoCategoria}
+		
+		<BreadcrumbCategoria></BreadcrumbCategoria>
+			
       </h2>
-
+        <VideoBubble title="Nome do Produto | 3em1_puffer" />
       {/* Filtros */}
       <div className="flex flex-wrap gap-4 mb-6">
-        <input
+        <label for='minimo' className="mt-2">Preço mínimo:</label>
+		<input
+		  id='minimo'
           type="number"
-          placeholder="Preço mínimo"
+		   size="10"
+          placeholder="0"
           value={minPrice}
           onChange={(e) => setMinPrice(e.target.value)}
-          className="border px-3 py-1 rounded bg-white"
+          className="border border-emerald-700 px-3 py-1 rounded bg-white"
         />
+		<label for='maximo' className="mt-2">Preço máximo:</label>
         <input
+		 id='maximo'
           type="number"
-          placeholder="Preço máximo"
+		  size="10"
+          placeholder="9999"
           value={maxPrice}
           onChange={(e) => setMaxPrice(e.target.value)}
-          className="border px-3 py-1 rounded bg-white"
+          className="border border-emerald-700 px-3 py-1 rounded bg-white"
         />
+			<label for='marca' className="mt-2">Marca:</label>
         <select
+		  id='marca'
           value={marca}
           onChange={(e) => setMarca(e.target.value)}
-          className="border px-3 py-1 rounded bg-white"
+          className="border border-emerald-700 px-3 py-1 rounded bg-white"
         >
           {marcasDisponiveis.map((m) => (
             <option key={m} value={m}>
@@ -257,23 +268,32 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 			{produtosVisiveis.map((p, i) => (
 			  <div key={p.slug || i} className="bg-white p-4 rounded shadow hover:shadow-md transition">
+				<Link
+					  href={p._padronizado?.link}>
 				<Image
 				  src={p._padronizado?.imagem}
 				  alt={p._padronizado?.nome}
 				  width={400}
 				  height={400}
-				  className="w-full h-48 object-cover mb-2"
+				  className="w-full h-48 object-cover mb-2 rounded"
 				/>
+				</Link>
 				<h3 className="font-bold text-lg">{p._padronizado?.nome}</h3>
 				<p className="text-sm text-gray-600">
 				  R$ {p._padronizado?.preco?.toFixed(2)}
 				</p>
-				<a
+				<Link
 					  href={`/${p._padronizado?.origem}/${p._padronizado?.slug}`}
-					  className="text-emerald-600 underline text-sm mt-2 inline-block"
+					  className="text-emerald-700 underline text-sm mt-2 inline-block  hover:text-emerald-500"
 					>
 				  Ver Produto
-				</a>
+				</Link> 
+				<Link alt="ir para loja {p._padronizado?.marca}"
+					  href={p._padronizado?.link}
+					  className="ml-2 p-2 text-white bg-emerald-700 rounded text-sm mt-2 inline-block hover:bg-emerald-500"
+					>
+				  Onde Comprar
+				</Link>
 			  </div>
 			))}
         </div>
@@ -286,8 +306,8 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
             <button
               key={num}
               onClick={() => setCurrentPage(num)}
-              className={`px-3 py-1 rounded border ${
-                currentPage === num ? 'bg-emerald-600 text-white' : 'bg-white text-black'
+              className={`px-3 py-1  border-emerald-700 rounded border ${
+                currentPage === num ? 'bg-emerald-700 text-white' : 'bg-white text-emerald-700'
               }`}
             >
               {num}
