@@ -12,7 +12,7 @@ if (fs.existsSync(dataDir)) {
   // Optionally, create the directory with fs.mkdirSync(dataDir, { recursive: true });
 }
 
-const pastaOrigem = path.join(process.cwd(), 'out', 'data');
+const pastaOrigem = path.join(process.cwd(), 'public', 'data');
 const destino = path.join(process.cwd(), 'public', 'categorias.json');
 
 const arquivos = fs.readdirSync(pastaOrigem).filter(file => file.endsWith('.json'));
