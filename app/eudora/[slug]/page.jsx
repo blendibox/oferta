@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const produtos = await lerProdutosJSON('eudora');
+  const produtos = await lerProdutosJSON('EUDORA');
   const produto = produtos.find(p =>
     p['slug'] === params.slug
   );
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-  const produtos = await lerProdutosJSON('eudora');
+  const produtos = await lerProdutosJSON('EUDORA');
   const produto = produtos.find(p =>
     p['slug'] === params.slug
   );
