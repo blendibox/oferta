@@ -4,6 +4,7 @@ import ResultadosFiltrados from '../components/ResultadosFiltrados';
 import CompararProdutos    from '../components/CompararProdutos';
 import BreadcrumbCategoria from '../components/BreadcrumbCategoria';
 import Footer    from '../components/footer';
+import { Suspense } from 'react';
 
 export const metadata = {
   title: 'Blendibox Ofertas',
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
 		</head>   
         <body className="flex min-h-screen  relative z-0 overflow-visible">
 		 <div className="flex w-full">
-	        <MenuPrincipal />		    
+		   <Suspense fallback={<div>Carregando busca...</div>}>	
+	          <MenuPrincipal />	
+           </Suspense>			
 		    <div className="flex-1 max-w-7xl mx-auto px-4">
 		      <div className="max-w-7xl mx-auto px-4">
 			  	     <h2 className="text-2xl font-semibold mb-4 capitalize mt-6">
@@ -32,8 +35,10 @@ export default function RootLayout({ children }) {
 					  </h2>
 				  
 				  <ResultadosFiltrados />
-				  <div className="m-10"><hr /></div>			  
-				  <CompararProdutos/>
+				  <div className="m-10"><hr /></div>	
+                    <Suspense fallback={<div>Carregando busca...</div>}>				  
+				      <CompararProdutos/>
+				    </Suspense>
 				  <main className="mt-8">
 					{children}
 				  </main>

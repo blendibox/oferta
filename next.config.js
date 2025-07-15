@@ -14,13 +14,14 @@ let dominios = JSON.parse(
 dominios.push('images2.productserve.com'); // padrão awin
 dominios.push('cdn.shopify.com'); //usado por awin GALVIC
 dominios.push('stanley.fbitsstatic.net'); //usado por awin STANLEY
-dominios.push('res.cloudinary.com/beleza-na-web');  //usado por awin OBOTICARIO E BELEZANAWEB
+dominios.push('res.cloudinary.com/beleza-na-web');  //usado por awin OBOTICARIO E BELEZANAWEB e EUDORA
 dominios.push('kipling.vteximg.com.br'); //usado por awin KIPPLING 
 dominios.push('imgnike-a.akamaihd.net'); //usado por awin NIKE 
 dominios.push('mizunobr.vteximg.com.br'); //usado por awin MIZUNO 
-
-
-
+dominios.push('cea.vteximg.com.br'); //usado por awin C&A 
+dominios.push('imgcentauro-a.akamaihd.net'); //usado por awin Centauro 
+dominios.push('www.nescafe-dolcegusto.com.br'); //usado por awin Dolcegusto 
+dominios.push('www.nescafe-dolcegusto.com.br'); //usado por awin Dolcegusto 
 
 const nextConfig = {
 	output: 'export',

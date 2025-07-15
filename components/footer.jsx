@@ -38,10 +38,10 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold mb-2 uppercase text-gray-300">Institucional</h3>
           <ul className="space-y-1 text-sm">
-            <li><button onClick={() => navegarComScroll('/sobre')} className="hover:underline text-gray-400">Sobre nós</button></li>
-            <li><button onClick={() => navegarComScroll('/termos')} className="hover:underline text-gray-400">Termos de Uso</button></li>
-            <li><button onClick={() => navegarComScroll('/privacidade')} className="hover:underline text-gray-400">Privacidade</button></li>
-            <li><button onClick={() => navegarComScroll('/contato')} className="hover:underline text-gray-400">Contato</button></li>
+            <li><button onClick={() => navegarComScroll('/sobre#sobre-nos')} className="hover:underline text-gray-400">Sobre nós</button></li>
+            <li><button onClick={() => navegarComScroll('/sobre#termos')} className="hover:underline text-gray-400">Termos de Uso</button></li>
+            <li><button onClick={() => navegarComScroll('/sobre#privacidade')} className="hover:underline text-gray-400">Privacidade</button></li>
+            <li><button onClick={() => navegarComScroll('/sobre#contato')} className="hover:underline text-gray-400">Contato</button></li>
           </ul>
         </div>
 

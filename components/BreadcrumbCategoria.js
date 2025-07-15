@@ -82,10 +82,6 @@ export default function BreadcrumbCategoria() {
     if (categoriaObj && categoriaObj.arquivos && categoriaObj.arquivos.length > 0) {
 		 // Só navega para a categoria normalmente
       router.push(`/categoria/${caminho.join('/')}`);
-    
-    } else {
-       // Aqui você pode chamar uma função para buscar produtos ou navegar para a página de produtos
-      router.push(`/busca/${categoriaObj.slug}`); // ou como sua página de produtos funciona
     }
   }
   
