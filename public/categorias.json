@@ -7692,6 +7692,907 @@
       "DOLCEGUSTO.json"
     ]
   },
+  "Perfumaria": {
+    "slug": "perfumaria",
+    "subcategorias": {
+      "Feminino": {
+        "slug": "perfumaria/feminino",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Masculino": {
+        "slug": "perfumaria/masculino",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Kits para Presente": {
+        "slug": "perfumaria/kits-para-presente",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Infantil": {
+        "slug": "perfumaria/infantil",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Unissex": {
+        "slug": "perfumaria/unissex",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  },
+  "Corpo e Banho": {
+    "slug": "corpo-e-banho",
+    "subcategorias": {
+      "Hidratante": {
+        "slug": "corpo-e-banho/hidratante",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Acessórios": {
+        "slug": "corpo-e-banho/acessorios",
+        "subcategorias": {
+          "Soluções para Corpo": {
+            "slug": "corpo-e-banho/acessorios/solucoes-para-corpo",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Nécessaire": {
+            "slug": "corpo-e-banho/acessorios/necessaire",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Toilette": {
+            "slug": "corpo-e-banho/acessorios/toilette",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Ambiente": {
+            "slug": "corpo-e-banho/acessorios/ambiente",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Soluções para Roupa": {
+            "slug": "corpo-e-banho/acessorios/solucoes-para-roupa",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Kits de Tratamento": {
+        "slug": "corpo-e-banho/kits-de-tratamento",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Cuidados Pós-Banho": {
+        "slug": "corpo-e-banho/cuidados-pos-banho",
+        "subcategorias": {
+          "Body Spray": {
+            "slug": "corpo-e-banho/cuidados-pos-banho/body-spray",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Desodorante": {
+            "slug": "corpo-e-banho/cuidados-pos-banho/desodorante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Cuidados para o Banho": {
+        "slug": "corpo-e-banho/cuidados-para-o-banho",
+        "subcategorias": {
+          "Sabonete": {
+            "slug": "corpo-e-banho/cuidados-para-o-banho/sabonete",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Esfoliante": {
+            "slug": "corpo-e-banho/cuidados-para-o-banho/esfoliante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Barba": {
+        "slug": "corpo-e-banho/barba",
+        "subcategorias": {
+          "Produtos para o Barbear": {
+            "slug": "corpo-e-banho/barba/produtos-para-o-barbear",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pós-Barba": {
+            "slug": "corpo-e-banho/barba/pos-barba",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Aparelhos para Barbear": {
+            "slug": "corpo-e-banho/barba/aparelhos-para-barbear",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Cuidados com a Barba": {
+            "slug": "corpo-e-banho/barba/cuidados-com-a-barba",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Óleo Corporal": {
+        "slug": "corpo-e-banho/oleo-corporal",
+        "subcategorias": {
+          "Hidratante": {
+            "slug": "corpo-e-banho/oleo-corporal/hidratante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Banho": {
+            "slug": "corpo-e-banho/oleo-corporal/banho",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Massagem": {
+            "slug": "corpo-e-banho/oleo-corporal/massagem",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Cuidados Íntimos": {
+        "slug": "corpo-e-banho/cuidados-intimos",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Protetor Solar e Bronzeamento": {
+        "slug": "corpo-e-banho/protetor-solar-e-bronzeamento",
+        "subcategorias": {
+          "Protetor Solar Corporal": {
+            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/protetor-solar-corporal",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pós-Sol": {
+            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/pos-sol",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Protetor Solar Facial": {
+            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/protetor-solar-facial",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Depilação": {
+        "slug": "corpo-e-banho/depilacao",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  },
+  "Maquiagem": {
+    "slug": "maquiagem",
+    "subcategorias": {
+      "Rosto": {
+        "slug": "maquiagem/rosto",
+        "subcategorias": {
+          "Iluminador": {
+            "slug": "maquiagem/rosto/iluminador",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Blush": {
+            "slug": "maquiagem/rosto/blush",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Demaquilante": {
+            "slug": "maquiagem/rosto/demaquilante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Corretivo": {
+            "slug": "maquiagem/rosto/corretivo",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Base": {
+            "slug": "maquiagem/rosto/base",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pó": {
+            "slug": "maquiagem/rosto/po",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Primer": {
+            "slug": "maquiagem/rosto/primer",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "BB Cream e CC Cream": {
+            "slug": "maquiagem/rosto/bb-cream-e-cc-cream",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Bronzer e Contorno": {
+            "slug": "maquiagem/rosto/bronzer-e-contorno",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Fixador": {
+            "slug": "maquiagem/rosto/fixador",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Unhas": {
+        "slug": "maquiagem/unhas",
+        "subcategorias": {
+          "Esmaltes": {
+            "slug": "maquiagem/unhas/esmaltes",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          }
+        }
+      },
+      "Olhos": {
+        "slug": "maquiagem/olhos",
+        "subcategorias": {
+          "Máscara de Cílios": {
+            "slug": "maquiagem/olhos/mascara-de-cilios",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Lápis e Delineador": {
+            "slug": "maquiagem/olhos/lapis-e-delineador",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Sombra e Pigmento": {
+            "slug": "maquiagem/olhos/sombra-e-pigmento",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Paleta": {
+        "slug": "maquiagem/paleta",
+        "subcategorias": {
+          "Sombra": {
+            "slug": "maquiagem/paleta/sombra",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Completa": {
+            "slug": "maquiagem/paleta/completa",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Pincéis": {
+        "slug": "maquiagem/pinceis",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Boca": {
+        "slug": "maquiagem/boca",
+        "subcategorias": {
+          "Gloss e Brilho Labial": {
+            "slug": "maquiagem/boca/gloss-e-brilho-labial",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Batom": {
+            "slug": "maquiagem/boca/batom",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Batom Líquido": {
+            "slug": "maquiagem/boca/batom-liquido",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Lápis e Delineador": {
+            "slug": "maquiagem/boca/lapis-e-delineador",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Lip Tint": {
+            "slug": "maquiagem/boca/lip-tint",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Kits e Looks": {
+        "slug": "maquiagem/kits-e-looks",
+        "subcategorias": {
+          "Completos": {
+            "slug": "maquiagem/kits-e-looks/completos",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Pincéis": {
+            "slug": "maquiagem/kits-e-looks/pinceis",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "maquiagem/acessorios",
+        "subcategorias": {
+          "Organizador de Maquiagem": {
+            "slug": "maquiagem/acessorios/organizador-de-maquiagem",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Espelho": {
+            "slug": "maquiagem/acessorios/espelho",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Curvador de Cílios": {
+            "slug": "maquiagem/acessorios/curvador-de-cilios",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Apontador": {
+            "slug": "maquiagem/acessorios/apontador",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Sobrancelhas": {
+        "slug": "maquiagem/sobrancelhas",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  },
+  "Cabelos": {
+    "slug": "cabelos",
+    "subcategorias": {
+      "Shampoo": {
+        "slug": "cabelos/shampoo",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Tratamento": {
+        "slug": "cabelos/tratamento",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Condicionador": {
+        "slug": "cabelos/condicionador",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Leave-in e Creme para Pentear": {
+        "slug": "cabelos/leave-in-e-creme-para-pentear",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Kits de Tratamento": {
+        "slug": "cabelos/kits-de-tratamento",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Modelador": {
+        "slug": "cabelos/modelador",
+        "subcategorias": {
+          "Gel": {
+            "slug": "cabelos/modelador/gel",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Pomada e Pasta": {
+            "slug": "cabelos/modelador/pomada-e-pasta",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Bálsamo e Creme": {
+            "slug": "cabelos/modelador/balsamo-e-creme",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Ativador de Cachos": {
+            "slug": "cabelos/modelador/ativador-de-cachos",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Finalizador": {
+        "slug": "cabelos/finalizador",
+        "subcategorias": {
+          "Reparador de Pontas": {
+            "slug": "cabelos/finalizador/reparador-de-pontas",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Sérum": {
+            "slug": "cabelos/finalizador/serum",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Óleo Capilar": {
+            "slug": "cabelos/finalizador/oleo-capilar",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Protetor Térmico": {
+            "slug": "cabelos/finalizador/protetor-termico",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Spray Fixador": {
+            "slug": "cabelos/finalizador/spray-fixador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Volumador": {
+            "slug": "cabelos/finalizador/volumador",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "cabelos/acessorios",
+        "subcategorias": {
+          "Refis": {
+            "slug": "cabelos/acessorios/refis",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Escovas e Pentes": {
+            "slug": "cabelos/acessorios/escovas-e-pentes",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Presilhas e Elásticos": {
+            "slug": "cabelos/acessorios/presilhas-e-elasticos",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Cuidados para Pele": {
+    "slug": "cuidados-para-pele",
+    "subcategorias": {
+      "Rosto": {
+        "slug": "cuidados-para-pele/rosto",
+        "subcategorias": {
+          "Clareador de Manchas": {
+            "slug": "cuidados-para-pele/rosto/clareador-de-manchas",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Limpeza": {
+            "slug": "cuidados-para-pele/rosto/limpeza",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Hidratante": {
+            "slug": "cuidados-para-pele/rosto/hidratante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Anti-idade": {
+            "slug": "cuidados-para-pele/rosto/anti-idade",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Tônico e Adstringente": {
+            "slug": "cuidados-para-pele/rosto/tonico-e-adstringente",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Esfoliante": {
+            "slug": "cuidados-para-pele/rosto/esfoliante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Protetor Solar Facial": {
+            "slug": "cuidados-para-pele/rosto/protetor-solar-facial",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Antiacne": {
+            "slug": "cuidados-para-pele/rosto/antiacne",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Máscara": {
+            "slug": "cuidados-para-pele/rosto/mascara",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Kits de Tratamento": {
+        "slug": "cuidados-para-pele/kits-de-tratamento",
+        "subcategorias": {
+          "Rosto": {
+            "slug": "cuidados-para-pele/kits-de-tratamento/rosto",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Corpo": {
+            "slug": "cuidados-para-pele/kits-de-tratamento/corpo",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Corpo": {
+        "slug": "cuidados-para-pele/corpo",
+        "subcategorias": {
+          "Hidratante": {
+            "slug": "cuidados-para-pele/corpo/hidratante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Mãos": {
+        "slug": "cuidados-para-pele/maos",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Lábios": {
+        "slug": "cuidados-para-pele/labios",
+        "subcategorias": {
+          "Hidratante": {
+            "slug": "cuidados-para-pele/labios/hidratante",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Anti-Idade": {
+            "slug": "cuidados-para-pele/labios/anti-idade",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Olhos": {
+        "slug": "cuidados-para-pele/olhos",
+        "subcategorias": {
+          "Anti-idade": {
+            "slug": "cuidados-para-pele/olhos/anti-idade",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          },
+          "Olheiras": {
+            "slug": "cuidados-para-pele/olhos/olheiras",
+            "arquivos": [
+              "EUDORA.json",
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "cuidados-para-pele/acessorios",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Pés": {
+        "slug": "cuidados-para-pele/pes",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ]
+      }
+    }
+  },
+  "Perfumes": {
+    "slug": "perfumes",
+    "subcategorias": {
+      "Kits para Presente": {
+        "slug": "perfumes/kits-para-presente",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ]
+      },
+      "Masculino": {
+        "slug": "perfumes/masculino",
+        "arquivos": [
+          "EUDORA.json"
+        ]
+      }
+    }
+  },
+  "Cuidados Pessoais": {
+    "slug": "cuidados-pessoais",
+    "subcategorias": {
+      "Corpo e Banho": {
+        "slug": "cuidados-pessoais/corpo-e-banho",
+        "subcategorias": {
+          "Hidratante Corporal": {
+            "slug": "cuidados-pessoais/corpo-e-banho/hidratante-corporal",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Kits de Tratamento": {
+            "slug": "cuidados-pessoais/corpo-e-banho/kits-de-tratamento",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Acessórios": {
+        "slug": "cuidados-pessoais/acessorios",
+        "subcategorias": {
+          "Toilette": {
+            "slug": "cuidados-pessoais/acessorios/toilette",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Bem Estar & Saúde": {
+    "slug": "bem-estar-e-saude",
+    "subcategorias": {
+      "Casa": {
+        "slug": "bem-estar-e-saude/casa",
+        "subcategorias": {
+          "Acessórios": {
+            "slug": "bem-estar-e-saude/casa/acessorios",
+            "arquivos": [
+              "EUDORA.json"
+            ]
+          },
+          "Kits para Casa": {
+            "slug": "bem-estar-e-saude/casa/kits-para-casa",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Velas e Aromatizadores": {
+            "slug": "bem-estar-e-saude/casa/velas-e-aromatizadores",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Decoração": {
+            "slug": "bem-estar-e-saude/casa/decoracao",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Mesa e banho": {
+            "slug": "bem-estar-e-saude/casa/mesa-e-banho",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      },
+      "Beleza Pet": {
+        "slug": "bem-estar-e-saude/beleza-pet",
+        "subcategorias": {
+          "Kits Pet": {
+            "slug": "bem-estar-e-saude/beleza-pet/kits-pet",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Shampoo": {
+            "slug": "bem-estar-e-saude/beleza-pet/shampoo",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Hidratantes": {
+            "slug": "bem-estar-e-saude/beleza-pet/hidratantes",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Condicionadores": {
+            "slug": "bem-estar-e-saude/beleza-pet/condicionadores",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Perfumes e Colônias": {
+            "slug": "bem-estar-e-saude/beleza-pet/perfumes-e-colonias",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Banhos a seco": {
+            "slug": "bem-estar-e-saude/beleza-pet/banhos-a-seco",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          },
+          "Lenços Umedecidos": {
+            "slug": "bem-estar-e-saude/beleza-pet/lencos-umedecidos",
+            "arquivos": [
+              "OBOTICARIO.json"
+            ]
+          }
+        }
+      }
+    }
+  },
   "Escolares": {
     "slug": "escolares",
     "arquivos": [
@@ -8013,766 +8914,6 @@
             ]
           }
         }
-      }
-    }
-  },
-  "Perfumaria": {
-    "slug": "perfumaria",
-    "subcategorias": {
-      "Feminino": {
-        "slug": "perfumaria/feminino",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Kits para Presente": {
-        "slug": "perfumaria/kits-para-presente",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Masculino": {
-        "slug": "perfumaria/masculino",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Unissex": {
-        "slug": "perfumaria/unissex",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Infantil": {
-        "slug": "perfumaria/infantil",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      }
-    }
-  },
-  "Maquiagem": {
-    "slug": "maquiagem",
-    "subcategorias": {
-      "Boca": {
-        "slug": "maquiagem/boca",
-        "subcategorias": {
-          "Gloss e Brilho Labial": {
-            "slug": "maquiagem/boca/gloss-e-brilho-labial",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Batom": {
-            "slug": "maquiagem/boca/batom",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Batom Líquido": {
-            "slug": "maquiagem/boca/batom-liquido",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Lip Tint": {
-            "slug": "maquiagem/boca/lip-tint",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Lápis e Delineador": {
-            "slug": "maquiagem/boca/lapis-e-delineador",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Rosto": {
-        "slug": "maquiagem/rosto",
-        "subcategorias": {
-          "Base": {
-            "slug": "maquiagem/rosto/base",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Primer": {
-            "slug": "maquiagem/rosto/primer",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Demaquilante": {
-            "slug": "maquiagem/rosto/demaquilante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Pó": {
-            "slug": "maquiagem/rosto/po",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Iluminador": {
-            "slug": "maquiagem/rosto/iluminador",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Blush": {
-            "slug": "maquiagem/rosto/blush",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "BB Cream e CC Cream": {
-            "slug": "maquiagem/rosto/bb-cream-e-cc-cream",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Corretivo": {
-            "slug": "maquiagem/rosto/corretivo",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Fixador": {
-            "slug": "maquiagem/rosto/fixador",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Olhos": {
-        "slug": "maquiagem/olhos",
-        "subcategorias": {
-          "Lápis e Delineador": {
-            "slug": "maquiagem/olhos/lapis-e-delineador",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Máscara de Cílios": {
-            "slug": "maquiagem/olhos/mascara-de-cilios",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Sombra e Pigmento": {
-            "slug": "maquiagem/olhos/sombra-e-pigmento",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Kits e Looks": {
-        "slug": "maquiagem/kits-e-looks",
-        "subcategorias": {
-          "Completos": {
-            "slug": "maquiagem/kits-e-looks/completos",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Pincéis": {
-            "slug": "maquiagem/kits-e-looks/pinceis",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Pincéis": {
-        "slug": "maquiagem/pinceis",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Acessórios": {
-        "slug": "maquiagem/acessorios",
-        "subcategorias": {
-          "Organizador de Maquiagem": {
-            "slug": "maquiagem/acessorios/organizador-de-maquiagem",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Apontador": {
-            "slug": "maquiagem/acessorios/apontador",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Sobrancelhas": {
-        "slug": "maquiagem/sobrancelhas",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Paleta": {
-        "slug": "maquiagem/paleta",
-        "subcategorias": {
-          "Sombra": {
-            "slug": "maquiagem/paleta/sombra",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Completa": {
-            "slug": "maquiagem/paleta/completa",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      }
-    }
-  },
-  "Corpo e Banho": {
-    "slug": "corpo-e-banho",
-    "subcategorias": {
-      "Kits de Tratamento": {
-        "slug": "corpo-e-banho/kits-de-tratamento",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Hidratante": {
-        "slug": "corpo-e-banho/hidratante",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Óleo Corporal": {
-        "slug": "corpo-e-banho/oleo-corporal",
-        "subcategorias": {
-          "Hidratante": {
-            "slug": "corpo-e-banho/oleo-corporal/hidratante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Banho": {
-            "slug": "corpo-e-banho/oleo-corporal/banho",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Massagem": {
-            "slug": "corpo-e-banho/oleo-corporal/massagem",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Cuidados Pós-Banho": {
-        "slug": "corpo-e-banho/cuidados-pos-banho",
-        "subcategorias": {
-          "Desodorante": {
-            "slug": "corpo-e-banho/cuidados-pos-banho/desodorante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Body Spray": {
-            "slug": "corpo-e-banho/cuidados-pos-banho/body-spray",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Acessórios": {
-        "slug": "corpo-e-banho/acessorios",
-        "subcategorias": {
-          "Ambiente": {
-            "slug": "corpo-e-banho/acessorios/ambiente",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Nécessaire": {
-            "slug": "corpo-e-banho/acessorios/necessaire",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Soluções para Roupa": {
-            "slug": "corpo-e-banho/acessorios/solucoes-para-roupa",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Soluções para Corpo": {
-            "slug": "corpo-e-banho/acessorios/solucoes-para-corpo",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Toilette": {
-            "slug": "corpo-e-banho/acessorios/toilette",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Cuidados para o Banho": {
-        "slug": "corpo-e-banho/cuidados-para-o-banho",
-        "subcategorias": {
-          "Sabonete": {
-            "slug": "corpo-e-banho/cuidados-para-o-banho/sabonete",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Esfoliante": {
-            "slug": "corpo-e-banho/cuidados-para-o-banho/esfoliante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Barba": {
-        "slug": "corpo-e-banho/barba",
-        "subcategorias": {
-          "Pós-Barba": {
-            "slug": "corpo-e-banho/barba/pos-barba",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Produtos para o Barbear": {
-            "slug": "corpo-e-banho/barba/produtos-para-o-barbear",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Aparelhos para Barbear": {
-            "slug": "corpo-e-banho/barba/aparelhos-para-barbear",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Cuidados com a Barba": {
-            "slug": "corpo-e-banho/barba/cuidados-com-a-barba",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Protetor Solar e Bronzeamento": {
-        "slug": "corpo-e-banho/protetor-solar-e-bronzeamento",
-        "subcategorias": {
-          "Protetor Solar Corporal": {
-            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/protetor-solar-corporal",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Pós-Sol": {
-            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/pos-sol",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Protetor Solar Facial": {
-            "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/protetor-solar-facial",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Cuidados Íntimos": {
-        "slug": "corpo-e-banho/cuidados-intimos",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Depilação": {
-        "slug": "corpo-e-banho/depilacao",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      }
-    }
-  },
-  "Cuidados para Pele": {
-    "slug": "cuidados-para-pele",
-    "subcategorias": {
-      "Rosto": {
-        "slug": "cuidados-para-pele/rosto",
-        "subcategorias": {
-          "Hidratante": {
-            "slug": "cuidados-para-pele/rosto/hidratante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Antiacne": {
-            "slug": "cuidados-para-pele/rosto/antiacne",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Limpeza": {
-            "slug": "cuidados-para-pele/rosto/limpeza",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Anti-idade": {
-            "slug": "cuidados-para-pele/rosto/anti-idade",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Clareador de Manchas": {
-            "slug": "cuidados-para-pele/rosto/clareador-de-manchas",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Protetor Solar Facial": {
-            "slug": "cuidados-para-pele/rosto/protetor-solar-facial",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Máscara": {
-            "slug": "cuidados-para-pele/rosto/mascara",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Esfoliante": {
-            "slug": "cuidados-para-pele/rosto/esfoliante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Tônico e Adstringente": {
-            "slug": "cuidados-para-pele/rosto/tonico-e-adstringente",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Kits de Tratamento": {
-        "slug": "cuidados-para-pele/kits-de-tratamento",
-        "subcategorias": {
-          "Rosto": {
-            "slug": "cuidados-para-pele/kits-de-tratamento/rosto",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Corpo": {
-            "slug": "cuidados-para-pele/kits-de-tratamento/corpo",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Corpo": {
-        "slug": "cuidados-para-pele/corpo",
-        "subcategorias": {
-          "Hidratante": {
-            "slug": "cuidados-para-pele/corpo/hidratante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Mãos": {
-        "slug": "cuidados-para-pele/maos",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Lábios": {
-        "slug": "cuidados-para-pele/labios",
-        "subcategorias": {
-          "Hidratante": {
-            "slug": "cuidados-para-pele/labios/hidratante",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Anti-Idade": {
-            "slug": "cuidados-para-pele/labios/anti-idade",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Acessórios": {
-        "slug": "cuidados-para-pele/acessorios",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Olhos": {
-        "slug": "cuidados-para-pele/olhos",
-        "subcategorias": {
-          "Olheiras": {
-            "slug": "cuidados-para-pele/olhos/olheiras",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Anti-idade": {
-            "slug": "cuidados-para-pele/olhos/anti-idade",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Pés": {
-        "slug": "cuidados-para-pele/pes",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      }
-    }
-  },
-  "Cabelos": {
-    "slug": "cabelos",
-    "subcategorias": {
-      "Leave-in e Creme para Pentear": {
-        "slug": "cabelos/leave-in-e-creme-para-pentear",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Finalizador": {
-        "slug": "cabelos/finalizador",
-        "subcategorias": {
-          "Protetor Térmico": {
-            "slug": "cabelos/finalizador/protetor-termico",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Óleo Capilar": {
-            "slug": "cabelos/finalizador/oleo-capilar",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Sérum": {
-            "slug": "cabelos/finalizador/serum",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Spray Fixador": {
-            "slug": "cabelos/finalizador/spray-fixador",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Volumador": {
-            "slug": "cabelos/finalizador/volumador",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Kits de Tratamento": {
-        "slug": "cabelos/kits-de-tratamento",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Condicionador": {
-        "slug": "cabelos/condicionador",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Acessórios": {
-        "slug": "cabelos/acessorios",
-        "subcategorias": {
-          "Escovas e Pentes": {
-            "slug": "cabelos/acessorios/escovas-e-pentes",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Shampoo": {
-        "slug": "cabelos/shampoo",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Tratamento": {
-        "slug": "cabelos/tratamento",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
-      },
-      "Modelador": {
-        "slug": "cabelos/modelador",
-        "subcategorias": {
-          "Bálsamo e Creme": {
-            "slug": "cabelos/modelador/balsamo-e-creme",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Pomada e Pasta": {
-            "slug": "cabelos/modelador/pomada-e-pasta",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Ativador de Cachos": {
-            "slug": "cabelos/modelador/ativador-de-cachos",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      }
-    }
-  },
-  "Cuidados Pessoais": {
-    "slug": "cuidados-pessoais",
-    "subcategorias": {
-      "Corpo e Banho": {
-        "slug": "cuidados-pessoais/corpo-e-banho",
-        "subcategorias": {
-          "Kits de Tratamento": {
-            "slug": "cuidados-pessoais/corpo-e-banho/kits-de-tratamento",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Acessórios": {
-        "slug": "cuidados-pessoais/acessorios",
-        "subcategorias": {
-          "Toilette": {
-            "slug": "cuidados-pessoais/acessorios/toilette",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      }
-    }
-  },
-  "Bem Estar & Saúde": {
-    "slug": "bem-estar-e-saude",
-    "subcategorias": {
-      "Beleza Pet": {
-        "slug": "bem-estar-e-saude/beleza-pet",
-        "subcategorias": {
-          "Kits Pet": {
-            "slug": "bem-estar-e-saude/beleza-pet/kits-pet",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Shampoo": {
-            "slug": "bem-estar-e-saude/beleza-pet/shampoo",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Hidratantes": {
-            "slug": "bem-estar-e-saude/beleza-pet/hidratantes",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Condicionadores": {
-            "slug": "bem-estar-e-saude/beleza-pet/condicionadores",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Perfumes e Colônias": {
-            "slug": "bem-estar-e-saude/beleza-pet/perfumes-e-colonias",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Banhos a seco": {
-            "slug": "bem-estar-e-saude/beleza-pet/banhos-a-seco",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Lenços Umedecidos": {
-            "slug": "bem-estar-e-saude/beleza-pet/lencos-umedecidos",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      },
-      "Casa": {
-        "slug": "bem-estar-e-saude/casa",
-        "subcategorias": {
-          "Kits para Casa": {
-            "slug": "bem-estar-e-saude/casa/kits-para-casa",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Velas e Aromatizadores": {
-            "slug": "bem-estar-e-saude/casa/velas-e-aromatizadores",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Decoração": {
-            "slug": "bem-estar-e-saude/casa/decoracao",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          },
-          "Mesa e banho": {
-            "slug": "bem-estar-e-saude/casa/mesa-e-banho",
-            "arquivos": [
-              "OBOTICARIO.json"
-            ]
-          }
-        }
-      }
-    }
-  },
-  "Perfumes": {
-    "slug": "perfumes",
-    "subcategorias": {
-      "Kits para Presente": {
-        "slug": "perfumes/kits-para-presente",
-        "arquivos": [
-          "OBOTICARIO.json"
-        ]
       }
     }
   }

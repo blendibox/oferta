@@ -59,8 +59,8 @@ export default function MenuPrincipal() {
           <div className="mx-auto p-2 max-w-8xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
-                <Link href="/" className="text-white font-bold text-2xl uppercase">
-                  <i>COMPARE PREÇOS<b className="text-white">✱</b></i>
+                <Link href="/" className="text-white font-bold text-2xl uppercase text-white text-shadow-2xl text-shadow-emerald-950">
+                  <i className=" ">COMPARE PREÇOS<b className="text-white">✱</b></i>
                 </Link>
                 <div className="hidden md:block ml-10">
                   <div className="flex space-x-2 flex-wrap">
