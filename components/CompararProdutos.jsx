@@ -1,0 +1,353 @@
+'use client';
+
+import { useEffect, useState, useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
+
+
+function normalizarTexto(texto) {
+  return texto
+    .normalize('NFD') // remove acentos
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/-/g, ' ') // troca hífen por espaço
+    .replace(/[^a-zA-Z0-9\s]/g, '') // remove pontuação
+    .toLowerCase();
+}
+
+
+
+export default function CompararProdutos() {
+	
+  const searchParams = useSearchParams();
+  const parametroBusca = searchParams.get('busca') || searchParams.keys().next().value || ''; // suporta ?busca=nike ou ?mizuno	
+	
+  const [busca, setBusca] = useState(parametroBusca || 'cupom');
+  const [resultados, setResultados] = useState([]);
+  const [selecionados, setSelecionados] = useState([]);
+  const [slugIndex, setSlugIndex] = useState({});
+  const [loading, setLoading] = useState(false);
+  const debounceTimer = useRef(null);
+  
+  useEffect(() => {
+  if (busca?.length >= 3 && slugIndex) {
+    buscarProdutos(busca);
+  }
+}, [busca, slugIndex]);
+
+
+  // Carrega índice de slugs
+  useEffect(() => {
+    fetch('/slug-index.json')
+      .then(res => res.json())
+      .then(setSlugIndex);
+  }, []);
+
+  const buscarProdutos = async (termo) => {
+    setLoading(true);
+	const termoNormalizado = normalizarTexto(termo);
+	const palavrasBusca = termoNormalizado.split(/\s+/);
+
+	const slugsEncontrados = Object.keys(slugIndex).filter((slug) => {
+	  const slugNormalizado = normalizarTexto(slug);
+	  return palavrasBusca.every(palavra => slugNormalizado.includes(palavra));
+	})
+	 .slice(0, 12);
+
+    const arquivosUnicos = [...new Set(slugsEncontrados.map(slug => slugIndex[slug]))];
+
+    const produtos = [];
+
+    for (const arquivo of arquivosUnicos) {
+      const caminho =
+        arquivo.startsWith('ofertas_') ?
+        `/data/produtos/${arquivo}` :
+        `/data/${arquivo}`;
+
+      try {
+        const res = await fetch(caminho);
+        const json = await res.json();
+
+        for (const slug of slugsEncontrados) {
+          const produto = json.find(p =>
+            (p.slug || p['g:id'] || '').toLowerCase() === slug
+          );
+
+          if (produto) {
+			const origem =  arquivo.replace('.json', '').toLowerCase();  
+            let marca =  arquivo.startsWith('ofertas_') ? "" : arquivo.replace('.json', '').toLowerCase();
+			    marca =  arquivo.startsWith('CUPOM')? produto.store?.name: marca ;
+			    marca =  arquivo.startsWith('PROMO')? produto.advertisername : marca ;
+			
+            const nome = produto['g:title'] || produto['title'] || produto.text?.name || produto['offerdescription'] ||  '';
+            const preco = produto['g:price']  || produto.price?.buynow ||  produto['price'] ||'';
+            const imagem = produto['g:image_link'] || produto['image'] || produto.uri?.mImage ||  '/images/cupons/cupom.png';
+            const slugFinal = produto.slug || slug;
+			const linkAfilio  = produto['aw_deep_link'] || produto['awTrack'] || produto['link'] || '';
+            const cupom = produto['code'] || produto['couponcode'] || 'Ir para o Site';  
+            const link = arquivo.startsWith('ofertas_')
+              ? `/produto/${slugFinal}`
+              : `/${origem}/${slugFinal}`;
+
+            produtos.push({
+              ...produto,
+              _slug: slugFinal,
+              _link: link,
+              _origem: origem,
+			  _marca: marca,
+              _titulo: nome,
+              _preco: preco,
+              _imagem: imagem,
+			  _linkAfilio: linkAfilio,
+			  _cupom: cupom
+            });
+          }
+        }
+      } catch (e) {
+        console.warn(`❌ Erro ao carregar ${arquivo}:`, e.message);
+      }
+    }
+
+    setResultados(produtos);
+    setLoading(false);
+  };
+
+  const handleBusca = (valor) => {
+    setBusca(valor);
+    clearTimeout(debounceTimer.current);
+    if (valor.length >= 3) {
+      debounceTimer.current = setTimeout(() => {
+        buscarProdutos(valor);
+      }, 400);
+    } else {
+      setResultados([]);
+    }
+  };
+
+  const toggleSelecionado = (produto) => {
+    const id = produto['g:id'] || produto.slug;
+    const jaExiste = selecionados.find(p => (p['g:id'] || p.slug) === id);
+
+    if (jaExiste) {
+      setSelecionados(selecionados.filter(p => (p['g:id'] || p.slug) !== id));
+    } else if (selecionados.length < 3) {
+      setSelecionados([...selecionados, produto]);
+    }
+  };
+  
+  
+  
+  
+  
+
+  return (
+    <div className="p-6 max-w-6xl mx-auto">
+      <h1 className="text-2xl font-bold mb-4">Comparar Ofertas</h1>
+   <label> <small>Digite sua pesquisa, que pode ser o nome do produto, cupom, ou marca:</small>
+      <input
+        type="text"
+        placeholder="Buscar produto por nome..."
+        value={busca}
+        onChange={(e) => handleBusca(e.target.value)}
+        className="border p-2 mb-4 w-full rounded"
+      />
+   </label>
+      {/* Produtos selecionados */}
+      {selecionados.length > 0 && (
+        <div className="bg-gray-100 p-4 mb-6 rounded">
+          <p className="mb-2 text-gray-600">Selecionados para comparação:</p>
+		  
+           {(() => {
+      const precosNumericos = selecionados.map(p =>
+        parseFloat(String(p._preco).replace(/[^\d,.-]/g, '').replace(',', '.'))
+      );
+      const menorPreco = Math.min(...precosNumericos);
+
+      return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {selecionados.map((p, i) => {
+            const precoNumerico = parseFloat(
+              String(p._preco).replace(/[^\d,.-]/g, '').replace(',', '.')
+            );
+
+            return (
+              <div key={i} className="bg-white p-4 rounded shadow hover:shadow-md transition">
+                <p className="font-bold text-base mb-1">{p._titulo}</p>
+                <p className="text-sm text-gray-500 mb-1">
+                  {p._marca.toUpperCase()}
+                </p>
+
+                <p
+                  className={`text-xl font-bold ${
+                    precoNumerico === menorPreco
+                      ? 'text-emerald-600'
+                      : 'text-gray-800'
+                  }`}
+                >
+                  {p._preco ?  'R$ ' +  String(p._preco).replace(/[^\d,.-]/g, '') : ''}
+					 <i className="text-sm pb-5"> { precoNumerico === menorPreco?'✱ melhor preço!':''}</i>
+					  
+                </p>
+
+                <img
+                  src={p._imagem}
+                  alt={p._titulo}
+                  className="w-full h-40 object-contain my-2"
+                />
+
+                <Link
+                  href={p._linkAfilio || p._link}
+                  className="text-blue-600 underline text-sm block mt-1"
+                  target="_blank"
+                >
+				<p    className=" text-center border-dashed rounded border-2 text-2xl mask-clip-content inline-flex shrink-0 text-red-500 border border-pink-300 bg-pink-100 p-2 dark:border-pink-300/10 dark:bg-pink-400/10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-200 hover:text-white"
+                 > {(p._origem =='cupom' || p._origem =='promo')?p._cupom:'ver produto'}</p>
+                  
+                </Link>
+                <button
+                  onClick={() => toggleSelecionado(p)}
+                  className="text-red-600 text-sm mt-2"
+                >
+                  Remover
+                </button>
+              </div>
+            );
+          })}
+        </div>
+      );
+    })()}					
+   
+		  
+        </div>
+      )}
+	  
+	  
+	  {selecionados.length >= 2 && (
+		  <div className="mb-5 overflow-auto mt-8 border rounded shadow bg-white">
+			<table className="table-auto w-full text-sm text-left border-collapse min-w-[600px]">
+			  <thead className="bg-gray-100">
+				<tr>
+				  <th className="p-3 font-semibold text-gray-700 w-40">Atributo</th>
+				  {selecionados.map((p, i) => (
+					<th key={i} className="p-3 text-center font-bold text-gray-900">
+					  Oferta {i + 1}
+					</th>
+				  ))}
+				</tr>
+			  </thead>
+			  <tbody className="[&>tr]:border-t">
+				<tr>
+				  <td className="p-3 font-medium">Imagem</td>
+				  {selecionados.map((p, i) => (
+					<td key={i} className="p-3 text-center">
+					  <Link
+                  href={p._linkAfilio}
+                  className="text-emerald-600 underline text-sm block mt-1"
+                  target="_blank"
+                >
+                  <img
+						src={p._imagem}
+						alt={p._titulo}
+						className="w-24 h-24 mx-auto object-contain"
+					  />
+                </Link>
+					  
+					</td>
+				  ))}
+				</tr>
+				<tr>
+				  <td className="p-3 font-medium">Nome</td>
+				  {selecionados.map((p, i) => (
+					<td key={i} className="p-3">{p._titulo}</td>
+				  ))}
+				</tr>
+				<tr>
+				  <td className="p-3 font-medium">Preço</td>
+				  {selecionados.map((p, i) => (
+					<td key={i} className="p-3">
+					 
+					   {p._preco ?  'R$ ' +  String(p._preco).replace(/[^\d,.-]/g, '') : ''}
+					  
+					</td>
+				  ))}
+				</tr>
+				<tr>
+				  <td className="p-3 font-medium">Marca</td>
+				  {selecionados.map((p, i) => (
+					<td key={i} className="p-3 capitalize">{p._marca}</td>
+				  ))}
+				</tr>
+				<tr>
+				  <td className="p-3 font-medium">Ver produto</td>
+				  {selecionados.map((p, i) => (
+					<td key={i} className="p-3">
+					  <Link
+						href={p._linkAfilio}
+						target="_blank"
+						className="text-blue-600 underline"
+					  >
+					  	<p    className=" text-center border-dashed rounded border-2 text-2xl mask-clip-content inline-flex shrink-0 text-red-500 border border-pink-300 bg-pink-100 p-2 dark:border-pink-300/10 dark:bg-pink-400/10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-200 hover:text-white"
+                 > {(p._origem =='cupom' || p._origem =='promo')?p._cupom:'Ir para loja'}</p>
+						
+					  </Link>
+					</td>
+				  ))}
+				</tr>
+				<tr>
+				  <td className="p-3 font-medium">Remover</td>
+				  {selecionados.map((p, i) => (
+					<td key={i} className="p-3 text-center">
+					  <button
+						onClick={() => toggleSelecionado(p)}
+						className="text-red-600 underline text-sm"
+					  >
+						Remover
+					  </button>
+					</td>
+				  ))}
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+	 )}
+
+	  
+
+      {/* Resultados da busca */}
+      {loading && <p>🔄 Buscando produtos...</p>}
+
+      {!loading && resultados.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {resultados.map((p, i) => (
+            <div
+              key={i}
+              onClick={() => toggleSelecionado(p)}
+              className="bg-white p-4 rounded shadow hover:shadow-md transition cursor-pointer hover:bg-emerald-100 transition shadow"
+            >
+              <img src={p._imagem} alt={p._titulo} className="w-full h-48 object-contain mb-2" />
+              <h3 className="font-bold text-lg">{p._titulo}</h3>
+              <p className="text-sm text-gray-500">{p._marca.toUpperCase()}</p>
+              <p className="text-sm">
+			
+			   {p._preco ?  'R$ ' +  String(p._preco).replace(/[^\d,.-]/g, '') : ''}
+			  
+			  </p>
+              <Link
+                href={p._linkAfilio}
+                onClick={(e) => e.stopPropagation()}
+                className="text-blue-600 underline text-sm mt-2 inline-block"
+                target="_blank"
+              >  	<p    className=" self-auto  text-center border-dashed rounded border-2 text-2xl mask-clip-content inline-flex shrink-0 text-red-500 border border-pink-300 bg-pink-100 p-2 dark:border-pink-300/10 dark:bg-pink-400/10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-200 hover:text-white"
+                 > {(p._origem =='cupom' || p._origem =='promo')?p._cupom:'ver produto'}</p>
+			  
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {!loading && resultados.length === 0 && busca.length >= 3 && (
+        <p className="text-gray-500">Nenhum produto encontrado.</p>
+      )}
+    </div>
+  );
+}

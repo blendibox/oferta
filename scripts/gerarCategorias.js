@@ -18,12 +18,11 @@ const destino = path.join(process.cwd(), 'public', 'categorias.json');
 const arquivos = fs.readdirSync(pastaOrigem).filter(file => file.endsWith('.json'));
 const categorias = {};
 
-
 function slug(str) {
   return slugify(str?.trim() || '', {
     lower: true,
     strict: true,
-    locale: 'pt', // ajuda com acentuação em português
+    locale: 'pt',
   });
 }
 
@@ -47,11 +46,11 @@ for (const nomeArquivo of arquivos) {
         };
       }
 
-      if (i === partes.length - 1) {
-        // último nível → incluir o arquivo de origem
-        if (!atual[nome].arquivos) atual[nome].arquivos = new Set();
-        atual[nome].arquivos.add(nomeArquivo);
-      } else {
+      // MODIFICAÇÃO: Adiciona o arquivo em todos os níveis!
+      if (!atual[nome].arquivos) atual[nome].arquivos = new Set();
+      atual[nome].arquivos.add(nomeArquivo);
+
+      if (i < partes.length - 1) {
         if (!atual[nome].subcategorias) atual[nome].subcategorias = {};
         atual = atual[nome].subcategorias;
       }

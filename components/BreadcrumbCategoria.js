@@ -1,7 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import categorias from '../public/categorias.json'; // ajuste esse import conforme seu projeto
+
 
 function deslugify(slug) {
 	
@@ -32,9 +34,40 @@ function deslugify(slug) {
   
 }
 
+function encontrarCategoriaPorCaminho(categorias, partes) {
+  let obj = categorias;
+  let categoriaAtual = null;
+  
+
+
+  for (const parte of partes) {
+    let proxima = null;
+
+    // Buscar pelo nome da categoria
+    if (obj[parte]) {
+      proxima = obj[parte];
+    } else {
+      // Buscar pelo slug (última parte)
+      proxima = Object.values(obj).find(cat => {
+        const partesSlug = cat.slug.split('/');
+        return partesSlug[partesSlug.length - 1] === parte;
+      });
+    }
+
+    if (!proxima) {
+      categoriaAtual = null;
+      break;
+    }
+    categoriaAtual = proxima;
+    obj = categoriaAtual.subcategorias || {};
+  }
+  console.log(categoriaAtual);
+  return categoriaAtual;
+}
 
 export default function BreadcrumbCategoria() {
   const pathname = usePathname(); // ex: /categoria/maquiagem/rosto/base-liquida
+  const router = useRouter();
   const partes = pathname
     .replace(/^\/categoria\//, '')
     .split('/')
@@ -42,7 +75,22 @@ export default function BreadcrumbCategoria() {
 
   const caminhoAcumulado = [];
   
+  
+   function handleBreadcrumbClick(i) {
+    const caminho = partes.slice(0, i + 1);
+    const categoriaObj = encontrarCategoriaPorCaminho(categorias, caminho);
+    if (categoriaObj && categoriaObj.arquivos && categoriaObj.arquivos.length > 0) {
+		 // Só navega para a categoria normalmente
+      router.push(`/categoria/${caminho.join('/')}`);
+    
+    } else {
+       // Aqui você pode chamar uma função para buscar produtos ou navegar para a página de produtos
+      router.push(`/busca/${categoriaObj.slug}`); // ou como sua página de produtos funciona
+    }
+  }
+  
   return (
+  
   <nav aria-label="Breadcrumb" className="text-sm">
   <ol className="flex flex-wrap items-center space-x-1 text-gray-700">
     <li>
@@ -78,9 +126,12 @@ export default function BreadcrumbCategoria() {
           {isLast ? (
             <span className="text-gray-500">{nomeFormatado}</span>
           ) : (
-            <Link href={href} className="hover:text-emerald-600">
-              {nomeFormatado}
-            </Link>
+             <span
+                  className="hover:text-emerald-600 cursor-pointer"
+                  onClick={() => handleBreadcrumbClick(i)}
+                >
+                  {nomeFormatado}
+                </span>
           )}
         </li>
       );

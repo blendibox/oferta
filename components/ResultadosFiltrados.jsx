@@ -6,7 +6,7 @@ import slugify from 'slugify';
 import Image from 'next/image';
 import Link from 'next/link';
 import VideoBubble from './VideoBubble'
-import BreadcrumbCategoria from './BreadcrumbCategoria';
+
 
 // Utilitário para tratar preço em diferentes formatos
 function extrairPreco(valor) {
@@ -216,11 +216,7 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 */
   return (
     <div className="mt-6">
-      <h2 className="text-2xl font-semibold mb-4 capitalize">
-		
-		<BreadcrumbCategoria></BreadcrumbCategoria>
-			
-      </h2>
+   
         <VideoBubble title="Nome do Produto | 3em1_puffer" />
       {/* Filtros */}
       <div className="flex flex-wrap gap-4 mb-6">

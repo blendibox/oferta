@@ -1,33 +1,53 @@
 import fs from 'fs';
 import path from 'path';
 
-// Pasta com seus arquivos JSON
+// Diretórios
+const dataDirs = [
+  path.join(process.cwd(), 'data'),
+  path.join(process.cwd(), 'data/awin')
+];
 
-const dataDir = path.join(process.cwd(), 'data/');
 const outputPath = path.join(process.cwd(), 'data/slugs/slug-index.json');
 const publicPath = path.join(process.cwd(), 'public/slug-index.json');
+const publicOutputPath = path.join(process.cwd(), 'public/data/produtos/');
 
 const slugIndex = {};
 
-const arquivos = fs.readdirSync(dataDir).filter(file =>
-  fs.statSync(path.join(dataDir, file)).isFile() && file.endsWith('.json')
-);
+// Lê todos os arquivos .json de data/ e data/awin/
+for (const dir of dataDirs) {
+  const arquivos = fs.readdirSync(dir).filter(file =>
+    fs.statSync(path.join(dir, file)).isFile() && file.endsWith('.json')
+  );
 
-for (const file of arquivos) {
-  const fullPath = path.join(dataDir, file);
-  try {
-    const conteudo = fs.readFileSync(fullPath, 'utf8');
-    const produtos = JSON.parse(conteudo);
+  for (const file of arquivos) {
+    const fullPath = path.join(dir, file);
+    try {
+      const conteudo = fs.readFileSync(fullPath, 'utf8');
+      const produtos = JSON.parse(conteudo);
 
-    for (const produto of produtos) {
-      const slug = produto.slug;
-      if (slug) slugIndex[slug] = file;
+      for (const produto of produtos) {
+        const slug = produto.slug;
+        if (slug) {
+          slugIndex[slug] = file;
+        }
+      }
+	  if (dir.endsWith('data')) {
+		  // Copia para public/data/produtos
+		  const destino = path.join(publicOutputPath, file);
+		  fs.mkdirSync(publicOutputPath, { recursive: true });
+		  fs.copyFileSync(fullPath, destino);
+		  console.log(`📁 Copiado: ${file} → public/data/produtos`);
+	  }
+    } catch (err) {
+      console.error(`❌ Erro ao processar ${file}:`, err.message);
     }
-  } catch (err) {
-    console.error(`Erro ao processar ${file}:`, err);
   }
 }
 
+// Salva índice de slugs
 fs.writeFileSync(outputPath, JSON.stringify(slugIndex, null, 2), 'utf8');
 fs.writeFileSync(publicPath, JSON.stringify(slugIndex, null, 2), 'utf8');
-console.log(`✅ Índice de slugs gerado com sucesso em: ${outputPath} e em ${publicPath} `);
+
+console.log(`✅ Índice de slugs gerado com sucesso em:`);
+console.log(`📄 ${outputPath}`);
+console.log(`🌐 ${publicPath}`);

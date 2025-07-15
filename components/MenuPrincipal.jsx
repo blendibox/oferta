@@ -1,12 +1,15 @@
 "use client";
-
-import { Disclosure } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function MenuPrincipal() {
   const [categorias, setCategorias] = useState({});
+  const [aberto, setAberto] = useState(true);
+  const [filtro, setFiltro] = useState("");
+
+const router = useRouter();
 
   useEffect(() => {
     fetch("/categorias.json")
@@ -14,145 +17,107 @@ export default function MenuPrincipal() {
       .then(setCategorias)
       .catch((err) => console.error("Erro ao carregar categorias:", err));
   }, []);
+  
+  
+   const navegarComScroll = (href) => {
+    router.push(href);
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); // pequena espera para a navegação acontecer
+  };
 
-  function renderSubcategorias(subcategorias, nivel = 1) {
+  function filtrarCategorias(categorias, texto) {
+    if (!texto) return categorias;
+    const resultado = {};
+    Object.entries(categorias).forEach(([cat, dados]) => {
+      const matchCat = cat.toLowerCase().includes(texto.toLowerCase());
+      let matchSub = {};
+      if (dados.subcategorias) {
+        matchSub = filtrarCategorias(dados.subcategorias, texto);
+      }
+      if (matchCat || (matchSub && Object.keys(matchSub).length > 0)) {
+        resultado[cat] = {
+          ...dados,
+          subcategorias: Object.keys(matchSub).length > 0 ? matchSub : undefined
+        };
+      }
+    });
+    return resultado;
+  }
+
+  function renderSubcategorias(subcategorias) {
     return (
-      <div className={`ml-${nivel * 4} space-y-1`}> {/* mobile */}
+      <div className="ml-4 border-l pl-2">
         {Object.entries(subcategorias).map(([nome, dados]) => (
-          <div key={nome} className="group relative">
+          <div key={nome}>
 		  
-           <div key={nome} className="group relative">
-			  <Link
-				href={`/categoria/${dados.slug}`}
-				className={`flex justify-between items-center px-3 py-1 text-sm hover:bg-emerald-700  ${
-				  dados.subcategorias ? 'relative z-10 bg-emerald-500 text-white font-semibold' : 'text-emerald-500 bg-white hover:text-white '
-				}`}
-			  >
-				<span>{nome}</span>
-				{dados.subcategorias && (
-				  <span className="ml-2 text-xs opacity-70  z-50">▶</span> 
-				)}
-			  </Link>
+		  
+		  
+		  <button
+			  onClick={() => {
+				navegarComScroll(`/categoria/${dados.slug}`);
+				setAberto(false);
+			  }}
+			  className="block px-2 py-1 text-sm text-gray-800 hover:bg-emerald-100 rounded text-left w-full"
+			>
+			  {nome}
+			</button>
 
-			  {dados.subcategorias && (
-				<div className="hidden group-hover:block absolute left-full top-0 z-50  w-48 bg-white text-black shadow z-50 ">
-				  {renderSubcategorias(dados.subcategorias)}
-				</div>
-			  )}
-			</div>
-			
-            {dados.subcategorias && (
-              <div className="hidden group-hover:block absolute left-full top-0  z-50 w-48 bg-white shadow z-50">
-                {renderSubcategorias(dados.subcategorias, nivel + 1)}
-              </div>
-            )}
+            {dados.subcategorias && renderSubcategorias(dados.subcategorias)}
           </div>
         ))}
       </div>
     );
   }
 
+  const categoriasFiltradas = filtrarCategorias(categorias, filtro);
+
   return (
-    <Disclosure as="nav" className="bg-emerald-600">
-      {({ open }) => (
-        <>
-          <div className="mx-auto p-2 max-w-8xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-              <div className="flex items-center">
-                <Link href="/" className="text-white font-bold text-2xl uppercase text-white text-shadow-2xl text-shadow-emerald-950">
-                  <i className=" ">COMPARE PREÇOS<b className="text-white">✱</b></i>
-                </Link>
-                <div className="hidden md:block ml-10">
-                  <div className="flex space-x-2 flex-wrap">
-                    {Object.entries(categorias).map(([categoria, dados]) => (
-                      <div key={categoria} className="relative group">
-                        <Link
-                          href={`/categoria/${dados.slug}`}
-                          className="'relative z-10 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-700"
-                        >
-                          {categoria}
-                        </Link>
-                        {dados.subcategorias && (
-                           <div className="absolute left-0 mt-2 w-56 z-50 rounded-md shadow-lg bg-white hidden group-hover:block z-50">
-                            {renderSubcategorias(dados.subcategorias)}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="-mr-2 flex md:hidden">
-                <Disclosure.Button className="inline-flex items-center z-50 justify-center rounded-md bg-emerald-700 p-2 text-wite hover:bg-emerald-200 hover:text-white">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
+    <>
+      <button
+        onClick={() => setAberto(!aberto)}
+        className="fixed top-4 left-4 z-[9999] bg-emerald-600 text-white p-2 rounded-md shadow-md"
+        aria-label={aberto ? "Fechar menu" : "Abrir menu"}
+      >
+        {aberto ? <XMarkIcon className="h-5 w-5" /> : <Bars3Icon className="h-5 w-5" />}
+      </button>
 
-			 <div className="relative flex inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-			  <div className="flex flex-1">
-			  <Link href='/cupom' alt="Novos Cupons!">
-				<button 
-				  type="button"
-				  className="relative rounded-full  p-1 text-gray-100 hover:text-white focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-800"
+      <aside
+        className={`fixed z-40 top-0 left-0 h-full bg-white shadow-lg w-64 p-4 transition-transform duration-300 ${
+          aberto ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        {/* Alterar o título aqui */}
+        <div className="text-lg font-semibold mb-4 text-emerald-600 ml-20">Busca ofertas Blendibox</div>
+        <input
+          type="text"
+          className="w-full mb-3 p-2 border rounded"
+          placeholder="Filtrar departamentos..."
+          value={filtro}
+          onChange={e => setFiltro(e.target.value)}
+        />
+        <div className="overflow-y-auto h-full space-y-2 pr-2">
+          {Object.keys(categoriasFiltradas).length === 0 ? (
+            <div className="text-gray-400 text-sm">Nenhum departamento encontrado.</div>
+          ) : (
+            Object.entries(categoriasFiltradas).map(([categoria, dados]) => (
+              <div key={categoria}>
+				
+				<button
+				  onClick={() => {
+					navegarComScroll(`/categoria/${dados.slug}`);
+					setAberto(false);
+				  }}
+				  className="block px-2 py-1 text-sm text-gray-800 hover:bg-emerald-100 rounded text-left w-full"
 				>
-				  <span className="absolute -inset-1.5" />
-				  <span className="sr-only">Ver notificações</span>
-
-				  {/* Ícone de sino */}
-				  <svg
-					className="w-6 h-6"
-					fill="none"
-					viewBox="0 0 24 24"
-					strokeWidth="1.5"
-					stroke="currentColor"
-					aria-hidden="true"
-				  >
-					<path
-					  strokeLinecap="round"
-					  strokeLinejoin="round"
-					  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-					/>
-				  </svg>
-
-				  {/* Bolinha de notificação */}
-				  <span className="absolute -top-1 -right-1 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-red-600 rounded-full">
-					5
-				  </span>
+				  {categoria}
 				</button>
-				</Link>
-			  </div>
-			</div>
-		
-          </div>
-		 
-		 </div>
-
-         <Disclosure.Panel as="div" className="md:hidden">
-		  {({ close }) => (
-			<div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-			  {Object.entries(categorias).map(([categoria, dados]) => (
-				<div key={categoria}>
-				  <Link
-					href={`/categoria/${dados.slug}`}
-					onClick={() => close()}
-					className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-emerald-700"
-				  >
-					{categoria}
-				  </Link>
-				  {dados.subcategorias && renderSubcategorias(dados.subcategorias, 1, close)}
-				</div>
-			  ))}
-			</div>
-		  )}
-		</Disclosure.Panel>
-		  
-        </>
-      )}
-    </Disclosure>
+                {dados.subcategorias && renderSubcategorias(dados.subcategorias)}
+              </div>
+            ))
+          )}
+        </div>
+      </aside>
+    </>
   );
 }

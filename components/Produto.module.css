@@ -364,7 +364,7 @@ line-height:1.9em;
       position: fixed;
 	  cursor: move;
       bottom: 14px;
-      left: 14px;
+      right: 14px;
       width:100px;
       height: 100px;
       border-radius: 50%;

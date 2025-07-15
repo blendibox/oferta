@@ -132,7 +132,7 @@ export default function VideoBubble({ title }) {
       onMouseLeave={onMouseUp}
       style={{
         top: position.y,
-        left: position.x,
+        right: position.x,
         position: "fixed",
         cursor: expanded ? "default" : "move",
       }}

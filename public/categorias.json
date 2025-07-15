@@ -1,9 +1,15 @@
 {
   "Saúde e beleza": {
     "slug": "saude-e-beleza",
+    "arquivos": [
+      "BELEZANAWEB.json"
+    ],
     "subcategorias": {
       "Cuidados pessoais": {
         "slug": "saude-e-beleza/cuidados-pessoais",
+        "arquivos": [
+          "BELEZANAWEB.json"
+        ],
         "subcategorias": {
           "Cuidados com os cabelos": {
             "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos",
@@ -31,6 +37,9 @@
               },
               "Utensílios de penteado": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
                 "subcategorias": {
                   "Pentes e escovas": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/utensilios-de-penteado/pentes-e-escovas",
@@ -62,10 +71,7 @@
                       "BELEZANAWEB.json"
                     ]
                   }
-                },
-                "arquivos": [
-                  "BELEZANAWEB.json"
-                ]
+                }
               },
               "Acessórios para utensílios de penteado": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-os-cabelos/acessorios-para-utensilios-de-penteado",
@@ -139,6 +145,9 @@
           },
           "Cosméticos": {
             "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
             "subcategorias": {
               "Cuidados com a pele": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele",
@@ -172,6 +181,9 @@
                   },
                   "Produtos para bronzeamento": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/produtos-para-bronzeamento",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Autobronzeador": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/produtos-para-bronzeamento/autobronzeador",
@@ -185,10 +197,7 @@
                           "BELEZANAWEB.json"
                         ]
                       }
-                    },
-                    "arquivos": [
-                      "BELEZANAWEB.json"
-                    ]
+                    }
                   },
                   "Removedores de maquiagem": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-a-pele/removedores-de-maquiagem",
@@ -254,9 +263,15 @@
               },
               "Maquiagem": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
                 "subcategorias": {
                   "Maquiagem para o rosto": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Bases e corretivos": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-o-rosto/bases-e-corretivos",
@@ -288,13 +303,13 @@
                           "BELEZANAWEB.json"
                         ]
                       }
-                    },
-                    "arquivos": [
-                      "BELEZANAWEB.json"
-                    ]
+                    }
                   },
                   "Maquiagem para os olhos": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Sombras": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-olhos/sombras",
@@ -344,13 +359,13 @@
                           "BELEZANAWEB.json"
                         ]
                       }
-                    },
-                    "arquivos": [
-                      "BELEZANAWEB.json"
-                    ]
+                    }
                   },
                   "Maquiagem para os lábios": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Batons": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-para-os-labios/batons",
@@ -382,13 +397,13 @@
                           "BELEZANAWEB.json"
                         ]
                       }
-                    },
-                    "arquivos": [
-                      "BELEZANAWEB.json"
-                    ]
+                    }
                   },
                   "Maquiagem corporal": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-corporal",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Bases e tintas corporais": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/maquiagem-corporal/bases-e-tintas-corporais",
@@ -402,10 +417,7 @@
                           "BELEZANAWEB.json"
                         ]
                       }
-                    },
-                    "arquivos": [
-                      "BELEZANAWEB.json"
-                    ]
+                    }
                   },
                   "Sprays de acabamento para maquiagem": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/maquiagem/sprays-de-acabamento-para-maquiagem",
@@ -419,13 +431,13 @@
                       "BELEZANAWEB.json"
                     ]
                   }
-                },
-                "arquivos": [
-                  "BELEZANAWEB.json"
-                ]
+                }
               },
               "Cuidados com as unhas": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
                 "subcategorias": {
                   "Esmaltes": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/cuidados-com-as-unhas/esmaltes",
@@ -469,16 +481,19 @@
                       "BELEZANAWEB.json"
                     ]
                   }
-                },
-                "arquivos": [
-                  "BELEZANAWEB.json"
-                ]
+                }
               },
               "Ferramentas cosméticas": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
                 "subcategorias": {
                   "Ferramentas de maquiagem": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Esponjas de maquiagem": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/esponjas-de-maquiagem",
@@ -512,6 +527,9 @@
                       },
                       "Acessórios para cílios postiços": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/acessorios-para-cilios-posticos",
+                        "arquivos": [
+                          "BELEZANAWEB.json"
+                        ],
                         "subcategorias": {
                           "Cola para cílios postiços": {
                             "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/acessorios-para-cilios-posticos/cola-para-cilios-posticos",
@@ -525,10 +543,7 @@
                               "BELEZANAWEB.json"
                             ]
                           }
-                        },
-                        "arquivos": [
-                          "BELEZANAWEB.json"
-                        ]
+                        }
                       },
                       "Moldes para sobrancelha": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-de-maquiagem/moldes-para-sobrancelha",
@@ -542,13 +557,13 @@
                           "BELEZANAWEB.json"
                         ]
                       }
-                    },
-                    "arquivos": [
-                      "BELEZANAWEB.json"
-                    ]
+                    }
                   },
                   "Ferramentas para cuidados com a pele": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-cuidados-com-a-pele",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Sistemas e pincéis de limpeza de pele": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-cuidados-com-a-pele/sistemas-e-pinceis-de-limpeza-de-pele",
@@ -574,13 +589,13 @@
                           "BELEZANAWEB.json"
                         ]
                       }
-                    },
-                    "arquivos": [
-                      "BELEZANAWEB.json"
-                    ]
+                    }
                   },
                   "Ferramentas para unhas": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas",
+                    "arquivos": [
+                      "BELEZANAWEB.json"
+                    ],
                     "subcategorias": {
                       "Cortadores de unhas": {
                         "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/ferramentas-cosmeticas/ferramentas-para-unhas/cortadores-de-unhas",
@@ -620,10 +635,7 @@
                       }
                     }
                   }
-                },
-                "arquivos": [
-                  "BELEZANAWEB.json"
-                ]
+                }
               },
               "Banho e corpo": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cosmeticos/banho-e-corpo",
@@ -705,10 +717,7 @@
                   "BELEZANAWEB.json"
                 ]
               }
-            },
-            "arquivos": [
-              "BELEZANAWEB.json"
-            ]
+            }
           },
           "Barbearia e embelezamento": {
             "slug": "saude-e-beleza/cuidados-pessoais/barbearia-e-embelezamento",
@@ -782,6 +791,9 @@
           },
           "Suprimentos para a higiene feminina": {
             "slug": "saude-e-beleza/cuidados-pessoais/suprimentos-para-a-higiene-feminina",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
             "subcategorias": {
               "Desodorantes femininos": {
                 "slug": "saude-e-beleza/cuidados-pessoais/suprimentos-para-a-higiene-feminina/desodorantes-femininos",
@@ -825,6 +837,9 @@
           },
           "Massagem e relaxamento": {
             "slug": "saude-e-beleza/cuidados-pessoais/massagem-e-relaxamento",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
             "subcategorias": {
               "Massageadores": {
                 "slug": "saude-e-beleza/cuidados-pessoais/massagem-e-relaxamento/massageadores",
@@ -838,13 +853,13 @@
                   "BELEZANAWEB.json"
                 ]
               }
-            },
-            "arquivos": [
-              "BELEZANAWEB.json"
-            ]
+            }
           },
           "Cuidados bucais": {
             "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
             "subcategorias": {
               "Escovas de dente": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/escovas-de-dente",
@@ -860,6 +875,9 @@
               },
               "Acessórios para escova de dente": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/acessorios-para-escova-de-dente",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
                 "subcategorias": {
                   "Capas para escovas de dente": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cuidados-bucais/acessorios-para-escova-de-dente/capas-para-escovas-de-dente",
@@ -875,10 +893,7 @@
                   }
                 }
               }
-            },
-            "arquivos": [
-              "BELEZANAWEB.json"
-            ]
+            }
           },
           "Pinças": {
             "slug": "saude-e-beleza/cuidados-pessoais/pincas",
@@ -888,9 +903,15 @@
           },
           "Cuidados com a visão": {
             "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-a-visao",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
             "subcategorias": {
               "Cuidados com lentes de contato": {
                 "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-a-visao/cuidados-com-lentes-de-contato",
+                "arquivos": [
+                  "BELEZANAWEB.json"
+                ],
                 "subcategorias": {
                   "Kit de cuidados para lentes de contato": {
                     "slug": "saude-e-beleza/cuidados-pessoais/cuidados-com-a-visao/cuidados-com-lentes-de-contato/kit-de-cuidados-para-lentes-de-contato",
@@ -908,16 +929,19 @@
               }
             }
           }
-        },
-        "arquivos": [
-          "BELEZANAWEB.json"
-        ]
+        }
       },
       "Cuidados com a saúde": {
         "slug": "saude-e-beleza/cuidados-com-a-saude",
+        "arquivos": [
+          "BELEZANAWEB.json"
+        ],
         "subcategorias": {
           "Preparo físico e nutrição": {
             "slug": "saude-e-beleza/cuidados-com-a-saude/preparo-fisico-e-nutricao",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
             "subcategorias": {
               "Vitaminas e suplementos": {
                 "slug": "saude-e-beleza/cuidados-com-a-saude/preparo-fisico-e-nutricao/vitaminas-e-suplementos",
@@ -935,6 +959,9 @@
           },
           "Primeiros socorros": {
             "slug": "saude-e-beleza/cuidados-com-a-saude/primeiros-socorros",
+            "arquivos": [
+              "BELEZANAWEB.json"
+            ],
             "subcategorias": {
               "Antissépticos e suprimentos para limpeza": {
                 "slug": "saude-e-beleza/cuidados-com-a-saude/primeiros-socorros/antissepticos-e-suprimentos-para-limpeza",
@@ -944,18 +971,15 @@
               }
             }
           }
-        },
-        "arquivos": [
-          "BELEZANAWEB.json"
-        ]
+        }
       }
-    },
-    "arquivos": [
-      "BELEZANAWEB.json"
-    ]
+    }
   },
   "Malas e bolsas": {
     "slug": "malas-e-bolsas",
+    "arquivos": [
+      "BELEZANAWEB.json"
+    ],
     "subcategorias": {
       "Nécessaires de cosmética e higiene": {
         "slug": "malas-e-bolsas/necessaires-de-cosmetica-e-higiene",
@@ -967,9 +991,15 @@
   },
   "Moda Masculina": {
     "slug": "moda-masculina",
+    "arquivos": [
+      "CEA.json"
+    ],
     "subcategorias": {
       "Moda íntima": {
         "slug": "moda-masculina/moda-intima",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Meias": {
             "slug": "moda-masculina/moda-intima/meias",
@@ -999,6 +1029,9 @@
       },
       "Roupas": {
         "slug": "moda-masculina/roupas",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Blusas": {
             "slug": "moda-masculina/roupas/blusas",
@@ -1040,6 +1073,9 @@
       },
       "Calçados": {
         "slug": "moda-masculina/calcados",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Sapatos": {
             "slug": "moda-masculina/calcados/sapatos",
@@ -1077,13 +1113,13 @@
               "CEA.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Acessórios": {
         "slug": "moda-masculina/acessorios",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Cintos": {
             "slug": "moda-masculina/acessorios/cintos",
@@ -1151,13 +1187,13 @@
               "CEA.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Moda Praia": {
         "slug": "moda-masculina/moda-praia",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Sungas": {
             "slug": "moda-masculina/moda-praia/sungas",
@@ -1171,6 +1207,9 @@
   },
   "Serviços": {
     "slug": "servicos",
+    "arquivos": [
+      "CEA.json"
+    ],
     "subcategorias": {
       "Cartão Presente Virtual": {
         "slug": "servicos/cartao-presente-virtual",
@@ -1182,9 +1221,15 @@
   },
   "Moda Feminina": {
     "slug": "moda-feminina",
+    "arquivos": [
+      "CEA.json"
+    ],
     "subcategorias": {
       "Acessórios": {
         "slug": "moda-feminina/acessorios",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Relógios": {
             "slug": "moda-feminina/acessorios/relogios",
@@ -1298,6 +1343,9 @@
       },
       "Roupas": {
         "slug": "moda-feminina/roupas",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Blusas": {
             "slug": "moda-feminina/roupas/blusas",
@@ -1345,6 +1393,9 @@
       },
       "Moda Íntima": {
         "slug": "moda-feminina/moda-intima",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Cintas e modeladores": {
             "slug": "moda-feminina/moda-intima/cintas-e-modeladores",
@@ -1398,6 +1449,9 @@
       },
       "Calçados": {
         "slug": "moda-feminina/calcados",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Rasteirinhas": {
             "slug": "moda-feminina/calcados/rasteirinhas",
@@ -1463,6 +1517,9 @@
       },
       "Moda Praia": {
         "slug": "moda-feminina/moda-praia",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Biquínis": {
             "slug": "moda-feminina/moda-praia/biquinis",
@@ -1500,9 +1557,17 @@
   },
   "Infantil": {
     "slug": "infantil",
+    "arquivos": [
+      "CEA.json",
+      "NIKE.json"
+    ],
     "subcategorias": {
       "Roupas": {
         "slug": "infantil/roupas",
+        "arquivos": [
+          "CEA.json",
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Calças": {
             "slug": "infantil/roupas/calcas",
@@ -1624,13 +1689,13 @@
               "NIKE.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Moda Praia": {
         "slug": "infantil/moda-praia",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Sungas": {
             "slug": "infantil/moda-praia/sungas",
@@ -1666,6 +1731,9 @@
       },
       "Moda íntima": {
         "slug": "infantil/moda-intima",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Meias": {
             "slug": "infantil/moda-intima/meias",
@@ -1701,6 +1769,10 @@
       },
       "Acessórios": {
         "slug": "infantil/acessorios",
+        "arquivos": [
+          "CEA.json",
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Apoio de pescoço": {
             "slug": "infantil/acessorios/apoio-de-pescoco",
@@ -1768,13 +1840,14 @@
               "NIKE.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Calçados": {
         "slug": "infantil/calcados",
+        "arquivos": [
+          "CEA.json",
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Sandálias": {
             "slug": "infantil/calcados/sandalias",
@@ -1843,13 +1916,13 @@
               "NIKE.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Diversão": {
         "slug": "infantil/diversao",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Pelúcias": {
             "slug": "infantil/diversao/pelucias",
@@ -1863,9 +1936,15 @@
   },
   "Beleza": {
     "slug": "beleza",
+    "arquivos": [
+      "CEA.json"
+    ],
     "subcategorias": {
       "Perfumes": {
         "slug": "beleza/perfumes",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Perfumes Femininos": {
             "slug": "beleza/perfumes/perfumes-femininos",
@@ -1885,13 +1964,13 @@
               "CEA.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Corpo e Banho": {
         "slug": "beleza/corpo-e-banho",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Hidratantes": {
             "slug": "beleza/corpo-e-banho/hidratantes",
@@ -1941,13 +2020,13 @@
               "CEA.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Maquiagem": {
         "slug": "beleza/maquiagem",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Demaquilante": {
             "slug": "beleza/maquiagem/demaquilante",
@@ -2051,10 +2130,7 @@
               "CEA.json"
             ]
           }
-        },
-        "arquivos": [
-          "CEA.json"
-        ]
+        }
       },
       "Skincare": {
         "slug": "beleza/skincare",
@@ -2114,6 +2190,9 @@
       },
       "Cabelos": {
         "slug": "beleza/cabelos",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Finalizadores": {
             "slug": "beleza/cabelos/finalizadores",
@@ -2157,9 +2236,15 @@
   },
   "Eletrônicos": {
     "slug": "eletronicos",
+    "arquivos": [
+      "CEA.json"
+    ],
     "subcategorias": {
       "Celulares": {
         "slug": "eletronicos/celulares",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Acessórios": {
             "slug": "eletronicos/celulares/acessorios",
@@ -2171,6 +2256,9 @@
       },
       "Games": {
         "slug": "eletronicos/games",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Jogos": {
             "slug": "eletronicos/games/jogos",
@@ -2184,9 +2272,15 @@
   },
   "Casa": {
     "slug": "casa",
+    "arquivos": [
+      "CEA.json"
+    ],
     "subcategorias": {
       "Decoração e Utilidades": {
         "slug": "casa/decoracao-e-utilidades",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Difusores e Aromatizadores": {
             "slug": "casa/decoracao-e-utilidades/difusores-e-aromatizadores",
@@ -2216,6 +2310,9 @@
       },
       "Mesa e Cozinha": {
         "slug": "casa/mesa-e-cozinha",
+        "arquivos": [
+          "CEA.json"
+        ],
         "subcategorias": {
           "Copos e Taças": {
             "slug": "casa/mesa-e-cozinha/copos-e-tacas",
@@ -2247,12 +2344,22 @@
   },
   "Acessórios": {
     "slug": "acessorios",
+    "arquivos": [
+      "CENTAURO.json",
+      "KIPPLING.json"
+    ],
     "subcategorias": {
       "Racket": {
         "slug": "acessorios/racket",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BOLA": {
             "slug": "acessorios/racket/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola De Tênis": {
                 "slug": "acessorios/racket/bola/bola-de-tenis",
@@ -2276,6 +2383,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/racket/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Antivibrador": {
                 "slug": "acessorios/racket/acessorios/antivibrador",
@@ -2305,6 +2415,9 @@
           },
           "RAQUETE": {
             "slug": "acessorios/racket/raquete",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Acessório Racket": {
                 "slug": "acessorios/racket/raquete/acessorio-racket",
@@ -2346,6 +2459,9 @@
           },
           "LUTA": {
             "slug": "acessorios/racket/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cushion Grip": {
                 "slug": "acessorios/racket/luta/cushion-grip",
@@ -2363,6 +2479,9 @@
           },
           "EQUIPAMENTO": {
             "slug": "acessorios/racket/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Kit De Frescobol": {
                 "slug": "acessorios/racket/equipamento/kit-de-frescobol",
@@ -2380,6 +2499,9 @@
           },
           "BONE": {
             "slug": "acessorios/racket/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/racket/bone/bone",
@@ -2391,6 +2513,9 @@
           },
           "OUTROS": {
             "slug": "acessorios/racket/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Grip": {
                 "slug": "acessorios/racket/outros/grip",
@@ -2404,9 +2529,15 @@
       },
       "Lutas": {
         "slug": "acessorios/lutas",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "LUTA": {
             "slug": "acessorios/lutas/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Protetor De Boca": {
                 "slug": "acessorios/lutas/luta/protetor-de-boca",
@@ -2460,6 +2591,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/lutas/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bandagem": {
                 "slug": "acessorios/lutas/acessorios/bandagem",
@@ -2473,9 +2607,15 @@
       },
       "Futebol": {
         "slug": "acessorios/futebol",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "acessorios/futebol/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Caneleira": {
                 "slug": "acessorios/futebol/acessorios/caneleira",
@@ -2511,6 +2651,9 @@
           },
           "BOLA": {
             "slug": "acessorios/futebol/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola De Futebol De Campo": {
                 "slug": "acessorios/futebol/bola/bola-de-futebol-de-campo",
@@ -2564,6 +2707,9 @@
           },
           "BONE": {
             "slug": "acessorios/futebol/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/futebol/bone/bone",
@@ -2581,6 +2727,9 @@
           },
           "LUTA": {
             "slug": "acessorios/futebol/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Luvas": {
                 "slug": "acessorios/futebol/luta/luvas",
@@ -2592,6 +2741,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/futebol/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Mochila": {
                 "slug": "acessorios/futebol/bolsamalamochila/mochila",
@@ -2621,6 +2773,9 @@
           },
           "OUTROS": {
             "slug": "acessorios/futebol/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Proteção": {
                 "slug": "acessorios/futebol/outros/protecao",
@@ -2640,9 +2795,15 @@
       },
       "Natação": {
         "slug": "acessorios/natacao",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OCULOS": {
             "slug": "acessorios/natacao/oculos",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Óculos De Natação": {
                 "slug": "acessorios/natacao/oculos/oculos-de-natacao",
@@ -2660,6 +2821,9 @@
           },
           "NATACAO": {
             "slug": "acessorios/natacao/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Palmar": {
                 "slug": "acessorios/natacao/natacao/palmar",
@@ -2689,6 +2853,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/natacao/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Anti Embacante": {
                 "slug": "acessorios/natacao/acessorios/anti-embacante",
@@ -2706,6 +2873,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/natacao/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bolsa": {
                 "slug": "acessorios/natacao/bolsamalamochila/bolsa",
@@ -2719,9 +2889,15 @@
       },
       "Lazer / Piscina / Praia": {
         "slug": "acessorios/lazer-piscina-praia",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OCULOS": {
             "slug": "acessorios/lazer-piscina-praia/oculos",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Óculos De Natação": {
                 "slug": "acessorios/lazer-piscina-praia/oculos/oculos-de-natacao",
@@ -2733,6 +2909,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/lazer-piscina-praia/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bumeran Freesbee": {
                 "slug": "acessorios/lazer-piscina-praia/acessorios/bumeran-freesbee",
@@ -2746,9 +2925,15 @@
       },
       "Bike": {
         "slug": "acessorios/bike",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "acessorios/bike/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cadeirinha": {
                 "slug": "acessorios/bike/acessorios/cadeirinha",
@@ -2802,6 +2987,9 @@
           },
           "BICICLETA": {
             "slug": "acessorios/bike/bicicleta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Acessorio Bike": {
                 "slug": "acessorios/bike/bicicleta/acessorio-bike",
@@ -2819,6 +3007,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/bike/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bolsa De Selim": {
                 "slug": "acessorios/bike/bolsamalamochila/bolsa-de-selim",
@@ -2830,6 +3021,9 @@
           },
           "EQUIPAMENTO": {
             "slug": "acessorios/bike/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Capacete": {
                 "slug": "acessorios/bike/equipamento/capacete",
@@ -2841,6 +3035,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "acessorios/bike/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Sapatilha": {
                 "slug": "acessorios/bike/sandaliachinelo/sapatilha",
@@ -2852,6 +3049,9 @@
           },
           "LUTA": {
             "slug": "acessorios/bike/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Luvas": {
                 "slug": "acessorios/bike/luta/luvas",
@@ -2865,9 +3065,15 @@
       },
       "Aquaticos": {
         "slug": "acessorios/aquaticos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OCULOS": {
             "slug": "acessorios/aquaticos/oculos",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Óculos De Natação": {
                 "slug": "acessorios/aquaticos/oculos/oculos-de-natacao",
@@ -2885,6 +3091,9 @@
           },
           "NATACAO": {
             "slug": "acessorios/aquaticos/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Touca De Natação": {
                 "slug": "acessorios/aquaticos/natacao/touca-de-natacao",
@@ -2920,6 +3129,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/aquaticos/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "TOUCA": {
                 "slug": "acessorios/aquaticos/acessorios/touca",
@@ -2931,6 +3143,9 @@
           },
           "OUTROS": {
             "slug": "acessorios/aquaticos/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Proteção": {
                 "slug": "acessorios/aquaticos/outros/protecao",
@@ -2942,6 +3157,9 @@
           },
           "MEIA": {
             "slug": "acessorios/aquaticos/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "acessorios/aquaticos/meia/meia",
@@ -2955,9 +3173,15 @@
       },
       "Academia / Fitness": {
         "slug": "acessorios/academia-fitness",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "LUTA": {
             "slug": "acessorios/academia-fitness/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Luvas": {
                 "slug": "acessorios/academia-fitness/luta/luvas",
@@ -2969,6 +3193,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/academia-fitness/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tornozeleira": {
                 "slug": "acessorios/academia-fitness/acessorios/tornozeleira",
@@ -2986,6 +3213,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/academia-fitness/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Gym Sack": {
                 "slug": "acessorios/academia-fitness/bolsamalamochila/gym-sack",
@@ -3009,6 +3239,9 @@
           },
           "BOLA": {
             "slug": "acessorios/academia-fitness/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola De Ginástica": {
                 "slug": "acessorios/academia-fitness/bola/bola-de-ginastica",
@@ -3020,6 +3253,9 @@
           },
           "MUSCULACAO": {
             "slug": "acessorios/academia-fitness/musculacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Roda Abdominal": {
                 "slug": "acessorios/academia-fitness/musculacao/roda-abdominal",
@@ -3057,9 +3293,15 @@
       },
       "Lifestyle": {
         "slug": "acessorios/lifestyle",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "acessorios/lifestyle/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Limpa Tênis": {
                 "slug": "acessorios/lifestyle/acessorios/limpa-tenis",
@@ -3095,6 +3337,9 @@
           },
           "BONE": {
             "slug": "acessorios/lifestyle/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/lifestyle/bone/bone",
@@ -3106,6 +3351,9 @@
           },
           "OCULOS": {
             "slug": "acessorios/lifestyle/oculos",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Óculos De Sol": {
                 "slug": "acessorios/lifestyle/oculos/oculos-de-sol",
@@ -3123,6 +3371,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/lifestyle/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bolsa": {
                 "slug": "acessorios/lifestyle/bolsamalamochila/bolsa",
@@ -3152,6 +3403,9 @@
           },
           "NATACAO": {
             "slug": "acessorios/lifestyle/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Toalha": {
                 "slug": "acessorios/lifestyle/natacao/toalha",
@@ -3163,6 +3417,9 @@
           },
           "CUECA": {
             "slug": "acessorios/lifestyle/cueca",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Kit Cueca": {
                 "slug": "acessorios/lifestyle/cueca/kit-cueca",
@@ -3176,9 +3433,15 @@
       },
       "Treino": {
         "slug": "acessorios/treino",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "acessorios/treino/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cotoveleira": {
                 "slug": "acessorios/treino/acessorios/cotoveleira",
@@ -3286,6 +3549,9 @@
           },
           "MUSCULACAO": {
             "slug": "acessorios/treino/musculacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Caneleira Com Peso": {
                 "slug": "acessorios/treino/musculacao/caneleira-com-peso",
@@ -3327,6 +3593,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/treino/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Mochila": {
                 "slug": "acessorios/treino/bolsamalamochila/mochila",
@@ -3362,6 +3631,9 @@
           },
           "BONE": {
             "slug": "acessorios/treino/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/treino/bone/bone",
@@ -3373,6 +3645,9 @@
           },
           "OCULOS": {
             "slug": "acessorios/treino/oculos",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Óculos De Sol": {
                 "slug": "acessorios/treino/oculos/oculos-de-sol",
@@ -3390,6 +3665,9 @@
           },
           "OUTROS": {
             "slug": "acessorios/treino/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "CINTA MODELADORA": {
                 "slug": "acessorios/treino/outros/cinta-modeladora",
@@ -3407,6 +3685,9 @@
           },
           "MEIA": {
             "slug": "acessorios/treino/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "acessorios/treino/meia/meia",
@@ -3418,6 +3699,9 @@
           },
           "LUTA": {
             "slug": "acessorios/treino/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Luvas": {
                 "slug": "acessorios/treino/luta/luvas",
@@ -3431,9 +3715,15 @@
       },
       "Casual": {
         "slug": "acessorios/casual",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "acessorios/casual/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cuidados com os Pés": {
                 "slug": "acessorios/casual/acessorios/cuidados-com-os-pes",
@@ -3457,6 +3747,9 @@
           },
           "OCULOS": {
             "slug": "acessorios/casual/oculos",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Óculos De Sol": {
                 "slug": "acessorios/casual/oculos/oculos-de-sol",
@@ -3468,6 +3761,9 @@
           },
           "BONE": {
             "slug": "acessorios/casual/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/casual/bone/bone",
@@ -3479,6 +3775,9 @@
           },
           "RELOGIO": {
             "slug": "acessorios/casual/relogio",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Relógio": {
                 "slug": "acessorios/casual/relogio/relogio",
@@ -3490,6 +3789,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/casual/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Mochila": {
                 "slug": "acessorios/casual/bolsamalamochila/mochila",
@@ -3515,9 +3817,15 @@
       },
       "Aventura / Esportes Radicais": {
         "slug": "acessorios/aventura-esportes-radicais",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "acessorios/aventura-esportes-radicais/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Colchonete": {
                 "slug": "acessorios/aventura-esportes-radicais/acessorios/colchonete",
@@ -3607,6 +3915,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/aventura-esportes-radicais/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Saco Estanque": {
                 "slug": "acessorios/aventura-esportes-radicais/bolsamalamochila/saco-estanque",
@@ -3642,6 +3953,9 @@
           },
           "BONE": {
             "slug": "acessorios/aventura-esportes-radicais/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Gorro": {
                 "slug": "acessorios/aventura-esportes-radicais/bone/gorro",
@@ -3659,6 +3973,9 @@
           },
           "LUTA": {
             "slug": "acessorios/aventura-esportes-radicais/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Luvas": {
                 "slug": "acessorios/aventura-esportes-radicais/luta/luvas",
@@ -3670,6 +3987,9 @@
           },
           "OUTROS": {
             "slug": "acessorios/aventura-esportes-radicais/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Isolante": {
                 "slug": "acessorios/aventura-esportes-radicais/outros/isolante",
@@ -3689,9 +4009,15 @@
       },
       "Skate": {
         "slug": "acessorios/skate",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OUTROS": {
             "slug": "acessorios/skate/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Embalag Presente": {
                 "slug": "acessorios/skate/outros/embalag-presente",
@@ -3709,6 +4035,9 @@
           },
           "LUTA": {
             "slug": "acessorios/skate/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Kit De Proteção": {
                 "slug": "acessorios/skate/luta/kit-de-protecao",
@@ -3720,6 +4049,9 @@
           },
           "EQUIPAMENTO": {
             "slug": "acessorios/skate/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Capacete": {
                 "slug": "acessorios/skate/equipamento/capacete",
@@ -3733,9 +4065,15 @@
       },
       "Corrida / Caminhada": {
         "slug": "acessorios/corrida-caminhada",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BONE": {
             "slug": "acessorios/corrida-caminhada/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/corrida-caminhada/bone/bone",
@@ -3747,6 +4085,9 @@
           },
           "RELOGIO": {
             "slug": "acessorios/corrida-caminhada/relogio",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Relógio": {
                 "slug": "acessorios/corrida-caminhada/relogio/relogio",
@@ -3764,6 +4105,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/corrida-caminhada/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Squeeze": {
                 "slug": "acessorios/corrida-caminhada/acessorios/squeeze",
@@ -3823,6 +4167,9 @@
           },
           "MUSCULACAO": {
             "slug": "acessorios/corrida-caminhada/musculacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Extensor": {
                 "slug": "acessorios/corrida-caminhada/musculacao/extensor",
@@ -3834,6 +4181,9 @@
           },
           "OCULOS": {
             "slug": "acessorios/corrida-caminhada/oculos",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Óculos De Sol": {
                 "slug": "acessorios/corrida-caminhada/oculos/oculos-de-sol",
@@ -3845,6 +4195,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/corrida-caminhada/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Pochete": {
                 "slug": "acessorios/corrida-caminhada/bolsamalamochila/pochete",
@@ -3856,6 +4209,9 @@
           },
           "MEIA": {
             "slug": "acessorios/corrida-caminhada/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "acessorios/corrida-caminhada/meia/meia",
@@ -3869,9 +4225,15 @@
       },
       "Beisebol": {
         "slug": "acessorios/beisebol",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BONE": {
             "slug": "acessorios/beisebol/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/beisebol/bone/bone",
@@ -3885,9 +4247,15 @@
       },
       "Basquete": {
         "slug": "acessorios/basquete",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BONE": {
             "slug": "acessorios/basquete/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/basquete/bone/bone",
@@ -3899,6 +4267,9 @@
           },
           "BOLA": {
             "slug": "acessorios/basquete/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola De Basquete": {
                 "slug": "acessorios/basquete/bola/bola-de-basquete",
@@ -3916,6 +4287,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/basquete/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "BASQUETE": {
                 "slug": "acessorios/basquete/acessorios/basquete",
@@ -3927,6 +4301,9 @@
           },
           "EQUIPAMENTO": {
             "slug": "acessorios/basquete/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tabela De Basquete": {
                 "slug": "acessorios/basquete/equipamento/tabela-de-basquete",
@@ -3940,9 +4317,15 @@
       },
       "Jogos de Mesa": {
         "slug": "acessorios/jogos-de-mesa",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "EQUIPAMENTO": {
             "slug": "acessorios/jogos-de-mesa/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Kit De Tênis De Mesa": {
                 "slug": "acessorios/jogos-de-mesa/equipamento/kit-de-tenis-de-mesa",
@@ -3956,9 +4339,15 @@
       },
       "Vôlei": {
         "slug": "acessorios/volei",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BOLA": {
             "slug": "acessorios/volei/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola De Vôlei": {
                 "slug": "acessorios/volei/bola/bola-de-volei",
@@ -3978,9 +4367,15 @@
       },
       "Coletivos": {
         "slug": "acessorios/coletivos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BONE": {
             "slug": "acessorios/coletivos/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/coletivos/bone/bone",
@@ -3992,6 +4387,9 @@
           },
           "BOLA": {
             "slug": "acessorios/coletivos/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola De Vôlei": {
                 "slug": "acessorios/coletivos/bola/bola-de-volei",
@@ -4021,6 +4419,9 @@
           },
           "OUTROS": {
             "slug": "acessorios/coletivos/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Proteção": {
                 "slug": "acessorios/coletivos/outros/protecao",
@@ -4038,6 +4439,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/coletivos/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Manguito": {
                 "slug": "acessorios/coletivos/acessorios/manguito",
@@ -4055,6 +4459,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/coletivos/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Mochila": {
                 "slug": "acessorios/coletivos/bolsamalamochila/mochila",
@@ -4068,9 +4475,15 @@
       },
       "Beach Tennis": {
         "slug": "acessorios/beach-tennis",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "RAQUETE": {
             "slug": "acessorios/beach-tennis/raquete",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Raquete": {
                 "slug": "acessorios/beach-tennis/raquete/raquete",
@@ -4082,6 +4495,9 @@
           },
           "BOLA": {
             "slug": "acessorios/beach-tennis/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bolas": {
                 "slug": "acessorios/beach-tennis/bola/bolas",
@@ -4101,9 +4517,15 @@
       },
       "TODAS": {
         "slug": "acessorios/todas",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "acessorios/todas/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Squeeze": {
                 "slug": "acessorios/todas/acessorios/squeeze",
@@ -4117,9 +4539,15 @@
       },
       "Studio 78": {
         "slug": "acessorios/studio-78",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BONE": {
             "slug": "acessorios/studio-78/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/studio-78/bone/bone",
@@ -4143,6 +4571,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/studio-78/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Shoulder Bag": {
                 "slug": "acessorios/studio-78/acessorios/shoulder-bag",
@@ -4154,6 +4585,9 @@
           },
           "OUTROS": {
             "slug": "acessorios/studio-78/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "BOLSA PR": {
                 "slug": "acessorios/studio-78/outros/bolsa-pr",
@@ -4171,6 +4605,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/studio-78/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bolsa": {
                 "slug": "acessorios/studio-78/bolsamalamochila/bolsa",
@@ -4202,9 +4639,15 @@
       },
       "Studio": {
         "slug": "acessorios/studio",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/studio/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bolsa": {
                 "slug": "acessorios/studio/bolsamalamochila/bolsa",
@@ -4222,6 +4665,9 @@
           },
           "NATACAO": {
             "slug": "acessorios/studio/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Toalha": {
                 "slug": "acessorios/studio/natacao/toalha",
@@ -4233,6 +4679,9 @@
           },
           "ACESSORIOS": {
             "slug": "acessorios/studio/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Yoga E Pilates": {
                 "slug": "acessorios/studio/acessorios/yoga-e-pilates",
@@ -4256,6 +4705,9 @@
           },
           "MUSCULACAO": {
             "slug": "acessorios/studio/musculacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Roda": {
                 "slug": "acessorios/studio/musculacao/roda",
@@ -4267,6 +4719,9 @@
           },
           "BOLA": {
             "slug": "acessorios/studio/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola": {
                 "slug": "acessorios/studio/bola/bola",
@@ -4280,9 +4735,15 @@
       },
       "Infantil": {
         "slug": "acessorios/infantil",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BOLA": {
             "slug": "acessorios/infantil/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola": {
                 "slug": "acessorios/infantil/bola/bola",
@@ -4294,6 +4755,9 @@
           },
           "BOLSA/MALA/MOCHILA": {
             "slug": "acessorios/infantil/bolsamalamochila",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Mochila": {
                 "slug": "acessorios/infantil/bolsamalamochila/mochila",
@@ -4305,6 +4769,9 @@
           },
           "BONE": {
             "slug": "acessorios/infantil/bone",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Boné": {
                 "slug": "acessorios/infantil/bone/bone",
@@ -4318,9 +4785,15 @@
       },
       "Volei": {
         "slug": "acessorios/volei",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BOLA": {
             "slug": "acessorios/volei/bola",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bola": {
                 "slug": "acessorios/volei/bola/bola",
@@ -4338,19 +4811,25 @@
           }
         }
       }
-    },
-    "arquivos": [
-      "KIPPLING.json"
-    ]
+    }
   },
   "Equipamentos": {
     "slug": "equipamentos",
+    "arquivos": [
+      "CENTAURO.json"
+    ],
     "subcategorias": {
       "Lutas": {
         "slug": "equipamentos/lutas",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "LUTA": {
             "slug": "equipamentos/lutas/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Saco De Pancada": {
                 "slug": "equipamentos/lutas/luta/saco-de-pancada",
@@ -4364,9 +4843,15 @@
       },
       "Academia / Fitness": {
         "slug": "equipamentos/academia-fitness",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MUSCULACAO": {
             "slug": "equipamentos/academia-fitness/musculacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Caneleira Com Peso": {
                 "slug": "equipamentos/academia-fitness/musculacao/caneleira-com-peso",
@@ -4390,6 +4875,9 @@
           },
           "ALIMENTO": {
             "slug": "equipamentos/academia-fitness/alimento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Barra": {
                 "slug": "equipamentos/academia-fitness/alimento/barra",
@@ -4401,6 +4889,9 @@
           },
           "EQUIPAMENTO": {
             "slug": "equipamentos/academia-fitness/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Trampolim": {
                 "slug": "equipamentos/academia-fitness/equipamento/trampolim",
@@ -4414,9 +4905,15 @@
       },
       "Treino": {
         "slug": "equipamentos/treino",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MUSCULACAO": {
             "slug": "equipamentos/treino/musculacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Caneleira Com Peso": {
                 "slug": "equipamentos/treino/musculacao/caneleira-com-peso",
@@ -4440,6 +4937,9 @@
           },
           "EQUIPAMENTO": {
             "slug": "equipamentos/treino/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Patins": {
                 "slug": "equipamentos/treino/equipamento/patins",
@@ -4457,6 +4957,9 @@
           },
           "ACESSORIOS": {
             "slug": "equipamentos/treino/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Caneleira": {
                 "slug": "equipamentos/treino/acessorios/caneleira",
@@ -4476,9 +4979,15 @@
       },
       "Bike": {
         "slug": "equipamentos/bike",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BICICLETA": {
             "slug": "equipamentos/bike/bicicleta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bicicleta": {
                 "slug": "equipamentos/bike/bicicleta/bicicleta",
@@ -4496,6 +5005,9 @@
           },
           "ACESSORIOS": {
             "slug": "equipamentos/bike/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Rolo De Treino": {
                 "slug": "equipamentos/bike/acessorios/rolo-de-treino",
@@ -4509,9 +5021,15 @@
       },
       "Skate": {
         "slug": "equipamentos/skate",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "EQUIPAMENTO": {
             "slug": "equipamentos/skate/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Patins": {
                 "slug": "equipamentos/skate/equipamento/patins",
@@ -4537,9 +5055,15 @@
       },
       "Aventura / Esportes Radicais": {
         "slug": "equipamentos/aventura-esportes-radicais",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "EQUIPAMENTO": {
             "slug": "equipamentos/aventura-esportes-radicais/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Prancha De Bodyboard": {
                 "slug": "equipamentos/aventura-esportes-radicais/equipamento/prancha-de-bodyboard",
@@ -4551,6 +5075,9 @@
           },
           "ACESSORIOS": {
             "slug": "equipamentos/aventura-esportes-radicais/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Barraca": {
                 "slug": "equipamentos/aventura-esportes-radicais/acessorios/barraca",
@@ -4564,9 +5091,15 @@
       },
       "Corrida / Caminhada": {
         "slug": "equipamentos/corrida-caminhada",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MUSCULACAO": {
             "slug": "equipamentos/corrida-caminhada/musculacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Halteres": {
                 "slug": "equipamentos/corrida-caminhada/musculacao/halteres",
@@ -4580,9 +5113,15 @@
       },
       "Aquaticos": {
         "slug": "equipamentos/aquaticos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "NATACAO": {
             "slug": "equipamentos/aquaticos/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Prancha": {
                 "slug": "equipamentos/aquaticos/natacao/prancha",
@@ -4596,9 +5135,15 @@
       },
       "Recreacao": {
         "slug": "equipamentos/recreacao",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "EQUIPAMENTO": {
             "slug": "equipamentos/recreacao/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Patinete": {
                 "slug": "equipamentos/recreacao/equipamento/patinete",
@@ -4612,9 +5157,15 @@
       },
       "Patinação": {
         "slug": "equipamentos/patinacao",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "EQUIPAMENTO": {
             "slug": "equipamentos/patinacao/equipamento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Patins": {
                 "slug": "equipamentos/patinacao/equipamento/patins",
@@ -4630,12 +5181,21 @@
   },
   "Vestuário": {
     "slug": "vestuario",
+    "arquivos": [
+      "CENTAURO.json"
+    ],
     "subcategorias": {
       "Corrida / Caminhada": {
         "slug": "vestuario/corrida-caminhada",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BERMUDA": {
             "slug": "vestuario/corrida-caminhada/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/corrida-caminhada/bermuda/bermuda",
@@ -4647,6 +5207,9 @@
           },
           "TOP/BODY": {
             "slug": "vestuario/corrida-caminhada/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/corrida-caminhada/topbody/top",
@@ -4658,6 +5221,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/corrida-caminhada/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/corrida-caminhada/t-shirt-outros/camiseta",
@@ -4675,6 +5241,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/corrida-caminhada/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/corrida-caminhada/calcaoshort/short",
@@ -4686,6 +5255,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/corrida-caminhada/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça Legging": {
                 "slug": "vestuario/corrida-caminhada/calcabottom/calca-legging",
@@ -4703,6 +5275,9 @@
           },
           "REGATA": {
             "slug": "vestuario/corrida-caminhada/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/corrida-caminhada/regata/camiseta-regata",
@@ -4714,6 +5289,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/corrida-caminhada/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/corrida-caminhada/outros/jaqueta-e-blusao",
@@ -4731,6 +5309,9 @@
           },
           "MEIA": {
             "slug": "vestuario/corrida-caminhada/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/corrida-caminhada/meia/meia",
@@ -4742,6 +5323,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/corrida-caminhada/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/corrida-caminhada/blusainverno/blusa",
@@ -4755,9 +5339,15 @@
       },
       "Natação": {
         "slug": "vestuario/natacao",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "NATACAO": {
             "slug": "vestuario/natacao/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Sunga": {
                 "slug": "vestuario/natacao/natacao/sunga",
@@ -4775,6 +5365,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/natacao/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/natacao/bermuda/bermuda",
@@ -4786,6 +5379,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/natacao/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Manga Longa": {
                 "slug": "vestuario/natacao/t-shirt-outros/camiseta-manga-longa",
@@ -4799,9 +5395,15 @@
       },
       "Aquaticos": {
         "slug": "vestuario/aquaticos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "NATACAO": {
             "slug": "vestuario/aquaticos/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Maiô": {
                 "slug": "vestuario/aquaticos/natacao/maio",
@@ -4825,6 +5427,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/aquaticos/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Macaquinho": {
                 "slug": "vestuario/aquaticos/vestuario/macaquinho",
@@ -4842,6 +5447,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/aquaticos/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/aquaticos/bermuda/bermuda",
@@ -4853,6 +5461,9 @@
           },
           "CUECA": {
             "slug": "vestuario/aquaticos/cueca",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calcinha": {
                 "slug": "vestuario/aquaticos/cueca/calcinha",
@@ -4864,6 +5475,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/aquaticos/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Manga Longa": {
                 "slug": "vestuario/aquaticos/t-shirt-outros/camiseta-manga-longa",
@@ -4881,6 +5495,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/aquaticos/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/aquaticos/outros/jaqueta-e-blusao",
@@ -4898,6 +5515,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/aquaticos/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calção": {
                 "slug": "vestuario/aquaticos/calcaoshort/calcao",
@@ -4909,6 +5529,9 @@
           },
           "REGATA": {
             "slug": "vestuario/aquaticos/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/aquaticos/regata/camiseta-regata",
@@ -4922,9 +5545,15 @@
       },
       "Bike": {
         "slug": "vestuario/bike",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "CALCA/BOTTOM": {
             "slug": "vestuario/bike/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/bike/calcabottom/calca",
@@ -4936,6 +5565,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/bike/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/bike/bermuda/bermuda",
@@ -4947,6 +5579,9 @@
           },
           "CAMISA-OUTROS": {
             "slug": "vestuario/bike/camisa-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa": {
                 "slug": "vestuario/bike/camisa-outros/camisa",
@@ -4960,9 +5595,15 @@
       },
       "Futebol": {
         "slug": "vestuario/futebol",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "vestuario/futebol/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meião": {
                 "slug": "vestuario/futebol/meia/meiao",
@@ -4986,6 +5627,9 @@
           },
           "CAMISA-FUTEBOL": {
             "slug": "vestuario/futebol/camisa-futebol",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa De Time": {
                 "slug": "vestuario/futebol/camisa-futebol/camisa-de-time",
@@ -5009,6 +5653,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/futebol/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/futebol/calcabottom/calca",
@@ -5020,6 +5667,9 @@
           },
           "CAMISA-OUTROS": {
             "slug": "vestuario/futebol/camisa-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa Térmica": {
                 "slug": "vestuario/futebol/camisa-outros/camisa-termica",
@@ -5037,6 +5687,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/futebol/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda Térmica": {
                 "slug": "vestuario/futebol/bermuda/bermuda-termica",
@@ -5054,6 +5707,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/futebol/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calção": {
                 "slug": "vestuario/futebol/calcaoshort/calcao",
@@ -5089,6 +5745,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/futebol/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/futebol/t-shirt-outros/camiseta",
@@ -5100,6 +5759,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/futebol/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/futebol/outros/jaqueta-e-blusao",
@@ -5117,6 +5779,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/futebol/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/futebol/blusainverno/blusa",
@@ -5134,6 +5799,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/futebol/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Conjunto": {
                 "slug": "vestuario/futebol/vestuario/conjunto",
@@ -5147,9 +5815,15 @@
       },
       "Treino": {
         "slug": "vestuario/treino",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TOP/BODY": {
             "slug": "vestuario/treino/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/treino/topbody/top",
@@ -5167,6 +5841,9 @@
           },
           "MEIA": {
             "slug": "vestuario/treino/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/treino/meia/meia",
@@ -5178,6 +5855,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/treino/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/treino/calcabottom/calca",
@@ -5195,6 +5875,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/treino/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/treino/t-shirt-outros/camiseta",
@@ -5212,6 +5895,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/treino/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/treino/calcaoshort/short",
@@ -5223,6 +5909,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/treino/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/treino/bermuda/bermuda",
@@ -5234,6 +5923,9 @@
           },
           "REGATA": {
             "slug": "vestuario/treino/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/treino/regata/camiseta-regata",
@@ -5245,6 +5937,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/treino/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/treino/blusainverno/blusa",
@@ -5262,6 +5957,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/treino/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/treino/outros/jaqueta-e-blusao",
@@ -5291,6 +5989,9 @@
           },
           "CAMISA-OUTROS": {
             "slug": "vestuario/treino/camisa-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa": {
                 "slug": "vestuario/treino/camisa-outros/camisa",
@@ -5302,6 +6003,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/treino/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Macacão": {
                 "slug": "vestuario/treino/vestuario/macacao",
@@ -5343,6 +6047,9 @@
           },
           "ALIMENTO": {
             "slug": "vestuario/treino/alimento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Complemento": {
                 "slug": "vestuario/treino/alimento/complemento",
@@ -5354,6 +6061,9 @@
           },
           "CUECA": {
             "slug": "vestuario/treino/cueca",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cueca": {
                 "slug": "vestuario/treino/cueca/cueca",
@@ -5373,9 +6083,15 @@
       },
       "Lifestyle": {
         "slug": "vestuario/lifestyle",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "vestuario/lifestyle/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/lifestyle/meia/meia",
@@ -5387,6 +6103,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/lifestyle/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/lifestyle/t-shirt-outros/camiseta",
@@ -5404,6 +6123,9 @@
           },
           "REGATA": {
             "slug": "vestuario/lifestyle/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/lifestyle/regata/camiseta-regata",
@@ -5415,6 +6137,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/lifestyle/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/lifestyle/outros/jaqueta-e-blusao",
@@ -5432,6 +6157,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/lifestyle/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/lifestyle/bermuda/bermuda",
@@ -5443,6 +6171,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/lifestyle/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cropped": {
                 "slug": "vestuario/lifestyle/vestuario/cropped",
@@ -5478,6 +6209,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/lifestyle/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/lifestyle/calcabottom/calca",
@@ -5495,6 +6229,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/lifestyle/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Agasalho": {
                 "slug": "vestuario/lifestyle/blusainverno/agasalho",
@@ -5512,6 +6249,9 @@
           },
           "CAMISA-OUTROS": {
             "slug": "vestuario/lifestyle/camisa-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa": {
                 "slug": "vestuario/lifestyle/camisa-outros/camisa",
@@ -5523,6 +6263,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/lifestyle/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/lifestyle/calcaoshort/short",
@@ -5534,6 +6277,9 @@
           },
           "TOP/BODY": {
             "slug": "vestuario/lifestyle/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/lifestyle/topbody/top",
@@ -5545,6 +6291,9 @@
           },
           "CUECA": {
             "slug": "vestuario/lifestyle/cueca",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cueca": {
                 "slug": "vestuario/lifestyle/cueca/cueca",
@@ -5556,6 +6305,9 @@
           },
           "CAMISA-FUTEBOL": {
             "slug": "vestuario/lifestyle/camisa-futebol",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta De Time": {
                 "slug": "vestuario/lifestyle/camisa-futebol/camiseta-de-time",
@@ -5569,9 +6321,15 @@
       },
       "Casual": {
         "slug": "vestuario/casual",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "vestuario/casual/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/casual/meia/meia",
@@ -5583,6 +6341,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/casual/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/casual/bermuda/bermuda",
@@ -5594,6 +6355,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/casual/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/casual/outros/jaqueta-e-blusao",
@@ -5605,6 +6369,9 @@
           },
           "CUECA": {
             "slug": "vestuario/casual/cueca",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cueca": {
                 "slug": "vestuario/casual/cueca/cueca",
@@ -5616,6 +6383,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/casual/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/casual/calcaoshort/short",
@@ -5627,6 +6397,9 @@
           },
           "REGATA": {
             "slug": "vestuario/casual/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/casual/regata/camiseta-regata",
@@ -5638,6 +6411,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/casual/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/casual/t-shirt-outros/camiseta",
@@ -5649,6 +6425,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/casual/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/casual/calcabottom/calca",
@@ -5666,6 +6445,9 @@
           },
           "TOP/BODY": {
             "slug": "vestuario/casual/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/casual/topbody/top",
@@ -5677,6 +6459,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/casual/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/casual/blusainverno/blusa",
@@ -5694,6 +6479,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/casual/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Vestido": {
                 "slug": "vestuario/casual/vestuario/vestido",
@@ -5719,9 +6507,15 @@
       },
       "Academia / Fitness": {
         "slug": "vestuario/academia-fitness",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "T SHIRT-OUTROS": {
             "slug": "vestuario/academia-fitness/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/academia-fitness/t-shirt-outros/camiseta",
@@ -5733,6 +6527,9 @@
           },
           "TOP/BODY": {
             "slug": "vestuario/academia-fitness/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/academia-fitness/topbody/top",
@@ -5744,6 +6541,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/academia-fitness/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/academia-fitness/calcaoshort/short",
@@ -5755,6 +6555,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/academia-fitness/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tapa Bumbum": {
                 "slug": "vestuario/academia-fitness/vestuario/tapa-bumbum",
@@ -5778,6 +6581,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/academia-fitness/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/academia-fitness/calcabottom/calca",
@@ -5795,6 +6601,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/academia-fitness/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/academia-fitness/bermuda/bermuda",
@@ -5806,6 +6615,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/academia-fitness/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/academia-fitness/outros/jaqueta-e-blusao",
@@ -5817,6 +6629,9 @@
           },
           "REGATA": {
             "slug": "vestuario/academia-fitness/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/academia-fitness/regata/camiseta-regata",
@@ -5828,6 +6643,9 @@
           },
           "MEIA": {
             "slug": "vestuario/academia-fitness/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/academia-fitness/meia/meia",
@@ -5839,6 +6657,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/academia-fitness/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Agasalho": {
                 "slug": "vestuario/academia-fitness/blusainverno/agasalho",
@@ -5852,9 +6673,15 @@
       },
       "Lutas": {
         "slug": "vestuario/lutas",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BERMUDA": {
             "slug": "vestuario/lutas/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/lutas/bermuda/bermuda",
@@ -5866,6 +6693,9 @@
           },
           "LUTA": {
             "slug": "vestuario/lutas/luta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Kimono": {
                 "slug": "vestuario/lutas/luta/kimono",
@@ -5877,6 +6707,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/lutas/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/lutas/t-shirt-outros/camiseta",
@@ -5888,6 +6721,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/lutas/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/lutas/blusainverno/blusa",
@@ -5899,6 +6735,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/lutas/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/lutas/calcabottom/calca",
@@ -5912,9 +6751,15 @@
       },
       "Surf / Stand Up": {
         "slug": "vestuario/surf-stand-up",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OUTROS": {
             "slug": "vestuario/surf-stand-up/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/surf-stand-up/outros/jaqueta-e-blusao",
@@ -5926,6 +6771,9 @@
           },
           "CAMISA-OUTROS": {
             "slug": "vestuario/surf-stand-up/camisa-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa": {
                 "slug": "vestuario/surf-stand-up/camisa-outros/camisa",
@@ -5937,6 +6785,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/surf-stand-up/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/surf-stand-up/t-shirt-outros/camiseta",
@@ -5950,9 +6801,15 @@
       },
       "Coletivos": {
         "slug": "vestuario/coletivos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "T SHIRT-OUTROS": {
             "slug": "vestuario/coletivos/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/coletivos/t-shirt-outros/camiseta",
@@ -5964,6 +6821,9 @@
           },
           "REGATA": {
             "slug": "vestuario/coletivos/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/coletivos/regata/camiseta-regata",
@@ -5975,6 +6835,9 @@
           },
           "CAMISA-FUTEBOL": {
             "slug": "vestuario/coletivos/camisa-futebol",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta De Time": {
                 "slug": "vestuario/coletivos/camisa-futebol/camiseta-de-time",
@@ -5992,6 +6855,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/coletivos/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/coletivos/bermuda/bermuda",
@@ -6003,6 +6869,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/coletivos/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/coletivos/outros/jaqueta-e-blusao",
@@ -6014,6 +6883,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/coletivos/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/coletivos/blusainverno/blusa",
@@ -6025,6 +6897,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/coletivos/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/coletivos/calcabottom/calca",
@@ -6036,6 +6911,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/coletivos/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calção": {
                 "slug": "vestuario/coletivos/calcaoshort/calcao",
@@ -6047,6 +6925,9 @@
           },
           "MEIA": {
             "slug": "vestuario/coletivos/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/coletivos/meia/meia",
@@ -6058,6 +6939,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/coletivos/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Conjunto": {
                 "slug": "vestuario/coletivos/vestuario/conjunto",
@@ -6071,9 +6955,15 @@
       },
       "Skate": {
         "slug": "vestuario/skate",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "T SHIRT-OUTROS": {
             "slug": "vestuario/skate/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/skate/t-shirt-outros/camiseta",
@@ -6085,6 +6975,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/skate/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/skate/blusainverno/blusa",
@@ -6096,6 +6989,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/skate/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/skate/bermuda/bermuda",
@@ -6109,9 +7005,15 @@
       },
       "Racket": {
         "slug": "vestuario/racket",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "T SHIRT-OUTROS": {
             "slug": "vestuario/racket/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/racket/t-shirt-outros/camiseta",
@@ -6123,6 +7025,9 @@
           },
           "REGATA": {
             "slug": "vestuario/racket/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/racket/regata/camiseta-regata",
@@ -6134,6 +7039,9 @@
           },
           "CAMISA-OUTROS": {
             "slug": "vestuario/racket/camisa-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa": {
                 "slug": "vestuario/racket/camisa-outros/camisa",
@@ -6151,6 +7059,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/racket/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/racket/bermuda/bermuda",
@@ -6162,6 +7073,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/racket/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short-Saia": {
                 "slug": "vestuario/racket/vestuario/short-saia",
@@ -6185,6 +7099,9 @@
           },
           "TOP/BODY": {
             "slug": "vestuario/racket/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/racket/topbody/top",
@@ -6196,6 +7113,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/racket/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/racket/calcaoshort/short",
@@ -6207,6 +7127,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/racket/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/racket/outros/jaqueta-e-blusao",
@@ -6220,9 +7143,15 @@
       },
       "Futebol Americano": {
         "slug": "vestuario/futebol-americano",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "CAMISA-FUTEBOL": {
             "slug": "vestuario/futebol-americano/camisa-futebol",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta De Time": {
                 "slug": "vestuario/futebol-americano/camisa-futebol/camiseta-de-time",
@@ -6234,6 +7163,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/futebol-americano/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/futebol-americano/t-shirt-outros/camiseta",
@@ -6247,9 +7179,15 @@
       },
       "Vestuário": {
         "slug": "vestuario/vestuario",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "vestuario/vestuario/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/vestuario/meia/meia",
@@ -6263,9 +7201,15 @@
       },
       "Basquete": {
         "slug": "vestuario/basquete",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "T SHIRT-OUTROS": {
             "slug": "vestuario/basquete/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/basquete/t-shirt-outros/camiseta",
@@ -6277,6 +7221,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/basquete/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/basquete/outros/jaqueta-e-blusao",
@@ -6288,6 +7235,9 @@
           },
           "REGATA": {
             "slug": "vestuario/basquete/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/basquete/regata/camiseta-regata",
@@ -6299,6 +7249,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/basquete/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/basquete/bermuda/bermuda",
@@ -6310,6 +7263,9 @@
           },
           "CAMISA-FUTEBOL": {
             "slug": "vestuario/basquete/camisa-futebol",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta De Time": {
                 "slug": "vestuario/basquete/camisa-futebol/camiseta-de-time",
@@ -6323,9 +7279,15 @@
       },
       "Beach Tennis": {
         "slug": "vestuario/beach-tennis",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "vestuario/beach-tennis/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/beach-tennis/meia/meia",
@@ -6339,9 +7301,15 @@
       },
       "Aventura / Esportes Radicais": {
         "slug": "vestuario/aventura-esportes-radicais",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OUTROS": {
             "slug": "vestuario/aventura-esportes-radicais/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/aventura-esportes-radicais/outros/jaqueta-e-blusao",
@@ -6353,6 +7321,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/aventura-esportes-radicais/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/aventura-esportes-radicais/t-shirt-outros/camiseta",
@@ -6370,6 +7341,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/aventura-esportes-radicais/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/aventura-esportes-radicais/calcabottom/calca",
@@ -6381,6 +7355,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/aventura-esportes-radicais/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Colete": {
                 "slug": "vestuario/aventura-esportes-radicais/blusainverno/colete",
@@ -6392,6 +7369,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/aventura-esportes-radicais/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/aventura-esportes-radicais/bermuda/bermuda",
@@ -6403,6 +7383,9 @@
           },
           "REGATA": {
             "slug": "vestuario/aventura-esportes-radicais/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/aventura-esportes-radicais/regata/camiseta-regata",
@@ -6414,6 +7397,9 @@
           },
           "MEIA": {
             "slug": "vestuario/aventura-esportes-radicais/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/aventura-esportes-radicais/meia/meia",
@@ -6427,9 +7413,15 @@
       },
       "Studio": {
         "slug": "vestuario/studio",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BERMUDA": {
             "slug": "vestuario/studio/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/studio/bermuda/bermuda",
@@ -6441,6 +7433,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/studio/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Macacão": {
                 "slug": "vestuario/studio/vestuario/macacao",
@@ -6452,6 +7447,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/studio/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/studio/outros/jaqueta-e-blusao",
@@ -6469,6 +7467,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/studio/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/studio/blusainverno/blusa",
@@ -6480,6 +7481,9 @@
           },
           "TOP/BODY": {
             "slug": "vestuario/studio/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/studio/topbody/top",
@@ -6497,6 +7501,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/studio/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/studio/calcabottom/calca",
@@ -6508,6 +7515,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/studio/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/studio/t-shirt-outros/camiseta",
@@ -6519,6 +7529,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/studio/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/studio/calcaoshort/short",
@@ -6530,6 +7543,9 @@
           },
           "REGATA": {
             "slug": "vestuario/studio/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/studio/regata/camiseta-regata",
@@ -6543,9 +7559,15 @@
       },
       "Studio 78": {
         "slug": "vestuario/studio-78",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "vestuario/studio-78/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "vestuario/studio-78/meia/meia",
@@ -6557,6 +7579,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/studio-78/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/studio-78/blusainverno/blusa",
@@ -6574,6 +7599,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/studio-78/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/studio-78/outros/jaqueta-e-blusao",
@@ -6591,6 +7619,9 @@
           },
           "T SHIRT-OUTROS": {
             "slug": "vestuario/studio-78/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/studio-78/t-shirt-outros/camiseta",
@@ -6608,6 +7639,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/studio-78/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/studio-78/bermuda/bermuda",
@@ -6619,6 +7653,9 @@
           },
           "REGATA": {
             "slug": "vestuario/studio-78/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/studio-78/regata/camiseta-regata",
@@ -6630,6 +7667,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/studio-78/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/studio-78/calcabottom/calca",
@@ -6641,6 +7681,9 @@
           },
           "TOP/BODY": {
             "slug": "vestuario/studio-78/topbody",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Top": {
                 "slug": "vestuario/studio-78/topbody/top",
@@ -6652,6 +7695,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/studio-78/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Saia": {
                 "slug": "vestuario/studio-78/vestuario/saia",
@@ -6681,6 +7727,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/studio-78/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/studio-78/calcaoshort/short",
@@ -6694,9 +7743,15 @@
       },
       "TODAS": {
         "slug": "vestuario/todas",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ACESSORIOS": {
             "slug": "vestuario/todas/acessorios",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Kit": {
                 "slug": "vestuario/todas/acessorios/kit",
@@ -6710,9 +7765,15 @@
       },
       "": {
         "slug": "vestuario",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "CAMISA-FUTEBOL": {
             "slug": "vestuario/camisa-futebol",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta De Time": {
                 "slug": "vestuario/camisa-futebol/camiseta-de-time",
@@ -6726,9 +7787,15 @@
       },
       "MOTORSPORT": {
         "slug": "vestuario/motorsport",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "CAMISA-OUTROS": {
             "slug": "vestuario/motorsport/camisa-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camisa Polo": {
                 "slug": "vestuario/motorsport/camisa-outros/camisa-polo",
@@ -6742,9 +7809,15 @@
       },
       "Dança": {
         "slug": "vestuario/danca",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "CALCA/BOTTOM": {
             "slug": "vestuario/danca/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/danca/calcabottom/calca",
@@ -6756,6 +7829,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/danca/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Cropped": {
                 "slug": "vestuario/danca/vestuario/cropped",
@@ -6767,6 +7843,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/danca/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/danca/outros/jaqueta-e-blusao",
@@ -6780,9 +7859,15 @@
       },
       "Infantil": {
         "slug": "vestuario/infantil",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "T SHIRT-OUTROS": {
             "slug": "vestuario/infantil/t-shirt-outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta": {
                 "slug": "vestuario/infantil/t-shirt-outros/camiseta",
@@ -6794,6 +7879,9 @@
           },
           "CALCAO/SHORT": {
             "slug": "vestuario/infantil/calcaoshort",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Short": {
                 "slug": "vestuario/infantil/calcaoshort/short",
@@ -6805,6 +7893,9 @@
           },
           "BERMUDA": {
             "slug": "vestuario/infantil/bermuda",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bermuda": {
                 "slug": "vestuario/infantil/bermuda/bermuda",
@@ -6816,6 +7907,9 @@
           },
           "REGATA": {
             "slug": "vestuario/infantil/regata",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Camiseta Regata": {
                 "slug": "vestuario/infantil/regata/camiseta-regata",
@@ -6827,6 +7921,9 @@
           },
           "VESTUARIO": {
             "slug": "vestuario/infantil/vestuario",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Conjunto": {
                 "slug": "vestuario/infantil/vestuario/conjunto",
@@ -6838,6 +7935,9 @@
           },
           "NATACAO": {
             "slug": "vestuario/infantil/natacao",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Sunga": {
                 "slug": "vestuario/infantil/natacao/sunga",
@@ -6849,6 +7949,9 @@
           },
           "OUTROS": {
             "slug": "vestuario/infantil/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Jaqueta e Blusão": {
                 "slug": "vestuario/infantil/outros/jaqueta-e-blusao",
@@ -6866,6 +7969,9 @@
           },
           "CALCA/BOTTOM": {
             "slug": "vestuario/infantil/calcabottom",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Calça": {
                 "slug": "vestuario/infantil/calcabottom/calca",
@@ -6877,6 +7983,9 @@
           },
           "BLUSA/INVERNO": {
             "slug": "vestuario/infantil/blusainverno",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Blusa": {
                 "slug": "vestuario/infantil/blusainverno/blusa",
@@ -6892,12 +8001,22 @@
   },
   "Calçados": {
     "slug": "calcados",
+    "arquivos": [
+      "CENTAURO.json",
+      "KIPPLING.json"
+    ],
     "subcategorias": {
       "Casual": {
         "slug": "calcados/casual",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/casual/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/casual/tenis/tenis",
@@ -6909,6 +8028,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "calcados/casual/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos E Sandálias": {
                 "slug": "calcados/casual/sandaliachinelo/chinelos-e-sandalias",
@@ -6928,9 +8050,15 @@
       },
       "Futebol": {
         "slug": "calcados/futebol",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "CHUTEIRA": {
             "slug": "calcados/futebol/chuteira",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "CHUTEIRA": {
                 "slug": "calcados/futebol/chuteira/chuteira",
@@ -6948,6 +8076,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "calcados/futebol/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos e Sandálias": {
                 "slug": "calcados/futebol/sandaliachinelo/chinelos-e-sandalias",
@@ -6965,6 +8096,9 @@
           },
           "TENIS": {
             "slug": "calcados/futebol/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/futebol/tenis/tenis",
@@ -6978,9 +8112,15 @@
       },
       "Lazer / Piscina / Praia": {
         "slug": "calcados/lazer-piscina-praia",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "SANDALIA/CHINELO": {
             "slug": "calcados/lazer-piscina-praia/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos E Sandálias": {
                 "slug": "calcados/lazer-piscina-praia/sandaliachinelo/chinelos-e-sandalias",
@@ -7000,9 +8140,15 @@
       },
       "Aventura / Esportes Radicais": {
         "slug": "calcados/aventura-esportes-radicais",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/aventura-esportes-radicais/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/aventura-esportes-radicais/tenis/tenis",
@@ -7022,9 +8168,15 @@
       },
       "Lifestyle": {
         "slug": "calcados/lifestyle",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/lifestyle/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/lifestyle/tenis/tenis",
@@ -7036,6 +8188,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "calcados/lifestyle/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos E Sandálias": {
                 "slug": "calcados/lifestyle/sandaliachinelo/chinelos-e-sandalias",
@@ -7055,9 +8210,15 @@
       },
       "Corrida / Caminhada": {
         "slug": "calcados/corrida-caminhada",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/corrida-caminhada/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/corrida-caminhada/tenis/tenis",
@@ -7069,6 +8230,9 @@
           },
           "OUTROS": {
             "slug": "calcados/corrida-caminhada/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "z_TENIS LS_desativacao": {
                 "slug": "calcados/corrida-caminhada/outros/ztenis-lsdesativacao",
@@ -7088,9 +8252,15 @@
       },
       "Skate": {
         "slug": "calcados/skate",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/skate/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/skate/tenis/tenis",
@@ -7104,9 +8274,15 @@
       },
       "Aquaticos": {
         "slug": "calcados/aquaticos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "SANDALIA/CHINELO": {
             "slug": "calcados/aquaticos/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos E Sandálias": {
                 "slug": "calcados/aquaticos/sandaliachinelo/chinelos-e-sandalias",
@@ -7126,9 +8302,15 @@
       },
       "Lutas": {
         "slug": "calcados/lutas",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/lutas/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/lutas/tenis/tenis",
@@ -7142,9 +8324,15 @@
       },
       "Racket": {
         "slug": "calcados/racket",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/racket/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/racket/tenis/tenis",
@@ -7156,6 +8344,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "calcados/racket/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Sapatilha": {
                 "slug": "calcados/racket/sandaliachinelo/sapatilha",
@@ -7169,9 +8360,15 @@
       },
       "Treino": {
         "slug": "calcados/treino",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/treino/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/treino/tenis/tenis",
@@ -7189,6 +8386,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "calcados/treino/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos E Sandálias": {
                 "slug": "calcados/treino/sandaliachinelo/chinelos-e-sandalias",
@@ -7200,6 +8400,9 @@
           },
           "OUTROS": {
             "slug": "calcados/treino/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "z_TENIS LS_desativacao": {
                 "slug": "calcados/treino/outros/ztenis-lsdesativacao",
@@ -7213,9 +8416,15 @@
       },
       "Coletivos": {
         "slug": "calcados/coletivos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/coletivos/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/coletivos/tenis/tenis",
@@ -7227,6 +8436,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "calcados/coletivos/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos E Sandálias": {
                 "slug": "calcados/coletivos/sandaliachinelo/chinelos-e-sandalias",
@@ -7246,9 +8458,15 @@
       },
       "z_Corrida Perf_desativacao": {
         "slug": "calcados/zcorrida-perfdesativacao",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/zcorrida-perfdesativacao/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/zcorrida-perfdesativacao/tenis/tenis",
@@ -7262,9 +8480,15 @@
       },
       "Academia / Fitness": {
         "slug": "calcados/academia-fitness",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/academia-fitness/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/academia-fitness/tenis/tenis",
@@ -7278,9 +8502,15 @@
       },
       "MOTORSPORT": {
         "slug": "calcados/motorsport",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/motorsport/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/motorsport/tenis/tenis",
@@ -7294,9 +8524,15 @@
       },
       "": {
         "slug": "calcados",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/tenis/tenis",
@@ -7310,9 +8546,15 @@
       },
       "Studio 78": {
         "slug": "calcados/studio-78",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/studio-78/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/studio-78/tenis/tenis",
@@ -7324,6 +8566,9 @@
           },
           "SANDALIA/CHINELO": {
             "slug": "calcados/studio-78/sandaliachinelo",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Chinelos e Sandálias": {
                 "slug": "calcados/studio-78/sandaliachinelo/chinelos-e-sandalias",
@@ -7337,9 +8582,15 @@
       },
       "Infantil": {
         "slug": "calcados/infantil",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/infantil/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/infantil/tenis/tenis",
@@ -7353,9 +8604,15 @@
       },
       "Basquete": {
         "slug": "calcados/basquete",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/basquete/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/basquete/tenis/tenis",
@@ -7369,9 +8626,15 @@
       },
       "Vôlei": {
         "slug": "calcados/volei",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "TENIS": {
             "slug": "calcados/volei/tenis",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Tênis": {
                 "slug": "calcados/volei/tenis/tenis",
@@ -7383,19 +8646,25 @@
           }
         }
       }
-    },
-    "arquivos": [
-      "KIPPLING.json"
-    ]
+    }
   },
   "Alimento": {
     "slug": "alimento",
+    "arquivos": [
+      "CENTAURO.json"
+    ],
     "subcategorias": {
       "Suplementos": {
         "slug": "alimento/suplementos",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ALIMENTO": {
             "slug": "alimento/suplementos/alimento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Termogênico": {
                 "slug": "alimento/suplementos/alimento/termogenico",
@@ -7481,9 +8750,15 @@
       },
       "Treino": {
         "slug": "alimento/treino",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "ALIMENTO": {
             "slug": "alimento/treino/alimento",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Whey Protein": {
                 "slug": "alimento/treino/alimento/whey-protein",
@@ -7551,9 +8826,15 @@
       },
       "Aventura / Esportes Radicais": {
         "slug": "alimento/aventura-esportes-radicais",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OUTROS": {
             "slug": "alimento/aventura-esportes-radicais/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "A Cadastrar": {
                 "slug": "alimento/aventura-esportes-radicais/outros/a-cadastrar",
@@ -7567,9 +8848,15 @@
       },
       "Infantil": {
         "slug": "alimento/infantil",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "OUTROS": {
             "slug": "alimento/infantil/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "A Cadastrar": {
                 "slug": "alimento/infantil/outros/a-cadastrar",
@@ -7585,12 +8872,21 @@
   },
   "Meias": {
     "slug": "meias",
+    "arquivos": [
+      "CENTAURO.json"
+    ],
     "subcategorias": {
       "Treino": {
         "slug": "meias/treino",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "meias/treino/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "meias/treino/meia/meia",
@@ -7604,9 +8900,15 @@
       },
       "Lifestyle": {
         "slug": "meias/lifestyle",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "meias/lifestyle/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meia": {
                 "slug": "meias/lifestyle/meia/meia",
@@ -7620,9 +8922,15 @@
       },
       "Futebol": {
         "slug": "meias/futebol",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "MEIA": {
             "slug": "meias/futebol/meia",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Meião": {
                 "slug": "meias/futebol/meia/meiao",
@@ -7644,12 +8952,21 @@
   },
   "Bike": {
     "slug": "bike",
+    "arquivos": [
+      "CENTAURO.json"
+    ],
     "subcategorias": {
       "Bike": {
         "slug": "bike/bike",
+        "arquivos": [
+          "CENTAURO.json"
+        ],
         "subcategorias": {
           "BICICLETA": {
             "slug": "bike/bike/bicicleta",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "Bicicleta": {
                 "slug": "bike/bike/bicicleta/bicicleta",
@@ -7661,6 +8978,9 @@
           },
           "OUTROS": {
             "slug": "bike/bike/outros",
+            "arquivos": [
+              "CENTAURO.json"
+            ],
             "subcategorias": {
               "A Cadastrar": {
                 "slug": "bike/bike/outros/a-cadastrar",
@@ -7694,6 +9014,10 @@
   },
   "Perfumaria": {
     "slug": "perfumaria",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Feminino": {
         "slug": "perfumaria/feminino",
@@ -7733,6 +9057,10 @@
   },
   "Corpo e Banho": {
     "slug": "corpo-e-banho",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Hidratante": {
         "slug": "corpo-e-banho/hidratante",
@@ -7743,6 +9071,10 @@
       },
       "Acessórios": {
         "slug": "corpo-e-banho/acessorios",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Soluções para Corpo": {
             "slug": "corpo-e-banho/acessorios/solucoes-para-corpo",
@@ -7790,6 +9122,10 @@
       },
       "Cuidados Pós-Banho": {
         "slug": "corpo-e-banho/cuidados-pos-banho",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Body Spray": {
             "slug": "corpo-e-banho/cuidados-pos-banho/body-spray",
@@ -7809,6 +9145,10 @@
       },
       "Cuidados para o Banho": {
         "slug": "corpo-e-banho/cuidados-para-o-banho",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Sabonete": {
             "slug": "corpo-e-banho/cuidados-para-o-banho/sabonete",
@@ -7828,6 +9168,10 @@
       },
       "Barba": {
         "slug": "corpo-e-banho/barba",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Produtos para o Barbear": {
             "slug": "corpo-e-banho/barba/produtos-para-o-barbear",
@@ -7859,6 +9203,10 @@
       },
       "Óleo Corporal": {
         "slug": "corpo-e-banho/oleo-corporal",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Hidratante": {
             "slug": "corpo-e-banho/oleo-corporal/hidratante",
@@ -7891,6 +9239,9 @@
       },
       "Protetor Solar e Bronzeamento": {
         "slug": "corpo-e-banho/protetor-solar-e-bronzeamento",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Protetor Solar Corporal": {
             "slug": "corpo-e-banho/protetor-solar-e-bronzeamento/protetor-solar-corporal",
@@ -7922,9 +9273,17 @@
   },
   "Maquiagem": {
     "slug": "maquiagem",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Rosto": {
         "slug": "maquiagem/rosto",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Iluminador": {
             "slug": "maquiagem/rosto/iluminador",
@@ -7999,6 +9358,9 @@
       },
       "Unhas": {
         "slug": "maquiagem/unhas",
+        "arquivos": [
+          "EUDORA.json"
+        ],
         "subcategorias": {
           "Esmaltes": {
             "slug": "maquiagem/unhas/esmaltes",
@@ -8010,6 +9372,10 @@
       },
       "Olhos": {
         "slug": "maquiagem/olhos",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Máscara de Cílios": {
             "slug": "maquiagem/olhos/mascara-de-cilios",
@@ -8036,6 +9402,10 @@
       },
       "Paleta": {
         "slug": "maquiagem/paleta",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Sombra": {
             "slug": "maquiagem/paleta/sombra",
@@ -8062,6 +9432,10 @@
       },
       "Boca": {
         "slug": "maquiagem/boca",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Gloss e Brilho Labial": {
             "slug": "maquiagem/boca/gloss-e-brilho-labial",
@@ -8102,6 +9476,10 @@
       },
       "Kits e Looks": {
         "slug": "maquiagem/kits-e-looks",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Completos": {
             "slug": "maquiagem/kits-e-looks/completos",
@@ -8121,6 +9499,10 @@
       },
       "Acessórios": {
         "slug": "maquiagem/acessorios",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Organizador de Maquiagem": {
             "slug": "maquiagem/acessorios/organizador-de-maquiagem",
@@ -8161,6 +9543,10 @@
   },
   "Cabelos": {
     "slug": "cabelos",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Shampoo": {
         "slug": "cabelos/shampoo",
@@ -8199,6 +9585,10 @@
       },
       "Modelador": {
         "slug": "cabelos/modelador",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Gel": {
             "slug": "cabelos/modelador/gel",
@@ -8229,6 +9619,10 @@
       },
       "Finalizador": {
         "slug": "cabelos/finalizador",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Reparador de Pontas": {
             "slug": "cabelos/finalizador/reparador-de-pontas",
@@ -8272,6 +9666,10 @@
       },
       "Acessórios": {
         "slug": "cabelos/acessorios",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Refis": {
             "slug": "cabelos/acessorios/refis",
@@ -8298,9 +9696,17 @@
   },
   "Cuidados para Pele": {
     "slug": "cuidados-para-pele",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Rosto": {
         "slug": "cuidados-para-pele/rosto",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Clareador de Manchas": {
             "slug": "cuidados-para-pele/rosto/clareador-de-manchas",
@@ -8367,6 +9773,10 @@
       },
       "Kits de Tratamento": {
         "slug": "cuidados-para-pele/kits-de-tratamento",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Rosto": {
             "slug": "cuidados-para-pele/kits-de-tratamento/rosto",
@@ -8386,6 +9796,10 @@
       },
       "Corpo": {
         "slug": "cuidados-para-pele/corpo",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Hidratante": {
             "slug": "cuidados-para-pele/corpo/hidratante",
@@ -8405,6 +9819,10 @@
       },
       "Lábios": {
         "slug": "cuidados-para-pele/labios",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Hidratante": {
             "slug": "cuidados-para-pele/labios/hidratante",
@@ -8423,6 +9841,10 @@
       },
       "Olhos": {
         "slug": "cuidados-para-pele/olhos",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Anti-idade": {
             "slug": "cuidados-para-pele/olhos/anti-idade",
@@ -8457,6 +9879,10 @@
   },
   "Perfumes": {
     "slug": "perfumes",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Kits para Presente": {
         "slug": "perfumes/kits-para-presente",
@@ -8475,9 +9901,17 @@
   },
   "Cuidados Pessoais": {
     "slug": "cuidados-pessoais",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Corpo e Banho": {
         "slug": "cuidados-pessoais/corpo-e-banho",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Hidratante Corporal": {
             "slug": "cuidados-pessoais/corpo-e-banho/hidratante-corporal",
@@ -8495,6 +9929,9 @@
       },
       "Acessórios": {
         "slug": "cuidados-pessoais/acessorios",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Toilette": {
             "slug": "cuidados-pessoais/acessorios/toilette",
@@ -8508,9 +9945,17 @@
   },
   "Bem Estar & Saúde": {
     "slug": "bem-estar-e-saude",
+    "arquivos": [
+      "EUDORA.json",
+      "OBOTICARIO.json"
+    ],
     "subcategorias": {
       "Casa": {
         "slug": "bem-estar-e-saude/casa",
+        "arquivos": [
+          "EUDORA.json",
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Acessórios": {
             "slug": "bem-estar-e-saude/casa/acessorios",
@@ -8546,6 +9991,9 @@
       },
       "Beleza Pet": {
         "slug": "bem-estar-e-saude/beleza-pet",
+        "arquivos": [
+          "OBOTICARIO.json"
+        ],
         "subcategorias": {
           "Kits Pet": {
             "slug": "bem-estar-e-saude/beleza-pet/kits-pet",
@@ -8619,9 +10067,15 @@
   },
   "Masculino": {
     "slug": "masculino",
+    "arquivos": [
+      "NIKE.json"
+    ],
     "subcategorias": {
       "Calçados": {
         "slug": "masculino/calcados",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Tênis": {
             "slug": "masculino/calcados/tenis",
@@ -8651,6 +10105,9 @@
       },
       "Roupas": {
         "slug": "masculino/roupas",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Camisetas": {
             "slug": "masculino/roupas/camisetas",
@@ -8686,6 +10143,9 @@
       },
       "Acessórios": {
         "slug": "masculino/acessorios",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Bolsas & Mochilas": {
             "slug": "masculino/acessorios/bolsas-e-mochilas",
@@ -8705,9 +10165,15 @@
   },
   "Feminino": {
     "slug": "feminino",
+    "arquivos": [
+      "NIKE.json"
+    ],
     "subcategorias": {
       "Roupas": {
         "slug": "feminino/roupas",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Shorts": {
             "slug": "feminino/roupas/shorts",
@@ -8767,6 +10233,9 @@
       },
       "Calçados": {
         "slug": "feminino/calcados",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Tênis": {
             "slug": "feminino/calcados/tenis",
@@ -8796,6 +10265,9 @@
       },
       "Acessórios": {
         "slug": "feminino/acessorios",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Bolsas & Mochilas": {
             "slug": "feminino/acessorios/bolsas-e-mochilas",
@@ -8815,9 +10287,15 @@
   },
   "Unissex": {
     "slug": "unissex",
+    "arquivos": [
+      "NIKE.json"
+    ],
     "subcategorias": {
       "Acessórios": {
         "slug": "unissex/acessorios",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Bolsas & Mochilas": {
             "slug": "unissex/acessorios/bolsas-e-mochilas",
@@ -8871,6 +10349,9 @@
       },
       "Roupas": {
         "slug": "unissex/roupas",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Meias": {
             "slug": "unissex/roupas/meias",
@@ -8900,6 +10381,9 @@
       },
       "Calçados": {
         "slug": "unissex/calcados",
+        "arquivos": [
+          "NIKE.json"
+        ],
         "subcategorias": {
           "Tênis": {
             "slug": "unissex/calcados/tenis",

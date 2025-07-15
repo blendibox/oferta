@@ -4,6 +4,9 @@ import { parseStringPromise } from 'xml2js';
 import CupomCard from '../components/CupomCard';
 import CupomCard2 from '../components/CupomCard2';
 
+import CompararProdutos    from '../components/CompararProdutos';
+import BreadcrumbCategoria from '../components/BreadcrumbCategoria';
+
 
 async function lerProdutosDoXML() {
   const xmlPath = path.join(process.cwd(), 'data/cupons/LomadeeDownload.xml');
@@ -49,6 +52,8 @@ export default async function Home() {
   const produtos2 = await lerProdutosDoXML2();
 
   return (
+   <div className="max-w-7xl mx-auto px-4">
+
     <div className="m-6 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <div className="items-center gap-8 rounded-lg bg-white p-6 shadow-md">
         <h1 className="font-sans font-black text-center text-4xl italic text-white rounded-lg bg-emerald-600 bold p-6 m-6">
@@ -66,5 +71,6 @@ export default async function Home() {
 		
       </div>
     </div>
+	</div>
   );
 }
