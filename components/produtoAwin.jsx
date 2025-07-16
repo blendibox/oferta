@@ -38,7 +38,13 @@ export default function ProdutoAwin(props) {
 
     return (
       <>   
-         
+		  <SchemaProduto
+		   title={produto['text']['name']}
+		   image= {produto['uri']['mImage']}
+		   link= {produto['uri']['awTrack']}
+		   brand={produto['brand'] || mybrand}
+		   priceGoogle= {produto['price']['buynow']} 
+		   />
       <main id="content" role="main" className={styles.AlignCenter}>
 		<VideoBubble title="Nome do Produto | 3em1_puffer" />		
       <div className="p-8 max-w-3xl mx-auto  ">

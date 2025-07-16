@@ -140,19 +140,23 @@ export default function CompararProdutos() {
   
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-	<div id='buscador'>
-      <h1 className="text-2xl font-bold mb-4 ">Comparar Ofertas</h1>
-   <label> <small>Digite sua pesquisa, que pode ser o nome do produto, cupom, ou marca:</small>
-      <input
-        type="text"
-        placeholder="Buscar produto por nome..."
-        value={busca}
-        onChange={(e) => handleBusca(e.target.value)}
-        className="border p-2 mb-4 w-full rounded"
-      />
-   </label>
-   </div>
+    <div className="p-6 max-w-9/10 mx-auto  ">
+	<div id='buscador' className="rounded-xl bg-[url(/images/banner.webp)] bg-fixed bg-center md:bg-cover mb-5 drop-shadow-xl ">
+		<div className=" p-10 rounded">
+		<div className="bg-white/30 backdrop-blur-md p-5 rounded drop-shadow-xl">
+		  <h1 className="text-4xl font-bold mb-3 text-center pt-3  text-sky-950 text-shadow-2xs text-shadow-sky-100">Compare Ofertas <b className="text-pink-400">✱</b></h1>
+		  <label className=" text-center text-sky-950 "> <small>Digite sua pesquisa, que pode ser o <b>Nome</b> do <b>Produto</b>, <b>Cupom</b>, ou <b>Marca</b>:</small>
+			  <input
+				type="text"
+				placeholder="Buscar produto por nome..."
+				value={busca}
+				onChange={(e) => handleBusca(e.target.value)}
+				className="  border p-3 mb-3 w-full rounded bg-white text-sky-950 opacity-75 drop-shadow-xl  "
+			  />
+		   </label>	   
+	    </div>
+		</div>
+    </div>
       {/* Produtos selecionados */}
       {selecionados.length > 0 && (
         <div className="bg-gray-100 p-4 mb-6 rounded">
@@ -193,6 +197,8 @@ export default function CompararProdutos() {
                 <Image
                   src={p._imagem}
                   alt={p._titulo}
+				  width={400}
+				  height={400}
                   className="w-full h-40 object-contain my-2"
 				  blurDataURL={p._imagem}
 				  placeholder="blur"
@@ -251,6 +257,8 @@ export default function CompararProdutos() {
                   <Image
 						src={p._imagem}
 						alt={p._titulo}
+						width={400}
+				        height={400}
 						className="w-24 h-24 mx-auto object-contain"
 						blurDataURL={p._imagem}
 						placeholder="blur"

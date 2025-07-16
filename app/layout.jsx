@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
 		<head>
 		   <meta charSet="UTF-8" />
 		   <link rel="alternate" type="application/rss+xml" href="https://comprar.blendibox.com.br/googleMerchant_1.xml" />
+		   <link rel="preload" fetchPriority="high" as="image" href="/images/banner.webp" type="image/webp"></link>	   
 		   <meta name="msvalidate.01" content="13BC51958165F779625DD28F673D5B4A"></meta>
 		   <meta name="verify-admitad" content="547987f230" ></meta>
 		   <meta name="lomadee" content="2324685" ></meta>
@@ -28,10 +29,10 @@ export default function RootLayout({ children }) {
 			   <Suspense fallback={<div>Carregando busca...</div>}>	
 				  <MenuPrincipal />	
 			   </Suspense>			
-				<div className="flex-1 max-w-7xl mx-auto px-4">
-				  <div className="max-w-7xl mx-auto px-4">
+				<div className="flex-1 max-w-10/10 mx-auto">
+				  <div className="max-w-10/10 mx-auto">
 				
-						 <h2 className="text-2xl font-semibold mb-4 capitalize mt-6">
+						 <h2 className="text-2xl font-semibold mb-4 capitalize mt-6 ml-16">
 							<BreadcrumbCategoria/>							
 						  </h2>
 					  

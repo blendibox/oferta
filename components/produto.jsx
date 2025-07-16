@@ -51,7 +51,13 @@ export default function Produto(props) {
 
     return (
       <>
-	  
+		  <SchemaProduto
+		   title= {title}
+		   image= {image}
+		   link= {link}
+		   brand={'sem marca'}
+		   priceGoogle= {price}   
+		   />
 	  <main id="content" role="main" className={styles.AlignCenter}>
 	  <VideoBubble title="Nome do Produto | 3em1_puffer" />		
       <div className="p-8 max-w-3xl mx-auto  ">

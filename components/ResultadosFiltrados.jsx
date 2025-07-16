@@ -6,7 +6,7 @@ import slugify from 'slugify';
 import Image from 'next/image';
 import Link from 'next/link';
 import VideoBubble from './VideoBubble'
-
+import SchemaCategoria from './SchemaCategoria';
 
 // Utilitário para tratar preço em diferentes formatos
 function extrairPreco(valor) {
@@ -217,7 +217,16 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 */
   return (
     <div className="mt-6">
-   
+	   <SchemaCategoria
+		  produtos={produtosFiltrados.slice(0, 10).map(p => ({
+			title: p._padronizado?.nome,
+			url: p._padronizado?.link,
+			image: p._padronizado?.imagem,
+			brand: p._padronizado?.marca,
+			descript: p._padronizado?.descricao || '',
+			priceGoogle: p._padronizado?.preco?.toFixed(2) || '0.00'
+		  }))}
+		 />
         <VideoBubble title="Nome do Produto | 3em1_puffer" />
       {/* Filtros */}
       <div className="flex flex-wrap gap-4 mb-6">

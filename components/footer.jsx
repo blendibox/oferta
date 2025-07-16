@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 export default function Footer() {
@@ -19,9 +20,21 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
 
         <div>
-          <h2 className="text-xl font-bold text-emerald-400">Comprar.Blendibox</h2>
+          <h2 className="text-2xl font-bold mb-3 text-center pt-3  text-white text-shadow-2xs text-shadow-sky-100 ">Compare Ofertas <b className="text-pink-500">✱</b>
+		  <div  className="bg-cyan-400 rounded-full max-w-200">
+		   <Image
+                  src="/images/banner.webp"
+                  alt='Logo Blendibox'
+				  width='200'
+				  height='200'
+                  className="w-full h-40 object-contain my-2 rounded-full p-5 drop-shadow-xl"
+				  blurDataURL="/images/blendibox.webp"
+				  placeholder="blur"
+                />
+				</div>
+		  </h2>
           <p className="mt-2 text-sm text-gray-100">
-            Compare preços de milhares de produtos de marcas confiáveis como Nike, Boticário, Kipling, C&A e muito mais.
+            Compare Preços de milhares de Produtos de Marcas famosas: como Nike, Boticário, Kipling, C&A e muito mais.
           </p>
         </div>
 
@@ -32,7 +45,9 @@ export default function Footer() {
             <li><button name='busca' onClick={() => navegarComScroll('/busca')} className="hover:underline text-gray-100">Buscar Produtos</button></li>
             <li><button name='cupom' onClick={() => navegarComScroll('/cupom')} className="hover:underline text-gray-100">Cupons</button></li>
             <li><button name='make' onClick={() => navegarComScroll('/categoria/maquiagem')} className="hover:underline text-gray-100">Maquiagem</button></li>
-          </ul>
+           <li><button name='busca' onClick={() => navegarComScroll('/busca?nike')} className="hover:underline text-gray-100">Nike</button></li>
+           
+		  </ul>
         </div>
 
         <div>
@@ -48,7 +63,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-700 py-4 text-center text-sm text-gray-100">
-        © {ano} Comprar.Blendibox. Todos os direitos reservados.
+        © {ano} <Link href="https://www.blendibox.com.br">Blendibox. Todos os direitos reservados.</Link>
       </div>
     </footer>
   );

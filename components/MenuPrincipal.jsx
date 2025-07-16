@@ -74,7 +74,7 @@ const router = useRouter();
     <>
       <button name='abreFechaMenu'
         onClick={() => setAberto(!aberto)}
-        className="fixed top-4 left-4 z-[9999] bg-emerald-700 text-white p-2 rounded-md shadow-md"
+        className="fixed top-4 left-4 z-[9999] bg-emerald-600 text-white p-2 rounded-md shadow-md"
         aria-label={aberto ? "Fechar menu" : "Abrir menu"}
       >
         {aberto ? <XMarkIcon className="h-5 w-5" /> : <Bars3Icon className="h-5 w-5" />}
@@ -86,7 +86,9 @@ const router = useRouter();
         }`}
       >
         {/* Alterar o título aqui */}
-        <div className="text-lg font-semibold mb-4 text-emerald-700 ml-20">Busca ofertas Blendibox</div>
+        <div className="text-2xl font-bold mb-4 text-center ml-5 text-sky-950 text-shadow-2xs text-shadow-sky-100">
+		Compare Ofertas <b className="text-pink-500">✱</b>
+		</div>
         <input
           type="text"
           className="w-full mb-3 p-2 border rounded"

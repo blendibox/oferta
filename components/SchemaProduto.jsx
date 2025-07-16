@@ -2,6 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SchemaProduto({ title, image, link, brand, priceGoogle }) {
+	
+	const description = `Procurando onde comprar ${title}? Acesse, Compare Ofertas, encontre Cupons para ${title} de forma dinâmica. Milhares de Ofertas e Cupons de desconto de grandes Marcas.`;
+	
   const schema = [
     {
       "@context": "http://schema.org",
@@ -10,7 +13,7 @@ export default function SchemaProduto({ title, image, link, brand, priceGoogle }
       "headline": title,
       "datePublished": "2023-03-03T12:02:41Z",
       "dateModified": "2023-03-03T12:02:41Z",
-      "description": `Procurando onde comprar ${title} original? Clique aqui e encontre com o melhor preço, a melhor forma de pagamento, a entrega mais rápida e o melhor preço de frete. Clique agora e confira! Observação: Poucas unidades! Oferta válida enquanto durarem os estoques! Corre pois está quase esgotado. Oferta exclusiva ${title}`,
+      "description": description,
       "author": {
         "@type": "Person",
         "name": "Juliana",
@@ -38,8 +41,8 @@ export default function SchemaProduto({ title, image, link, brand, priceGoogle }
       name: title,
       image: image,
       url: link,
-      description: `Procurando onde comprar ${title} original? Clique aqui e encontre com o melhor preço, a melhor forma de pagamento, a entrega mais rápida e o melhor preço de frete. Clique agora e confira! Observação: Poucas unidades! Oferta válida enquanto durarem os estoques! Corre pois está quase esgotado. Oferta exclusiva ${title}`,
-      brand: {
+      description: description,
+	  brand: {
         "@type": "Brand",
         name: brand?.replace("-", " "),
       },
