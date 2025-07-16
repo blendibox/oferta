@@ -12,7 +12,9 @@ export async function generateStaticParams() {
 
   function coletar(categorias) {
     for (const [_, dados] of Object.entries(categorias)) {
-      slugs.push({ slug: dados.slug.split('/') });
+      if (dados?.slug) {
+        slugs.push({ slug: dados.slug.split('/') });
+      }
       if (dados.subcategorias) {
         coletar(dados.subcategorias);
       }
@@ -20,7 +22,18 @@ export async function generateStaticParams() {
   }
 
   coletar(categoriasJson);
-  return slugs;
+
+  // Se não for o alvo do build, retorna um slug fake
+  if (process.env.BUILD_TARGET !== 'categoria') {
+    return [{ slug: ['__dummy__'] }];
+  }
+
+  const loteAtual = parseInt(process.env.LOTE || '1');
+  const tamanhoLote = 300; // Ajuste conforme a complexidade
+  const inicio = (loteAtual - 1) * tamanhoLote;
+  const fim = inicio + tamanhoLote;
+
+  return slugs.slice(inicio, fim);
 }
 
 

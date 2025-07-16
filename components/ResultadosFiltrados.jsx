@@ -142,6 +142,7 @@ export default function ResultadosFiltrados() {
 						precoBruto.replace(/[^\d,.-]/g, '').replace(',', '.')
 					  ),
 					imagem: isGalvic ? p['g:image_link'] : p?.uri?.mImage,
+					imagem2: isGalvic ? p['g:image_link'] : p?.uri?.awImage,
 					slug: p.slug || '',
 					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
 					marca: isGalvic ? p['g:brand'] : nomeMarca,
@@ -257,9 +258,16 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 
       {/* Lista de produtos */}
       {carregando ? (
-        <p>Carregando produtos...</p>
+	    <div>
+          <p>Carregando Ofertas...</p>		
+		  <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+			{Array.from({ length: 6 }).map((_, i) => (
+			  <div key={i} className="h-48 bg-gray-200 animate-pulse rounded" />
+			))}
+		  </div>
+		</div>
       ) : produtosVisiveis.length === 0 ? (
-        <p>Nenhum produto encontrado com os filtros aplicados.</p>
+        <p>Nenhuma oferta encontrada com os filtros aplicados.</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
 			{produtosVisiveis.map((p, i) => (
@@ -272,9 +280,11 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 				  width={400}
 				  height={400}
 				  className="w-full h-48 object-cover mb-2 rounded saturate-[1.08] contrast-[1.08]"
+				  blurDataURL={p._padronizado?.imagem2}
+				  placeholder="blur"
 				/>
 				</Link>
-				<h3 className="font-bold text-lg">{p._padronizado?.nome}</h3>
+				<p className="font-bold text-lg">{p._padronizado?.nome}</p>
 				<p className="text-sm text-gray-600">
 				  R$ {p._padronizado?.preco?.toFixed(2)}
 				</p>
@@ -306,6 +316,7 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
           ))}
         </div>
       )}
+	    <div className="m-10"><hr /></div>
     </div>
   );
 }

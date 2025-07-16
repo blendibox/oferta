@@ -38,6 +38,40 @@ if ( tipo == 'produto'){
 	  // copia a pasta out
 	  fs.cpSync('out', outDir, { recursive: true });
 	}
+}else if (tipo === 'categoria') {
+  // Lê e processa categorias.json
+  const categoriasPath = path.join(process.cwd(), 'public', 'categorias.json');
+  const categoriasJson = JSON.parse(fs.readFileSync(categoriasPath, 'utf-8'));
+
+  const slugs = [];
+
+  function coletar(categorias) {
+    for (const [_, dados] of Object.entries(categorias)) {
+      if (dados?.slug) {
+        slugs.push(dados.slug);
+      }
+      if (dados.subcategorias) {
+        coletar(dados.subcategorias);
+      }
+    }
+  }
+
+  coletar(categoriasJson);
+
+  const tamanhoLote = 300;
+  const totalLotes = Math.ceil(slugs.length / tamanhoLote);
+
+  console.log(`🔍 Tipo: ${tipo} | ${slugs.length} categorias | ${totalLotes} lotes`);
+
+  for (let i = 0; i < totalLotes; i++) {
+    const numero = i + 1;
+    const envVars = `LOTE=${numero} BUILD_TARGET=categoria`;
+    const outDir = `out-categoria-lote-${numero}`;
+
+    console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
+    execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
+    fs.cpSync('out', outDir, { recursive: true });
+  }
 	
 }else{
 	// 🔄 Leitura dinâmica do XML da marca atual (ex: mizuno)

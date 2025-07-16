@@ -14,6 +14,8 @@ if (fs.existsSync(dataDir)) {
 
 const pastaOrigem = path.join(process.cwd(), 'public', 'data');
 const destino = path.join(process.cwd(), 'public', 'categorias.json');
+const destinoData = path.join(process.cwd(), 'data', 'slugs', 'categorias.json');
+
 
 const arquivos = fs.readdirSync(pastaOrigem).filter(file => file.endsWith('.json'));
 const categorias = {};
@@ -73,5 +75,8 @@ converterSets(categorias);
 
 // 💾 Salvar o JSON final
 fs.writeFileSync(destino, JSON.stringify(categorias, null, 2), 'utf-8');
+fs.writeFileSync(destinoData, JSON.stringify(categorias, null, 2), 'utf-8');
+
 
 console.log('✅ categorias.json gerado com sucesso em /public/categorias.json');
+console.log('✅ categorias.json gerado com sucesso em /data/slugs/categorias.json');

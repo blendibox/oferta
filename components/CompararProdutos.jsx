@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 function normalizarTexto(texto) {
   return texto
@@ -141,7 +141,8 @@ export default function CompararProdutos() {
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Comparar Ofertas</h1>
+	<div id='buscador'>
+      <h1 className="text-2xl font-bold mb-4 ">Comparar Ofertas</h1>
    <label> <small>Digite sua pesquisa, que pode ser o nome do produto, cupom, ou marca:</small>
       <input
         type="text"
@@ -151,6 +152,7 @@ export default function CompararProdutos() {
         className="border p-2 mb-4 w-full rounded"
       />
    </label>
+   </div>
       {/* Produtos selecionados */}
       {selecionados.length > 0 && (
         <div className="bg-gray-100 p-4 mb-6 rounded">
@@ -188,10 +190,12 @@ export default function CompararProdutos() {
 					  
                 </p>
 
-                <img
+                <Image
                   src={p._imagem}
                   alt={p._titulo}
                   className="w-full h-40 object-contain my-2"
+				  blurDataURL={p._imagem}
+				  placeholder="blur"
                 />
 
                 <Link
@@ -244,10 +248,12 @@ export default function CompararProdutos() {
                   className="text-emerald-600 underline text-sm block mt-1"
                   target="_blank"
                 >
-                  <img
+                  <Image
 						src={p._imagem}
 						alt={p._titulo}
 						className="w-24 h-24 mx-auto object-contain"
+						blurDataURL={p._imagem}
+						placeholder="blur"
 					  />
                 </Link>
 					  
@@ -324,7 +330,7 @@ export default function CompararProdutos() {
               className="bg-white p-4 rounded shadow hover:shadow-md transition cursor-pointer hover:bg-emerald-100 transition shadow"
             >
               <img src={p._imagem} alt={p._titulo} className="w-full h-48 object-contain mb-2" />
-              <h3 className="font-bold text-lg">{p._titulo}</h3>
+              <p className="font-bold text-lg">{p._titulo}</p>
               <p className="text-sm text-gray-500">{p._marca.toUpperCase()}</p>
               <p className="text-sm">
 			

@@ -50,15 +50,13 @@ const router = useRouter();
       <div className="ml-4 border-l pl-2">
         {Object.entries(subcategorias).map(([nome, dados]) => (
           <div key={nome}>
-		  
-		  
-		  
-		  <button
+		  	  
+		  <button id={nome} title={nome}
 			  onClick={() => {
 				navegarComScroll(`/categoria/${dados.slug}`);
 				setAberto(false);
 			  }}
-			  className="block px-2 py-1 text-sm text-gray-800 hover:bg-emerald-100 rounded text-left w-full"
+			  className="block px-2 py-1 text-lg text-gray-800 hover:bg-emerald-100 rounded text-left w-full"
 			>
 			  {nome}
 			</button>
@@ -74,21 +72,21 @@ const router = useRouter();
 
   return (
     <>
-      <button
+      <button name='abreFechaMenu'
         onClick={() => setAberto(!aberto)}
-        className="fixed top-4 left-4 z-[9999] bg-emerald-600 text-white p-2 rounded-md shadow-md"
+        className="fixed top-4 left-4 z-[9999] bg-emerald-700 text-white p-2 rounded-md shadow-md"
         aria-label={aberto ? "Fechar menu" : "Abrir menu"}
       >
         {aberto ? <XMarkIcon className="h-5 w-5" /> : <Bars3Icon className="h-5 w-5" />}
       </button>
 
       <aside
-        className={`fixed z-40 top-0 left-0 h-full bg-white shadow-lg w-64 p-4 transition-transform duration-300 ${
+        className={`fixed z-40 top-0 left-0 h-full bg-white shadow-lg w-84 p-4 transition-transform duration-300 ${
           aberto ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         {/* Alterar o título aqui */}
-        <div className="text-lg font-semibold mb-4 text-emerald-600 ml-20">Busca ofertas Blendibox</div>
+        <div className="text-lg font-semibold mb-4 text-emerald-700 ml-20">Busca ofertas Blendibox</div>
         <input
           type="text"
           className="w-full mb-3 p-2 border rounded"
@@ -103,12 +101,12 @@ const router = useRouter();
             Object.entries(categoriasFiltradas).map(([categoria, dados]) => (
               <div key={categoria}>
 				
-				<button
+				<button id={categoria} title={categoria}
 				  onClick={() => {
 					navegarComScroll(`/categoria/${dados.slug}`);
 					setAberto(false);
 				  }}
-				  className="block px-2 py-1 text-sm text-gray-800 hover:bg-emerald-100 rounded text-left w-full"
+				  className="block px-2 py-1 text-lg text-gray-800 hover:bg-emerald-100 rounded text-left w-full"
 				>
 				  {categoria}
 				</button>
