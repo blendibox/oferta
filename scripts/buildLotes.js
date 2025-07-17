@@ -58,7 +58,7 @@ if ( tipo == 'produto'){
 
   coletar(categoriasJson);
 
-  const tamanhoLote = 300;
+  const tamanhoLote = 15000;
   const totalLotes = Math.ceil(slugs.length / tamanhoLote);
 
   console.log(`🔍 Tipo: ${tipo} | ${slugs.length} categorias | ${totalLotes} lotes`);
