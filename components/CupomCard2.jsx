@@ -16,7 +16,7 @@ export default function CupomCard2({ item }) {
 
   return (
     <Link href={item.clickurl || "#"} title={item.couponcode?"Clique para Copiar Código e Ir para o Site":"Clique para Ir para o Site"}>
-      <div className="m-2 flex items-center gap-4 rounded-lg bg-white p-2 shadow-md outline outline-black/5 dark:bg-gray-800">
+      <div className="m-2 flex grid gap-4 rounded-lg bg-white p-2 shadow-md outline outline-black/5 ">
         <div
           onClick={handleCopy}
           className="border-dashed border-2 text-4xl mask-clip-content inline-flex shrink-0 text-red-500 border border-pink-300 bg-pink-100 p-2 dark:border-pink-300/10 dark:bg-pink-400/10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-200 hover:text-white"

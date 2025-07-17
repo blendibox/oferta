@@ -28,6 +28,9 @@ export default function CompararProdutos() {
   const [loading, setLoading] = useState(false);
   const debounceTimer = useRef(null);
   
+  const [paginaAtual, setPaginaAtual] = useState(1);
+  const itensPorPagina = 9;
+  
   useEffect(() => {
   if (busca?.length >= 3 && slugIndex) {
     buscarProdutos(busca);
@@ -51,7 +54,14 @@ export default function CompararProdutos() {
 	  const slugNormalizado = normalizarTexto(slug);
 	  return palavrasBusca.every(palavra => slugNormalizado.includes(palavra));
 	})
-	 .slice(0, 12);
+	.slice(0, 30);
+	
+
+	  // Paginação: monta a página corrente dos resultados
+  const inicio = (paginaAtual - 1) * itensPorPagina;
+  const fim = inicio + itensPorPagina;
+  const paginaResultados = resultados.slice(inicio, fim);
+	
 
     const arquivosUnicos = [...new Set(slugsEncontrados.map(slug => slugIndex[slug]))];
 
@@ -107,9 +117,18 @@ export default function CompararProdutos() {
       }
     }
 
-    setResultados(produtos);
+
+	setPaginaAtual(1); // sempre volta à primeira página ao buscar
+    setResultados(produtos);	
     setLoading(false);
   };
+  
+  
+    // Paginação: monta a página corrente dos resultados
+  const inicio = (paginaAtual - 1) * itensPorPagina;
+  const fim = inicio + itensPorPagina;
+  const paginaResultados = resultados.slice(inicio, fim);
+  
 
   const handleBusca = (valor) => {
     setBusca(valor);
@@ -135,7 +154,7 @@ export default function CompararProdutos() {
   };
   
   
-  
+
   
   
 
@@ -329,9 +348,9 @@ export default function CompararProdutos() {
       {/* Resultados da busca */}
       {loading && <p>🔄 Buscando produtos...</p>}
 
-      {!loading && resultados.length > 0 && (
+      {!loading && paginaResultados.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {resultados.map((p, i) => (
+          {paginaResultados.map((p, i) => (
             <div
               key={i}
               onClick={() => toggleSelecionado(p)}
@@ -358,6 +377,37 @@ export default function CompararProdutos() {
           ))}
         </div>
       )}
+	   {/* Navegação da paginação */}
+
+      {resultados.length > itensPorPagina && (
+        <div className="flex flex-wrap items-center justify-center mt-6 gap-2">
+          <button
+            onClick={() => setPaginaAtual((p) => Math.max(1, p - 1))}
+            className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+            disabled={paginaAtual === 1}
+          >
+            ◀ Anterior
+          </button>
+          {[...Array(Math.ceil(resultados.length / itensPorPagina)).keys()].map((n) => (
+            <button
+              key={n}
+              onClick={() => setPaginaAtual(n + 1)}
+              className={`px-3 py-1 rounded ${
+                paginaAtual === n + 1 ? 'bg-emerald-500 text-white' : 'bg-gray-100'
+              }`}
+            >
+              {n + 1}
+            </button>
+          ))}
+          <button
+            onClick={() => setPaginaAtual((p) => Math.min(p + 1, Math.ceil(resultados.length / itensPorPagina)))}
+            className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+            disabled={paginaAtual === Math.ceil(resultados.length / itensPorPagina)}
+          >
+            Próximo ▶
+          </button>
+        </div>
+      )}
 
       {!loading && resultados.length === 0 && busca.length >= 3 && (
         <p className="text-gray-500">Nenhum produto encontrado.</p>
@@ -365,3 +415,4 @@ export default function CompararProdutos() {
     </div>
   );
 }
+		

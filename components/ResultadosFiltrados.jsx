@@ -306,22 +306,84 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
         </div>
       )}
 
-      {/* Paginação */}
-      {totalPaginas > 1 && (
-        <div className="mt-6 flex justify-center gap-2">
-          {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((num) => (
-            <button
-              key={num}
-              onClick={() => setCurrentPage(num)}
-              className={`px-3 py-1  border-emerald-700 rounded border ${
-                currentPage === num ? 'bg-emerald-700 text-white' : 'bg-white text-emerald-700'
-              }`}
-            >
-              {num}
-            </button>
-          ))}
-        </div>
-      )}
+    {/* Paginação Melhorada */}
+{totalPaginas > 1 && (
+  <div className="mt-6 flex flex-wrap justify-center items-center gap-2">
+    {/* Botão Anterior */}
+    <button
+      onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+      disabled={currentPage === 1}
+      className="px-3 py-1 border border-emerald-700 rounded bg-white text-emerald-700 hover:bg-emerald-50 disabled:opacity-50"
+    >
+      ← Anterior
+    </button>
+
+    {/* Primeira Página */}
+    {currentPage > 3 && (
+      <>
+        <button onClick={() => setCurrentPage(1)} className="px-3 py-1 border border-emerald-700 rounded bg-white text-emerald-700 hover:bg-emerald-50">
+          1
+        </button>
+        {currentPage > 4 && <span className="text-gray-400 px-1">...</span>}
+      </>
+    )}
+
+    {/* Páginas vizinhas */}
+    {Array.from({ length: totalPaginas }, (_, i) => i + 1)
+      .filter(
+        (page) =>
+          page === currentPage ||
+          page === currentPage - 1 ||
+          page === currentPage + 1
+      )
+      .map((num) => (
+        <button
+          key={num}
+          onClick={() => setCurrentPage(num)}
+          className={`px-3 py-1 border border-emerald-700 rounded ${
+            currentPage === num
+              ? 'bg-emerald-700 text-white'
+              : 'bg-white text-emerald-700 hover:bg-emerald-50'
+          }`}
+        >
+          {num}
+        </button>
+      ))}
+
+    {/* Última Página */}
+    {currentPage < totalPaginas - 2 && (
+      <>
+        {currentPage < totalPaginas - 3 && <span className="text-gray-400 px-1">...</span>}
+        <button onClick={() => setCurrentPage(totalPaginas)} className="px-3 py-1 border border-emerald-700 rounded bg-white text-emerald-700 hover:bg-emerald-50">
+          {totalPaginas}
+        </button>
+      </>
+    )}
+
+    {/* Botão Próximo */}
+    <button
+      onClick={() => setCurrentPage((p) => Math.min(totalPaginas, p + 1))}
+      disabled={currentPage === totalPaginas}
+      className="px-3 py-1 border border-emerald-700 rounded bg-white text-emerald-700 hover:bg-emerald-50 disabled:opacity-50"
+    >
+      Próximo →
+    </button>
+
+    {/* Dropdown de Seleção de Página */}
+    <select
+      value={currentPage}
+      onChange={(e) => setCurrentPage(Number(e.target.value))}
+      className="ml-4 border border-emerald-700 rounded px-2 py-1 bg-white text-emerald-700"
+    >
+      {Array.from({ length: totalPaginas }, (_, i) => (
+        <option key={i + 1} value={i + 1}>
+          Página {i + 1}
+        </option>
+      ))}
+    </select>
+  </div>
+)}
+
 	    <div className="m-10"><hr /></div>
     </div>
 	</>

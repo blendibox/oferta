@@ -35,9 +35,9 @@ export default function RootLayout({ children }) {
 						 <h2 className="text-2xl font-semibold mb-4 capitalize mt-6 ml-16">
 							<BreadcrumbCategoria/>							
 						  </h2>
-					  
+					  <div className="ml-6 mr-6">
 					  <ResultadosFiltrados />
-						
+						</div>
 						<Suspense fallback={<div>Carregando busca...</div>}>				  
 						  <CompararProdutos/>
 						</Suspense>

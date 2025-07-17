@@ -36,7 +36,10 @@ if ( tipo == 'produto'){
 	  console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
 	  execSync(`cross-env ${envVars} next build `, { stdio: 'inherit' });
 	  // copia a pasta out
-	  fs.cpSync('out', outDir, { recursive: true });
+	  fs.cpSync('out', outDir, {
+		  recursive: true,
+		  filter: (src) => !src.includes('data')
+		});
 	}
 }else if (tipo === 'categoria') {
   // Lê e processa categorias.json
@@ -70,7 +73,11 @@ if ( tipo == 'produto'){
 
     console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
     execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
-    fs.cpSync('out', outDir, { recursive: true });
+    // Copia a pasta 'out' para o lote, EXCETO 'public/data'
+	fs.cpSync('out', outDir, {
+	  recursive: true,
+	  filter: (src) => !src.includes('data')
+	});
   }
 	
 }else{
@@ -119,8 +126,12 @@ if ( tipo == 'produto'){
 
 		console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
 		execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
-
-		fs.cpSync('out', outDir, { recursive: true });
+	
+		fs.cpSync('out', outDir, {
+		  recursive: true,
+		  filter: (src) => !src.includes('data')
+		});
+			
 	  }
 	
 }
@@ -138,5 +149,11 @@ if ( tipo == 'produto'){
     -->
 */
 
+// Copia a pasta public/data apenas uma vez ao final
+const dataOrigem = path.join(process.cwd(), 'public', 'data');
+const pastaFinal = path.join(process.cwd(), 'out'   ,'data');
 
+fs.cpSync(dataOrigem, pastaFinal, { recursive: true });
+
+console.log(`📦 Dados copiados para ${pastaFinal}`);
 console.log('✅ Todos os lotes foram processados com sucesso!');
