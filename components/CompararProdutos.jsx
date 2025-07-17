@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import SchemaCategoria from './SchemaCategoria';
 
 function normalizarTexto(texto) {
   return texto
@@ -92,7 +93,8 @@ export default function CompararProdutos() {
             const preco = produto['g:price']  || produto.price?.buynow ||  produto['price'] ||'';
             const imagem = produto['g:image_link'] || produto['image'] || produto.uri?.mImage ||  '/images/cupons/cupom.png';
             const slugFinal = produto.slug || slug;
-			const linkAfilio  = produto['aw_deep_link'] || produto['awTrack'] || produto['link'] || '';
+			
+			const linkAfilio  =  produto['awTrack'] || produto['aw_deep_link'] || produto['link'] || '';
             const cupom = produto['code'] || produto['couponcode'] || 'Ir para o Site';  
             const link = arquivo.startsWith('ofertas_')
               ? `/produto/${slugFinal}`
@@ -108,6 +110,7 @@ export default function CompararProdutos() {
               _preco: preco,
               _imagem: imagem,
 			  _linkAfilio: linkAfilio,
+			  _linklocal:`https://comprar.blendibox.com.br/${link}?${marca}`,
 			  _cupom: cupom
             });
           }
@@ -159,6 +162,10 @@ export default function CompararProdutos() {
   
 
   return (
+    <>
+    <head>
+        <SchemaCategoria produtos={selecionados} />
+      </head>
     <div className="p-6 max-w-9/10 mx-auto  ">
 	<div id='buscador' className="rounded-xl bg-[url(/images/banner.webp)] bg-fixed bg-center md:bg-cover mb-5 drop-shadow-xl ">
 		<div className=" p-10 rounded">
@@ -224,7 +231,7 @@ export default function CompararProdutos() {
                 />
 
                 <Link
-                  href={p._linkAfilio || p._link}
+                  href={p._linkAfilio || p._linkLocal || "#"}
                   className="text-blue-600 underline text-sm block mt-1"
                   target="_blank"
                 >
@@ -304,7 +311,7 @@ export default function CompararProdutos() {
 				  ))}
 				</tr>
 				<tr>
-				  <td className="p-3 font-medium">Marca</td>
+				  <td className="p-3 font-medium">Loja</td>
 				  {selecionados.map((p, i) => (
 					<td key={i} className="p-3 capitalize">{p._marca}</td>
 				  ))}
@@ -365,7 +372,7 @@ export default function CompararProdutos() {
 			  
 			  </p>
               <Link
-                href={p._linkAfilio}
+                href={p._linkAfilio || p._linkLocal || '#'}
                 onClick={(e) => e.stopPropagation()}
                 className="text-blue-600 underline text-sm mt-2 inline-block"
                 target="_blank"
@@ -413,6 +420,7 @@ export default function CompararProdutos() {
         <p className="text-gray-500">Nenhum produto encontrado.</p>
       )}
     </div>
+	</>
   );
 }
 		

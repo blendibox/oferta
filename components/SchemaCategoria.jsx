@@ -13,20 +13,20 @@ export default function SchemaCategoria({ produtos = [] }) {
       "position": i + 1,
       "item": {
         "@type": "Product",
-        "name": produto._padronizado?.nome || '',
-        "url": produto._padronizado?.linklocal || '',
-        "image": produto._padronizado?.imagem || '',
+        "name": produto._padronizado?.nome ||  produto._titulo  || '',
+        "url": produto._padronizado?.linklocal ||   produto._linklocal || '#',
+        "image": produto._padronizado?.imagem ||   produto._imagem || '',
         "dateCreated": "2025-10-07",
-        "description": produto._padronizado?.descricao || `Compare ofertas e cupons para ${produto._padronizado?.nome}`,
+        "description": produto._padronizado?.descricao || `Compare ofertas e cupons para ${produto._padronizado?.nome ||  produto._titulo || 'este produto'}`,
         "brand": {
           "@type": "Brand",
-          "name": produto._padronizado?.marca || 'Sem marca'
+          "name": produto._padronizado?.marca ||  produto._marca || 'Sem marca',
         },
         "offers": {
           "@type": "Offer",
-          "url": produto._padronizado?.linklocal || '',
+          "url": produto._padronizado?.linklocal ||  produto._linklocal || '#',
           "priceCurrency": "BRL",
-          "price": produto._padronizado?.preco || "0.00",
+          "price": produto._padronizado?.preco ||  produto._preco || "0.00",
           "priceValidUntil": "2026-12-12",
           "itemCondition": "https://schema.org/NewCondition",
           "availability": "https://schema.org/InStock"

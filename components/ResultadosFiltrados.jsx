@@ -144,7 +144,7 @@ export default function ResultadosFiltrados() {
 					imagem: isGalvic ? p['g:image_link'] : p?.uri?.mImage,
 					imagem2: isGalvic ? p['g:image_link'] : p?.uri?.awImage,
 					slug: p.slug || '',
-					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
+					link: isGalvic ?  p['aw_deep_link'] || p['link']  :  p['awTrack'] || p?.uri?.awTrack || p?.uri?.mLink ,
 					marca: isGalvic ? p['g:brand'] : nomeMarca,
 					origem: nomeMarca,
 					categoria: categoriaTexto,
@@ -227,27 +227,29 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
         <VideoBubble title="Nome do Produto | 3em1_puffer" />
       {/* Filtros */}
       <div className="flex flex-wrap gap-4 mb-6">
-        <label htmlFor='minimo' className="mt-2">Preço mínimo:</label>
+        <label htmlFor='minimo' className="mt-2">Preço mínimo: 
 		<input
 		  id='minimo'
           type="number"
-		   size="10"
+		   size="12"
           placeholder="0"
           value={minPrice}
           onChange={(e) => setMinPrice(e.target.value)}
           className="border border-emerald-700 px-3 py-1 rounded bg-white"
         />
-		<label htmlFor='maximo' className="mt-2">Preço máximo:</label>
+		</label>
+		<label htmlFor='maximo' className="mt-2">Preço máximo: 
         <input
 		 id='maximo'
           type="number"
-		  size="10"
+		  size="12"
           placeholder="9999"
           value={maxPrice}
           onChange={(e) => setMaxPrice(e.target.value)}
           className="border border-emerald-700 px-3 py-1 rounded bg-white"
         />
-			<label htmlFor='marca' className="mt-2">Marca:</label>
+		</label>
+			<label htmlFor='marca' className="mt-2">Marca: 
         <select
 		  id='marca'
           value={marca}
@@ -260,6 +262,7 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 			</option>
           ))}
         </select>
+		</label>
       </div>
 
       {/* Lista de produtos */}
