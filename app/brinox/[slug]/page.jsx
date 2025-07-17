@@ -9,7 +9,7 @@ import ProdutoAwin from '../../../components/produtoAwin';
 export async function generateStaticParams() {
 	
 	
-   if (process.env.BUILD_TARGET !== 'arno') {
+   if (process.env.BUILD_TARGET !== 'brinox') {
     return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
   } 
 	
@@ -18,7 +18,7 @@ export async function generateStaticParams() {
   const slugIndex = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
 
   const slugsProduto = Object.entries(slugIndex)
-    .filter(([_, arquivo]) =>  /^ARNO\.json$/i.test(arquivo))
+    .filter(([_, arquivo]) =>  /^brinox\.json$/i.test(arquivo))
     .map(([slug]) => slug);
   
     
@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const produtos = await lerProdutosJSON('ARNO');
+  const produtos = await lerProdutosJSON('BRINOX');
   const produto = produtos.find(p =>
     p['slug'] === params.slug
   );
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-  const produtos = await lerProdutosJSON('ARNO');
+  const produtos = await lerProdutosJSON('BRINOX');
   const produto = produtos.find(p =>
     p['slug'] === params.slug
   );
@@ -62,7 +62,7 @@ export default async function ProdutoPage({ params }) {
   return (
 	  <ProdutoAwin
 		produto= {produto}
-		mybrand='ARNO'
+		mybrand=' BRINOX'
 	  >
 	  </ProdutoAwin>
 	  
