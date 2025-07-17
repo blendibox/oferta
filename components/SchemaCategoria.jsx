@@ -1,8 +1,10 @@
 // components/SchemaCategoria.jsx
 import React from 'react';
-import Head from 'next/head';
+
 
 export default function SchemaCategoria({ produtos = [] }) {
+	
+	
   if (!produtos.length) return null;
 
   const lista = produtos.slice(0, 10).map((produto, i) => {
@@ -11,20 +13,20 @@ export default function SchemaCategoria({ produtos = [] }) {
       "position": i + 1,
       "item": {
         "@type": "Product",
-        "name": produto.title || '',
-        "url": produto.url || '',
-        "image": produto.image || '',
+        "name": produto._padronizado?.nome || '',
+        "url": produto._padronizado?.linklocal || '',
+        "image": produto._padronizado?.imagem || '',
         "dateCreated": "2025-10-07",
-        "description": produto.descript || `Compare ofertas e cupons para ${produto.title}`,
+        "description": produto._padronizado?.descricao || `Compare ofertas e cupons para ${produto._padronizado?.nome}`,
         "brand": {
           "@type": "Brand",
-          "name": produto.brand || 'Sem marca'
+          "name": produto._padronizado?.marca || 'Sem marca'
         },
         "offers": {
           "@type": "Offer",
-          "url": produto.url || '',
+          "url": produto._padronizado?.linklocal || '',
           "priceCurrency": "BRL",
-          "price": produto.priceGoogle || "0.00",
+          "price": produto._padronizado?.preco || "0.00",
           "priceValidUntil": "2026-12-12",
           "itemCondition": "https://schema.org/NewCondition",
           "availability": "https://schema.org/InStock"
@@ -57,13 +59,11 @@ export default function SchemaCategoria({ produtos = [] }) {
   }];
 
   return (
-    <Head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema),
-        }}
-      />
-    </Head>
+   <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema)
+      }}
+    />
   );
 }

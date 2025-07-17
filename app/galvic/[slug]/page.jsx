@@ -4,7 +4,7 @@ import { lerProdutosXMLGoogle,  } from '../../../lib/awin';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-
+import SchemaProduto from '../../../components/SchemaProduto';
 export async function generateStaticParams() {
 	
     if (process.env.BUILD_TARGET !== 'galvic') {
@@ -56,6 +56,17 @@ export default async function ProdutoPage({ params }) {
   if (!produto) return notFound();
 
   return (
+  <>
+    <head>		 
+		 <SchemaProduto
+		   title={produto['g:title']}
+		   image={produto['g:image_link']} 
+		   link ={`https://comprar.blendibox.com.br/galvic/${produto['slug']}?galvic`}
+		   brand='GALVIC'
+		   priceGoogle= {produto['g:price']}
+		   />
+	 </head>
+	<main id="content" role="main" >
     <div className="p-8 max-w-3xl mx-auto  ">
       <h1 className="text-3xl font-bold mb-4">Onde Comprar {produto['g:title']}?</h1>
 	   <div className="m-2  items-center gap-4 rounded-lg bg-white p-6 shadow-md outline outline-black/5 dark:bg-gray-800">
@@ -96,5 +107,7 @@ export default async function ProdutoPage({ params }) {
 	  <p>* Valor na data de publicação - 09/07/2025</p>
 	  </div>
     </div>
+	</main>
+	</>
   );
 }

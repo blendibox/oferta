@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 
 export default function SchemaProduto({ title, image, link, brand, priceGoogle }) {
 	
@@ -44,7 +43,7 @@ export default function SchemaProduto({ title, image, link, brand, priceGoogle }
       description: description,
 	  brand: {
         "@type": "Brand",
-        name: brand?.replace("-", " "),
+        name: brand,
       },
       offers: {
         "@type": "Offer",
@@ -78,13 +77,11 @@ export default function SchemaProduto({ title, image, link, brand, priceGoogle }
   ];
 
   return (
-    <Head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema),
-        }}
-      />
-    </Head>
+   <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema)
+      }}
+    />
   );
 }

@@ -1,4 +1,3 @@
-"use client";
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -6,7 +5,6 @@ import Link from 'next/link'
 import Video from './video'
 import styles from './Produto.module.css'
 import VideoBubble from './VideoBubble'
-import { useState, useRef , useEffect } from 'react';
 
 import SchemaProduto from './SchemaProduto';
 
@@ -26,38 +24,20 @@ export default function Produto(props) {
     imageHeight = 450,
   } = props;
   
-  
-  const [lensPos, setLensPos] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
-  const imageRef = useRef(null);
-  
-  
-   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth < 768);
-    }
-  }, []);
 
-  const handleMouseMove = (e) => {
-	if (isMobile) return;
-    const rect = imageRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    setLensPos({ x, y });
-  };
-
-  const handleMouseLeave = () => setLensPos(null);
   
 
     return (
-      <>
+    <> 
+		<head>
 		  <SchemaProduto
 		   title= {title}
 		   image= {image}
-		   link= {link}
-		   brand={'sem marca'}
+		   link = {`https://comprar.blendibox.com.br/produto/${slug}?nike`}
+		   brand={'oferta'}
 		   priceGoogle= {price}   
 		   />
+		</head>
 	  <main id="content" role="main" className={styles.AlignCenter}>
 	  <VideoBubble title="Nome do Produto | 3em1_puffer" />		
       <div className="p-8 max-w-3xl mx-auto  ">
@@ -68,37 +48,16 @@ export default function Produto(props) {
 			className="inline-block mt-4  px-4 py-2 rounded"
 			title={title}
 		  >     
-		     <div
-                className={`overflow-hidden group ${
-					isMobile ? '' : 'relative w-[406px] h-[406px]'
-				  }`}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-              >
+
 		 <Image
-		    ref={imageRef}
+
 			src={image}
 			alt={title}
 			width={406}
 			height={406}
 			className="rounded object-cover w-full h-full"
 		  />
-		      {/* Mostrar a lente apenas se NÃO for mobile */}
-			  {!isMobile && lensPos && (
-				<div
-				  className="absolute w-32 h-32 border-2 shadow-xl border-emerald-500 rounded-full pointer-events-none z-50"
-				  style={{
-					left: lensPos.x - 64,
-					top: lensPos.y - 64,
-					backgroundImage: `url(${image})`,
-					backgroundRepeat: 'no-repeat',
-					backgroundSize: '812px 812px',
-					backgroundPosition: `-${lensPos.x * 2 - 64}px -${lensPos.y * 2 - 64}px`,
-				  }}
-				/>
-			  )}
 
-              </div>
 	     </Link>
 		 <h2> Este produto você encontra 
 		  <Link

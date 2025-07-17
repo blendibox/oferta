@@ -147,7 +147,9 @@ export default function ResultadosFiltrados() {
 					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
 					marca: isGalvic ? p['g:brand'] : nomeMarca,
 					origem: nomeMarca,
-					categoria: categoriaTexto
+					categoria: categoriaTexto,
+					linklocal:`https://comprar.blendibox.com.br/${nomeMarca}/${p.slug}?${nomeMarca}`,
+					descricao: `Procurando onde comprar ${isGalvic ? p['g:title'] : p?.text?.name || ''}? Acesse, Compare Ofertas, encontre Cupons para ${isGalvic ? p['g:title'] : p?.text?.name || ''} de forma dinâmica. Milhares de Ofertas e Cupons de desconto de grandes Marcas.`
 				  };
 
 				return { ...p, _padronizado: padronizado };
@@ -216,17 +218,12 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
 
 */
   return (
-    <div className="mt-6">
-	   <SchemaCategoria
-		  produtos={produtosFiltrados.slice(0, 10).map(p => ({
-			title: p._padronizado?.nome,
-			url: p._padronizado?.link,
-			image: p._padronizado?.imagem,
-			brand: p._padronizado?.marca,
-			descript: p._padronizado?.descricao || '',
-			priceGoogle: p._padronizado?.preco?.toFixed(2) || '0.00'
-		  }))}
-		 />
+  <>
+     <head>
+        <SchemaCategoria produtos={produtos} />
+      </head>
+      <div className="m-3">
+	  
         <VideoBubble title="Nome do Produto | 3em1_puffer" />
       {/* Filtros */}
       <div className="flex flex-wrap gap-4 mb-6">
@@ -327,5 +324,6 @@ console.log('🔍 caminhoCategoria encontrada:', caminhoCategoria);
       )}
 	    <div className="m-10"><hr /></div>
     </div>
+	</>
   );
 }

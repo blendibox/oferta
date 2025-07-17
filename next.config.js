@@ -21,7 +21,14 @@ dominios.push('mizunobr.vteximg.com.br'); //usado por awin MIZUNO
 dominios.push('cea.vteximg.com.br'); //usado por awin C&A 
 dominios.push('imgcentauro-a.akamaihd.net'); //usado por awin Centauro 
 dominios.push('www.nescafe-dolcegusto.com.br'); //usado por awin Dolcegusto 
-dominios.push('www.nescafe-dolcegusto.com.br'); //usado por awin Dolcegusto 
+dominios.push('www.lg.com'); //usado por awin lg 
+/*
+dominios.push('mash.vteximg.com.br'); //usado por awin mash 
+dominios.push('lojaarno.vteximg.com.br'); //usado por awin arno 
+dominios.push('brinox.vteximg.com.br'); //usado por awin brinox 
+dominios.push('calvinklein.vteximg.com.br'); //usado por awin calvin klein  
+*/
+
 
 const nextConfig = {
 	output: 'export',

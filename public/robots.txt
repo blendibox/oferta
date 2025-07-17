@@ -6,6 +6,8 @@ Disallow: /404
 User-agent: *
 Allow: /
 
+# Host
+Host: https://comprar.blendibox.com.br
 
 # Sitemaps
 Sitemap: https://comprar.blendibox.com.br/sitemap.xml
