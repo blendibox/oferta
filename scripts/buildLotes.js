@@ -38,7 +38,10 @@ if ( tipo == 'produto'){
 	  // copia a pasta out
 	  fs.cpSync('out', outDir, {
 		  recursive: true,
-		  filter: (src) => !src.includes('data')
+		  filter: (src) => {
+			// Pula exatamente a pasta 'out/data' e tudo dentro dela
+			return !src.startsWith(path.join('out', 'data'));
+		  }
 		});
 	}
 }else if (tipo === 'categoria') {
@@ -76,7 +79,10 @@ if ( tipo == 'produto'){
     // Copia a pasta 'out' para o lote, EXCETO 'public/data'
 	fs.cpSync('out', outDir, {
 	  recursive: true,
-	  filter: (src) => !src.includes('data')
+	  filter: (src) => {
+		// Pula exatamente a pasta 'out/data' e tudo dentro dela
+		return !src.startsWith(path.join('out', 'data'));
+	  }
 	});
   }
 	
@@ -129,7 +135,10 @@ if ( tipo == 'produto'){
 	
 		fs.cpSync('out', outDir, {
 		  recursive: true,
-		  filter: (src) => !src.includes('data')
+		  filter: (src) => {
+			// Pula exatamente a pasta 'out/data' e tudo dentro dela
+			return !src.startsWith(path.join('out', 'data'));
+		  }
 		});
 			
 	  }
