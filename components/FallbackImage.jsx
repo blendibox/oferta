@@ -7,7 +7,7 @@ export default function FallbackImage(props) {
   const [erro, setErro] = useState(false)
   
   const _className = erro
-    ? (props.className ? props.className + " backdrop-grayscale" : "backdrop-grayscale")
+    ? (props.className ? props.className + " !backdrop-grayscale !saturate-[0.78]  " : "backdrop-grayscale saturate-[0.78]")
     : (props.className || "")
   
   return (

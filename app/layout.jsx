@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 				  "url": "https://comprar.blendibox.com.br/",
 				  "potentialAction": {
 					"@type": "SearchAction",
-					"target": "https://comprar.blendibox.com.br/?{search_term_string}",
+					"target": "https://comprar.blendibox.com.br/busca?{search_term_string}",
 					"query-input": "required name=search_term_string"
 				  }
 				})

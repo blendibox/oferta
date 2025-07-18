@@ -1257,100 +1257,8 @@
     "slug": "masculino",
     "arquivos": [
       "CALVINKLEIN.json",
-      "NIKE.json"
-    ],
-    "subcategorias": {
-      "Calçados": {
-        "slug": "masculino/calcados",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Tênis": {
-            "slug": "masculino/calcados/tenis",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Chuteiras": {
-            "slug": "masculino/calcados/chuteiras",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Snkrs": {
-            "slug": "masculino/calcados/snkrs",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Chinelos & Sandálias": {
-            "slug": "masculino/calcados/chinelos-e-sandalias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      },
-      "Roupas": {
-        "slug": "masculino/roupas",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Camisetas": {
-            "slug": "masculino/roupas/camisetas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Shorts": {
-            "slug": "masculino/roupas/shorts",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Jaquetas & Moletons": {
-            "slug": "masculino/roupas/jaquetas-e-moletons",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Calças & Leggings": {
-            "slug": "masculino/roupas/calcas-e-leggings",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "SCCP": {
-            "slug": "masculino/roupas/sccp",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      },
-      "Acessórios": {
-        "slug": "masculino/acessorios",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Bolsas & Mochilas": {
-            "slug": "masculino/acessorios/bolsas-e-mochilas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Meias": {
-            "slug": "masculino/acessorios/meias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      }
-    }
+      "DIESEL.json"
+    ]
   },
   "Oportunidades": {
     "slug": "oportunidades",
@@ -1362,124 +1270,8 @@
     "slug": "feminino",
     "arquivos": [
       "CALVINKLEIN.json",
-      "NIKE.json"
-    ],
-    "subcategorias": {
-      "Roupas": {
-        "slug": "feminino/roupas",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Shorts": {
-            "slug": "feminino/roupas/shorts",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Calças & Leggings": {
-            "slug": "feminino/roupas/calcas-e-leggings",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Tops": {
-            "slug": "feminino/roupas/tops",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Camisetas": {
-            "slug": "feminino/roupas/camisetas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Jaquetas & Moletons": {
-            "slug": "feminino/roupas/jaquetas-e-moletons",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Maiôs & Biquinis": {
-            "slug": "feminino/roupas/maios-e-biquinis",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Segunda Pele & Compressão": {
-            "slug": "feminino/roupas/segunda-pele-e-compressao",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Saias & Vestidos & Macacões": {
-            "slug": "feminino/roupas/saias-e-vestidos-e-macacoes",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "SCCP": {
-            "slug": "feminino/roupas/sccp",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      },
-      "Calçados": {
-        "slug": "feminino/calcados",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Tênis": {
-            "slug": "feminino/calcados/tenis",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Snkrs": {
-            "slug": "feminino/calcados/snkrs",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Chinelos & Sandálias": {
-            "slug": "feminino/calcados/chinelos-e-sandalias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Chuteiras": {
-            "slug": "feminino/calcados/chuteiras",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      },
-      "Acessórios": {
-        "slug": "feminino/acessorios",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Bolsas & Mochilas": {
-            "slug": "feminino/acessorios/bolsas-e-mochilas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Meias": {
-            "slug": "feminino/acessorios/meias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      }
-    }
+      "DIESEL.json"
+    ]
   },
   "Perfumes": {
     "slug": "perfumes",
@@ -1508,15 +1300,13 @@
     "slug": "infantil",
     "arquivos": [
       "CALVINKLEIN.json",
-      "CEA.json",
-      "NIKE.json"
+      "CEA.json"
     ],
     "subcategorias": {
       "Roupas": {
         "slug": "infantil/roupas",
         "arquivos": [
-          "CEA.json",
-          "NIKE.json"
+          "CEA.json"
         ],
         "subcategorias": {
           "Calças": {
@@ -1577,66 +1367,6 @@
             "slug": "infantil/roupas/fantasias",
             "arquivos": [
               "CEA.json"
-            ]
-          },
-          "Camisetas": {
-            "slug": "infantil/roupas/camisetas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Shorts": {
-            "slug": "infantil/roupas/shorts",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Jaquetas & Moletons": {
-            "slug": "infantil/roupas/jaquetas-e-moletons",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Tops": {
-            "slug": "infantil/roupas/tops",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Calças & Leggings": {
-            "slug": "infantil/roupas/calcas-e-leggings",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Maiôs & Biquinis": {
-            "slug": "infantil/roupas/maios-e-biquinis",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Sungas": {
-            "slug": "infantil/roupas/sungas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Saias & Vestidos & Macacões": {
-            "slug": "infantil/roupas/saias-e-vestidos-e-macacoes",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "SCCP": {
-            "slug": "infantil/roupas/sccp",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Agasalho": {
-            "slug": "infantil/roupas/agasalho",
-            "arquivos": [
-              "NIKE.json"
             ]
           }
         }
@@ -1720,8 +1450,7 @@
       "Acessórios": {
         "slug": "infantil/acessorios",
         "arquivos": [
-          "CEA.json",
-          "NIKE.json"
+          "CEA.json"
         ],
         "subcategorias": {
           "Apoio de pescoço": {
@@ -1753,50 +1482,13 @@
             "arquivos": [
               "CEA.json"
             ]
-          },
-          "Bolsas & Mochilas": {
-            "slug": "infantil/acessorios/bolsas-e-mochilas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Outros": {
-            "slug": "infantil/acessorios/outros",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Caneleiras": {
-            "slug": "infantil/acessorios/caneleiras",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Bonés & Viseiras": {
-            "slug": "infantil/acessorios/bones-e-viseiras",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Luvas": {
-            "slug": "infantil/acessorios/luvas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Meias": {
-            "slug": "infantil/acessorios/meias",
-            "arquivos": [
-              "NIKE.json"
-            ]
           }
         }
       },
       "Calçados": {
         "slug": "infantil/calcados",
         "arquivos": [
-          "CEA.json",
-          "NIKE.json"
+          "CEA.json"
         ],
         "subcategorias": {
           "Sandálias": {
@@ -1820,8 +1512,7 @@
           "Tênis": {
             "slug": "infantil/calcados/tenis",
             "arquivos": [
-              "CEA.json",
-              "NIKE.json"
+              "CEA.json"
             ]
           },
           "Botas": {
@@ -1846,24 +1537,6 @@
             "slug": "infantil/calcados/sapatilhas",
             "arquivos": [
               "CEA.json"
-            ]
-          },
-          "Chinelos & Sandálias": {
-            "slug": "infantil/calcados/chinelos-e-sandalias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Chuteiras": {
-            "slug": "infantil/calcados/chuteiras",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Snkrs": {
-            "slug": "infantil/calcados/snkrs",
-            "arquivos": [
-              "NIKE.json"
             ]
           }
         }
@@ -3877,6 +3550,253 @@
       }
     }
   },
+  "Loiro Perolado": {
+    "slug": "loiro-perolado",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Vermelho Intenso": {
+    "slug": "vermelho-intenso",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Vermelho Especial": {
+    "slug": "vermelho-especial",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Cobre": {
+    "slug": "cobre",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Clareador": {
+    "slug": "clareador",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Desmaia Cabelo": {
+    "slug": "desmaia-cabelo",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Ampola Capilar": {
+    "slug": "ampola-capilar",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Mini Máscaras": {
+    "slug": "mini-mascaras",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Detox Quelante": {
+    "slug": "detox-quelante",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Banho de Verniz Morango": {
+    "slug": "banho-de-verniz-morango",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Cresce Cabelo": {
+    "slug": "cresce-cabelo",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Escova Definitiva": {
+    "slug": "escova-definitiva",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Force Repair": {
+    "slug": "force-repair",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Cachos": {
+    "slug": "cachos",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Platinum Blond": {
+    "slug": "platinum-blond",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Banho de Verniz": {
+    "slug": "banho-de-verniz",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Blindagem Capilar": {
+    "slug": "blindagem-capilar",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Bye Bye Volume": {
+    "slug": "bye-bye-volume",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Cauterização Capilar": {
+    "slug": "cauterizacao-capilar",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Abacachos": {
+    "slug": "abacachos",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Olive Oil": {
+    "slug": "olive-oil",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Mealiza": {
+    "slug": "mealiza",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Alho": {
+    "slug": "alho",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Alinhahair 4D": {
+    "slug": "alinhahair-4d",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Catiônica": {
+    "slug": "cationica",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Acessórios": {
+    "slug": "acessorios",
+    "arquivos": [
+      "FOREVERLISS.json",
+      "KIPPLING.json"
+    ]
+  },
+  "SOS Antiemborrachamento": {
+    "slug": "sos-antiemborrachamento",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Cronograma Capilar": {
+    "slug": "cronograma-capilar",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Xô Frizz": {
+    "slug": "xo-frizz",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Natural": {
+    "slug": "natural",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Loiro Acinzentado": {
+    "slug": "loiro-acinzentado",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Mar&Rios": {
+    "slug": "marerios",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Maracujá e Melaleuca": {
+    "slug": "maracuja-e-melaleuca",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Desmaia Cabelo 2.0": {
+    "slug": "desmaia-cabelo-20",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Máscara Capilar": {
+    "slug": "mascara-capilar",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Linha Crespo": {
+    "slug": "linha-crespo",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Forever Hair": {
+    "slug": "forever-hair",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Máscara UTI": {
+    "slug": "mascara-uti",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Banho de Pérola": {
+    "slug": "banho-de-perola",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Home Care": {
+    "slug": "home-care",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
+  "Volume Zero": {
+    "slug": "volume-zero",
+    "arquivos": [
+      "FOREVERLISS.json"
+    ]
+  },
   "Escolares": {
     "slug": "escolares",
     "arquivos": [
@@ -3885,12 +3805,6 @@
   },
   "Mochilas": {
     "slug": "mochilas",
-    "arquivos": [
-      "KIPPLING.json"
-    ]
-  },
-  "Acessórios": {
-    "slug": "acessorios",
     "arquivos": [
       "KIPPLING.json"
     ]
@@ -4038,121 +3952,5 @@
     "arquivos": [
       "LG.json"
     ]
-  },
-  "Unissex": {
-    "slug": "unissex",
-    "arquivos": [
-      "NIKE.json"
-    ],
-    "subcategorias": {
-      "Acessórios": {
-        "slug": "unissex/acessorios",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Bolsas & Mochilas": {
-            "slug": "unissex/acessorios/bolsas-e-mochilas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Luvas": {
-            "slug": "unissex/acessorios/luvas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Meias": {
-            "slug": "unissex/acessorios/meias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Bonés & Viseiras": {
-            "slug": "unissex/acessorios/bones-e-viseiras",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Bolas": {
-            "slug": "unissex/acessorios/bolas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Caneleiras": {
-            "slug": "unissex/acessorios/caneleiras",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Outros": {
-            "slug": "unissex/acessorios/outros",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "SCCP": {
-            "slug": "unissex/acessorios/sccp",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      },
-      "Roupas": {
-        "slug": "unissex/roupas",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Meias": {
-            "slug": "unissex/roupas/meias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Camisetas": {
-            "slug": "unissex/roupas/camisetas",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Shorts": {
-            "slug": "unissex/roupas/shorts",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Jaquetas & Moletons": {
-            "slug": "unissex/roupas/jaquetas-e-moletons",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      },
-      "Calçados": {
-        "slug": "unissex/calcados",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Tênis": {
-            "slug": "unissex/calcados/tenis",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Snkrs": {
-            "slug": "unissex/calcados/snkrs",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      }
-    }
   }
 }
