@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from  './FallbackImage';
 import { useRouter } from 'next/navigation';
 
 export default function Footer() {

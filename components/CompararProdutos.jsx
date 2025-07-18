@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from  './FallbackImage';
 import SchemaCategoria from './SchemaCategoria';
 
 function normalizarTexto(texto) {
@@ -94,7 +94,7 @@ export default function CompararProdutos() {
             const imagem = produto['g:image_link'] || produto['image'] || produto.uri?.mImage ||  '/images/cupons/cupom.png';
             const slugFinal = produto.slug || slug;
 			
-			const linkAfilio  =  produto['awTrack'] || produto['aw_deep_link'] || produto['link'] || '';
+			const linkAfilio  =  produto['awTrack'] || produto['aw_deep_link'] || produto['clickurl'] || produto['link'] || '';
             const cupom = produto['code'] || produto['couponcode'] || 'Ir para o Site';  
             const link = arquivo.startsWith('ofertas_')
               ? `/produto/${slugFinal}`

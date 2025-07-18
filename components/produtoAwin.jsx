@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from  './FallbackImage'
 import Link from 'next/link'
 import Video from './video'
 import styles from './Produto.module.css'

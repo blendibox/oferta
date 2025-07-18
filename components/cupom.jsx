@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head'
-import Image from 'next/image';
+import Image from  './FallbackImage';
 import Link from 'next/link';
 import styles from './Cupom.module.css';
 

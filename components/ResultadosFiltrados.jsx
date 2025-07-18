@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import slugify from 'slugify';
-import Image from 'next/image';
+import Image from  './FallbackImage';
 import Link from 'next/link';
 import VideoBubble from './VideoBubble'
 import SchemaCategoria from './SchemaCategoria';
@@ -144,7 +144,7 @@ export default function ResultadosFiltrados() {
 					imagem: isGalvic ? p['g:image_link'] : p?.uri?.mImage,
 					imagem2: isGalvic ? p['g:image_link'] : p?.uri?.awImage,
 					slug: p.slug || '',
-					link: isGalvic ?  p['aw_deep_link'] || p['link']  :  p['awTrack'] || p?.uri?.awTrack || p?.uri?.mLink ,
+					link: isGalvic ?  p['aw_deep_link'] || p['link']  :  p['awTrack'] ||  p['clickurl'] || p['mLink'] || p?.uri?.awTrack || p?.uri?.mLink ,
 					marca: isGalvic ? p['g:brand'] : nomeMarca,
 					origem: nomeMarca,
 					categoria: categoriaTexto,
