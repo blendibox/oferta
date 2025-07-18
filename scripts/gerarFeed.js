@@ -13,6 +13,26 @@ function extrairPreco(valor) {
   return valor;
 }
 
+function apagarFeedsAntigos(diretorio) {
+  if (!fs.existsSync(diretorio)) return;
+  const arquivos = fs.readdirSync(diretorio);
+  arquivos.forEach((arquivo) => {
+    if (arquivo.startsWith('googleMerchant_') && arquivo.endsWith('.xml')) {
+      fs.unlinkSync(path.join(diretorio, arquivo));
+    }
+  });
+}
+
+
+function escapeXML(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 
 // Em ESM, usamos isso para simular __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -26,9 +46,18 @@ async function googleMerchant() {
   const total = produtos.length;
   const marcas = await lerTodasMarcas();
   const totalMarcas = marcas.length;
+  let arquivosGerados = 0;
+  
+  const DIR_DESTINO_PUBLIC = path.join(__dirname, "../public");
+  const DIR_DESTINO_OUT = path.join(__dirname, "../out");
+
+  // Apagar feeds antigos
+  apagarFeedsAntigos(DIR_DESTINO_PUBLIC);
+  apagarFeedsAntigos(DIR_DESTINO_OUT);
+  
   
 
-  let arquivosGerados = 0;
+
 
 
   // gerar de marcas
@@ -68,7 +97,8 @@ async function googleMerchant() {
     const fileNamem = `googleMerchant_${arquivosGerados + 1}.xml`;
     const filePathm = path.join(DIR_DESTINO, fileNamem);
 
-    fs.writeFileSync(filePathm, xmlm, "utf-8");
+    fs.writeFileSync(path.join(DIR_DESTINO_PUBLIC, fileNamem), xmlm, "utf-8");
+    fs.writeFileSync(path.join(DIR_DESTINO_OUT, fileNamem), xmlm, "utf-8");
     console.log(`✅ Feed salvo: ${fileNamem} (${blocom.length} produtos)`);
     arquivosGerados++;
   }// end for
@@ -82,7 +112,9 @@ async function googleMerchant() {
     const fileName = `googleMerchant_${arquivosGerados + 1}.xml`;
     const filePath = path.join(DIR_DESTINO, fileName);
 
-    fs.writeFileSync(filePath, xml, "utf-8");
+
+	fs.writeFileSync(path.join(DIR_DESTINO_PUBLIC, fileName), xml, "utf-8");
+    fs.writeFileSync(path.join(DIR_DESTINO_OUT, fileName), xml, "utf-8");
     console.log(`✅ Feed salvo: ${fileName} (${bloco.length} produtos)`);
     arquivosGerados++;
   }
@@ -90,14 +122,13 @@ async function googleMerchant() {
 }
 
 function gerarXML(produtos) {
-	console.log(produtos);
 
   const items = produtos.map((post) => `
     <item>
       <title><![CDATA[${post.title || post._p.title }]]></title>
       <link><![CDATA[https://comprar.blendibox.com.br/produto/${post.slug || post._p.slug}]]></link>
       <description><![CDATA[${post.title || post._p.title}]]></description>
-      <g:image_link>${post.image}</g:image_link>
+      <g:image_link>${escapeXML(post.image || post._p.imagem || "")}</g:image_link>
       <g:price><![CDATA[${post.price || post._p && post._p.price} BRL]]></g:price>
       <g:condition>new</g:condition>
       <g:availability>in stock</g:availability>

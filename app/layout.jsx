@@ -23,6 +23,21 @@ export default function RootLayout({ children }) {
 		   <meta name="lomadee" content="2324685" ></meta>
 		   <meta name="lomadee-verification" content="23108504" ></meta>
 		   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		   <script
+			  type="application/ld+json"
+			  dangerouslySetInnerHTML={{
+				__html: JSON.stringify({
+				  "@context": "https://schema.org",
+				  "@type": "WebSite",
+				  "url": "https://comprar.blendibox.com.br/",
+				  "potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://comprar.blendibox.com.br/?{search_term_string}",
+					"query-input": "required name=search_term_string"
+				  }
+				})
+			  }}
+			/>
 		</head>   
         <body className="flex min-h-screen  relative z-0 overflow-visible">
 		 <div className="flex w-full">
