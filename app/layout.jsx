@@ -5,6 +5,12 @@ import CompararProdutos    from '../components/CompararProdutos';
 import BreadcrumbCategoria from '../components/BreadcrumbCategoria';
 import Footer    from '../components/footer';
 import { Suspense } from 'react';
+import Clarity from '@microsoft/clarity';
+
+
+const projectId = "gljrxgwcmh"
+
+Clarity.init(projectId);
 
 export const metadata = {
   title: 'Blendibox Ofertas',

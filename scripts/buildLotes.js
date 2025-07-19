@@ -1,67 +1,60 @@
-// scripts/buildLotes.js
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 
-
-const tipo = process.argv[2]; // ← tipo como argumento, ex: "produto", "mizuno"
+const tipo = process.argv[2];
 if (!tipo) {
   console.error('❌ Você deve informar o tipo do BUILD_TARGET. Ex: node buildLotes.js produto');
   process.exit(1);
 }
 
-// Caminho onde estão os arquivos slugs_*.json
 const pastaSlugs = path.join(process.cwd(), 'data', 'slugs');
 
+function copiaSomenteTarget(outDir, target) {
+  const origem = path.join('out', target);
+  const destino = path.join(outDir, target);
 
-if ( tipo == 'produto'){
-	// Encontra todos os arquivos com o padrão "slugs_*.json"
-	const arquivos = fs
-	  .readdirSync(pastaSlugs)
-	  .filter(name => /^slugs_\d+\.json$/.test(name))
-	  .sort((a, b) => {
-		const numA = parseInt(a.match(/\d+/));
-		const numB = parseInt(b.match(/\d+/));
-		return numA - numB;
-	  });
+  if (!fs.existsSync(origem)) {
+    console.warn(`⚠️ Pasta não encontrada: ${origem}`);
+    return;
+  }
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.cpSync(origem, destino, { recursive: true });
+}
 
-	console.log(`🔍 Tipo: ${tipo} | ${arquivos.length} arquivos de slugs encontrados.`);
+if (tipo == 'produto') {
+  const arquivos = fs
+    .readdirSync(pastaSlugs)
+    .filter(name => /^slugs_\d+\.json$/.test(name))
+    .sort((a, b) => {
+      const numA = parseInt(a.match(/\d+/));
+      const numB = parseInt(b.match(/\d+/));
+      return numA - numB;
+    });
 
-	// Gera um build para cada arquivo
-	for (const arquivo of arquivos) {
-	  const numero = arquivo.match(/\d+/)[0];
-	  const envVars = `LOTE=${numero} BUILD_TARGET=${tipo}`;
-	  const outDir = `out-${tipo}-lote-${numero}`;
+  console.log(`🔍 Tipo: ${tipo} | ${arquivos.length} arquivos de slugs encontrados.`);
 
-	  console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
-	  execSync(`cross-env ${envVars} next build `, { stdio: 'inherit' });
-	  // copia a pasta out
-	  fs.cpSync('out', outDir, {
-		  recursive: true,
-		  filter: (src) => {
-			// Pula exatamente a pasta 'out/data' e tudo dentro dela
-			return !src.startsWith(path.join('out', 'data'));
-		  }
-		});
-	}
-}else if (tipo === 'categoria') {
-  // Lê e processa categorias.json
+  for (const arquivo of arquivos) {
+    const numero = arquivo.match(/\d+/)[0];
+    const envVars = `LOTE=${numero} BUILD_TARGET=${tipo}`;
+    const outDir = `out-${tipo}-lote-${numero}`;
+
+    console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
+    execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
+
+    copiaSomenteTarget(outDir, tipo);
+  }
+} else if (tipo === 'categoria') {
   const categoriasPath = path.join(process.cwd(), 'public', 'categorias.json');
   const categoriasJson = JSON.parse(fs.readFileSync(categoriasPath, 'utf-8'));
 
   const slugs = [];
-
   function coletar(categorias) {
     for (const [_, dados] of Object.entries(categorias)) {
-      if (dados?.slug) {
-        slugs.push(dados.slug);
-      }
-      if (dados.subcategorias) {
-        coletar(dados.subcategorias);
-      }
+      if (dados?.slug) slugs.push(dados.slug);
+      if (dados.subcategorias) coletar(dados.subcategorias);
     }
   }
-
   coletar(categoriasJson);
 
   const tamanhoLote = 15000;
@@ -76,93 +69,38 @@ if ( tipo == 'produto'){
 
     console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
     execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
-    // Copia a pasta 'out' para o lote, EXCETO 'public/data'
-	fs.cpSync('out', outDir, {
-	  recursive: true,
-	  filter: (src) => {
-		// Pula exatamente a pasta 'out/data' e tudo dentro dela
-		return !src.startsWith(path.join('out', 'data'));
-	  }
-	});
+
+    copiaSomenteTarget(outDir, tipo);
   }
-	
-}else{
-	// 🔄 Leitura dinâmica do XML da marca atual (ex: mizuno)
+} else {
+	//  promo, cupom , galvic e  nike...,
+	const jsonPath = path.join(process.cwd(), 'data', 'awin', `${tipo.toUpperCase()}.json`);
+	if (!fs.existsSync(jsonPath)) {
+	  console.error(`❌ Arquivo JSON não encontrado: ${jsonPath}`);
+	  process.exit(1);
+	}
+	const parsed = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+	//console.log(parsed[0]);
 
-	  const xmlPath = path.join(process.cwd(), 'data', 'awin', `${tipo.toUpperCase()}.xml`);
-	  if (!fs.existsSync(xmlPath)) {
-		console.error(`❌ Arquivo XML não encontrado: ${xmlPath}`);
-		process.exit(1);
-	  }
-	 
+  const  produtos = parsed || [];
 
-	  const xmlData = fs.readFileSync(xmlPath, 'utf8');
-	  const { parseStringPromise } = await import('xml2js');
-	  const parsed = await parseStringPromise(xmlData, { explicitArray: false });
-	  
-	
 
-      let produtos = [];
-      // xml com formatos diferentes
-	  if(tipo == 'galvic'){ 
-	       //lerProdutosXMLGoogle
-		    produtos = parsed.rss?.channel?.item || [];
-	  }else if(tipo == 'cupom'){
-            //ler cupons lomadee
-	        produtos = parsed.coupons?.coupon || [];
-	  }else if(tipo == 'promo'){
-		   //ler cupons rakuten
-		    produtos = parsed.couponfeed?.link || [];
-	  }else{
-		   //lerProdutosXML
-		    produtos = parsed.cafProductFeed.datafeed.prod || []; 
-	  }
-	 
-	  const todos = Array.isArray(produtos) ? produtos : [produtos];
+  const todos = Array.isArray(produtos) ? produtos : [produtos];
+  const tamanhoLote = 10000;
+  const totalLotes = Math.ceil(todos.length / tamanhoLote);
 
-	  const tamanhoLote = 10000;
-	  const totalLotes = Math.ceil(todos.length / tamanhoLote);
+  console.log(`🔍 Tipo: ${tipo} | ${todos.length} produtos | ${totalLotes} lotes de ${tamanhoLote}`);
 
-	  console.log(`🔍 Tipo: ${tipo} | ${todos.length} produtos | ${totalLotes} lotes de ${tamanhoLote}`);
+  for (let i = 0; i < totalLotes; i++) {
+    const numero = i + 1;
+    const envVars = `LOTE=${numero} BUILD_TARGET=${tipo}`;
+    const outDir = `out-${tipo}-lote-${numero}`;
 
-	  for (let i = 0; i < totalLotes; i++) {
-		const numero = i + 1;
-		const envVars = `LOTE=${numero} BUILD_TARGET=${tipo}`;
-		const outDir = `out-${tipo}-lote-${numero}`;
+    console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
+    execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
 
-		console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
-		execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
-	
-		fs.cpSync('out', outDir, {
-		  recursive: true,
-		  filter: (src) => {
-			// Pula exatamente a pasta 'out/data' e tudo dentro dela
-			return !src.startsWith(path.join('out', 'data'));
-		  }
-		});
-			
-	  }
-	
+    copiaSomenteTarget(outDir, tipo);
+  }
 }
 
-/*
-<!--ELEMENT prod (
-        brand?,cat?,price?,text?,uri?,vertical?,
-        pId,
-        avgRating?,awLastUpdated?,colour?,comGroup?,cond?,
-        custom1?,custom2?,custom3?,custom4?,custom5?,custom6?,custom7?,custom8?,custom9?,
-        delRestrictions?,delTime?,dimensions?,ean?,isbn?,lastUpdated?,modelNumber?,mpn?,
-        numberAvailable?,numStars?,parentId?,productGTIN?,productModel?,proType?,rating?,
-        reviews?,sizeStockAmount?,sizeStockStatus?,stockStatus?,termsOfContract?,
-        upc?,valFrom?,valTo?,weight?,namedField*)
-    -->
-*/
-
-// Copia a pasta public/data apenas uma vez ao final
-const dataOrigem = path.join(process.cwd(), 'public', 'data');
-const pastaFinal = path.join(process.cwd(), 'out'   ,'data');
-
-fs.cpSync(dataOrigem, pastaFinal, { recursive: true });
-
-console.log(`📦 Dados copiados para ${pastaFinal}`);
 console.log('✅ Todos os lotes foram processados com sucesso!');
