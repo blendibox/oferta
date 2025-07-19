@@ -18,7 +18,7 @@ export async function generateStaticParams() {
   const slugIndex = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
 
   const slugsProduto = Object.entries(slugIndex)
-    .filter(([_, arquivo]) =>  /^olympikus\.json$/i.test(arquivo))
+    .filter(([_, arquivo]) =>  /^OLYMPIKUS\.json$/i.test(arquivo))
     .map(([slug]) => slug);
   
     

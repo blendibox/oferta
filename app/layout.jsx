@@ -46,29 +46,28 @@ export default function RootLayout({ children }) {
 			/>
 		</head>   
         <body className="flex min-h-screen  relative z-0 overflow-visible">
-		 <div className="flex w-full">
+		   <div className="flex w-full">
 			   <Suspense fallback={<div>Carregando busca...</div>}>	
 				  <MenuPrincipal />	
 			   </Suspense>			
 				<div className="flex-1 max-w-10/10 mx-auto">
-				  <div className="max-w-10/10 mx-auto">
-				
-						 <h2 className="text-2xl font-semibold mb-4 capitalize mt-6 ml-16">
-							<BreadcrumbCategoria/>							
-						  </h2>
-					  <div className="ml-6 mr-6">
+				  <div className="max-w-10/10 mx-auto">			
+					<h2 className="text-2xl font-semibold mb-4 capitalize mt-6 ml-16">
+						<BreadcrumbCategoria/>							
+					</h2>
+					<div className="ml-6 mr-6">
 					  <ResultadosFiltrados />
-						</div>
-						<Suspense fallback={<div>Carregando busca...</div>}>				  
-						  <CompararProdutos/>
-						</Suspense>
-					  <main className="mt-8">
+					</div>
+					<main className="mt-8">
 						{children}
-					  </main>
+					</main>
+					<Suspense fallback={<div>Carregando busca...</div>}>				  
+						  <CompararProdutos/>
+					</Suspense>				  
 				  </div>
 				  <Footer/>
 				</div>
-		 </div>
+		   </div>
         </body>
     </html>
   );

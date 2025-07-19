@@ -74,26 +74,29 @@ if (tipo == 'produto') {
   }
 } else {
 	//  promo, cupom , galvic e  nike...,
-	const jsonPath = path.join(process.cwd(), 'data', 'awin', `${tipo.toUpperCase()}.json`);
-	if (!fs.existsSync(jsonPath)) {
-	  console.error(`❌ Arquivo JSON não encontrado: ${jsonPath}`);
-	  process.exit(1);
-	}
-	const parsed = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-	//console.log(parsed[0]);
+	  
+  const nomeArquivoSlug = `slugs_${tipo.toLowerCase()}.json`; // Exemplo: tipo = 'cea' → buscar data/slugs/slugs_cea.json
+  const buscaArquivoSlug = `${tipo}.json`; //  Exemplo: tipo = 'cea' → CEA.json
+  const slugPath = path.join(process.cwd(), 'data', 'slugs', nomeArquivoSlug);
 
-  const  produtos = parsed || [];
+  if (!fs.existsSync(slugPath)) {
+    console.error(`❌ Arquivo de slugs não encontrado: ${slugPath}`);
+    process.exit(1);
+  }
 
-
-  const todos = Array.isArray(produtos) ? produtos : [produtos];
   const tamanhoLote = 10000;
-  const totalLotes = Math.ceil(todos.length / tamanhoLote);
+   
+  const slugMap = JSON.parse(fs.readFileSync(slugPath, 'utf8'));
+  const slugs = Object.keys(slugMap); // Agora slugs é um array
+  const totalLotes = Math.ceil(slugs.length / tamanhoLote);
 
-  console.log(`🔍 Tipo: ${tipo} | ${todos.length} produtos | ${totalLotes} lotes de ${tamanhoLote}`);
+
+  console.log(`🔍 Tipo: ${tipo} | ${slugs.length} slugs | ${totalLotes} lotes de ${tamanhoLote}`);
+
 
   for (let i = 0; i < totalLotes; i++) {
     const numero = i + 1;
-    const envVars = `LOTE=${numero} BUILD_TARGET=${tipo}`;
+    const envVars = `LOTE=${numero} BUILD_TARGET=${tipo.toLowerCase()}`;
     const outDir = `out-${tipo}-lote-${numero}`;
 
     console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);

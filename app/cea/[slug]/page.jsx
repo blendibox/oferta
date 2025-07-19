@@ -9,7 +9,7 @@ import ProdutoAwin from '../../../components/produtoAwin';
 export async function generateStaticParams() {
 	
 	
-   if (process.env.BUILD_TARGET !== 'CEA') {
+   if (process.env.BUILD_TARGET !== 'cea') {
     return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
   } 
 	
@@ -28,6 +28,8 @@ export async function generateStaticParams() {
   const fim = inicio + tamanhoLote;
 
   const slugsDoLote  = slugsProduto.slice(inicio, fim);
+  
+  
 
   return slugsDoLote.map((slug) => ({
     slug
