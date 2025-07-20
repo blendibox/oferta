@@ -9,10 +9,11 @@ import ProdutoAwin from '../../../components/produtoAwin';
 export async function generateStaticParams() {
 	
 	
-   if (process.env.BUILD_TARGET !== 'cea') {
+   if (process.env.BUILD_TARGET !== 'lg') {
     return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
   } 
 	
+     
    const nomeArquivo = process.env.SLUGS_FILE;
 
   const indexPath = path.join(process.cwd(), 'data', 'slugs-lotes', nomeArquivo);
@@ -35,11 +36,12 @@ export async function generateStaticParams() {
   }
 
   return slugs;
-
+ 
+ 
 }
 
 export async function generateMetadata({ params }) {
-  const produtos = await lerProdutosJSON('CEA');
+  const produtos = await lerProdutosJSON('LG');
   const produto = produtos.find(p =>
     p['slug'] === params.slug
   );
@@ -55,7 +57,7 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-  const produtos = await lerProdutosJSON('CEA');
+  const produtos = await lerProdutosJSON('LG');
   const produto = produtos.find(p =>
     p['slug'] === params.slug
   );
@@ -65,7 +67,7 @@ export default async function ProdutoPage({ params }) {
   return (
 	  <ProdutoAwin
 		produto= {produto}
-		mybrand=' C&A'
+		mybrand=' LG'
 	  >
 	  </ProdutoAwin>
 	  

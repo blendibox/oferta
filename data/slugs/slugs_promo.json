@@ -1,26 +1,74 @@
-{
-  "ellus-brazil-use-este-cupom--0": "PROMO.json",
-  "ellus-brazil-use-este-cupom--1": "PROMO.json",
-  "ellus-brazil-use-este-cupom--2": "PROMO.json",
-  "ellus-brazil-use-este-cupom--3": "PROMO.json",
-  "amobeleza-use-este-cupom--4": "PROMO.json",
-  "amobeleza-use-este-cupom--5": "PROMO.json",
-  "amobeleza-use-este-cupom--6": "PROMO.json",
-  "amobeleza-use-este-cupom--7": "PROMO.json",
-  "bobstore-brazil-use-este-cupom--8": "PROMO.json",
-  "loungerie-use-este-cupom--9": "PROMO.json",
-  "loungerie-use-este-cupom--10": "PROMO.json",
-  "loungerie-use-este-cupom--11": "PROMO.json",
-  "new-balance-brl-use-este-cupom--12": "PROMO.json",
-  "new-balance-brl-use-este-cupom--13": "PROMO.json",
-  "new-balance-brl-use-este-cupom--14": "PROMO.json",
-  "new-balance-brl-use-este-cupom--15": "PROMO.json",
-  "new-balance-brl-use-este-cupom--16": "PROMO.json",
-  "new-balance-brl-use-este-cupom--17": "PROMO.json",
-  "richards-brazil-use-este-cupom--18": "PROMO.json",
-  "richards-brazil-use-este-cupom--19": "PROMO.json",
-  "richards-brazil-use-este-cupom--20": "PROMO.json",
-  "tok-stok-use-este-cupom--21": "PROMO.json",
-  "salinas-rio-use-este-cupom--22": "PROMO.json",
-  "salinas-rio-use-este-cupom--23": "PROMO.json"
-}
+[
+  {
+    "slug": "ellus-brazil-use-este-cupom--0"
+  },
+  {
+    "slug": "ellus-brazil-use-este-cupom--1"
+  },
+  {
+    "slug": "ellus-brazil-use-este-cupom--2"
+  },
+  {
+    "slug": "ellus-brazil-use-este-cupom--3"
+  },
+  {
+    "slug": "amobeleza-use-este-cupom--4"
+  },
+  {
+    "slug": "amobeleza-use-este-cupom--5"
+  },
+  {
+    "slug": "amobeleza-use-este-cupom--6"
+  },
+  {
+    "slug": "amobeleza-use-este-cupom--7"
+  },
+  {
+    "slug": "bobstore-brazil-use-este-cupom--8"
+  },
+  {
+    "slug": "loungerie-use-este-cupom--9"
+  },
+  {
+    "slug": "loungerie-use-este-cupom--10"
+  },
+  {
+    "slug": "loungerie-use-este-cupom--11"
+  },
+  {
+    "slug": "new-balance-brl-use-este-cupom--12"
+  },
+  {
+    "slug": "new-balance-brl-use-este-cupom--13"
+  },
+  {
+    "slug": "new-balance-brl-use-este-cupom--14"
+  },
+  {
+    "slug": "new-balance-brl-use-este-cupom--15"
+  },
+  {
+    "slug": "new-balance-brl-use-este-cupom--16"
+  },
+  {
+    "slug": "new-balance-brl-use-este-cupom--17"
+  },
+  {
+    "slug": "richards-brazil-use-este-cupom--18"
+  },
+  {
+    "slug": "richards-brazil-use-este-cupom--19"
+  },
+  {
+    "slug": "richards-brazil-use-este-cupom--20"
+  },
+  {
+    "slug": "tok-stok-use-este-cupom--21"
+  },
+  {
+    "slug": "salinas-rio-use-este-cupom--22"
+  },
+  {
+    "slug": "salinas-rio-use-este-cupom--23"
+  }
+]

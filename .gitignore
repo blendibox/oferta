@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/data/slugs-lotes
+/data/slugs
 /.pnp
 .pnp.*
 .yarn/*
@@ -40,3 +42,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/data/slugs

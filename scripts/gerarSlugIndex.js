@@ -41,9 +41,16 @@ for (const dir of dataDirs) {
       if (dir.endsWith('awin')) {
         const nomeBase = path.parse(file).name.toLowerCase(); // Ex: "NOME.json" → "nome"
         const caminhoSaidaIndividual = path.join(process.cwd(), 'data/slugs', `slugs_${nomeBase}.json`);
-        fs.writeFileSync(caminhoSaidaIndividual, JSON.stringify(slugsDoArquivo, null, 2), 'utf8');
+		
+		
+		  // Transforma { slug1: "arquivo1.json", slug2: "arquivo1.json", ... }
+		  // em [ { slug: "slug1" }, { slug: "slug2" }, ... ]
+		  const slugsArray = Object.keys(slugsDoArquivo).map(slug => ({slug}));
+		  
+        fs.writeFileSync(caminhoSaidaIndividual, JSON.stringify(slugsArray, null, 2), 'utf8');
         console.log(`📝 Slugs salvos por arquivo: ${caminhoSaidaIndividual}`);
       }
+	  
 	  
 	  // Copia arquivos da pasta /data para public/data/produtos
 	  if (dir.endsWith('data')) {

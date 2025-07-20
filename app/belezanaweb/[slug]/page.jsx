@@ -9,30 +9,32 @@ import ProdutoAwin from '../../../components/produtoAwin';
 export async function generateStaticParams() {
 	
 
-    if (process.env.BUILD_TARGET !== 'belezanaweb') {
+  if (process.env.BUILD_TARGET !== 'belezanaweb') {
     return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
   }
-
-     
-  const indexPath = path.join(process.cwd(), 'public', 'slug-index.json');
-  const slugIndex = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
-
-  const slugsProduto = Object.entries(slugIndex)
-    .filter(([_, arquivo]) =>  /^belezanaweb\.json$/i.test(arquivo))
-    .map(([slug]) => slug);
-  
     
-  const loteAtual = parseInt(process.env.LOTE || '1');
-  const tamanhoLote = 10000; // ou o valor desejado
-  const inicio = (loteAtual - 1) * tamanhoLote;
-  const fim = inicio + tamanhoLote;
+  const nomeArquivo = process.env.SLUGS_FILE;
 
-  const slugsDoLote  = slugsProduto.slice(inicio, fim);
+  const indexPath = path.join(process.cwd(), 'data', 'slugs-lotes', nomeArquivo);
+  const slugsProduto = [];
+  
+  const linhas = fs.readFileSync(indexPath, 'utf8').split('\n');
+  const slugs = [];
 
-  return slugsDoLote.map((slug) => ({
-    slug
-  }));
- 
+  for (const linha of linhas) {
+    if (!linha.trim()) continue; // Ignora linhas vazias
+    try {
+		
+      const obj = JSON.parse(linha);
+      if (obj.slug) {
+        slugs.push({ slug: obj.slug });
+      }
+    } catch (e) {
+      console.warn(`❌ Erro ao parsear linha: ${linha}`);
+    }
+  }
+
+  return slugs;
 }
 
 export async function generateMetadata({ params }) {

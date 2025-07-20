@@ -1,126 +1,374 @@
-{
-  "liquidificador-arno-power-max-700w-branco-com-jarra-de-31-litros-ln51-105": "ARNO.json",
-  "mixer-portatil-arno-turbomix-pro-3-em-1-inox-com-400w-e-copo-medidor-mx31-11": "ARNO.json",
-  "multiprocessador-de-alimentos-arno-multichef-4-em-1-com-600w-mp60-116": "ARNO.json",
-  "liquidificador-arno-power-max-700w-preto-com-jarra-de-31-litros-ln50-129": "ARNO.json",
-  "grill-arno-dual-inox-com-abertura-de-180-gnox-13": "ARNO.json",
-  "liquidificador-arno-power-max-limpa-facil-700w-vermelho-com-laminas-removiveis-e-jarra-de-31l-ln61-133": "ARNO.json",
-  "multiprocessador-de-alimentos-arno-multichef-7-em-1-700w-e-jarra-de-31l-de-capacidade-mp74-137": "ARNO.json",
-  "cafeteira-filtro-arno-preferita-inox-com-750ml-de-capacidade-e-jarra-de-vidro-cfpf-15": "ARNO.json",
-  "nescafe-dolce-gusto-arno-genio-s-plus-multibebidas-digital-automatica-vermelha-dgs3-17": "ARNO.json",
-  "liquidificador-arno-power-mix-branco-lq12-171": "ARNO.json",
-  "liquidificador-arno-power-mix-vermelho-lq11-173": "ARNO.json",
-  "liquidificador-arno-power-mix-preto-lq10-175": "ARNO.json",
-  "liquidificador-arno-power-mix-limpa-facil-off-white-com-laminas-removiveis-lq31-185": "ARNO.json",
-  "nescafe-dolce-gusto-arno-genio-s-plus-multibebidas-digital-automatica-preta-dgs2-19": "ARNO.json",
-  "nescafe-dolce-gusto-arno-genio-s-basic-multibebidas-digital-automatica-branca-dgs1-21": "ARNO.json",
-  "espremedor-de-frutas-arno-suco-express-40w-e-750ml-de-capacidade-vermelho-cp32-23": "ARNO.json",
-  "batedeira-planetaria-arno-compacta-inspirart-com-5-velocidades-vermelha-km32---batedeira-planetaria-arno-compacta-inspirart-vermelha-km32---127v-236": "ARNO.json",
-  "batedeira-arno-chef-400w-2-batedores-multifuncionais-5-litros-vermelha-sm02-246": "ARNO.json",
-  "espremedor-de-frutas-arno-suco-express-40w-e-750ml-de-capacidade-preto-cp31-25": "ARNO.json",
-  "batedeira-arno-chef-400w-2-batedores-multifuncionais-5-litros-branca-sm00-250": "ARNO.json",
-  "batedeira-planetaria-arno-super-chef-750w-com-3-batedores-tigela-de-5-litros-e-15-velocidades-branca-km00-260": "ARNO.json",
-  "cafeteira-espresso-arno-mini-espresso-compacta-inox-800w-com-bico-vaporizador-para-leite-cmme-282": "ARNO.json",
-  "sanduicheira-arno-inox-compacta-com-placas-antiaderentes-sacs-3": "ARNO.json",
-  "forno-eletrico-arno-airfry-5-em-1-com-20l-de-capacidade-vermelho-for3-30": "ARNO.json",
-  "multiprocessador-de-alimentos-arno-multichef-7-em-1-700w-limpa-facil-com-laminas-removiveis-jarra-de-31l-vermelho-mp76-315": "ARNO.json",
-  "batedeira-arno-mini-chef-portatil-400w-com-2-tigelas-de-4-litros-4-velocidades-funcao-pulsar-preta-hm11-322": "ARNO.json",
-  "batedeira-arno-mini-chef-portatil-400w-com-2-tigelas-de-4-litros-4-velocidades-funcao-pulsar-branca-hm10-325": "ARNO.json",
-  "batedeira-arno-mini-chef-portatil-400w-compacta-com-4-velocidades-e-funcao-pulsar-hm01-327": "ARNO.json",
-  "churrasqueira-eletrica-arno-mais-sabor-e-menos-fumaca-gpra-33": "ARNO.json",
-  "ventilador-de-mesa-40cm-arno-bluetooth-6-pas-126w-vdbt-334": "ARNO.json",
-  "cafeteira-filtro-arno-perfectta-inox-com-600ml-de-capacidade-e-jarra-de-vidro-cfpi-35": "ARNO.json",
-  "fritadeira-sem-oleo-airfry-arno-moderna-com-35l-de-capacidade-e-cuba-antiaderente-preta-pfry-37": "ARNO.json",
-  "fritadeira-sem-oleo-arno-airfry-easy-fry-com-32-litros-hot-air-e-cesto-removivel-preta-ezfp-391": "ARNO.json",
-  "cafeteira-filtro-digital-arno-new-element-com-18l-tubo-misturador-e-funcoes-programaveis-cfne-394": "ARNO.json",
-  "fritadeira-sem-oleo-arno-airfry-ultra-com-42l-de-capacidade-preta-ufrp-401": "ARNO.json",
-  "fritadeira-sem-oleo-arno-airfry-ultra-com-42l-de-capacidade-vermelha-ufrv-403": "ARNO.json",
-  "kit-cha-da-tarde-torradeira-chaleira-e-cafeteira-soleil-414": "ARNO.json",
-  "kit-cafe-i-torradeira-e-cafeteira-soleil-416": "ARNO.json",
-  "kit-cha-pratico-torradeira-e-chaleira-soleil-418": "ARNO.json",
-  "nescafe-dolce-gusto-arno-genio-s-touch-multibebidas-digital-automatica-cinza-dgs4-43": "ARNO.json",
-  "liquidificador-arno-blendforce-preto-700w-limpa-facil-com-laminas-removiveis-e-jarra-de-vidro-ln91-45": "ARNO.json",
-  "ventilador-arno-xtreme-force-breeze-coluna-repelente-40cm-vb5c---220v-482": "ARNO.json",
-  "ventilador-arno-xtreme-force-breeze-coluna-50cm-vb52-485": "ARNO.json",
-  "ventilador-arno-xtreme-force-breeze-parede-50cm-vb51-487": "ARNO.json",
-  "ventilador-arno-xtreme-force-breeze-mesa-50cm-vb50-489": "ARNO.json",
-  "ventilador-arno-xtreme-force-breeze-coluna-40cm-vb4c-495": "ARNO.json",
-  "ventilador-arno-xtreme-force-breeze-mesa-40cm-vb40-498": "ARNO.json",
-  "sanduicheira-arno-compacta-com-placas-antiaderentes-sacb-5": "ARNO.json",
-  "nescafe-dolce-gusto-arno-genio-s-basic-multibebidas-digital-automatica-grafite-dgs5-503": "ARNO.json",
-  "fritadeira-sem-oleo-arno-airfry-super-inox-com-42l-de-capacidade-e-cesto-removivel-ifry-53": "ARNO.json",
-  "torradeira-arno-linha-soleil-com-7-niveis-de-tostagem-e-bandeja-removivel-marfim-stoa-57": "ARNO.json",
-  "chaleira-arno-linha-soleil-com-17l-de-capacidade-e-base-giratoria-marfim-sket-60": "ARNO.json",
-  "fritadeira-sem-oleo-arno-airfry-ultra-preta-42l-com-cesta-removivel-ufrd-674": "ARNO.json",
-  "ferro-a-vapor-arno-ultragliss-com-base-durilium-airglide-fmv-695": "ARNO.json",
-  "ferro-a-vapor-arno-ultragliss-plus-com-base-durilium-airglide-fmy-697": "ARNO.json",
-  "sanduicheira-grill-arno-compact-uno-com-placas-antiaderentes-guno-7": "ARNO.json",
-  "kit-nescafe-dolce-gusto-arno-genio-dgs2---2-unidades-701": "ARNO.json",
-  "ventilador-arno-x-treme-7-mesa-40cm-ve70-720": "ARNO.json",
-  "airfry-oven-e-grill-arno-expert-9-em-1-digital-11l-preta-ufe9-722": "ARNO.json",
-  "airfry-arno-air-plus-expert-e-grill-digital-42l-inox-ufe2-723": "ARNO.json",
-  "liquidificador-arno-power-mix-limpa-facil-700w-vermelho-lq36-724": "ARNO.json",
-  "liquidificador-arno-power-max-autolock-1400w-cinza-ln82-726": "ARNO.json",
-  "liquidificador-arno-power-mix-limpa-facil-700w-comfort-preto-lq35-728": "ARNO.json",
-  "chopeira-eletrica-heineken-beertender-krups-com-capacidade-de-5-litros-preta-b101-73": "ARNO.json",
-  "liquidificador-arno-power-max-1200w-limpa-facil-preto-ln78-730": "ARNO.json",
-  "fritadeira-sem-oleo-arno-airfry-essential-35l-afe3-744": "ARNO.json",
-  "cafeteira-arno-espresso-steam-e-pump-opio-soleil-marfim-scsp---cafeteira-arno-espresso-steam-e-pump-opio-soleil-marfim---127v-745": "ARNO.json",
-  "ventilador-arno-x-treme-9-mesa-40cm-ve90-756": "ARNO.json",
-  "ventilador-de-teto-arno-ultimate-bivolt-branco-com-3-pas-e-controle-remoto-vx13-bivolt-760": "ARNO.json",
-  "ferro-a-vapor-arno-essentialgliss-com-base-antiaderente-fmq-763": "ARNO.json",
-  "ventilador-de-teto-arno-ultimate-bivolt-preto-com-3-pas-e-controle-remoto-vx14-765": "ARNO.json",
-  "fritadeira-sem-oleo-airfryer-arno-mega-75l-digit-inox-afd7-776": "ARNO.json",
-  "fritadeira-sem-oleo-arno-airfry-ultra-grafite-42l-com-cesta-removivel-ufry-78": "ARNO.json",
-  "liquidificador-arno-power-max-1400w-marfim-ln64-780": "ARNO.json",
-  "liquidificador-arno-power-max-1400w-preto-ln65-782": "ARNO.json",
-  "liquidificador-arno-ultraforce-inox-jarra-de-vidro-ln92-784": "ARNO.json",
-  "liquidificador-arno-ultraforce-pro-inox-vidro-ln93-786": "ARNO.json",
-  "ventilador-arno-x-treme-9-parede-40cm-ve9p-788": "ARNO.json",
-  "ventilador-arno-x-treme-9-coluna-repelente-40cm-ve9r-790": "ARNO.json",
-  "ventilador-arno-x-treme-9-mesa-repelente-40cm-ve95-792": "ARNO.json",
-  "ventilador-arno-x-treme-9-2-em-1-40cm-ve9m-794": "ARNO.json",
-  "chaleira-eletrica-arno-soleil-17l-preta-spke-797": "ARNO.json",
-  "cafeteira-eletrica-arno-soleil-preta-125l-spfc-799": "ARNO.json",
-  "cafeteira-arno-linha-soleil-com-jarra-de-125l-e-sistema-corta-gotas-marfim-sfcm-80": "ARNO.json",
-  "torradeira-arno-soleil-com-7-niveis-de-tostagem-preta-spto-801": "ARNO.json",
-  "liquidificador-arno-power-max-vermelho-1400w-ln63-803": "ARNO.json",
-  "ferro-a-seco-arno-drygliss-com-base-antiaderente-fs31-805": "ARNO.json",
-  "ventilador-arno-eole-ultra-de-torre-neo2-807": "ARNO.json",
-  "fritadeira-sem-oleo-airfryer-arno-dual-83l-inox-digital-1800w-afd2-808": "ARNO.json",
-  "liquidificador-arno-power-max-xxl-1200w-carmim-ln86-810": "ARNO.json",
-  "liquidificador-arno-power-max-xxl-1400w-cinza-ln87-812": "ARNO.json",
-  "kit-3-ventiladores-de-teto-arno-ultimate-bivolt-branco-com-3-pas-e-controle-remoto-vx13-819": "ARNO.json",
-  "ferro-a-vapor-eletrico-arno-steamgliss-base-antiaderente-e-ponta-de-precisao-fsgp-82": "ARNO.json",
-  "kit-2-ventiladores-de-teto-arno-ultimate-bivolt-branco-com-3-pas-e-controle-remoto-vx13-820": "ARNO.json",
-  "kit-2-ventiladores-de-teto-arno-ultimate-bivolt-preto-com-3-pas-e-controle-remoto-vx14-821": "ARNO.json",
-  "kit-3-ventiladores-de-teto-arno-ultimate-bivolt-preto-com-3-pas-e-controle-remoto-vx14-822": "ARNO.json",
-  "liquidificador-arno-power-max-autolock-1400w-cinza-chumbo-ln81-833": "ARNO.json",
-  "aspirador-de-po-sem-fio-arno-x-pert-760-rh6a-bivolt-838": "ARNO.json",
-  "aspirador-de-po-sem-fio-arno-x-force-flex-960-rh20-bivolt-839": "ARNO.json",
-  "ferro-a-vapor-arno-smartgliss-inteligente-com-desligamento-automatico-fsc1-84": "ARNO.json",
-  "ventilador-de-coluna-40cm-arno-x-treme-9-9-pas-160w-ve9c-840": "ARNO.json",
-  "ventilador-de-coluna-40cm-arno-x-treme-7-7-pas-150w-ve7c-842": "ARNO.json",
-  "kit-cafeteira-e-torradeira-soleil-preta-844": "ARNO.json",
-  "kit-cafeteira-chaleira-e-torradeira-soleil-preta-845": "ARNO.json",
-  "kit-chaleira-e-torradeira-soleil-preta-847": "ARNO.json",
-  "kit-cafeteira-expresso-e-torradeira-soleil-marfim---127v-849": "ARNO.json",
-  "vaporizador-arno-steam-travel-dobravel-e-portatil-hs11-851": "ARNO.json",
-  "vaporizador-arno-pure-pop-azul-higieniza-hs20-853": "ARNO.json",
-  "vaporizador-arno-pure-pop-amarelo-higieniza-hs26-855": "ARNO.json",
-  "vaporizador-arno-pure-pop-coral-higieniza-hs22---127v-857": "ARNO.json",
-  "vaporizador-arno-pure-pop-verde-higieniza-hs24---127v-858": "ARNO.json",
-  "vaporizador-arno-steam-home-higieniza-branco-e-cinza-us32-859": "ARNO.json",
-  "ferro-a-vapor-arno-ecogliss-com-modo-economico-fec1-86": "ARNO.json",
-  "cafeteira-eletrica-arno-espresso-steam-e-pump-inox-1l-cesp-861": "ARNO.json",
-  "sanduicheira-grill-arno-compact-preto-gpto-863": "ARNO.json",
-  "ventilador-de-torre-arno-eole-infinite-neol-88": "ARNO.json",
-  "mixer-portatil-turbomix-arno-duo-200w-com-copo-medidor-mx21-9": "ARNO.json",
-  "ferro-a-vapor-arno-powergliss-com-base-xglide-e-vapor-continuo-fpo1-90": "ARNO.json",
-  "multiprocessador-arno-700w-16-funcoes-marfim-mp62-902": "ARNO.json",
-  "multiprocessador-arno-700w-24-funcoes-preto-mp72-904": "ARNO.json",
-  "vaporizador-de-roupas-portatil-arno-steam-power-hs81-92": "ARNO.json",
-  "vaporizador-de-roupas-portatil-arno-steam-minute-hs61-94": "ARNO.json",
-  "ferro-a-vapor-eletrico-arno-steamgliss-base-ampla-de-ceramica-e-ponta-de-precisao-fsgc-96": "ARNO.json",
-  "super-grill-e-sanduicheira-arno-inox-com-abertura-180-graus-e-placas-antiaderentes-ggra-98": "ARNO.json"
-}
+[
+  {
+    "slug": "liquidificador-arno-power-max-700w-branco-com-jarra-de-31-litros-ln51-105"
+  },
+  {
+    "slug": "mixer-portatil-arno-turbomix-pro-3-em-1-inox-com-400w-e-copo-medidor-mx31-11"
+  },
+  {
+    "slug": "multiprocessador-de-alimentos-arno-multichef-4-em-1-com-600w-mp60-116"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-700w-preto-com-jarra-de-31-litros-ln50-129"
+  },
+  {
+    "slug": "grill-arno-dual-inox-com-abertura-de-180-gnox-13"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-limpa-facil-700w-vermelho-com-laminas-removiveis-e-jarra-de-31l-ln61-133"
+  },
+  {
+    "slug": "multiprocessador-de-alimentos-arno-multichef-7-em-1-700w-e-jarra-de-31l-de-capacidade-mp74-137"
+  },
+  {
+    "slug": "cafeteira-filtro-arno-preferita-inox-com-750ml-de-capacidade-e-jarra-de-vidro-cfpf-15"
+  },
+  {
+    "slug": "nescafe-dolce-gusto-arno-genio-s-plus-multibebidas-digital-automatica-vermelha-dgs3-17"
+  },
+  {
+    "slug": "liquidificador-arno-power-mix-branco-lq12-171"
+  },
+  {
+    "slug": "liquidificador-arno-power-mix-vermelho-lq11-173"
+  },
+  {
+    "slug": "liquidificador-arno-power-mix-preto-lq10-175"
+  },
+  {
+    "slug": "liquidificador-arno-power-mix-limpa-facil-off-white-com-laminas-removiveis-lq31-185"
+  },
+  {
+    "slug": "nescafe-dolce-gusto-arno-genio-s-plus-multibebidas-digital-automatica-preta-dgs2-19"
+  },
+  {
+    "slug": "nescafe-dolce-gusto-arno-genio-s-basic-multibebidas-digital-automatica-branca-dgs1-21"
+  },
+  {
+    "slug": "espremedor-de-frutas-arno-suco-express-40w-e-750ml-de-capacidade-vermelho-cp32-23"
+  },
+  {
+    "slug": "batedeira-planetaria-arno-compacta-inspirart-com-5-velocidades-vermelha-km32---batedeira-planetaria-arno-compacta-inspirart-vermelha-km32---127v-236"
+  },
+  {
+    "slug": "batedeira-arno-chef-400w-2-batedores-multifuncionais-5-litros-vermelha-sm02-246"
+  },
+  {
+    "slug": "espremedor-de-frutas-arno-suco-express-40w-e-750ml-de-capacidade-preto-cp31-25"
+  },
+  {
+    "slug": "batedeira-arno-chef-400w-2-batedores-multifuncionais-5-litros-branca-sm00-250"
+  },
+  {
+    "slug": "batedeira-planetaria-arno-super-chef-750w-com-3-batedores-tigela-de-5-litros-e-15-velocidades-branca-km00-260"
+  },
+  {
+    "slug": "cafeteira-espresso-arno-mini-espresso-compacta-inox-800w-com-bico-vaporizador-para-leite-cmme-282"
+  },
+  {
+    "slug": "sanduicheira-arno-inox-compacta-com-placas-antiaderentes-sacs-3"
+  },
+  {
+    "slug": "forno-eletrico-arno-airfry-5-em-1-com-20l-de-capacidade-vermelho-for3-30"
+  },
+  {
+    "slug": "multiprocessador-de-alimentos-arno-multichef-7-em-1-700w-limpa-facil-com-laminas-removiveis-jarra-de-31l-vermelho-mp76-315"
+  },
+  {
+    "slug": "batedeira-arno-mini-chef-portatil-400w-com-2-tigelas-de-4-litros-4-velocidades-funcao-pulsar-preta-hm11-322"
+  },
+  {
+    "slug": "batedeira-arno-mini-chef-portatil-400w-com-2-tigelas-de-4-litros-4-velocidades-funcao-pulsar-branca-hm10-325"
+  },
+  {
+    "slug": "batedeira-arno-mini-chef-portatil-400w-compacta-com-4-velocidades-e-funcao-pulsar-hm01-327"
+  },
+  {
+    "slug": "churrasqueira-eletrica-arno-mais-sabor-e-menos-fumaca-gpra-33"
+  },
+  {
+    "slug": "ventilador-de-mesa-40cm-arno-bluetooth-6-pas-126w-vdbt-334"
+  },
+  {
+    "slug": "cafeteira-filtro-arno-perfectta-inox-com-600ml-de-capacidade-e-jarra-de-vidro-cfpi-35"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-airfry-arno-moderna-com-35l-de-capacidade-e-cuba-antiaderente-preta-pfry-37"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-arno-airfry-easy-fry-com-32-litros-hot-air-e-cesto-removivel-preta-ezfp-391"
+  },
+  {
+    "slug": "cafeteira-filtro-digital-arno-new-element-com-18l-tubo-misturador-e-funcoes-programaveis-cfne-394"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-arno-airfry-ultra-com-42l-de-capacidade-preta-ufrp-401"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-arno-airfry-ultra-com-42l-de-capacidade-vermelha-ufrv-403"
+  },
+  {
+    "slug": "kit-cha-da-tarde-torradeira-chaleira-e-cafeteira-soleil-414"
+  },
+  {
+    "slug": "kit-cafe-i-torradeira-e-cafeteira-soleil-416"
+  },
+  {
+    "slug": "kit-cha-pratico-torradeira-e-chaleira-soleil-418"
+  },
+  {
+    "slug": "nescafe-dolce-gusto-arno-genio-s-touch-multibebidas-digital-automatica-cinza-dgs4-43"
+  },
+  {
+    "slug": "liquidificador-arno-blendforce-preto-700w-limpa-facil-com-laminas-removiveis-e-jarra-de-vidro-ln91-45"
+  },
+  {
+    "slug": "ventilador-arno-xtreme-force-breeze-coluna-repelente-40cm-vb5c---220v-482"
+  },
+  {
+    "slug": "ventilador-arno-xtreme-force-breeze-coluna-50cm-vb52-485"
+  },
+  {
+    "slug": "ventilador-arno-xtreme-force-breeze-parede-50cm-vb51-487"
+  },
+  {
+    "slug": "ventilador-arno-xtreme-force-breeze-mesa-50cm-vb50-489"
+  },
+  {
+    "slug": "ventilador-arno-xtreme-force-breeze-coluna-40cm-vb4c-495"
+  },
+  {
+    "slug": "ventilador-arno-xtreme-force-breeze-mesa-40cm-vb40-498"
+  },
+  {
+    "slug": "sanduicheira-arno-compacta-com-placas-antiaderentes-sacb-5"
+  },
+  {
+    "slug": "nescafe-dolce-gusto-arno-genio-s-basic-multibebidas-digital-automatica-grafite-dgs5-503"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-arno-airfry-super-inox-com-42l-de-capacidade-e-cesto-removivel-ifry-53"
+  },
+  {
+    "slug": "torradeira-arno-linha-soleil-com-7-niveis-de-tostagem-e-bandeja-removivel-marfim-stoa-57"
+  },
+  {
+    "slug": "chaleira-arno-linha-soleil-com-17l-de-capacidade-e-base-giratoria-marfim-sket-60"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-arno-airfry-ultra-preta-42l-com-cesta-removivel-ufrd-674"
+  },
+  {
+    "slug": "ferro-a-vapor-arno-ultragliss-com-base-durilium-airglide-fmv-695"
+  },
+  {
+    "slug": "ferro-a-vapor-arno-ultragliss-plus-com-base-durilium-airglide-fmy-697"
+  },
+  {
+    "slug": "sanduicheira-grill-arno-compact-uno-com-placas-antiaderentes-guno-7"
+  },
+  {
+    "slug": "kit-nescafe-dolce-gusto-arno-genio-dgs2---2-unidades-701"
+  },
+  {
+    "slug": "ventilador-arno-x-treme-7-mesa-40cm-ve70-720"
+  },
+  {
+    "slug": "airfry-oven-e-grill-arno-expert-9-em-1-digital-11l-preta-ufe9-722"
+  },
+  {
+    "slug": "airfry-arno-air-plus-expert-e-grill-digital-42l-inox-ufe2-723"
+  },
+  {
+    "slug": "liquidificador-arno-power-mix-limpa-facil-700w-vermelho-lq36-724"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-autolock-1400w-cinza-ln82-726"
+  },
+  {
+    "slug": "liquidificador-arno-power-mix-limpa-facil-700w-comfort-preto-lq35-728"
+  },
+  {
+    "slug": "chopeira-eletrica-heineken-beertender-krups-com-capacidade-de-5-litros-preta-b101-73"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-1200w-limpa-facil-preto-ln78-730"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-arno-airfry-essential-35l-afe3-744"
+  },
+  {
+    "slug": "cafeteira-arno-espresso-steam-e-pump-opio-soleil-marfim-scsp---cafeteira-arno-espresso-steam-e-pump-opio-soleil-marfim---127v-745"
+  },
+  {
+    "slug": "ventilador-arno-x-treme-9-mesa-40cm-ve90-756"
+  },
+  {
+    "slug": "ventilador-de-teto-arno-ultimate-bivolt-branco-com-3-pas-e-controle-remoto-vx13-bivolt-760"
+  },
+  {
+    "slug": "ferro-a-vapor-arno-essentialgliss-com-base-antiaderente-fmq-763"
+  },
+  {
+    "slug": "ventilador-de-teto-arno-ultimate-bivolt-preto-com-3-pas-e-controle-remoto-vx14-765"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-airfryer-arno-mega-75l-digit-inox-afd7-776"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-arno-airfry-ultra-grafite-42l-com-cesta-removivel-ufry-78"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-1400w-marfim-ln64-780"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-1400w-preto-ln65-782"
+  },
+  {
+    "slug": "liquidificador-arno-ultraforce-inox-jarra-de-vidro-ln92-784"
+  },
+  {
+    "slug": "liquidificador-arno-ultraforce-pro-inox-vidro-ln93-786"
+  },
+  {
+    "slug": "ventilador-arno-x-treme-9-parede-40cm-ve9p-788"
+  },
+  {
+    "slug": "ventilador-arno-x-treme-9-coluna-repelente-40cm-ve9r-790"
+  },
+  {
+    "slug": "ventilador-arno-x-treme-9-mesa-repelente-40cm-ve95-792"
+  },
+  {
+    "slug": "ventilador-arno-x-treme-9-2-em-1-40cm-ve9m-794"
+  },
+  {
+    "slug": "chaleira-eletrica-arno-soleil-17l-preta-spke-797"
+  },
+  {
+    "slug": "cafeteira-eletrica-arno-soleil-preta-125l-spfc-799"
+  },
+  {
+    "slug": "cafeteira-arno-linha-soleil-com-jarra-de-125l-e-sistema-corta-gotas-marfim-sfcm-80"
+  },
+  {
+    "slug": "torradeira-arno-soleil-com-7-niveis-de-tostagem-preta-spto-801"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-vermelho-1400w-ln63-803"
+  },
+  {
+    "slug": "ferro-a-seco-arno-drygliss-com-base-antiaderente-fs31-805"
+  },
+  {
+    "slug": "ventilador-arno-eole-ultra-de-torre-neo2-807"
+  },
+  {
+    "slug": "fritadeira-sem-oleo-airfryer-arno-dual-83l-inox-digital-1800w-afd2-808"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-xxl-1200w-carmim-ln86-810"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-xxl-1400w-cinza-ln87-812"
+  },
+  {
+    "slug": "kit-3-ventiladores-de-teto-arno-ultimate-bivolt-branco-com-3-pas-e-controle-remoto-vx13-819"
+  },
+  {
+    "slug": "ferro-a-vapor-eletrico-arno-steamgliss-base-antiaderente-e-ponta-de-precisao-fsgp-82"
+  },
+  {
+    "slug": "kit-2-ventiladores-de-teto-arno-ultimate-bivolt-branco-com-3-pas-e-controle-remoto-vx13-820"
+  },
+  {
+    "slug": "kit-2-ventiladores-de-teto-arno-ultimate-bivolt-preto-com-3-pas-e-controle-remoto-vx14-821"
+  },
+  {
+    "slug": "kit-3-ventiladores-de-teto-arno-ultimate-bivolt-preto-com-3-pas-e-controle-remoto-vx14-822"
+  },
+  {
+    "slug": "liquidificador-arno-power-max-autolock-1400w-cinza-chumbo-ln81-833"
+  },
+  {
+    "slug": "aspirador-de-po-sem-fio-arno-x-pert-760-rh6a-bivolt-838"
+  },
+  {
+    "slug": "aspirador-de-po-sem-fio-arno-x-force-flex-960-rh20-bivolt-839"
+  },
+  {
+    "slug": "ferro-a-vapor-arno-smartgliss-inteligente-com-desligamento-automatico-fsc1-84"
+  },
+  {
+    "slug": "ventilador-de-coluna-40cm-arno-x-treme-9-9-pas-160w-ve9c-840"
+  },
+  {
+    "slug": "ventilador-de-coluna-40cm-arno-x-treme-7-7-pas-150w-ve7c-842"
+  },
+  {
+    "slug": "kit-cafeteira-e-torradeira-soleil-preta-844"
+  },
+  {
+    "slug": "kit-cafeteira-chaleira-e-torradeira-soleil-preta-845"
+  },
+  {
+    "slug": "kit-chaleira-e-torradeira-soleil-preta-847"
+  },
+  {
+    "slug": "kit-cafeteira-expresso-e-torradeira-soleil-marfim---127v-849"
+  },
+  {
+    "slug": "vaporizador-arno-steam-travel-dobravel-e-portatil-hs11-851"
+  },
+  {
+    "slug": "vaporizador-arno-pure-pop-azul-higieniza-hs20-853"
+  },
+  {
+    "slug": "vaporizador-arno-pure-pop-amarelo-higieniza-hs26-855"
+  },
+  {
+    "slug": "vaporizador-arno-pure-pop-coral-higieniza-hs22---127v-857"
+  },
+  {
+    "slug": "vaporizador-arno-pure-pop-verde-higieniza-hs24---127v-858"
+  },
+  {
+    "slug": "vaporizador-arno-steam-home-higieniza-branco-e-cinza-us32-859"
+  },
+  {
+    "slug": "ferro-a-vapor-arno-ecogliss-com-modo-economico-fec1-86"
+  },
+  {
+    "slug": "cafeteira-eletrica-arno-espresso-steam-e-pump-inox-1l-cesp-861"
+  },
+  {
+    "slug": "sanduicheira-grill-arno-compact-preto-gpto-863"
+  },
+  {
+    "slug": "ventilador-de-torre-arno-eole-infinite-neol-88"
+  },
+  {
+    "slug": "mixer-portatil-turbomix-arno-duo-200w-com-copo-medidor-mx21-9"
+  },
+  {
+    "slug": "ferro-a-vapor-arno-powergliss-com-base-xglide-e-vapor-continuo-fpo1-90"
+  },
+  {
+    "slug": "multiprocessador-arno-700w-16-funcoes-marfim-mp62-902"
+  },
+  {
+    "slug": "multiprocessador-arno-700w-24-funcoes-preto-mp72-904"
+  },
+  {
+    "slug": "vaporizador-de-roupas-portatil-arno-steam-power-hs81-92"
+  },
+  {
+    "slug": "vaporizador-de-roupas-portatil-arno-steam-minute-hs61-94"
+  },
+  {
+    "slug": "ferro-a-vapor-eletrico-arno-steamgliss-base-ampla-de-ceramica-e-ponta-de-precisao-fsgc-96"
+  },
+  {
+    "slug": "super-grill-e-sanduicheira-arno-inox-com-abertura-180-graus-e-placas-antiaderentes-ggra-98"
+  }
+]

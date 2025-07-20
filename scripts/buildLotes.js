@@ -3,6 +3,8 @@ import path from 'path';
 import { execSync } from 'child_process';
 
 const tipo = process.argv[2];
+
+
 if (!tipo) {
   console.error('❌ Você deve informar o tipo do BUILD_TARGET. Ex: node buildLotes.js produto');
   process.exit(1);
@@ -57,7 +59,7 @@ if (tipo == 'produto') {
   }
   coletar(categoriasJson);
 
-  const tamanhoLote = 15000;
+  const tamanhoLote = 10000;
   const totalLotes = Math.ceil(slugs.length / tamanhoLote);
 
   console.log(`🔍 Tipo: ${tipo} | ${slugs.length} categorias | ${totalLotes} lotes`);
@@ -73,37 +75,43 @@ if (tipo == 'produto') {
     copiaSomenteTarget(outDir, tipo);
   }
 } else {
-	//  promo, cupom , galvic e  nike...,
+    // marcas promo, cupom 
+    const marca = tipo;
+    const pastaLotes = path.join('data', 'slugs-lotes');
+	
+    const arquivosLotes = fs
+     .readdirSync(pastaLotes)
+     .filter((f) => f.startsWith(`slugs_${marca}_`) && f.endsWith('.jsonl'));
+
+	if (arquivosLotes.length === 0) {
+	  console.warn(`⚠️ Nenhum arquivo de lote encontrado para a marca "${marca}" em ${pastaLotes}`);
+	  process.exit(0);
+	}
+
+    let index = 0;
+	for (const arquivo of arquivosLotes) {		
+	 	
+	  const src = path.join(pastaLotes, arquivo);
+	  const outDir = `out-${marca}-lote-${index}`;
+      const envVars = `LOTE=${index} BUILD_TARGET=${marca.toLowerCase()} SLUGS_FILE=slugs_${marca}_${index}.jsonl`;
 	  
-  const nomeArquivoSlug = `slugs_${tipo.toLowerCase()}.json`; // Exemplo: tipo = 'cea' → buscar data/slugs/slugs_cea.json
-  const buscaArquivoSlug = `${tipo}.json`; //  Exemplo: tipo = 'cea' → CEA.json
-  const slugPath = path.join(process.cwd(), 'data', 'slugs', nomeArquivoSlug);
 
-  if (!fs.existsSync(slugPath)) {
-    console.error(`❌ Arquivo de slugs não encontrado: ${slugPath}`);
-    process.exit(1);
-  }
-
-  const tamanhoLote = 10000;
-   
-  const slugMap = JSON.parse(fs.readFileSync(slugPath, 'utf8'));
-  const slugs = Object.keys(slugMap); // Agora slugs é um array
-  const totalLotes = Math.ceil(slugs.length / tamanhoLote);
+	  // Executa build passando a marca como variável de ambiente (se quiser usar em generateStaticParams)
+	  console.log(`🚀 Gerando build do lote ${index} → ${outDir}`);
+	  execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
+	  
+	  // Copiar apenas o diretório relevante para o lote
+      copiaSomenteTarget(outDir, tipo);
 
 
-  console.log(`🔍 Tipo: ${tipo} | ${slugs.length} slugs | ${totalLotes} lotes de ${tamanhoLote}`);
+	  console.log(`✅ Finalizado: ${arquivo}`);
+	  
+	  index  = index + 1;  
+	} 
+  
 
-
-  for (let i = 0; i < totalLotes; i++) {
-    const numero = i + 1;
-    const envVars = `LOTE=${numero} BUILD_TARGET=${tipo.toLowerCase()}`;
-    const outDir = `out-${tipo}-lote-${numero}`;
-
-    console.log(`🚀 Gerando build do lote ${numero} → ${outDir}`);
-    execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
-
-    copiaSomenteTarget(outDir, tipo);
-  }
 }
+
+
 
 console.log('✅ Todos os lotes foram processados com sucesso!');

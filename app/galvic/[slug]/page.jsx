@@ -12,24 +12,28 @@ export async function generateStaticParams() {
   }   
 	
     
-  const indexPath = path.join(process.cwd(), 'public', 'slug-index.json');
-  const slugIndex = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const nomeArquivo = process.env.SLUGS_FILE;
 
-  const slugsProduto = Object.entries(slugIndex)
-    .filter(([_, arquivo]) =>  /^galvic\.json$/i.test(arquivo))
-    .map(([slug]) => slug);
+  const indexPath = path.join(process.cwd(), 'data', 'slugs-lotes', nomeArquivo);
+  const slugsProduto = [];
   
-    
-  const loteAtual = parseInt(process.env.LOTE || '1');
-  const tamanhoLote = 10000; // ou o valor desejado
-  const inicio = (loteAtual - 1) * tamanhoLote;
-  const fim = inicio + tamanhoLote;
+  const linhas = fs.readFileSync(indexPath, 'utf8').split('\n');
+  const slugs = [];
 
-  const slugsDoLote  = slugsProduto.slice(inicio, fim);
+  for (const linha of linhas) {
+    if (!linha.trim()) continue; // Ignora linhas vazias
+    try {
+		
+      const obj = JSON.parse(linha);
+      if (obj.slug) {
+        slugs.push({ slug: obj.slug });
+      }
+    } catch (e) {
+      console.warn(`❌ Erro ao parsear linha: ${linha}`);
+    }
+  }
 
-  return slugsDoLote.map((slug) => ({
-    slug
-  }));
+  return slugs;
  
 }
 
