@@ -37,7 +37,7 @@ async function converterTodosXMLs() {
     const caminhoJSON = path.join(pastaSaida, `${nomeBase}.json`);
 	const caminhoJSON2 = path.join(pastaSaida2, `${nomeBase}.json`);
 
-    console.log(`🔄 Convertendo ${arquivo} → ${nomeBase}.json`);
+    console.log(`🔄 Convertendo ${arquivo} → ${nomeBase}.jsonl`);
 
     try {
       const xml = fs.readFileSync(caminhoXML, 'utf-8');
@@ -54,7 +54,13 @@ async function converterTodosXMLs() {
 		   //ler cupons rakuten
 		    produtos = json.couponfeed?.link|| [];
 	  }else{
-		  produtos = json.cafProductFeed?.datafeed?.prod || [];
+		  // Garante que datafeed seja sempre um array
+			const datafeeds = Array.isArray(json.cafProductFeed?.datafeed)
+			  ? json.cafProductFeed.datafeed
+			  : [json.cafProductFeed?.datafeed].filter(Boolean); // Remove undefined/null se não existir
+
+			// Agora junta os produtos de todos os datafeeds
+			 produtos = datafeeds.flatMap((df) => df?.prod || []);
 	  }
 	  
       const arr = Array.isArray(produtos) ? produtos : [produtos];
@@ -81,13 +87,22 @@ async function converterTodosXMLs() {
 		slugIndex[slug] = `${nomeBase}.json`;
 		
         return {
+		  slug: slug,
           ...p,
-          slug: slug,
+          
         };
       });
 
-      fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
-	  fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
+		  if( nomeBase == 'PROMO' || nomeBase == 'CUPOM'){
+			  fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
+			  fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
+			  
+		  }
+			 
+	  
+	  const jsonlContent = produtosComSlug.map(p => JSON.stringify(p)).join('\n');
+		fs.writeFileSync(caminhoJSON.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
+		fs.writeFileSync(caminhoJSON2.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
 	  
     } catch (err) {
       console.error(`❌ Erro ao processar ${arquivo}:`, err.message);

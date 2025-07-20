@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { lerProdutosJSON } from '../../../lib/awin';
+import readline from 'readline';
+import { lerProdutoPorSlug } from '../../../lib/awin';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -40,10 +41,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const produtos = await lerProdutosJSON('EUDORA');
-  const produto = produtos.find(p =>
-    p['slug'] === params.slug
-  );
+  const produto = await lerProdutoPorSlug(params.slug,'EUDORA');
+
 
   if (!produto) return {};
 
@@ -56,10 +55,8 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-  const produtos = await lerProdutosJSON('EUDORA');
-  const produto = produtos.find(p =>
-    p['slug'] === params.slug
-  );
+  const produto = await lerProdutoPorSlug(params.slug,'EUDORA');
+
 
   if (!produto) return notFound();
 

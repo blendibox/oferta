@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Cupom from '../../../components/cupom';
 import { notFound } from 'next/navigation';
-import { lerProdutosJSON } from '../../../lib/awin';
+import { lerProdutoPorSlug } from '../../../lib/awin';
 
 
 export async function generateStaticParams() {
@@ -43,13 +43,10 @@ export async function generateStaticParams() {
 // ✅ Esta função gera o <title> e <meta description>
 export async function generateMetadata({ params }) {
     const { slug } = params;
-  const produtos = await lerProdutosJSON('CUPOM');
+  const produto = await lerProdutoPorSlug(slug,'CUPOM');
   
 
-  const produto = produtos.find((p, i) =>
-   p.slug === slug
-  );
-  console.log(produto);
+
 
   if (!produto) return {};
 
@@ -73,11 +70,8 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { slug } = params;
-  const produtos = await lerProdutosJSON('CUPOM');
+  const produto = await lerProdutoPorSlug(slug, 'CUPOM');
 
-  const produto = produtos.find((p, i) =>
-    p.slug === slug
-  );
 
   if (!produto) return notFound();
 

@@ -90,7 +90,9 @@ if (tipo == 'produto') {
 
     let index = 0;
 	for (const arquivo of arquivosLotes) {		
-	 	
+	 
+	  index  = index + 1; 
+		
 	  const src = path.join(pastaLotes, arquivo);
 	  const outDir = `out-${marca}-lote-${index}`;
       const envVars = `LOTE=${index} BUILD_TARGET=${marca.toLowerCase()} SLUGS_FILE=slugs_${marca}_${index}.jsonl`;
@@ -106,7 +108,7 @@ if (tipo == 'produto') {
 
 	  console.log(`✅ Finalizado: ${arquivo}`);
 	  
-	  index  = index + 1;  
+	   
 	} 
   
 

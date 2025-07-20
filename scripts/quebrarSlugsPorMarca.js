@@ -3,7 +3,7 @@ import path from 'path';
 
 const entradaDir = path.join('data', 'slugs');
 const saidaDir = path.join('data', 'slugs-lotes');
-const tamanhoLote = 10000;
+const tamanhoLote = 5000;
 
 fs.mkdirSync(saidaDir, { recursive: true });
 
@@ -29,7 +29,7 @@ const origem = arquivo;
   for (let i = 0; i < totalLotes; i++) {
     const fatia = slugs.slice(i * tamanhoLote, (i + 1) * tamanhoLote);
 
-    const nomeSaida = `slugs_${marca}_${i}.jsonl`; // JSONL = 1 linha por objeto
+    const nomeSaida = `slugs_${marca}_${i+1}.jsonl`; // JSONL = 1 linha por objeto
     const caminhoSaida = path.join(saidaDir, nomeSaida);
 
     const stream = fs.createWriteStream(caminhoSaida);
