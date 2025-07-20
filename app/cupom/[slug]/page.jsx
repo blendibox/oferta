@@ -43,7 +43,8 @@ export async function generateStaticParams() {
 // ✅ Esta função gera o <title> e <meta description>
 export async function generateMetadata({ params }) {
     const { slug } = params;
-  const produto = await lerProdutoPorSlug(slug,'CUPOM');
+	 const lote = process.env.LOTE;
+  const produto = await lerProdutoPorSlug(slug,'CUPOM',lote);
   
 
 
@@ -70,7 +71,8 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { slug } = params;
-  const produto = await lerProdutoPorSlug(slug, 'CUPOM');
+   const lote = process.env.LOTE;
+  const produto = await lerProdutoPorSlug(slug, 'CUPOM',lote);
 
 
   if (!produto) return notFound();

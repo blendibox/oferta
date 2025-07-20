@@ -40,7 +40,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const produto = await lerProdutoPorSlug(params.slug, 'DOLCEGUSTO');
+	 const lote = process.env.LOTE;
+  const produto = await lerProdutoPorSlug(params.slug, 'DOLCEGUSTO',lote);
 
   if (!produto) return {};
 
@@ -52,7 +53,8 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-  const produto = await lerProdutoPorSlug(params.slug, 'DOLCEGUSTO');
+	 const lote = process.env.LOTE;
+  const produto = await lerProdutoPorSlug(params.slug, 'DOLCEGUSTO',lote);
 
 
   if (!produto) return notFound();

@@ -102,7 +102,23 @@ async function converterTodosXMLs() {
 	  
 	  const jsonlContent = produtosComSlug.map(p => JSON.stringify(p)).join('\n');
 		fs.writeFileSync(caminhoJSON.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
-		fs.writeFileSync(caminhoJSON2.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
+		
+		const loteTamanho = 10000;
+		const totalLotes = Math.ceil(produtosComSlug.length / loteTamanho);
+		for (let i = 0; i < totalLotes; i++) {
+		  const inicio = i * loteTamanho;
+		  const fim = inicio + loteTamanho;
+		  const lote = produtosComSlug.slice(inicio, fim);
+
+		  const jsonlContent = lote.map(p => JSON.stringify(p)).join('\n');
+
+		  const nomeArquivo =  path.join(process.cwd(), 'data', 'awin', `${nomeBase}_${i+1}.jsonl`);
+
+		  fs.writeFileSync(nomeArquivo, jsonlContent, 'utf-8');
+		  console.log(`✅ Arquivo salvo: ${nomeArquivo} (${lote.length} registros)`);
+		}
+		
+		//fs.writeFileSync(caminhoJSON2.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
 	  
     } catch (err) {
       console.error(`❌ Erro ao processar ${arquivo}:`, err.message);

@@ -6,7 +6,6 @@ import { lerProdutoPorSlug } from '../../../lib/awin';
 
 
 
-
 export async function generateStaticParams() {
 	
 
@@ -45,7 +44,8 @@ export async function generateStaticParams() {
 // ✅ Esta função gera o <title> e <meta description>
 export async function generateMetadata({ params }) {
   const { slug } = params;
-  const produto = await lerProdutoPorSlug(slug, 'PROMO');
+  const lote = process.env.LOTE;
+  const produto = await lerProdutoPorSlug(slug, 'PROMO', lote);
  
  
 
@@ -71,7 +71,8 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { slug } = params;
-  const produto = await lerProdutoPorSlug(slug,'PROMO')
+  const lote = process.env.LOTE;
+  const produto = await lerProdutoPorSlug(slug,'PROMO',lote);
 
 
   if (!produto) return notFound();

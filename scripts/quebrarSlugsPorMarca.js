@@ -3,7 +3,7 @@ import path from 'path';
 
 const entradaDir = path.join('data', 'slugs');
 const saidaDir = path.join('data', 'slugs-lotes');
-const tamanhoLote = 5000;
+const tamanhoLote = 10000;
 
 fs.mkdirSync(saidaDir, { recursive: true });
 
