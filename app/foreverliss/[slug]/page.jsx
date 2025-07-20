@@ -40,6 +40,10 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
+	
+	if (process.env.BUILD_TARGET !== 'FOREVERLISS') {
+    return {}
+  }
 	 const lote = process.env.LOTE;
   const produto = await lerProdutoPorSlug(params.slug,'FOREVERLISS',lote);
 
@@ -54,6 +58,10 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
+	
+	if (process.env.BUILD_TARGET !== 'FOREVERLISS') {
+		return notFound()
+	  } 
 	 const lote = process.env.LOTE;
   const produto = await lerProdutoPorSlug(params.slug,'FOREVERLISS',lote);
  

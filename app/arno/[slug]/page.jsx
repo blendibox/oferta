@@ -40,7 +40,12 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-	 const lote = process.env.LOTE;
+
+   if (process.env.BUILD_TARGET !== 'ARNO') {
+    return {}
+  } 
+  
+  const lote = process.env.LOTE;
   const produto = await lerProdutoPorSlug(params.slug,'ARNO',lote);
    if (!produto) return {};
 
@@ -53,7 +58,12 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-	 const lote = process.env.LOTE;
+	
+	 if (process.env.BUILD_TARGET !== 'ARNO') {
+		return notFound()
+	  } 
+	  
+  const lote = process.env.LOTE;
   const produto = await lerProdutoPorSlug(params.slug, 'ARNO',lote);
 
   if (!produto) return notFound();

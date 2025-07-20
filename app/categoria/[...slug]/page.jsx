@@ -28,12 +28,15 @@ export async function generateStaticParams() {
     return [{ slug: ['__dummy__'] }];
   }
 
-  const loteAtual = parseInt(process.env.LOTE || '1');
+  /*const loteAtual = parseInt(process.env.LOTE || '1');
   const tamanhoLote = 300; // Ajuste conforme a complexidade
   const inicio = (loteAtual - 1) * tamanhoLote;
   const fim = inicio + tamanhoLote;
 
   return slugs.slice(inicio, fim);
+  */
+  
+  return slugs;
 }
 
 
