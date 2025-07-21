@@ -8,7 +8,10 @@ if (!tipo) {
   process.exit(1);
 }
 
+
+
 const regex = new RegExp(`^out-${tipo}-lote-\\d+$`);
+//const regex = new RegExp(`^out-[^-]+-lote-\d+$`);
 
 const diretorioFinal = path.join(process.cwd(), 'out');
 const diretoriosLote = fs
