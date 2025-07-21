@@ -168,7 +168,7 @@ export default function CompararProdutos() {
       </head>
     <div className="p-6 max-w-9/10 mx-auto  ">
 	<div id='buscador' className="rounded-xl bg-[url(/images/banner.webp)] bg-fixed bg-center md:bg-cover mb-5 drop-shadow-xl ">
-		<div className=" p-10 rounded">
+		<div className=" p-6 rounded">
 		<div className="bg-white/30 backdrop-blur-md p-5 rounded drop-shadow-xl">
 		  <h1 className="text-4xl font-bold mb-3 text-center pt-3  text-sky-950 text-shadow-2xs text-shadow-sky-100">Compare Ofertas <b className="text-pink-400">✱</b></h1>
 		  <label className=" text-center text-sky-950 "> <small>Digite sua pesquisa, que pode ser o <b>Nome</b> do <b>Produto</b>, <b>Cupom</b>, ou <b>Marca</b>:</small>
