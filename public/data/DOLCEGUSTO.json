@@ -1,5 +1,6 @@
 [
   {
+    "slug": "2-xicaras-para-latte-12264152",
     "$": {
       "id": "40908988378",
       "lang": "pt"
@@ -29,10 +30,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/jogo-xicaras-latte-transparente"
     },
     "vertical": "",
-    "pId": "12264152",
-    "slug": "2-xicaras-para-latte-12264152"
+    "pId": "12264152"
   },
   {
+    "slug": "2-xicaras-para-chocolate-12264153",
     "$": {
       "id": "40908988379",
       "lang": "pt"
@@ -62,10 +63,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/jogo-de-xicaras-para-chocolate"
     },
     "vertical": "",
-    "pId": "12264153",
-    "slug": "2-xicaras-para-chocolate-12264153"
+    "pId": "12264153"
   },
   {
+    "slug": "2-xicaras-para-espresso-12315936",
     "$": {
       "id": "38276359376",
       "lang": "pt"
@@ -95,10 +96,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/jogo-de-xicaras-para-espresso"
     },
     "vertical": "",
-    "pId": "12315936",
-    "slug": "2-xicaras-para-espresso-12315936"
+    "pId": "12315936"
   },
   {
+    "slug": "mini-me-preta-110v-12386036",
     "$": {
       "id": "32144454337",
       "lang": "pt"
@@ -129,10 +130,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/mini-me-automatica-maquina-de-cafe-preta-110v"
     },
     "vertical": "",
-    "pId": "12386036",
-    "slug": "mini-me-preta-110v-12386036"
+    "pId": "12386036"
   },
   {
+    "slug": "mini-me-preta-220v-12386037",
     "$": {
       "id": "31393480977",
       "lang": "pt"
@@ -163,10 +164,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/mini-me-automatica-maquina-de-cafe-preta-220v"
     },
     "vertical": "",
-    "pId": "12386037",
-    "slug": "mini-me-preta-220v-12386037"
+    "pId": "12386037"
   },
   {
+    "slug": "mini-me-vermelha-e-preta-110v-12386038",
     "$": {
       "id": "38827711131",
       "lang": "pt"
@@ -197,10 +198,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/mini-me-automatica-maquina-de-cafe-vermelha-e-preta-110v"
     },
     "vertical": "",
-    "pId": "12386038",
-    "slug": "mini-me-vermelha-e-preta-110v-12386038"
+    "pId": "12386038"
   },
   {
+    "slug": "mini-me-vermelha-e-preta-220v-12386039",
     "$": {
       "id": "34675667849",
       "lang": "pt"
@@ -231,10 +232,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/mini-me-automatica-maquina-de-cafe-vermelha-e-preta-220v"
     },
     "vertical": "",
-    "pId": "12386039",
-    "slug": "mini-me-vermelha-e-preta-220v-12386039"
+    "pId": "12386039"
   },
   {
+    "slug": "mini-me-vermelha-e-branca-110v-12394340",
     "$": {
       "id": "27554904117",
       "lang": "pt"
@@ -264,10 +265,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/mini-me-automatica-maquina-de-cafe-vermelha-110v"
     },
     "vertical": "",
-    "pId": "12394340",
-    "slug": "mini-me-vermelha-e-branca-110v-12394340"
+    "pId": "12394340"
   },
   {
+    "slug": "mini-me-cinza-e-preta-110v-12412175",
     "$": {
       "id": "40186670525",
       "lang": "pt"
@@ -298,10 +299,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/mini-me-automatica-maquina-de-cafe-cinza-e-preta-110v"
     },
     "vertical": "",
-    "pId": "12412175",
-    "slug": "mini-me-cinza-e-preta-110v-12412175"
+    "pId": "12412175"
   },
   {
+    "slug": "mini-me-cinza-e-preta-220v-12412520",
     "$": {
       "id": "39889985957",
       "lang": "pt"
@@ -332,10 +333,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/mini-me-automatica-maquina-de-cafe-cinza-e-preta-220v"
     },
     "vertical": "",
-    "pId": "12412520",
-    "slug": "mini-me-cinza-e-preta-220v-12412520"
+    "pId": "12412520"
   },
   {
+    "slug": "genio-s-basic-branca-220v-12447691",
     "$": {
       "id": "31089683525",
       "lang": "pt"
@@ -366,10 +367,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-basic-branca-220v"
     },
     "vertical": "",
-    "pId": "12447691",
-    "slug": "genio-s-basic-branca-220v-12447691"
+    "pId": "12447691"
   },
   {
+    "slug": "maquina-neo-n1-preta-110v-12484517",
     "$": {
       "id": "34675667877",
       "lang": "pt"
@@ -400,10 +401,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/neo-machine-black-110v"
     },
     "vertical": "",
-    "pId": "12484517",
-    "slug": "maquina-neo-n1-preta-110v-12484517"
+    "pId": "12484517"
   },
   {
+    "slug": "maquina-neo-n1-branca-220v-12484519",
     "$": {
       "id": "34675667871",
       "lang": "pt"
@@ -434,10 +435,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/neo-machine-white-220v-1"
     },
     "vertical": "",
-    "pId": "12484519",
-    "slug": "maquina-neo-n1-branca-220v-12484519"
+    "pId": "12484519"
   },
   {
+    "slug": "maquina-neo-n1-branca-110v-12484531",
     "$": {
       "id": "34675667873",
       "lang": "pt"
@@ -468,10 +469,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/neo-machine-white-110v-1"
     },
     "vertical": "",
-    "pId": "12484531",
-    "slug": "maquina-neo-n1-branca-110v-12484531"
+    "pId": "12484531"
   },
   {
+    "slug": "maquina-neo-n1-preta-220v-12484540",
     "$": {
       "id": "34675667875",
       "lang": "pt"
@@ -502,10 +503,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/neo-machine-black-220v"
     },
     "vertical": "",
-    "pId": "12484540",
-    "slug": "maquina-neo-n1-preta-220v-12484540"
+    "pId": "12484540"
   },
   {
+    "slug": "lixeira-branca-sustentavel-para-capsulas-12489938",
     "$": {
       "id": "39026366231",
       "lang": "pt"
@@ -536,10 +537,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/lixeira-branca-para-capsulas"
     },
     "vertical": "",
-    "pId": "12489938",
-    "slug": "lixeira-branca-sustentavel-para-capsulas-12489938"
+    "pId": "12489938"
   },
   {
+    "slug": "neo-caseiro-dark-10-capsulas-12509307",
     "$": {
       "id": "34675667857",
       "lang": "pt"
@@ -570,10 +571,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/caseiro-dark"
     },
     "vertical": "",
-    "pId": "12509307",
-    "slug": "neo-caseiro-dark-10-capsulas-12509307"
+    "pId": "12509307"
   },
   {
+    "slug": "neo-starbucks-americano-house-blend-10-capsulas-12509308",
     "$": {
       "id": "38674840945",
       "lang": "pt"
@@ -604,10 +605,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/neo-americano-house-blend"
     },
     "vertical": "",
-    "pId": "12509308",
-    "slug": "neo-starbucks-americano-house-blend-10-capsulas-12509308"
+    "pId": "12509308"
   },
   {
+    "slug": "neo-caseiro-delicate-10-capsulas-12509315",
     "$": {
       "id": "37456085783",
       "lang": "pt"
@@ -638,10 +639,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/caseiro-delicate"
     },
     "vertical": "",
-    "pId": "12509315",
-    "slug": "neo-caseiro-delicate-10-capsulas-12509315"
+    "pId": "12509315"
   },
   {
+    "slug": "neo-lungo-dark-10-capsulas-12509316",
     "$": {
       "id": "37456085782",
       "lang": "pt"
@@ -672,10 +673,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/lungo-dark"
     },
     "vertical": "",
-    "pId": "12509316",
-    "slug": "neo-lungo-dark-10-capsulas-12509316"
+    "pId": "12509316"
   },
   {
+    "slug": "neo-ristretto-intense-10-capsulas-12509317",
     "$": {
       "id": "36903320868",
       "lang": "pt"
@@ -706,10 +707,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/ristretto-intense"
     },
     "vertical": "",
-    "pId": "12509317",
-    "slug": "neo-ristretto-intense-10-capsulas-12509317"
+    "pId": "12509317"
   },
   {
+    "slug": "neo-espresso-sul-de-minas-organico-10-capsulas-12509319",
     "$": {
       "id": "40817736066",
       "lang": "pt"
@@ -740,10 +741,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/espresso-sul-de-minas"
     },
     "vertical": "",
-    "pId": "12509319",
-    "slug": "neo-espresso-sul-de-minas-organico-10-capsulas-12509319"
+    "pId": "12509319"
   },
   {
+    "slug": "neo-espresso-dark-10-capsulas-12509320",
     "$": {
       "id": "38827711135",
       "lang": "pt"
@@ -774,10 +775,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/espresso-dark"
     },
     "vertical": "",
-    "pId": "12509320",
-    "slug": "neo-espresso-dark-10-capsulas-12509320"
+    "pId": "12509320"
   },
   {
+    "slug": "neo-espresso-delicate-10-capsulas-12509321",
     "$": {
       "id": "34675667865",
       "lang": "pt"
@@ -808,10 +809,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/espresso-delicate"
     },
     "vertical": "",
-    "pId": "12509321",
-    "slug": "neo-espresso-delicate-10-capsulas-12509321"
+    "pId": "12509321"
   },
   {
+    "slug": "lixeira-vermelha-sustentavel-para-capsulas-12522106",
     "$": {
       "id": "37456085781",
       "lang": "pt"
@@ -842,10 +843,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/lixeira-sustentavel-para-capsulas"
     },
     "vertical": "",
-    "pId": "12522106",
-    "slug": "lixeira-vermelha-sustentavel-para-capsulas-12522106"
+    "pId": "12522106"
   },
   {
+    "slug": "porta-capsulas-dolce-gusto-transparente-12522107",
     "$": {
       "id": "38551643514",
       "lang": "pt"
@@ -876,10 +877,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/porta-capsulas-dolcegusto-transparente"
     },
     "vertical": "",
-    "pId": "12522107",
-    "slug": "porta-capsulas-dolce-gusto-transparente-12522107"
+    "pId": "12522107"
   },
   {
+    "slug": "mochaccino-canela-10-capsulas-12551246",
     "$": {
       "id": "35121499701",
       "lang": "pt"
@@ -910,10 +911,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-mochaccino-canela-10caps"
     },
     "vertical": "",
-    "pId": "12551246",
-    "slug": "mochaccino-canela-10-capsulas-12551246"
+    "pId": "12551246"
   },
   {
+    "slug": "nescau-10-capsulas-12551257",
     "$": {
       "id": "35312341083",
       "lang": "pt"
@@ -944,10 +945,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-nescau-10"
     },
     "vertical": "",
-    "pId": "12551257",
-    "slug": "nescau-10-capsulas-12551257"
+    "pId": "12551257"
   },
   {
+    "slug": "espresso-10-capsulas-12551265",
     "$": {
       "id": "35312341077",
       "lang": "pt"
@@ -978,10 +979,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-espresso-10"
     },
     "vertical": "",
-    "pId": "12551265",
-    "slug": "espresso-10-capsulas-12551265"
+    "pId": "12551265"
   },
   {
+    "slug": "nesquik-10-capsulas-12551269",
     "$": {
       "id": "36142963959",
       "lang": "pt"
@@ -1012,10 +1013,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-nesquik-10"
     },
     "vertical": "",
-    "pId": "12551269",
-    "slug": "nesquik-10-capsulas-12551269"
+    "pId": "12551269"
   },
   {
+    "slug": "cafe-au-lait-vanilla-10-capsulas-12551271",
     "$": {
       "id": "36377374373",
       "lang": "pt"
@@ -1046,10 +1047,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/cafe-au-lait-vanilla-1"
     },
     "vertical": "",
-    "pId": "12551271",
-    "slug": "cafe-au-lait-vanilla-10-capsulas-12551271"
+    "pId": "12551271"
   },
   {
+    "slug": "espresso-intenso-10-capsulas-12551300",
     "$": {
       "id": "35121499703",
       "lang": "pt"
@@ -1080,10 +1081,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-espresso-intenso-10"
     },
     "vertical": "",
-    "pId": "12551300",
-    "slug": "espresso-intenso-10-capsulas-12551300"
+    "pId": "12551300"
   },
   {
+    "slug": "cappuccino-10-capsulas-12551301",
     "$": {
       "id": "35312341075",
       "lang": "pt"
@@ -1114,10 +1115,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/cappuccino-capsulas-10"
     },
     "vertical": "",
-    "pId": "12551301",
-    "slug": "cappuccino-10-capsulas-12551301"
+    "pId": "12551301"
   },
   {
+    "slug": "caffe-matinal-10-capsulas-12551302",
     "$": {
       "id": "35121499705",
       "lang": "pt"
@@ -1148,10 +1149,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/caffe-matinal-10"
     },
     "vertical": "",
-    "pId": "12551302",
-    "slug": "caffe-matinal-10-capsulas-12551302"
+    "pId": "12551302"
   },
   {
+    "slug": "cafe-au-lait-desnatado-10-capsulas-12551303",
     "$": {
       "id": "35335104511",
       "lang": "pt"
@@ -1182,10 +1183,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-cafe-au-lait-desnatado-10"
     },
     "vertical": "",
-    "pId": "12551303",
-    "slug": "cafe-au-lait-desnatado-10-capsulas-12551303"
+    "pId": "12551303"
   },
   {
+    "slug": "lungo-10-capsulas-12551448",
     "$": {
       "id": "35312341079",
       "lang": "pt"
@@ -1216,10 +1217,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-lungo-10"
     },
     "vertical": "",
-    "pId": "12551448",
-    "slug": "lungo-10-capsulas-12551448"
+    "pId": "12551448"
   },
   {
+    "slug": "cafe-au-lait-10-capsulas-12551459",
     "$": {
       "id": "38827711136",
       "lang": "pt"
@@ -1250,10 +1251,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-cafe-au-lait-10"
     },
     "vertical": "",
-    "pId": "12551459",
-    "slug": "cafe-au-lait-10-capsulas-12551459"
+    "pId": "12551459"
   },
   {
+    "slug": "latte-macchiato-10-capsulas-12551463",
     "$": {
       "id": "35121499699",
       "lang": "pt"
@@ -1284,10 +1285,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/latte-macchiato-capsulas-10"
     },
     "vertical": "",
-    "pId": "12551463",
-    "slug": "latte-macchiato-10-capsulas-12551463"
+    "pId": "12551463"
   },
   {
+    "slug": "chococino-10-capsulas-12551472",
     "$": {
       "id": "35978968237",
       "lang": "pt"
@@ -1318,10 +1319,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-chococino-10"
     },
     "vertical": "",
-    "pId": "12551472",
-    "slug": "chococino-10-capsulas-12551472"
+    "pId": "12551472"
   },
   {
+    "slug": "natures-heart-hibiscus-pink-lemonade-10-capsulas-12551475",
     "$": {
       "id": "35312341091",
       "lang": "pt"
@@ -1352,10 +1353,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/nature-heart-pink-lemonade-1"
     },
     "vertical": "",
-    "pId": "12551475",
-    "slug": "natures-heart-hibiscus-pink-lemonade-10-capsulas-12551475"
+    "pId": "12551475"
   },
   {
+    "slug": "porta-capsulas-neo-12552253",
     "$": {
       "id": "38827711139",
       "lang": "pt"
@@ -1386,10 +1387,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/porta-capsulas-maquina-neo"
     },
     "vertical": "",
-    "pId": "12552253",
-    "slug": "porta-capsulas-neo-12552253"
+    "pId": "12552253"
   },
   {
+    "slug": "origens-do-mundo-brasil-organico-10-capsulas-12552456",
     "$": {
       "id": "36206159606",
       "lang": "pt"
@@ -1420,10 +1421,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/origens-do-mundo-brasil-organico-10"
     },
     "vertical": "",
-    "pId": "12552456",
-    "slug": "origens-do-mundo-brasil-organico-10-capsulas-12552456"
+    "pId": "12552456"
   },
   {
+    "slug": "ristretto-ardenza-10-capsulas-12552588",
     "$": {
       "id": "35312341071",
       "lang": "pt"
@@ -1454,10 +1455,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-ristretto-ardenza-10"
     },
     "vertical": "",
-    "pId": "12552588",
-    "slug": "ristretto-ardenza-10-capsulas-12552588"
+    "pId": "12552588"
   },
   {
+    "slug": "cafe-caseiro-intenso-10-capsulas-12552618",
     "$": {
       "id": "35121499697",
       "lang": "pt"
@@ -1488,10 +1489,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-cafe-caseiro-intenso-10"
     },
     "vertical": "",
-    "pId": "12552618",
-    "slug": "cafe-caseiro-intenso-10-capsulas-12552618"
+    "pId": "12552618"
   },
   {
+    "slug": "natures-heart-zen-style-10-capsulas-12552622",
     "$": {
       "id": "40343684132",
       "lang": "pt"
@@ -1522,10 +1523,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/nature-heart-zen-style-10"
     },
     "vertical": "",
-    "pId": "12552622",
-    "slug": "natures-heart-zen-style-10-capsulas-12552622"
+    "pId": "12552622"
   },
   {
+    "slug": "chococino-caramel-10-capsulas-12552624",
     "$": {
       "id": "38256684420",
       "lang": "pt"
@@ -1556,10 +1557,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-chococino-caramel-10"
     },
     "vertical": "",
-    "pId": "12552624",
-    "slug": "chococino-caramel-10-capsulas-12552624"
+    "pId": "12552624"
   },
   {
+    "slug": "copo-termico-branco-nescafe-dolce-gusto-12552882",
     "$": {
       "id": "40330406114",
       "lang": "pt"
@@ -1590,10 +1591,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/copo-termico-branco-nescafe-dolce-gusto"
     },
     "vertical": "",
-    "pId": "12552882",
-    "slug": "copo-termico-branco-nescafe-dolce-gusto-12552882"
+    "pId": "12552882"
   },
   {
+    "slug": "genio-s-basic-grafite-110v-12552974",
     "$": {
       "id": "37377536674",
       "lang": "pt"
@@ -1624,10 +1625,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-basic-grafite-110v"
     },
     "vertical": "",
-    "pId": "12552974",
-    "slug": "genio-s-basic-grafite-110v-12552974"
+    "pId": "12552974"
   },
   {
+    "slug": "genio-s-basic-grafite-220v-12552984",
     "$": {
       "id": "38827711142",
       "lang": "pt"
@@ -1658,10 +1659,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-basic-grafite-110v-1"
     },
     "vertical": "",
-    "pId": "12552984",
-    "slug": "genio-s-basic-grafite-220v-12552984"
+    "pId": "12552984"
   },
   {
+    "slug": "genio-s-basic-branca-110v-12552985",
     "$": {
       "id": "36499507083",
       "lang": "pt"
@@ -1692,10 +1693,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-basic-branca-110v-1"
     },
     "vertical": "",
-    "pId": "12552985",
-    "slug": "genio-s-basic-branca-110v-12552985"
+    "pId": "12552985"
   },
   {
+    "slug": "chai-tea-latte-10-capsulas-12553098",
     "$": {
       "id": "37823244745",
       "lang": "pt"
@@ -1726,10 +1727,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-chai-tea-latte-10"
     },
     "vertical": "",
-    "pId": "12553098",
-    "slug": "chai-tea-latte-10-capsulas-12553098"
+    "pId": "12553098"
   },
   {
+    "slug": "espresso-barista-10-capsulas-12553099",
     "$": {
       "id": "35312341073",
       "lang": "pt"
@@ -1760,10 +1761,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-espresso-barista-10"
     },
     "vertical": "",
-    "pId": "12553099",
-    "slug": "espresso-barista-10-capsulas-12553099"
+    "pId": "12553099"
   },
   {
+    "slug": "vanilla-latte-macchiato-10-capsulas-12553131",
     "$": {
       "id": "35312341103",
       "lang": "pt"
@@ -1794,10 +1795,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/vanilla-latte-macchiatto-1"
     },
     "vertical": "",
-    "pId": "12553131",
-    "slug": "vanilla-latte-macchiato-10-capsulas-12553131"
+    "pId": "12553131"
   },
   {
+    "slug": "copo-termico-preto-nescafe-dolce-gusto-12553377",
     "$": {
       "id": "40330406115",
       "lang": "pt"
@@ -1828,10 +1829,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/copo-termico-preto-nescafe-dolce-gusto"
     },
     "vertical": "",
-    "pId": "12553377",
-    "slug": "copo-termico-preto-nescafe-dolce-gusto-12553377"
+    "pId": "12553377"
   },
   {
+    "slug": "mochaccino-avela-10-capsulas-12555193",
     "$": {
       "id": "40270009501",
       "lang": "pt"
@@ -1862,10 +1863,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-mochaccino-avela-10"
     },
     "vertical": "",
-    "pId": "12555193",
-    "slug": "mochaccino-avela-10-capsulas-12555193"
+    "pId": "12555193"
   },
   {
+    "slug": "galak-10-capsulas-12557648",
     "$": {
       "id": "40333321733",
       "lang": "pt"
@@ -1896,10 +1897,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-galak"
     },
     "vertical": "",
-    "pId": "12557648",
-    "slug": "galak-10-capsulas-12557648"
+    "pId": "12557648"
   },
   {
+    "slug": "doppio-espresso-10-capsulas-12558494",
     "$": {
       "id": "36009417358",
       "lang": "pt"
@@ -1930,10 +1931,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/double-espresso-1"
     },
     "vertical": "",
-    "pId": "12558494",
-    "slug": "doppio-espresso-10-capsulas-12558494"
+    "pId": "12558494"
   },
   {
+    "slug": "copo-termico-vermelho-nescafe-dolce-gusto-12571061",
     "$": {
       "id": "37456085791",
       "lang": "pt"
@@ -1964,10 +1965,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/copo-termico-vermelho-nescafe-dolce-gusto"
     },
     "vertical": "",
-    "pId": "12571061",
-    "slug": "copo-termico-vermelho-nescafe-dolce-gusto-12571061"
+    "pId": "12571061"
   },
   {
+    "slug": "sensacao-10-capsulas-12571406",
     "$": {
       "id": "41239201476",
       "lang": "pt"
@@ -1998,10 +1999,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/sensacao-10capsulas"
     },
     "vertical": "",
-    "pId": "12571406",
-    "slug": "sensacao-10-capsulas-12571406"
+    "pId": "12571406"
   },
   {
+    "slug": "genio-s-plus-preta-220v-12572219",
     "$": {
       "id": "37626090198",
       "lang": "pt"
@@ -2032,10 +2033,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-plus-preta-220v-1"
     },
     "vertical": "",
-    "pId": "12572219",
-    "slug": "genio-s-plus-preta-220v-12572219"
+    "pId": "12572219"
   },
   {
+    "slug": "genio-s-touch-prata-220v-12572224",
     "$": {
       "id": "38325909113",
       "lang": "pt"
@@ -2066,10 +2067,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-touch-prata-220v-1"
     },
     "vertical": "",
-    "pId": "12572224",
-    "slug": "genio-s-touch-prata-220v-12572224"
+    "pId": "12572224"
   },
   {
+    "slug": "genio-s-plus-preta-110v-12572235",
     "$": {
       "id": "41204508295",
       "lang": "pt"
@@ -2100,10 +2101,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-plus-preta-110v-new"
     },
     "vertical": "",
-    "pId": "12572235",
-    "slug": "genio-s-plus-preta-110v-12572235"
+    "pId": "12572235"
   },
   {
+    "slug": "genio-s-plus-vermelha-110v-12572236",
     "$": {
       "id": "37626090199",
       "lang": "pt"
@@ -2134,10 +2135,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-plus-vermelha-110v-1"
     },
     "vertical": "",
-    "pId": "12572236",
-    "slug": "genio-s-plus-vermelha-110v-12572236"
+    "pId": "12572236"
   },
   {
+    "slug": "genio-s-touch-prata-110v-12572237",
     "$": {
       "id": "39090770730",
       "lang": "pt"
@@ -2168,10 +2169,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-touch-prata-110v-1"
     },
     "vertical": "",
-    "pId": "12572237",
-    "slug": "genio-s-touch-prata-110v-12572237"
+    "pId": "12572237"
   },
   {
+    "slug": "genio-s-plus-vermelha-220v-12572240",
     "$": {
       "id": "41204508296",
       "lang": "pt"
@@ -2202,10 +2203,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/genio-s-plus-vermelha-220v-new2"
     },
     "vertical": "",
-    "pId": "12572240",
-    "slug": "genio-s-plus-vermelha-220v-12572240"
+    "pId": "12572240"
   },
   {
+    "slug": "starbucks-blonde-espresso-roast-10-capsulas-12572612",
     "$": {
       "id": "37646074879",
       "lang": "pt"
@@ -2236,10 +2237,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/starbucks-blonde-espresso-roast-10-capsulas"
     },
     "vertical": "",
-    "pId": "12572612",
-    "slug": "starbucks-blonde-espresso-roast-10-capsulas-12572612"
+    "pId": "12572612"
   },
   {
+    "slug": "starbucks-espresso-colombia-10-capsulas-12572613",
     "$": {
       "id": "37462615670",
       "lang": "pt"
@@ -2270,10 +2271,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/starbucks-espresso-colombia-10-capsulas"
     },
     "vertical": "",
-    "pId": "12572613",
-    "slug": "starbucks-espresso-colombia-10-capsulas-12572613"
+    "pId": "12572613"
   },
   {
+    "slug": "starbucks-espresso-roast-10-capsulas-12573847",
     "$": {
       "id": "41209859860",
       "lang": "pt"
@@ -2304,10 +2305,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/starbucks-espresso-roast-10-capsulas"
     },
     "vertical": "",
-    "pId": "12573847",
-    "slug": "starbucks-espresso-roast-10-capsulas-12573847"
+    "pId": "12573847"
   },
   {
+    "slug": "starbucks-americano-house-blend-10-capsulas-12573867",
     "$": {
       "id": "37511275492",
       "lang": "pt"
@@ -2338,10 +2339,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/starbucks-americano-house-blend-10-capsulas"
     },
     "vertical": "",
-    "pId": "12573867",
-    "slug": "starbucks-americano-house-blend-10-capsulas-12573867"
+    "pId": "12573867"
   },
   {
+    "slug": "starbucks-latte-macchiato-10-capsulas-12574652",
     "$": {
       "id": "40330406116",
       "lang": "pt"
@@ -2372,10 +2373,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/starbucks-latte-macchiato-10-capsulas"
     },
     "vertical": "",
-    "pId": "12574652",
-    "slug": "starbucks-latte-macchiato-10-capsulas-12574652"
+    "pId": "12574652"
   },
   {
+    "slug": "chococino-alpino-10-capsulas-12574985",
     "$": {
       "id": "36499507081",
       "lang": "pt"
@@ -2406,10 +2407,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/capsulas-chococino-alpino-10-1"
     },
     "vertical": "",
-    "pId": "12574985",
-    "slug": "chococino-alpino-10-capsulas-12574985"
+    "pId": "12574985"
   },
   {
+    "slug": "copo-termico-amarelo-nescafe-dolce-gusto-12577936",
     "$": {
       "id": "40340516800",
       "lang": "pt"
@@ -2440,10 +2441,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/copo-termico-amarelo-nescafe-dolce-gusto"
     },
     "vertical": "",
-    "pId": "12577936",
-    "slug": "copo-termico-amarelo-nescafe-dolce-gusto-12577936"
+    "pId": "12577936"
   },
   {
+    "slug": "copo-termico-rosa-nescafe-dolce-gusto-12577941",
     "$": {
       "id": "40340516799",
       "lang": "pt"
@@ -2474,10 +2475,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/copo-termico-rosa-nescafe-dolce-gusto"
     },
     "vertical": "",
-    "pId": "12577941",
-    "slug": "copo-termico-rosa-nescafe-dolce-gusto-12577941"
+    "pId": "12577941"
   },
   {
+    "slug": "porta-capsulas-lata-dgusta-12579494",
     "$": {
       "id": "39274562568",
       "lang": "pt"
@@ -2508,10 +2509,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/porta-capsulas-dolcegusto-lata-dgusta"
     },
     "vertical": "",
-    "pId": "12579494",
-    "slug": "porta-capsulas-lata-dgusta-12579494"
+    "pId": "12579494"
   },
   {
+    "slug": "copo-termico-inox---nescafe-dolce-gusto-neo-12584912",
     "$": {
       "id": "38495946728",
       "lang": "pt"
@@ -2542,10 +2543,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/copo-termico-neo-inox"
     },
     "vertical": "",
-    "pId": "12584912",
-    "slug": "copo-termico-inox---nescafe-dolce-gusto-neo-12584912"
+    "pId": "12584912"
   },
   {
+    "slug": "chococino-alpino-intense-10-capsulas-12586548",
     "$": {
       "id": "39114679809",
       "lang": "pt"
@@ -2576,10 +2577,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/chococino-alpino-intense-10"
     },
     "vertical": "",
-    "pId": "12586548",
-    "slug": "chococino-alpino-intense-10-capsulas-12586548"
+    "pId": "12586548"
   },
   {
+    "slug": "espresso-cerrado-mineiro-10-capsulas-12591103",
     "$": {
       "id": "40325617960",
       "lang": "pt"
@@ -2610,10 +2611,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/cerrado-mineiro-10"
     },
     "vertical": "",
-    "pId": "12591103",
-    "slug": "espresso-cerrado-mineiro-10-capsulas-12591103"
+    "pId": "12591103"
   },
   {
+    "slug": "cappuccino-moca-sabor-brigadeiro-10-capsulas-12601139",
     "$": {
       "id": "38599808487",
       "lang": "pt"
@@ -2644,10 +2645,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/moca-brigadeiro-10"
     },
     "vertical": "",
-    "pId": "12601139",
-    "slug": "cappuccino-moca-sabor-brigadeiro-10-capsulas-12601139"
+    "pId": "12601139"
   },
   {
+    "slug": "adaptador-neo-start-12601357",
     "$": {
       "id": "40766560671",
       "lang": "pt"
@@ -2678,10 +2679,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/adaptador-neo-start"
     },
     "vertical": "",
-    "pId": "12601357",
-    "slug": "adaptador-neo-start-12601357"
+    "pId": "12601357"
   },
   {
+    "slug": "espresso-serras-do-alto-paranaiba-10-capsulas-12603778",
     "$": {
       "id": "40340516797",
       "lang": "pt"
@@ -2712,10 +2713,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/alto-paranaiba"
     },
     "vertical": "",
-    "pId": "12603778",
-    "slug": "espresso-serras-do-alto-paranaiba-10-capsulas-12603778"
+    "pId": "12603778"
   },
   {
+    "slug": "neo-espresso-serras-do-alto-paranaiba-10-capsulas-12609187",
     "$": {
       "id": "41016753187",
       "lang": "pt"
@@ -2746,10 +2747,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/neo-espresso-serras-do-alto-paranaiba"
     },
     "vertical": "",
-    "pId": "12609187",
-    "slug": "neo-espresso-serras-do-alto-paranaiba-10-capsulas-12609187"
+    "pId": "12609187"
   },
   {
+    "slug": "neo-lungo-chapada-diamantina-10-capsulas-12609217",
     "$": {
       "id": "41269558329",
       "lang": "pt"
@@ -2780,10 +2781,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/neo-lungo-chapada-diamantina"
     },
     "vertical": "",
-    "pId": "12609217",
-    "slug": "neo-lungo-chapada-diamantina-10-capsulas-12609217"
+    "pId": "12609217"
   },
   {
+    "slug": "lungo-nescafe-gold-10-capsulas-12612263",
     "$": {
       "id": "40761219550",
       "lang": "pt"
@@ -2814,10 +2815,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/lungo-gold-10"
     },
     "vertical": "",
-    "pId": "12612263",
-    "slug": "lungo-nescafe-gold-10-capsulas-12612263"
+    "pId": "12612263"
   },
   {
+    "slug": "espresso-nescafe-gold-10-capsulas-12613375",
     "$": {
       "id": "40761219551",
       "lang": "pt"
@@ -2848,10 +2849,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/espresso-gold-10"
     },
     "vertical": "",
-    "pId": "12613375",
-    "slug": "espresso-nescafe-gold-10-capsulas-12613375"
+    "pId": "12613375"
   },
   {
+    "slug": "kopenhagen-lingua-de-gato-10-capsulas-12615584",
     "$": {
       "id": "41084257282",
       "lang": "pt"
@@ -2882,10 +2883,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/kopenhagen-lingua-de-gato-10"
     },
     "vertical": "",
-    "pId": "12615584",
-    "slug": "kopenhagen-lingua-de-gato-10-capsulas-12615584"
+    "pId": "12615584"
   },
   {
+    "slug": "espresso-descafeinado-10-capsulas-12615587",
     "$": {
       "id": "40723605204",
       "lang": "pt"
@@ -2916,10 +2917,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/espresso-decaffeinato-10capsulas"
     },
     "vertical": "",
-    "pId": "12615587",
-    "slug": "espresso-descafeinado-10-capsulas-12615587"
+    "pId": "12615587"
   },
   {
+    "slug": "kopenhagen-lajotinha-10-capsulas-12615588",
     "$": {
       "id": "41084257281",
       "lang": "pt"
@@ -2950,10 +2951,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/kopenhagen-lajotinha-10"
     },
     "vertical": "",
-    "pId": "12615588",
-    "slug": "kopenhagen-lajotinha-10-capsulas-12615588"
+    "pId": "12615588"
   },
   {
+    "slug": "combo-neo-lungo-dark---6-caixas-20-off-Combo-NEO-Lungo-Dark-6un-20off-bf",
     "$": {
       "id": "39243028892",
       "lang": "pt"
@@ -2983,10 +2984,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-neo-lungo-dark-6un-20off-bf"
     },
     "vertical": "",
-    "pId": "Combo-NEO-Lungo-Dark-6un-20off-bf",
-    "slug": "combo-neo-lungo-dark---6-caixas-20-off-Combo-NEO-Lungo-Dark-6un-20off-bf"
+    "pId": "Combo-NEO-Lungo-Dark-6un-20off-bf"
   },
   {
+    "slug": "combo-cafe-au-lait-compre-6-caixas-com-25-off-cafe-aulait-6cx-25off",
     "$": {
       "id": "38827711133",
       "lang": "pt"
@@ -3016,10 +3017,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-cafe-aulait-6cx-25off"
     },
     "vertical": "",
-    "pId": "cafe-aulait-6cx-25off",
-    "slug": "combo-cafe-au-lait-compre-6-caixas-com-25-off-cafe-aulait-6cx-25off"
+    "pId": "cafe-aulait-6cx-25off"
   },
   {
+    "slug": "combo-cafe-au-lait-6-caixas-com-33-off-cafe-aulait-6cx-33off",
     "$": {
       "id": "40495722802",
       "lang": "pt"
@@ -3049,10 +3050,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-cafe-aulait-6cx-33off"
     },
     "vertical": "",
-    "pId": "cafe-aulait-6cx-33off",
-    "slug": "combo-cafe-au-lait-6-caixas-com-33-off-cafe-aulait-6cx-33off"
+    "pId": "cafe-aulait-6cx-33off"
   },
   {
+    "slug": "combo-boas-vindas-neo-com-20-off-combo-boas-vindas-neo-20-off-bf",
     "$": {
       "id": "39243028893",
       "lang": "pt"
@@ -3082,10 +3083,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-boas-vindas-neo-20-off-bf2024"
     },
     "vertical": "",
-    "pId": "combo-boas-vindas-neo-20-off-bf",
-    "slug": "combo-boas-vindas-neo-com-20-off-combo-boas-vindas-neo-20-off-bf"
+    "pId": "combo-boas-vindas-neo-20-off-bf"
   },
   {
+    "slug": "combo-moca-brigadeiro-4-caixas-com-35-off-combo-brigadeiro-4cx-35off",
     "$": {
       "id": "40951044498",
       "lang": "pt"
@@ -3115,10 +3116,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-brigadeiro-3cx-25off"
     },
     "vertical": "",
-    "pId": "combo-brigadeiro-4cx-35off",
-    "slug": "combo-moca-brigadeiro-4-caixas-com-35-off-combo-brigadeiro-4cx-35off"
+    "pId": "combo-brigadeiro-4cx-35off"
   },
   {
+    "slug": "combo-mochaccino-canela-6-caixas-com-33-off-combo-canela-6cx-33off",
     "$": {
       "id": "40495722803",
       "lang": "pt"
@@ -3148,10 +3149,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-canela-6cx-33off"
     },
     "vertical": "",
-    "pId": "combo-canela-6cx-33off",
-    "slug": "combo-mochaccino-canela-6-caixas-com-33-off-combo-canela-6cx-33off"
+    "pId": "combo-canela-6cx-33off"
   },
   {
+    "slug": "combo-cappuccino-6-caixas-com-33-off-combo-cappuccino-6cx-33off",
     "$": {
       "id": "40495722801",
       "lang": "pt"
@@ -3181,10 +3182,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-cappuccino-6cx-33off"
     },
     "vertical": "",
-    "pId": "combo-cappuccino-6cx-33off",
-    "slug": "combo-cappuccino-6-caixas-com-33-off-combo-cappuccino-6cx-33off"
+    "pId": "combo-cappuccino-6cx-33off"
   },
   {
+    "slug": "combo-compativeis-adaptador-neo-start---50-capsulas-combo-compativeis-neo-start",
     "$": {
       "id": "40794850622",
       "lang": "pt"
@@ -3214,10 +3215,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-compativeis-neo-start"
     },
     "vertical": "",
-    "pId": "combo-compativeis-neo-start",
-    "slug": "combo-compativeis-adaptador-neo-start---50-capsulas-combo-compativeis-neo-start"
+    "pId": "combo-compativeis-neo-start"
   },
   {
+    "slug": "combo-espresso-6-caixas-com-33-off-combo-espresso-6cx-33off",
     "$": {
       "id": "40495722804",
       "lang": "pt"
@@ -3247,10 +3248,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-espresso-6cx-33off"
     },
     "vertical": "",
-    "pId": "combo-espresso-6cx-33off",
-    "slug": "combo-espresso-6-caixas-com-33-off-combo-espresso-6cx-33off"
+    "pId": "combo-espresso-6cx-33off"
   },
   {
+    "slug": "combo-geracao-1-neo---ganhe-adaptador-combo-g1+capsneo+neostart-5cx",
     "$": {
       "id": "41307698870",
       "lang": "pt"
@@ -3281,10 +3282,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-g1-capsneo-neostart-5cx"
     },
     "vertical": "",
-    "pId": "combo-g1+capsneo+neostart-5cx",
-    "slug": "combo-geracao-1-neo---ganhe-adaptador-combo-g1+capsneo+neostart-5cx"
+    "pId": "combo-g1+capsneo+neostart-5cx"
   },
   {
+    "slug": "genio-s-basic-grafite-110v-adaptador-neo-start-combo-genio-grafite-110-neo-start",
     "$": {
       "id": "41292557553",
       "lang": "pt"
@@ -3315,10 +3316,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-genio-grafite-110-neo-start"
     },
     "vertical": "",
-    "pId": "combo-genio-grafite-110-neo-start",
-    "slug": "genio-s-basic-grafite-110v-adaptador-neo-start-combo-genio-grafite-110-neo-start"
+    "pId": "combo-genio-grafite-110-neo-start"
   },
   {
+    "slug": "genio-s-basic-grafite-220v-adaptador-neo-start-combo-genio-grafite-220-neo-start",
     "$": {
       "id": "41307698869",
       "lang": "pt"
@@ -3349,10 +3350,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-genio-grafite-220-neo-start"
     },
     "vertical": "",
-    "pId": "combo-genio-grafite-220-neo-start",
-    "slug": "genio-s-basic-grafite-220v-adaptador-neo-start-combo-genio-grafite-220-neo-start"
+    "pId": "combo-genio-grafite-220-neo-start"
   },
   {
+    "slug": "combo-kitkat-3-caixas-com-25-off-combo-kitkat-3cx-25off",
     "$": {
       "id": "39321708494",
       "lang": "pt"
@@ -3382,10 +3383,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-kitkat-3cx-25off"
     },
     "vertical": "",
-    "pId": "combo-kitkat-3cx-25off",
-    "slug": "combo-kitkat-3-caixas-com-25-off-combo-kitkat-3cx-25off"
+    "pId": "combo-kitkat-3cx-25off"
   },
   {
+    "slug": "combo-mais-vendidos-neo-com-20-off-combo-mais-vendidos-neo-20-off-bf",
     "$": {
       "id": "39243028894",
       "lang": "pt"
@@ -3415,10 +3416,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-mais-vendidos-neo-20-off-bf"
     },
     "vertical": "",
-    "pId": "combo-mais-vendidos-neo-20-off-bf",
-    "slug": "combo-mais-vendidos-neo-com-20-off-combo-mais-vendidos-neo-20-off-bf"
+    "pId": "combo-mais-vendidos-neo-20-off-bf"
   },
   {
+    "slug": "combo-caffe-matinal-leve-80-pague-60-capsulas-combo-matinal-leve80-pague60",
     "$": {
       "id": "39230227013",
       "lang": "pt"
@@ -3448,10 +3449,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-matinal-leve80-pague60"
     },
     "vertical": "",
-    "pId": "combo-matinal-leve80-pague60",
-    "slug": "combo-caffe-matinal-leve-80-pague-60-capsulas-combo-matinal-leve80-pague60"
+    "pId": "combo-matinal-leve80-pague60"
   },
   {
+    "slug": "kit-neo-espresso-roast-com-15-off---50-capsulas-combo-neo-espresso-roast-15-off",
     "$": {
       "id": "38674840946",
       "lang": "pt"
@@ -3481,10 +3482,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-neo-espresso-roast-15-off"
     },
     "vertical": "",
-    "pId": "combo-neo-espresso-roast-15-off",
-    "slug": "kit-neo-espresso-roast-com-15-off---50-capsulas-combo-neo-espresso-roast-15-off"
+    "pId": "combo-neo-espresso-roast-15-off"
   },
   {
+    "slug": "combo-vanilla-latte-macchiato-leve-80-pague-60-combo-vanilla-leve8-pague6-1",
     "$": {
       "id": "40844630774",
       "lang": "pt"
@@ -3514,10 +3515,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-vanilla-leve8-pague6-1"
     },
     "vertical": "",
-    "pId": "combo-vanilla-leve8-pague6-1",
-    "slug": "combo-vanilla-latte-macchiato-leve-80-pague-60-combo-vanilla-leve8-pague6-1"
+    "pId": "combo-vanilla-leve8-pague6-1"
   },
   {
+    "slug": "combo-espresso-7-caixas-com-20-off-espresso-7cx-20off",
     "$": {
       "id": "38933684953",
       "lang": "pt"
@@ -3547,10 +3548,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-espresso-7-20off"
     },
     "vertical": "",
-    "pId": "espresso-7cx-20off",
-    "slug": "combo-espresso-7-caixas-com-20-off-espresso-7cx-20off"
+    "pId": "espresso-7cx-20off"
   },
   {
+    "slug": "kit-boas-vindas-ii---30-off-kit-boas-vindas-2-30off",
     "$": {
       "id": "40165851304",
       "lang": "pt"
@@ -3580,10 +3581,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/kit-boas-vindas-ndg-2-30off-1"
     },
     "vertical": "",
-    "pId": "kit-boas-vindas-2-30off",
-    "slug": "kit-boas-vindas-ii---30-off-kit-boas-vindas-2-30off"
+    "pId": "kit-boas-vindas-2-30off"
   },
   {
+    "slug": "kit-cafes-starbucks-com-20-off-kit-cafes-starbucks-20-off",
     "$": {
       "id": "38770816740",
       "lang": "pt"
@@ -3613,10 +3614,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/combo-starbucks-cafes-8cxs-20off"
     },
     "vertical": "",
-    "pId": "kit-cafes-starbucks-20-off",
-    "slug": "kit-cafes-starbucks-com-20-off-kit-cafes-starbucks-20-off"
+    "pId": "kit-cafes-starbucks-20-off"
   },
   {
+    "slug": "combo-neo-caseiro-dark-com-20-off-kit-neo-caseirodark-neo-20-off-bf-2024",
     "$": {
       "id": "39342233093",
       "lang": "pt"
@@ -3646,10 +3647,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/kit-neo-caseirodark-neo-20-off-bf-2024"
     },
     "vertical": "",
-    "pId": "kit-neo-caseirodark-neo-20-off-bf-2024",
-    "slug": "combo-neo-caseiro-dark-com-20-off-kit-neo-caseirodark-neo-20-off-bf-2024"
+    "pId": "kit-neo-caseirodark-neo-20-off-bf-2024"
   },
   {
+    "slug": "combo-neo-espresso-dark-com-20-off-kit-neo-espressodark-neo-20-off-bf-2024",
     "$": {
       "id": "39342233092",
       "lang": "pt"
@@ -3679,10 +3680,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/kit-neo-espressodark-neo-20-off-bf-2024"
     },
     "vertical": "",
-    "pId": "kit-neo-espressodark-neo-20-off-bf-2024",
-    "slug": "combo-neo-espresso-dark-com-20-off-kit-neo-espressodark-neo-20-off-bf-2024"
+    "pId": "kit-neo-espressodark-neo-20-off-bf-2024"
   },
   {
+    "slug": "kit-cafes-starbucks-neo-com-20-off-kit-neo-sbux-neo-20-off-bf-2024",
     "$": {
       "id": "39322880223",
       "lang": "pt"
@@ -3712,10 +3713,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/kit-neo-sbux-neo-20-off-bf-2024"
     },
     "vertical": "",
-    "pId": "kit-neo-sbux-neo-20-off-bf-2024",
-    "slug": "kit-cafes-starbucks-neo-com-20-off-kit-neo-sbux-neo-20-off-bf-2024"
+    "pId": "kit-neo-sbux-neo-20-off-bf-2024"
   },
   {
+    "slug": "maquina-neo-neo-n1",
     "$": {
       "id": "34675667869",
       "lang": "pt"
@@ -3746,10 +3747,10 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/maquinas-cafe-neo"
     },
     "vertical": "",
-    "pId": "neo-n1",
-    "slug": "maquina-neo-neo-n1"
+    "pId": "neo-n1"
   },
   {
+    "slug": "resgate-copo-termico---promocao-neo-resgate-copo-termico-promo-neo",
     "$": {
       "id": "41099513147",
       "lang": "pt"
@@ -3779,7 +3780,6 @@
       "mLink": "https://www.nescafe-dolcegusto.com.br/resgate-copo-termico-promo-neo"
     },
     "vertical": "",
-    "pId": "resgate-copo-termico-promo-neo",
-    "slug": "resgate-copo-termico---promocao-neo-resgate-copo-termico-promo-neo"
+    "pId": "resgate-copo-termico-promo-neo"
   }
 ]

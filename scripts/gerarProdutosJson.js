@@ -93,11 +93,11 @@ async function converterTodosXMLs() {
         };
       });
 
-		  if( nomeBase == 'PROMO' || nomeBase == 'CUPOM'){
+		 // if( nomeBase == 'PROMO' || nomeBase == 'CUPOM'){
 			  fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
 			  fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
 			  
-		  }
+		 // }
 			 
 	  
 	  const jsonlContent = produtosComSlug.map(p => JSON.stringify(p)).join('\n');
