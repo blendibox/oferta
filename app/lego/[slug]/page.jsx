@@ -58,10 +58,8 @@ export async function generateMetadata({ params }) {
 
 export default async function ProdutoPage({ params }) {
 	
-	if (process.env.BUILD_TARGET !== 'LEGO') {
-    return notFound();
-  }
-	 const lote = process.env.LOTE;
+
+  const lote = process.env.LOTE || null;
   const produto = await lerProdutoPorSlug(params.slug, 'LEGO', lote);
 
 

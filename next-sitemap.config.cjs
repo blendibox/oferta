@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl:  'https://comprar.blendibox.com.br',
   generateRobotsTxt: false,
-  sitemapSize: 1000,
+  sitemapSize: 5000,
    exclude: [
 	  "/404",
 	  "/*/__dummy__"

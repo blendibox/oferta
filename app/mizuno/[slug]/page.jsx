@@ -39,10 +39,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-	if (process.env.BUILD_TARGET !== 'MIZUNO') {
-    return {}
-  }
-	 const lote = process.env.LOTE;
+  const lote = process.env.LOTE || null;
   const produto = await lerProdutoPorSlug(params.slug, 'MIZUNO',lote);
 
 
@@ -57,10 +54,7 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-	if (process.env.BUILD_TARGET !== 'MIZUNO') {
-    return notFound();
-  }
-	 const lote = process.env.LOTE;
+  const lote = process.env.LOTE || null;
   const produto = await lerProdutoPorSlug(params.slug, 'MIZUNO',lote);
  
 

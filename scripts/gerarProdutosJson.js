@@ -112,10 +112,11 @@ async function converterTodosXMLs() {
 
 		  const jsonlContent = lote.map(p => JSON.stringify(p)).join('\n');
 
-		  const nomeArquivo =  path.join(process.cwd(), 'data', 'awin', `${nomeBase}_${i+1}.jsonl`);
-
+		  const nomeArquivo =  path.join(process.cwd(), 'public', 'data', `${nomeBase}_${i+1}.jsonl`);
 		  fs.writeFileSync(nomeArquivo, jsonlContent, 'utf-8');
 		  console.log(`✅ Arquivo salvo: ${nomeArquivo} (${lote.length} registros)`);
+		  
+		  
 		}
 		
 		//fs.writeFileSync(caminhoJSON2.replace('.json', '.jsonl'), jsonlContent, 'utf-8');

@@ -94,7 +94,7 @@ export default function CompararProdutos() {
             const imagem = produto['g:image_link'] || produto['image'] || produto.uri?.mImage ||  '/images/cupons/cupom.png';
             const slugFinal = produto.slug || slug;
 			
-			const linkAfilio  =  produto['awTrack'] || produto['aw_deep_link'] || produto['clickurl'] || produto['link'] || '';
+			const linkAfilio  =  (produto['uri']?produto['uri']['awTrack']:"") || produto.uri?.awTrack ||  produto.aw_deep_link || produto['aw_deep_link'] || produto['clickurl'] || produto['link'] || '';
             const cupom = produto['code'] || produto['couponcode'] || 'Ir para o Site';  
             const link = arquivo.startsWith('ofertas_')
               ? `/produto/${slugFinal}`

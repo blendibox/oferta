@@ -42,10 +42,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
 	
-	if (process.env.BUILD_TARGET !== 'EUDORA') {
-    return {}
-  } 
-	 const lote = process.env.LOTE;
+  const lote = process.env.LOTE || null;
   const produto = await lerProdutoPorSlug(params.slug,'EUDORA',lote);
 
 
@@ -60,10 +57,7 @@ export async function generateMetadata({ params }) {
 
 
 export default async function ProdutoPage({ params }) {
-	if (process.env.BUILD_TARGET !== 'EUDORA') {
-		return notFound()
-	  } 
-	 const lote = process.env.LOTE;
+  const lote = process.env.LOTE || null;
   const produto = await lerProdutoPorSlug(params.slug,'EUDORA',lote);
 
 
