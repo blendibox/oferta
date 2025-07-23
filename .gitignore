@@ -4,6 +4,8 @@
 /node_modules
 /data/slugs-lotes
 /data/slugs
+/data/awin
+/public/data
 /.pnp
 .pnp.*
 .yarn/*
