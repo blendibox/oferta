@@ -61,7 +61,7 @@ export default async function ProdutoPage({ params }) {
   const lote = process.env.LOTE || null;
   const produto = await lerProdutoPorSlug(params.slug, 'LG',lote);
  
-console.log(produto);
+
   if (!produto) return notFound();
 
   return (

@@ -3,6 +3,8 @@ import path from 'path';
 import { parseStringPromise } from 'xml2js';
 import { decode } from 'html-entities';
 
+ process.env.COUNTER = 1;
+
 // Função para gerar slug
 function gerarSlug(texto, id) {
   return texto
@@ -21,6 +23,10 @@ if (!fs.existsSync(pastaSaida)) {
   fs.mkdirSync(pastaSaida, { recursive: true });
 }
 
+if (!fs.existsSync(pastaSaida2)) {
+  fs.mkdirSync(pastaSaida2, { recursive: true });
+}
+
 async function converterTodosXMLs() {
   const arquivos = fs.readdirSync(pastaXML).filter(file => file.endsWith('.xml'));
 
@@ -34,7 +40,8 @@ async function converterTodosXMLs() {
   for (const arquivo of arquivos) {
     const caminhoXML = path.join(pastaXML, arquivo);
     const nomeBase = path.basename(arquivo, '.xml');
-    const caminhoJSON = path.join(pastaSaida, `${nomeBase}.json`);
+
+	const caminhoJSON = path.join(pastaSaida, `${nomeBase}.json`);
 	const caminhoJSON2 = path.join(pastaSaida2, `${nomeBase}.json`);
 
     console.log(`🔄 Convertendo ${arquivo} → ${nomeBase}.jsonl`);
@@ -93,15 +100,19 @@ async function converterTodosXMLs() {
         };
       });
 
-		 // if( nomeBase == 'PROMO' || nomeBase == 'CUPOM'){
-			  fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
-			  fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8');
+          // x não precisa no build get staticparams
+		  // v precisa  para pesquisa de produtos e reultado categorias	
+			  fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //public data json
+			  //fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //data awin
 			  
-		 // }
+		
 			 
 	  
 	  const jsonlContent = produtosComSlug.map(p => JSON.stringify(p)).join('\n');
-		fs.writeFileSync(caminhoJSON.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
+	      // v precisa no build get staticparams
+		  // x  não precisa para pesquisa de produtos e reultado categorias
+	    //fs.writeFileSync(caminhoJSON.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
+		fs.writeFileSync(caminhoJSON2.replace('.json', '.jsonl'), jsonlContent, 'utf-8');
 		
 		const loteTamanho = 10000;
 		const totalLotes = Math.ceil(produtosComSlug.length / loteTamanho);
@@ -112,10 +123,12 @@ async function converterTodosXMLs() {
 
 		  const jsonlContent = lote.map(p => JSON.stringify(p)).join('\n');
 
-		  const nomeArquivo =  path.join(process.cwd(), 'public', 'data', `${nomeBase}_${i+1}.jsonl`);
+
+		  const nomeArquivo =  path.join(process.cwd(), 'data', 'awin', `${nomeBase}_${process.env.COUNTER}.jsonl`); //jsonl
 		  fs.writeFileSync(nomeArquivo, jsonlContent, 'utf-8');
 		  console.log(`✅ Arquivo salvo: ${nomeArquivo} (${lote.length} registros)`);
 		  
+		  process.env.COUNTER++;
 		  
 		}
 		

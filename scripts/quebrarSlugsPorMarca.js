@@ -5,7 +5,14 @@ const entradaDir = path.join('data', 'slugs');
 const saidaDir = path.join('data', 'slugs-lotes');
 const tamanhoLote = 10000;
 
+process.env.COUNTER=1;
+
 fs.mkdirSync(saidaDir, { recursive: true });
+
+
+function isNumeric(value) {
+  return !isNaN(parseFloat(value)) && isFinite(value);
+}
 
 // Limpa diretório saidaDir
 if (fs.existsSync(saidaDir)) {
@@ -19,6 +26,13 @@ const arquivos = fs.readdirSync(entradaDir).filter(f => f.startsWith('slugs_') &
 
 for (const arquivo of arquivos) {
   const marca = arquivo.replace(/^slugs_/, '').replace(/\.json$/, '');
+
+
+  if(isNumeric(marca)){
+	  //console.log('marca: ' + marca);
+	  continue;
+  }
+  
   const fullPath = path.join(entradaDir, arquivo);
 const origem = arquivo;
   const slugsMap = JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
@@ -29,7 +43,7 @@ const origem = arquivo;
   for (let i = 0; i < totalLotes; i++) {
     const fatia = slugs.slice(i * tamanhoLote, (i + 1) * tamanhoLote);
 
-    const nomeSaida = `slugs_${marca}_${i+1}.jsonl`; // JSONL = 1 linha por objeto
+    const nomeSaida = `slugs_${marca}_${process.env.COUNTER}.jsonl`; // JSONL = 1 linha por objeto
     const caminhoSaida = path.join(saidaDir, nomeSaida);
 
     const stream = fs.createWriteStream(caminhoSaida);
@@ -39,6 +53,9 @@ const origem = arquivo;
     });
 
     stream.end();
+	
+	process.env.COUNTER++;
+	
     console.log(`✅ Criado: ${nomeSaida} (${fatia.length} slugs)`);
    }
 }

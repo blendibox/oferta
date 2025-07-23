@@ -5,6 +5,8 @@ import { execSync } from 'child_process';
 const tipo = process.argv[2];
 
 
+// para produtos e categorias
+
 if (!tipo) {
   console.error('❌ Você deve informar o tipo do BUILD_TARGET. Ex: node buildLotes.js produto');
   process.exit(1);
@@ -74,7 +76,7 @@ if (tipo == 'produto') {
 
     copiaSomenteTarget(outDir, tipo);
   }
-} else {
+} /*else {
     // marcas promo, cupom 
     const marca = tipo;
     const pastaLotes = path.join('data', 'slugs-lotes');
@@ -112,7 +114,7 @@ if (tipo == 'produto') {
 	} 
   
 
-}
+}*/
 
 
 
