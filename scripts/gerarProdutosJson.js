@@ -102,9 +102,11 @@ async function converterTodosXMLs() {
 
           // x não precisa no build get staticparams
 		  // v precisa  para pesquisa de produtos e reultado categorias	
-			  fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //public data json
-			  //fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //data awin
-			  
+			  fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //public/data json
+			  console.log(`✅ Arquivo salvo: ${nomeBase}.json em public/data`);
+		  // necessário para gerar slugs por marca	  
+			 fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //data awin
+			 console.log(`✅ Arquivo salvo: ${nomeBase}.json em data/awin`); 
 		
 			 
 	  
