@@ -57,7 +57,7 @@ export default function ProdutoAwin(props) {
           </Link>		 
 		  </h2>
 		 
-      <p className="mt-4 text-lg">{produto['text']['desc'].toString("utf8")}</p>
+      <p className="mt-4 text-lg">{ (produto['text']['desc'])?produto['text']['desc'].toString("utf8"):""}</p>
 	  
 	  <Link
 			href={produto['uri']['awTrack']}
