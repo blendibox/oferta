@@ -66,8 +66,8 @@ for (const dir of dataDirs) {
 }
 
 // Salva índice de slugs
-fs.writeFileSync(outputPath, JSON.stringify(slugIndex, null, 2), 'utf8');
-fs.writeFileSync(publicPath, JSON.stringify(slugIndex, null, 2), 'utf8');
+fs.writeFileSync(outputPath, JSON.stringify(slugIndex), 'utf8');
+fs.writeFileSync(publicPath, JSON.stringify(slugIndex), 'utf8');
 
 console.log(`✅ Índice de slugs gerado com sucesso em:`);
 console.log(`📄 ${outputPath}`);

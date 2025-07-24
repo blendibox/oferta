@@ -5,15 +5,21 @@ import { decode } from 'html-entities';
 
  process.env.COUNTER = 1;
 
-// Função para gerar slug
 function gerarSlug(texto, id) {
-  return texto
-    .toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^\w\s-]/g, "")
-    .replace(/\s+/g, "-") + '-' + id;
-}
+  if (!texto || typeof texto !== 'string') texto = 'produto';
 
+  return (
+    texto
+      .toLowerCase()
+      .normalize("NFD")                    // Remove acentos
+      .replace(/[\u0300-\u036f]/g, "")    // Remove marcas de acento
+      .replace(/[^a-z0-9\s-]/g, "")       // Remove tudo que não for letra, número, espaço ou hífen
+      .replace(/\s+/g, "-")               // Espaços viram hífen
+      .replace(/-+/g, "-")                // Evita múltiplos hífens
+      .replace(/^-|-$/g, "")              // Remove hífen no início/fim
+    + '-' + id.toString().toLowerCase().replace(/[^a-z0-9]/g, "")
+  );
+}
 
 const pastaXML = path.join(process.cwd(), 'data', 'awin');
 const pastaSaida = path.join(process.cwd(), 'public', 'data');
@@ -81,10 +87,21 @@ async function converterTodosXMLs() {
 		);
 		
 		if (p['g:title']) p['g:title'] = decode(p['g:title']);
-		if (p['g:description']) p['g:description'] = decode(p['g:description']);
+		if (p['g:description']) {
+			const desc = decode(p['g:description']);
+			p['g:description'] = desc.split('.')[0] + '.'; // pega até o primeiro ponto final
+		}
 		if (p['title']) p['title'] = decode(p['title']);
-		if (p['text']) p['text']['desc'] = decode(p['text']['desc']);
-        if (p['text']) p['text']['name'] = decode(p['text']['name']);
+		if (p['text']) {
+			if (p['text']['desc']) {
+			  const desc = decode(p['text']['desc']);
+			  p['text']['desc'] = desc.split('.')[0] + '.'; // corta no primeiro ponto final
+			}
+			if (p['text']['name']) {
+			  p['text']['name'] = decode(p['text']['name']);
+			}
+		}
+
 		if (p['advertisername']) p['advertisername'] = decode(p['advertisername']);
 		
         const id   = p['g:id']    || p['pId']   || i       ;
@@ -102,10 +119,11 @@ async function converterTodosXMLs() {
 
           // x não precisa no build get staticparams
 		  // v precisa  para pesquisa de produtos e reultado categorias	
-			  fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //public/data json
+		 		  
+		     fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug), 'utf-8'); // public/data	
 			  console.log(`✅ Arquivo salvo: ${nomeBase}.json em public/data`);
 		  // necessário para gerar slugs por marca	  
-			 fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug, null, 2), 'utf-8'); //data awin
+			fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug), 'utf-8'); // data/awin
 			 console.log(`✅ Arquivo salvo: ${nomeBase}.json em data/awin`); 
 		
 			 
@@ -160,10 +178,72 @@ async function converterTodosXMLs() {
 	// 🧠 Mescla os slugs antigos com os novos (os novos sobrescrevem, se houver conflito)
 	const slugIndexFinal = { ...slugIndexAnterior, ...slugIndex };
 
-	fs.writeFileSync(caminhoIndex, JSON.stringify(slugIndexFinal, null, 2), 'utf-8');
+	fs.writeFileSync(caminhoIndex, JSON.stringify(slugIndexFinal), 'utf-8');
 
 
 	console.log('📄 Índice atualizado em: public/slug-index.json');
 }
 
+
+
+
+
+// para cupons awin 
+async function gerarVoucherJsonComSlugs(){
+	
+
+
+const pastaW = path.join(process.cwd(), 'data', 'cupons');
+
+if (!fs.existsSync(pastaW)) {
+  fs.mkdirSync(pastaW, { recursive: true });
+}
+ 
+  const arquivos = fs.readdirSync(pastaW)
+                   .filter((f) => f.startsWith(`PromotionsAwin`) && f.endsWith('.json'));
+
+
+  if (!arquivos.hasNext()) {
+    Logger.log("❌ Arquivo PromotionsAwin.json não encontrado.");
+    return;
+  }
+
+  const arquivo = arquivos.next();
+  const conteudo = arquivo.getBlob().getDataAsString("utf-8");
+
+  let cupons;
+  try {
+    cupons = JSON.parse(conteudo);
+  } catch (e) {
+    Logger.log("❌ Erro ao fazer parse do JSON: " + e.message);
+    return;
+  }
+
+  const cuponsComSlug = cupons.map(c => {
+    const id = c["Promotion ID"] || c["ID"] || Utilities.getUuid(); // tenta pegar um ID
+    const nome = c["Title"] || c["Description"] || "cupom";
+    return {
+      ...c,
+      slug: gerarSlug(nome, id)
+    };
+  });
+
+  // Cria os arquivos finais
+  const jsonCompleto = JSON.stringify(cuponsComSlug, null, 2);
+  const jsonl = cuponsComSlug.map(c => JSON.stringify(c)).join('\n');
+
+  // Salvar na pasta
+  pasta.createFile("cupons_com_slug.json", jsonCompleto, MimeType.PLAIN_TEXT);
+  pasta.createFile("cupons_com_slug.jsonl", jsonl, MimeType.PLAIN_TEXT);
+
+  Logger.log("✅ Arquivos JSON e JSONL criados com sucesso.");
+
+
+	
+	
+}
+
+
+
 converterTodosXMLs();
+//gerarVoucherJsonComSlugs();
