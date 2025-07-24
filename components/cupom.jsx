@@ -59,20 +59,13 @@ export default function Cupom(props) {
       <br /> 
 
       <small className={styles.small}>
-        * Este cupom de desconto é válido no site{' '}
+        * Esta oferta e válida no site{' '}
         <a href={link}>{storeName}</a> até  <b>{vigency}</b> ou enquanto
         durarem os estoques, podendo ser invalidado antes do prazo.
       </small>
 	  
 	  
-	   <div className={styles.AlignCenter}>
-		 <div   aria-label="Data da publicação" >					  
-			<Link href='https://www.blendibox.com.br' className={styles.AlignCenter}>
-					     © 2025, Blendibox - Todos os direitos reservados.
-			</Link>
-			
-		 </div>
-		 </div>
+	
 
       <hr />
 	  </div>

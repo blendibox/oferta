@@ -17,7 +17,7 @@ function copiaSomenteTarget(outDir, target) {
   fs.cpSync(origem, destino, { recursive: true });
 }
 
-    // marcas promo, cupom 
+    // marcas,  promo, cupom e voucher
 
 	
     const pastaLotes = path.join('data', 'slugs-lotes');

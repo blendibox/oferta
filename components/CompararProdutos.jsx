@@ -63,7 +63,7 @@ export default function CompararProdutos() {
 	  const slugNormalizado = normalizarTexto(slug);
 	  return palavrasBusca.every(palavra => slugNormalizado.includes(palavra));
 	})
-	.slice(0, 30);
+	.slice(0, 60);
 	
 
 	  // Paginação: monta a página corrente dos resultados
@@ -101,13 +101,17 @@ export default function CompararProdutos() {
 				  ? extrairPreco(produto['g:price'])
 				  : extrairPreco(produto?.price?.buynow);
 			  
-			  const categoriaTexto = isGalvic
+			  let categoriaTexto = isGalvic
 				  ? '' // ou p['g:categoria'] se existir
 				  : (produto?.cat?.mCat || '').toLowerCase();
+				  
+				 categoriaTexto =  arquivo.startsWith('VOUCHER')? produto?.categories : "";
+				  
 			
             let marca =  arquivo.startsWith('ofertas_') ? "" : arquivo.replace('.json', '').toLowerCase();
 			    marca =  arquivo.startsWith('CUPOM')? produto.store?.name: marca ;
 			    marca =  arquivo.startsWith('PROMO')? produto.advertisername : marca ;
+				marca =  arquivo.startsWith('VOUCHER')? produto.advertiser : marca ;
 			
             const nome = produto['g:title'] || produto['title'] || produto.text?.name || produto['offerdescription'] ||  '';
             const preco = parseFloat(
@@ -116,11 +120,12 @@ export default function CompararProdutos() {
             const imagem = produto['g:image_link'] || produto['image'] || produto.uri?.mImage ||  '/images/cupons/cupom.png';
             const slugFinal = produto.slug || slug;
 			const categoria = categoriaTexto;
-			const linkAfilio  =  (produto['uri']?produto['uri']['awTrack']:"") || produto.uri?.awTrack ||  produto.aw_deep_link || produto['aw_deep_link'] || produto['clickurl'] || produto['link'] || '';
-            const cupom = produto['code'] || produto['couponcode'] || 'Ir para o Site';  
+			const linkAfilio  =  (produto['uri']?produto['uri']['awTrack']:"") || produto.uri?.awTrack ||  produto.aw_deep_link || produto.deeplink_tracking || produto['aw_deep_link'] || produto['clickurl'] || produto['link'] || '';
+            const cupom = produto['code'] || produto['couponcode'] || produto.code || 'Ir para o Site';  
             const link = arquivo.startsWith('ofertas_')
               ? `/produto/${slugFinal}`
               : `/${origem}/${slugFinal}`;
+			  console.log(origem);
 
             produtos.push({
               ...produto,
@@ -259,7 +264,7 @@ export default function CompararProdutos() {
                   target="_blank"
                 >
 				<p    className=" text-center border-dashed rounded border-2 text-2xl mask-clip-content inline-flex shrink-0 text-red-500 border border-pink-300 bg-pink-100 p-2 dark:border-pink-300/10 dark:bg-pink-400/10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-200 hover:text-white"
-                 > {(p._origem =='cupom' || p._origem =='promo')?p._cupom:'ver produto'}</p>
+                 > {(p._origem =='cupom' || p._origem =='promo' || p._origem =='voucher')?p._cupom:'ver produto'}</p>
                   
                 </Link>
                 <button
@@ -400,7 +405,7 @@ export default function CompararProdutos() {
                 className="text-blue-600 underline text-sm mt-2 inline-block"
                 target="_blank"
               >  	<p    className=" self-auto  text-center border-dashed rounded border-2 text-2xl mask-clip-content inline-flex shrink-0 text-red-500 border border-pink-300 bg-pink-100 p-2 dark:border-pink-300/10 dark:bg-pink-400/10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-200 hover:text-white"
-                 > {(p._origem =='cupom' || p._origem =='promo')?p._cupom:'ver produto'}</p>
+                 > {(p._origem =='cupom' || p._origem =='promo' || p._origem =='voucher')?p._cupom:'ver produto'}</p>
 			  
               </Link>
             </div>
