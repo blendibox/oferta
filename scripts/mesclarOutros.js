@@ -51,7 +51,7 @@ for (const dir of diretoriosLote) {
   console.log(`🗑️  Apagado: ${dir}`);
 }
 
-
+/*
 
 const saidaDir2 = path.join('data', 'slugs-lotes');
 
@@ -61,5 +61,5 @@ if (fs.existsSync(saidaDir2)) {
   fs.rmSync(saidaDir2, { recursive: true, force: true });
 }
 fs.mkdirSync(saidaDir2);
-
+*/
 console.log('🎉 Todos os lotes foram unificados em /out com sucesso!');

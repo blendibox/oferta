@@ -36,7 +36,7 @@ export async function generateStaticParams() {
   } 	  
 	
 	  const lote = process.env.LOTE || '1'; // ex: LOTE=1
-	  const slugPath = path.join(process.cwd(), `data/slugs/slugs_${lote}.json`);
+	  const slugPath = path.join(process.cwd(), `data/slugs-ofertas/slugs_ofertas_${lote}.json`);
 
 	  if (!fs.existsSync(slugPath)) {
 		console.warn(`❌ Lote ${lote} não encontrado.`);

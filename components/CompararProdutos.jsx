@@ -15,6 +15,14 @@ function normalizarTexto(texto) {
     .toLowerCase();
 }
 
+// Utilitário para tratar preço em diferentes formatos
+function extrairPreco(valor) {
+  if (!valor) return '0';
+  if (typeof valor === 'object' && valor.$) return valor.$;
+  if (typeof valor === 'number') return valor.toString();
+  return valor;
+}
+
 
 
 export default function CompararProdutos() {
@@ -85,15 +93,29 @@ export default function CompararProdutos() {
 
           if (produto) {
 			const origem =  arquivo.replace('.json', '').toLowerCase();  
+			
+			// Galvic: detecta se é o formato com "g:title"
+				const isGalvic = !!produto['g:title'];
+				
+				const precoBruto = isGalvic
+				  ? extrairPreco(produto['g:price'])
+				  : extrairPreco(produto?.price?.buynow);
+			  
+			  const categoriaTexto = isGalvic
+				  ? '' // ou p['g:categoria'] se existir
+				  : (produto?.cat?.mCat || '').toLowerCase();
+			
             let marca =  arquivo.startsWith('ofertas_') ? "" : arquivo.replace('.json', '').toLowerCase();
 			    marca =  arquivo.startsWith('CUPOM')? produto.store?.name: marca ;
 			    marca =  arquivo.startsWith('PROMO')? produto.advertisername : marca ;
 			
             const nome = produto['g:title'] || produto['title'] || produto.text?.name || produto['offerdescription'] ||  '';
-            const preco = produto['g:price']  || produto.price?.buynow ||  produto['price'] ||'';
+            const preco = parseFloat(
+						precoBruto.replace(/[^\d,.-]/g, '').replace(',', '.')
+					  );
             const imagem = produto['g:image_link'] || produto['image'] || produto.uri?.mImage ||  '/images/cupons/cupom.png';
             const slugFinal = produto.slug || slug;
-			
+			const categoria = categoriaTexto;
 			const linkAfilio  =  (produto['uri']?produto['uri']['awTrack']:"") || produto.uri?.awTrack ||  produto.aw_deep_link || produto['aw_deep_link'] || produto['clickurl'] || produto['link'] || '';
             const cupom = produto['code'] || produto['couponcode'] || 'Ir para o Site';  
             const link = arquivo.startsWith('ofertas_')
@@ -110,6 +132,7 @@ export default function CompararProdutos() {
               _preco: preco,
               _imagem: imagem,
 			  _linkAfilio: linkAfilio,
+			  _categoria : categoria,
 			  _linklocal:`https://comprar.blendibox.com.br/${link}?${marca}`,
 			  _cupom: cupom
             });

@@ -7,6 +7,12 @@ const dataDirs = [
   path.join(process.cwd(), 'data/awin')
 ];
 
+
+const slugOfertasFolder =  path.join(process.cwd(), 'data','slugs-ofertas');
+fs.mkdirSync(slugOfertasFolder, { recursive: true }); // cria a pasta caso não exista
+
+
+
 const outputPath = path.join(process.cwd(), 'data/slugs/slug-index.json');
 const publicPath = path.join(process.cwd(), 'public/slug-index.json');
 const publicOutputPath = path.join(process.cwd(), 'public/data/produtos/');
@@ -52,8 +58,18 @@ for (const dir of dataDirs) {
       }
 	  
 	  
-	  // Copia arquivos da pasta /data para public/data/produtos
+	 
 	  if (dir.endsWith('data')) {
+		  
+		  // salva slugs na pasta slugs-ofertas
+		   const nomeBase2 = path.parse(file).name.toLowerCase(); // Ex: "NOME.json" → "nome"
+           const caminhoSaidaIndividual2 = path.join( slugOfertasFolder, `slugs_${nomeBase2}.json`);
+		   const slugsArray2 = Object.keys(slugsDoArquivo).map(slug => ({slug}));
+            fs.writeFileSync(caminhoSaidaIndividual2, JSON.stringify(slugsArray2, null, 2), 'utf8');
+           console.log(`📝 Slugs salvos por arquivo: ${caminhoSaidaIndividual2}`);
+		  
+		  
+		   // Copia arquivos da pasta /data para public/data/produtos
 		  const destino = path.join(publicOutputPath, file);
 		  fs.mkdirSync(publicOutputPath, { recursive: true });
 		  fs.copyFileSync(fullPath, destino);

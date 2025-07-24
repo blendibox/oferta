@@ -12,7 +12,7 @@ if (!tipo) {
   process.exit(1);
 }
 
-const pastaSlugs = path.join(process.cwd(), 'data', 'slugs');
+const pastaSlugs = path.join(process.cwd(), 'data', 'slugs-ofertas');
 
 function copiaSomenteTarget(outDir, target) {
   const origem = path.join('out', target);
@@ -29,7 +29,7 @@ function copiaSomenteTarget(outDir, target) {
 if (tipo == 'produto') {
   const arquivos = fs
     .readdirSync(pastaSlugs)
-    .filter(name => /^slugs_\d+\.json$/.test(name))
+    .filter(name => /^slugs_ofertas_\d+\.json$/.test(name))
     .sort((a, b) => {
       const numA = parseInt(a.match(/\d+/));
       const numB = parseInt(b.match(/\d+/));
