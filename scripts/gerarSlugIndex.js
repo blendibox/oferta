@@ -4,7 +4,7 @@ import path from 'path';
 // Diretórios
 const dataDirs = [
   path.join(process.cwd(), 'data'),
-  path.join(process.cwd(), 'data/awin')
+  path.join(process.cwd(), 'data','awin')
 ];
 
 
