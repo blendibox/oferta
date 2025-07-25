@@ -11,6 +11,9 @@ const dataDirs = [
 const slugOfertasFolder =  path.join(process.cwd(), 'data','slugs-ofertas');
 fs.mkdirSync(slugOfertasFolder, { recursive: true }); // cria a pasta caso não exista
 
+const slugAwinFolder =  path.join(process.cwd(), 'data','slugs');
+fs.mkdirSync(slugAwinFolder, { recursive: true }); // cria a pasta caso não exista
+
 
 
 const outputPath = path.join(process.cwd(), 'data/slugs/slug-index.json');
@@ -46,27 +49,23 @@ for (const dir of dataDirs) {
 	  // Salvar arquivo de slugs individual, somente para arquivos da pasta awin
       if (dir.endsWith('awin')) {
         const nomeBase = path.parse(file).name.toLowerCase(); // Ex: "NOME.json" → "nome"
-        const caminhoSaidaIndividual = path.join(process.cwd(), 'data/slugs', `slugs_${nomeBase}.json`);
-		
-		
-		  // Transforma { slug1: "arquivo1.json", slug2: "arquivo1.json", ... }
-		  // em [ { slug: "slug1" }, { slug: "slug2" }, ... ]
-		  const slugsArray = Object.keys(slugsDoArquivo).map(slug => ({slug}));
+        const caminhoSaidaIndividual = path.join(slugAwinFolder, `slugs_${nomeBase}.json`);
+
+		const slugsArray = Object.keys(slugsDoArquivo).map(slug => ({slug}));
 		  
         fs.writeFileSync(caminhoSaidaIndividual, JSON.stringify(slugsArray, null, 2), 'utf8');
-        console.log(`📝 Slugs salvos por arquivo: ${caminhoSaidaIndividual}`);
+        console.log(`📝 Slugs salvos por arquivo em awin: ${caminhoSaidaIndividual}`);
       }
-	  
-	  
-	 
+
 	  if (dir.endsWith('data')) {
 		  
 		  // salva slugs na pasta slugs-ofertas
 		   const nomeBase2 = path.parse(file).name.toLowerCase(); // Ex: "NOME.json" → "nome"
            const caminhoSaidaIndividual2 = path.join( slugOfertasFolder, `slugs_${nomeBase2}.json`);
+		   
 		   const slugsArray2 = Object.keys(slugsDoArquivo).map(slug => ({slug}));
-            fs.writeFileSync(caminhoSaidaIndividual2, JSON.stringify(slugsArray2, null, 2), 'utf8');
-           console.log(`📝 Slugs salvos por arquivo: ${caminhoSaidaIndividual2}`);
+           fs.writeFileSync(caminhoSaidaIndividual2, JSON.stringify(slugsArray2, null, 2), 'utf8');
+           console.log(`📝 Slugs salvos por arquivo em data: ${caminhoSaidaIndividual2}`);
 		  
 		  
 		   // Copia arquivos da pasta /data para public/data/produtos
