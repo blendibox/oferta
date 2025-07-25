@@ -88,14 +88,16 @@ async function converterTodosXMLs() {
 		
 		if (p['g:title']) p['g:title'] = decode(p['g:title']);
 		if (p['g:description']) {
-			const desc = decode(p['g:description']);
-			p['g:description'] = desc.split('.')[0] + '.'; // pega até o primeiro ponto final
+			//const desc = decode(p['g:description']);
+			//p['g:description'] = desc.split('.')[0] + '.'; // pega até o primeiro ponto final
+			p['g:description'] = 	'';// remove descricao
 		}
 		if (p['title']) p['title'] = decode(p['title']);
 		if (p['text']) {
 			if (p['text']['desc']) {
-			  const desc = decode(p['text']['desc']);
-			  p['text']['desc'] = desc.split('.')[0] + '.'; // corta no primeiro ponto final
+			  //const desc = decode(p['text']['desc']);
+			  //p['text']['desc'] = desc.split('.')[0] + '.'; // corta no primeiro ponto final			  
+			  p['text']['desc'] = 	'';// remove descricao
 			}
 			if (p['text']['name']) {
 			  p['text']['name'] = decode(p['text']['name']);
@@ -120,8 +122,13 @@ async function converterTodosXMLs() {
           // x não precisa no build get staticparams
 		  // v precisa  para pesquisa de produtos e reultado categorias	
 		 		  
-		     fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug), 'utf-8'); // public/data	
-			  console.log(`✅ Arquivo salvo: ${nomeBase}.json em public/data`);
+			// não salvar BELEZANAWEB, CEA e CENTAURO
+             if(nomeBase!= 'BELEZANAWEB' && nomeBase!= 'CEA' && nomeBase!= 'CENTAURO'){					
+		       fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug), 'utf-8'); // public/data	
+			   console.log(`✅ Arquivo salvo: ${nomeBase}.json em public/data`);
+			 }
+			  
+			  
 		  // necessário para gerar slugs por marca	  
 			fs.writeFileSync(caminhoJSON2, JSON.stringify(produtosComSlug), 'utf-8'); // data/awin
 			 console.log(`✅ Arquivo salvo: ${nomeBase}.json em data/awin`); 
