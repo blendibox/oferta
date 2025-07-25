@@ -8,14 +8,7 @@ import CompararProdutos    from '../components/CompararProdutos';
 import BreadcrumbCategoria from '../components/BreadcrumbCategoria';
 
 
-async function lerProdutosDoXML() {
-  const xmlPath = path.join(process.cwd(), 'data/cupons/LomadeeDownload.xml');
-  const xmlData = fs.readFileSync(xmlPath, 'utf8');
-  const json = await parseStringPromise(xmlData, { explicitArray: false });
 
-  const cupons = json.coupons?.coupon || [];
-  return Array.isArray(cupons) ? cupons : [cupons];
-}
 
 
 export async function lerProdutosDoXML2() {
@@ -68,10 +61,6 @@ export default async function Home() {
 		</div>
 	  </div>
 
-        {produtos.map((item, i) => (
-          <CupomCard key={i} item={item} />
-        ))}
-		
 		
 		{produtos2.map((item, i) => (
           <CupomCard2 key={i} item={item} />

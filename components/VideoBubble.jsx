@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./Produto.module.css";
 import Link from 'next/link';
 
+
+
 export default function VideoBubble({ title }) {
   const bubbleRef = useRef(null);
   const videoRef = useRef(null);

@@ -43,6 +43,7 @@ function copiaSomenteTarget(outDir, target) {
       const envVars = `LOTE=${index} BUILD_TARGET=${marca.toLowerCase()} SLUGS_FILE=slugs_${marca}_${index}.jsonl`;
 	  
 
+  //comando: nodex cross-env LOTE=37 BUILD_TARGET=voucher SLUGS_FILE=slugs_voucher_37.jsonl next build
 	  // Executa build passando a marca como variável de ambiente (se quiser usar em generateStaticParams)
 	  console.log(`🚀 Gerando build do lote ${index} → ${outDir}`);
 	  execSync(`cross-env ${envVars} next build`, { stdio: 'inherit' });
