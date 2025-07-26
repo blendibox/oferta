@@ -1,4 +1,3 @@
-import CupomCard from '../../components/CupomCard';
 import CupomCard2 from '../../components/CupomCard2';
 import { lerProdutosJSON } from '../../lib/awin';
 
@@ -22,7 +21,6 @@ export async function generateMetadata() {
 
 
 export default async function Home() {
-  const produtos = await lerProdutosJSON('CUPOM');
   const produtos2 = await lerProdutosJSON('PROMO');
 
   return (
@@ -38,10 +36,7 @@ export default async function Home() {
 				</div>
 			</div>
 	  </div>
-        {produtos.map((item, i) => (
-          <CupomCard key={i} item={item} />
-        ))}
-		
+
 		
 		{produtos2.map((item, i) => (
           <CupomCard2 key={i} item={item} />
