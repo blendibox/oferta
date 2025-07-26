@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { parseStringPromise } from 'xml2js';
-import CupomCard from '../components/CupomCard';
+
 import CupomCard2 from '../components/CupomCard2';
 
 import CompararProdutos    from '../components/CompararProdutos';
@@ -41,7 +41,7 @@ export async function generateMetadata() {
 
 
 export default async function Home() {
-  const produtos = await lerProdutosDoXML();
+
   const produtos2 = await lerProdutosDoXML2();
 
   return (
