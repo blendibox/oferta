@@ -82,6 +82,7 @@ export default function ProdutoAwin(props) {
 	 
 	  <hr className=" mt-12 "/>
 	  <p>* Valor na data de publicação - 21/07/2025</p>
+	  	 <p> Oferta válida enquanto durarem os estoques</p>
 	  </div>
     </div>
          

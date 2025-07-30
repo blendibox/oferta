@@ -17,23 +17,23 @@ export default function Footer() {
 
   return (
     <footer className="mt-10 min-h-[120px] bg-gray-900 text-white mt-16">
-      <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
 
         <div>
           <h2 className="text-2xl font-bold mb-3 text-center pt-3  text-white text-shadow-2xs text-shadow-sky-100 ">Compare Ofertas <b className="text-pink-500">✱</b>
-		  <div  className="bg-cyan-400 rounded-full max-w-200">
+		  <div  className="bg-cyan-400 rounded-full max-w-200 max-h-40">
 		   <Image
                   src="/images/banner.webp"
                   alt='Logo Blendibox'
-				  width='200'
-				  height='200'
-                  className="w-full h-40 object-contain my-2 rounded-full p-5 drop-shadow-xl"
+				  width='100'
+				  height='50'
+                  className="w-full h-40 object-contain my-2 rounded-full p-2 drop-shadow-xl"
 				  blurDataURL="/images/blendibox.webp"
 				  placeholder="blur"
                 />
 				</div>
 		  </h2>
-          <p className="mt-2 text-sm text-gray-100">
+          <p className="mt-2 text-sm text-gray-100 ">
             Compare Preços de milhares de Produtos de Marcas famosas: como Nike, Boticário, Kipling, C&A e muito mais.
           </p>
         </div>
@@ -47,6 +47,13 @@ export default function Footer() {
             <li><button name='make' onClick={() => navegarComScroll('/categoria/maquiagem')} className="hover:underline text-gray-100">Maquiagem</button></li>
            <li><button name='busca' onClick={() => navegarComScroll('/busca?nike')} className="hover:underline text-gray-100">Nike</button></li>
            
+		  </ul>
+        </div>
+		<div>
+          <h3 className="text-sm font-semibold mb-2 uppercase text-gray-100">Cursos</h3>
+          <ul className="space-y-1 text-sm">
+            <li><Link name='cursos fitness' href="https://fitness.blendibox.com.br/" className="hover:underline text-gray-100">Cursos fitness</Link></li>
+            <li><Link name='cursos confeitaria' href="https://cursoconfeitaria.blendibox.com.br/" className="hover:underline text-gray-100">Cursos Confeitaria</Link></li>
 		  </ul>
         </div>
 

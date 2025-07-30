@@ -35,6 +35,7 @@ export default function CupomCard2({ item }) {
             </span>
           </p>
           *Válido até {item.offerenddate || "indefinido"}
+		  	  	 <p> Sujeito a disponibilidade do lote de cupons</p>
         </div>
       </div>
     </Link>
