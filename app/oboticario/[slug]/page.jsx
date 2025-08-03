@@ -9,7 +9,7 @@ import ProdutoAwin from '../../../components/produtoAwin';
 export async function generateStaticParams() {
 	
 	
-   if (process.env.BUILD_TARGET !== 'OBOTICARIO') {
+   if (process.env.BUILD_TARGET !== 'oboticario') {
     return [{ slug: '__dummy__' }]; // ⚠️ slug fake para evitar erro no build
   } 
 	

@@ -94,7 +94,7 @@ async function googleMerchant() {
     const fileNamem = `googleMerchant_${arquivosGerados + 1}.xml`;
     const filePathm = path.join(DIR_DESTINO, fileNamem);
 
-    fs.writeFileSync(path.join(DIR_DESTINO_PUBLIC, fileNamem), xmlm, "utf-8");
+    //fs.writeFileSync(path.join(DIR_DESTINO_PUBLIC, fileNamem), xmlm, "utf-8");
     fs.writeFileSync(path.join(DIR_DESTINO_OUT, fileNamem), xmlm, "utf-8");
     console.log(`✅ Feed salvo: ${fileNamem} (${blocom.length} produtos)`);
     arquivosGerados++;

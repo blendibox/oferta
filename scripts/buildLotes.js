@@ -76,8 +76,8 @@ if (tipo == 'produto') {
 
     copiaSomenteTarget(outDir, tipo);
   }
-} /*else {
-    // marcas promo, cupom 
+} else {
+    // marcas promo, cupom de forma separada
     const marca = tipo;
     const pastaLotes = path.join('data', 'slugs-lotes');
 	
@@ -90,10 +90,12 @@ if (tipo == 'produto') {
 	  process.exit(0);
 	}
 
-    let index = 0;
+
 	for (const arquivo of arquivosLotes) {		
 	 
-	  index  = index + 1; 
+ 	  // 🔍 Pega o número após o último underscore ( _ ) e antes do .jsonl
+      let index = arquivo.match(/_(\d+)\.jsonl$/);
+	  index =  parseInt(index[1], 10);
 		
 	  const src = path.join(pastaLotes, arquivo);
 	  const outDir = `out-${marca}-lote-${index}`;
@@ -114,7 +116,7 @@ if (tipo == 'produto') {
 	} 
   
 
-}*/
+}
 
 
 
