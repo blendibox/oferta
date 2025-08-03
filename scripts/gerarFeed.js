@@ -112,13 +112,14 @@ function gerarXML(produtos) {
       <title><![CDATA[${post.title || post._p.title }]]></title>
       <link><![CDATA[https://comprar.blendibox.com.br/${post._p.brand}/${post.slug || post._p.slug}]]></link>
       <description><![CDATA[${post.title || post._p.title}]]></description>
-      <g:image_link>${escapeXML(post.image || post._p.imagem || "")}</g:image_link>
+      <g:image_link>${escapeXML(post.image || post._p.imagem || "Fashion")}</g:image_link>
+	  <g:google_product_category>${escapeXML(post.categoria ||  post._p && post._p.categoria || 'Bolsas e Malas')}</g:google_product_category>
       <g:price><![CDATA[${post.price || post._p && post._p.price} BRL]]></g:price>
       <g:condition>new</g:condition>
       <g:availability>in stock</g:availability>
       <g:id><![CDATA[${post.link && post.link.match(/\d{9,}/g)?.[0] ||  post.title && post.title.slice(0, 40) || post._p.title.slice(0, 40)}]]></g:id>
       <g:brand><![CDATA[${post.brand || post._p && post._p.brand || 'Sem marca'}]]></g:brand>
-      <g:product_type><![CDATA[${post.categoria ||  post._p && post._p.categoria || 'Bolsas e Malas'}]]></g:product_type>
+      <g:product_type><![CDATA[${escapeXML(post.categoria ||  post._p && post._p.categoria || 'Fashion')}]]></g:product_type>
       <g:identifier_exists>FALSE</g:identifier_exists>
     </item>`).join("");
 

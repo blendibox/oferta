@@ -68,6 +68,7 @@ if (tipo == 'produto') {
 
   for (let i = 0; i < totalLotes; i++) {
     const numero = i + 1;
+	
     const envVars = `LOTE=${numero} BUILD_TARGET=categoria`;
     const outDir = `out-categoria-lote-${numero}`;
 
