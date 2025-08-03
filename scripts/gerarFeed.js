@@ -117,7 +117,7 @@ function gerarXML(produtos) {
       <g:price><![CDATA[${post.price || post._p && post._p.price} BRL]]></g:price>
       <g:condition>new</g:condition>
       <g:availability>in stock</g:availability>
-      <g:id><![CDATA[${post.link && post.link.match(/\d{9,}/g)?.[0] ||  post.title && post.title.slice(0, 40) || post._p.title.slice(0, 40)}]]></g:id>
+      <g:id><![CDATA[${post.slug}]]></g:id>
       <g:brand><![CDATA[${post.brand || post._p && post._p.brand || 'Sem marca'}]]></g:brand>
       <g:product_type><![CDATA[${escapeXML(post.categoria ||  post._p && post._p.categoria || 'Fashion')}]]></g:product_type>
       <g:identifier_exists>FALSE</g:identifier_exists>
