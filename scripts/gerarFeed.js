@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { lerTodosProdutos } from "../lib/lerTodosProdutos.js";
 import { lerTodasMarcas } from "../lib/lerTodasMarcas.js";
 
 
@@ -42,8 +41,6 @@ const MAX_PRODUTOS_POR_ARQUIVO = 10000;
 const DIR_DESTINO = path.join(__dirname, "../public");
 
 async function googleMerchant() {
-  const produtos = await lerTodosProdutos();
-  const total = produtos.length;
   const marcas = await lerTodasMarcas();
   const totalMarcas = marcas.length;
   let arquivosGerados = 0;
@@ -84,7 +81,7 @@ async function googleMerchant() {
 					imagem: isGalvic ? p['g:image_link'] : p?.uri?.mImage,
 					slug: p.slug || '',
 					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
-					brand: isGalvic ? p['g:brand'] : '',
+					brand: isGalvic ? p['g:brand'] : p['brand'],
 					origem: '',
 					categoria: categoriaTexto
 				  };
@@ -92,7 +89,7 @@ async function googleMerchant() {
 				return { _p: padronizado };
 		   })
 	
-
+  //console.log(normalizados[0]);
     const xmlm = gerarXML(normalizados);
     const fileNamem = `googleMerchant_${arquivosGerados + 1}.xml`;
     const filePathm = path.join(DIR_DESTINO, fileNamem);
@@ -104,20 +101,7 @@ async function googleMerchant() {
   }// end for
   
   
-  // gerar de produtos
-  
-    for (let i = 0; i < total; i += MAX_PRODUTOS_POR_ARQUIVO) {
-    const bloco = produtos.slice(i, i + MAX_PRODUTOS_POR_ARQUIVO);
-    const xml = gerarXML(bloco);
-    const fileName = `googleMerchant_${arquivosGerados + 1}.xml`;
-    const filePath = path.join(DIR_DESTINO, fileName);
 
-
-	fs.writeFileSync(path.join(DIR_DESTINO_PUBLIC, fileName), xml, "utf-8");
-    fs.writeFileSync(path.join(DIR_DESTINO_OUT, fileName), xml, "utf-8");
-    console.log(`✅ Feed salvo: ${fileName} (${bloco.length} produtos)`);
-    arquivosGerados++;
-  }
  
 }
 
@@ -126,7 +110,7 @@ function gerarXML(produtos) {
   const items = produtos.map((post) => `
     <item>
       <title><![CDATA[${post.title || post._p.title }]]></title>
-      <link><![CDATA[https://comprar.blendibox.com.br/produto/${post.slug || post._p.slug}]]></link>
+      <link><![CDATA[https://comprar.blendibox.com.br/${post._p.brand}/${post.slug || post._p.slug}]]></link>
       <description><![CDATA[${post.title || post._p.title}]]></description>
       <g:image_link>${escapeXML(post.image || post._p.imagem || "")}</g:image_link>
       <g:price><![CDATA[${post.price || post._p && post._p.price} BRL]]></g:price>
