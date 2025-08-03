@@ -72,7 +72,7 @@
     "prod": "serve out",
     "build-teste": "   npm run build:categoria   &&  npm run build:marcas &&  npm run merge:merge:todos-os-tipos ",
     "build:old": "  npm run build-xml-to-json && npm run build-slugs && npm run categorias  && npm run build:marcas && npm run build:categoria && npm run merge:todos-os-tipos    && npm run merge:categoria && next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",
-    "build": " next-sitemap --config next-sitemap.config.cjs && node scripts/gerarFeed.js",     
+    "build": "  node scripts/gerarFeed.js",     
     "build-bing": "npx indexnow-submit sitemap-fetch https://comprar.blendibox.com.br/sitemap  --output ./public/indexnowlist.txt",
     "index-bing": "npx indexnow-submit submit-urls public/indexnowlist.txt --host comprar.blendibox.com.br --engine bing.com --key-file public/indexnowlist.txt --key dfd57212201542f4bc9309373db011ad",
     "build-sitemap": "npx next-sitemap --config next-sitemap.config.cjs",
