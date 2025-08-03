@@ -58,13 +58,14 @@ async function googleMerchant() {
 
 
   // gerar de marcas
-  
+  let countTotal = 0;
    for (let i = 0; i < totalMarcas; i += MAX_PRODUTOS_POR_ARQUIVO) {
+	   
     const blocom = marcas.slice(i, i + MAX_PRODUTOS_POR_ARQUIVO);
 	const normalizados = blocom.map((p) => {
 				// Galvic: detecta se é o formato com "g:title"
 				const isGalvic = !!p['g:title'];
-				
+				countTotal = countTotal +1;
 				const precoBruto = isGalvic
 				  ? extrairPreco(p['g:price'])
 				  : extrairPreco(p?.price?.buynow);
@@ -74,6 +75,7 @@ async function googleMerchant() {
 				  : (p?.cat?.mCat || '').toLowerCase();
 
 				const padronizado = {
+					id :  countTotal,
 					title: isGalvic ? p['g:title'] : p?.text?.name || '',
 					price: parseFloat(
 						precoBruto.replace(/[^\d,.-]/g, '').replace(',', '.')
@@ -117,7 +119,7 @@ function gerarXML(produtos) {
       <g:price><![CDATA[${post.price || post._p && post._p.price} BRL]]></g:price>
       <g:condition>new</g:condition>
       <g:availability>in stock</g:availability>
-      <g:id><![CDATA[${post.slug}]]></g:id>
+      <g:id><![CDATA[${post._p.id}]]></g:id>
       <g:brand><![CDATA[${post.brand || post._p && post._p.brand || 'Sem marca'}]]></g:brand>
       <g:product_type><![CDATA[${escapeXML(post.categoria ||  post._p && post._p.categoria || 'Fashion')}]]></g:product_type>
       <g:identifier_exists>FALSE</g:identifier_exists>
