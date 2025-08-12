@@ -123,7 +123,13 @@ async function converterTodosXMLs() {
 		  // v precisa  para pesquisa de produtos e reultado categorias	
 		 		  
 			// não salvar BELEZANAWEB, CEA e CENTAURO
-             if(nomeBase!= 'BELEZANAWEB' && nomeBase!= 'CEA' && nomeBase!= 'CENTAURO'){					
+             if(nomeBase!= 'BELEZANAWEB' 
+			 && nomeBase!= 'CEA' 
+			 && nomeBase!= 'CENTAURO'  
+			 && nomeBase!= 'MOBLY'  
+			 && nomeBase!= 'DAFITI'  
+			 && nomeBase!= 'CLOVISCALCADOS'  		 
+			 && nomeBase!= 'TELHANORTE'){					
 		       fs.writeFileSync(caminhoJSON, JSON.stringify(produtosComSlug), 'utf-8'); // public/data	
 			   console.log(`✅ Arquivo salvo: ${nomeBase}.json em public/data`);
 			 }

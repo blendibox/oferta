@@ -83,7 +83,7 @@ async function googleMerchant() {
 					imagem: isGalvic ? p['g:image_link'] : p?.uri?.mImage,
 					slug: p.slug || '',
 					link: isGalvic ? p['link'] || p['aw_deep_link'] : p?.uri?.mLink || p?.uri?.awTrack,
-					brand: isGalvic ? p['g:brand'] : p['brand'],
+					brand: isGalvic ? 'galvic' : p['brand'],
 					origem: '',
 					categoria: categoriaTexto
 				  };
