@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
 	 const lote = process.env.LOTE;
   const produto = await lerProdutoPorSlug(params.slug, 'LEGO', lote);
  
-  if (!produto) return notFound;
+  if (!produto) return notFound();
 
   return {
     title: produto['text']['name'],

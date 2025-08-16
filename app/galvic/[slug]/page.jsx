@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
   const produto = await lerProdutoPorSlug(params.slug,'GALVIC',lote);
 
 
-  if (!produto) return notFound;
+  if (!produto) return notFound();
 
   return {
     title: produto['g:title'],
