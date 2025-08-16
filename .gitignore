@@ -2,10 +2,6 @@
 
 # dependencies
 /node_modules
-/data/slugs-lotes
-/data/slugs
-/data/awin
-/public/data
 /.pnp
 .pnp.*
 .yarn/*
@@ -44,26 +40,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/data/awin/*.jsonl
+/data/awin/*.json
 /data/slugs
-data/awin/ARNO.json
-data/awin/BELEZANAWEB.json
-data/awin/VIVARA.json
-data/awin/OLYMPIKUS.json
-data/awin/MIZUNO.json
-data/awin/GALVIC.json
-data/awin/KIPPLING.json
-data/awin/LEGO.json
-data/awin/LG.json
-data/awin/CENTAURO.json
-data/awin/BRINOX.json
-data/awin/STANLEY.json
-data/awin/NIKE.json
-data/awin/MASH.json
-data/awin/FOREVERLISS.json
-data/awin/EUDORA.json
-data/awin/DOLCEGUSTO.json
-data/awin/DIESEL.json
-data/awin/OBOTICARIO.json
-data/awin/CALVINKLEIN.json
-data/awin/CEA.json
-/data/slugs-ofertas
+/data/slugs-lotes
+data/DAFITI.xml
+/data/slugs-lotes
+/public/data
+public/categorias.json
+public/slug-index.json
+
