@@ -83,7 +83,7 @@ async function converterTodosXMLs() {
 			  : [json.cafProductFeed?.datafeed].filter(Boolean); // Remove undefined/null se não existir
 
 			// Agora junta os produtos de todos os datafeeds
-          : [json.cafProductFeed?.datafeed].filter(Boolean);
+
         produtos = datafeeds.flatMap((df) => df?.prod || []);
       }
       const arr = Array.isArray(produtos) ? produtos : [produtos];
