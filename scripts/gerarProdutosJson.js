@@ -67,19 +67,25 @@ async function converterTodosXMLs() {
       const json = await parseStringPromise(xml, { explicitArray: false });
 
       let produtos = [];
+
       if (nomeBase == 'GALVIC') {
         produtos = json.rss?.channel?.item || [];
       } else if (nomeBase == 'CUPOM') {
+            //ler cupons lomadee
         produtos = json.coupons?.coupon || [];
       } else if (nomeBase == 'PROMO') {
+		   //ler cupons rakuten
         produtos = json.couponfeed?.link || [];
       } else {
+		  // Garante que datafeed seja sempre um array
         const datafeeds = Array.isArray(json.cafProductFeed?.datafeed)
           ? json.cafProductFeed.datafeed
+			  : [json.cafProductFeed?.datafeed].filter(Boolean); // Remove undefined/null se não existir
+
+			// Agora junta os produtos de todos os datafeeds
           : [json.cafProductFeed?.datafeed].filter(Boolean);
         produtos = datafeeds.flatMap((df) => df?.prod || []);
       }
-
       const arr = Array.isArray(produtos) ? produtos : [produtos];
 
       // MODIFICADO: Garante unicidade de slug e IGNORA duplicados
