@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
   const lote = process.env.LOTE || null;
   const produto = await lerProdutoPorSlug(params.slug,'FOREVERLISS',lote);
 
-  if (!produto) return {};
+  if (!produto) return notFound;
 
   return {
     title: produto['text']['name'],

@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
   const produto = await lerProdutoPorSlug(params.slug,'EUDORA',lote);
 
 
-  if (!produto) return {};
+  if (!produto) return notFound;
 
   return {
     title: produto['text']['name'],

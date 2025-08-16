@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
   const produto = await lerProdutoPorSlug(params.slug, 'MIZUNO',lote);
 
 
-  if (!produto) return {};
+  if (!produto) return notFound;
 
   return {
     title: produto['text']['name'],

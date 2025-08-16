@@ -51,7 +51,7 @@ export async function generateMetadata({ params }) {
  
  
 
-  if (!produto) return {};
+  if (!produto) return notFound;
 
   return {
     title: `${produto.offerdescription} ${produto.advertisername} `,
