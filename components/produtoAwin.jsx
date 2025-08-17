@@ -22,7 +22,7 @@ export default function ProdutoAwin(props) {
 		   title={produto['text']['name']}
 		   image={produto['uri']['mImage']} 
 		   link ={linkUrl}
-		   brand={produto['brand'] || mybrand}
+		   brand={produto['brand']?.['brandName'] || mybrand}
 		   priceGoogle= {produto['price']['buynow']}
 		   />
 	 </head>
@@ -50,9 +50,9 @@ export default function ProdutoAwin(props) {
 		  <Link
 			href={produto['uri']['awTrack']}
 			className="inline-block mt-4  px-4 py-2 rounded underline decoration-emerald-500"
-			title={produto['brand'] || mybrand}
+			title={produto['brand']?.['brandName'] || mybrand}
 		  >
-		 <b>{produto['brand'] || mybrand}</b>
+		 <b>{produto['brand']?.['brandName'] || mybrand}</b>
 
           </Link>		 
 		  </h2>
@@ -77,7 +77,7 @@ export default function ProdutoAwin(props) {
         href={produto['uri']['awTrack']}
         className="inline-block mt-4 bg-emerald-600 text-white px-4 py-2 rounded text-xl"
       >
-        Ver Produto na Loja {produto['brand'] || mybrand}
+        Ver Produto na Loja {produto['brand']?.['brandName'] || mybrand}
       </Link>
 	 
 	  <hr className=" mt-12 "/>
