@@ -413,6 +413,12 @@
               "NIKE.json"
             ]
           },
+          "Segunda Pele & Compressão": {
+            "slug": "feminino/roupas/segunda-pele-e-compressao",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
           "Saias & Vestidos & Macacões": {
             "slug": "feminino/roupas/saias-e-vestidos-e-macacoes",
             "arquivos": [
@@ -600,6 +606,12 @@
           },
           "SCCP": {
             "slug": "infantil/roupas/sccp",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Agasalho": {
+            "slug": "infantil/roupas/agasalho",
             "arquivos": [
               "NIKE.json"
             ]
@@ -2697,14 +2709,14 @@
               }
             }
           },
-          "Vestidos": {
-            "slug": "ropa-y-accesorios/prendas-de-vestir/vestidos",
+          "Camisas y tops": {
+            "slug": "ropa-y-accesorios/prendas-de-vestir/camisas-y-tops",
             "arquivos": [
               "MARIAFILO.json"
             ]
           },
-          "Camisas y tops": {
-            "slug": "ropa-y-accesorios/prendas-de-vestir/camisas-y-tops",
+          "Vestidos": {
+            "slug": "ropa-y-accesorios/prendas-de-vestir/vestidos",
             "arquivos": [
               "MARIAFILO.json"
             ]
@@ -2813,6 +2825,26 @@
           }
         }
       },
+      "Calçados": {
+        "slug": "unissex/calcados",
+        "arquivos": [
+          "NIKE.json"
+        ],
+        "subcategorias": {
+          "Tênis": {
+            "slug": "unissex/calcados/tenis",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          },
+          "Snkrs": {
+            "slug": "unissex/calcados/snkrs",
+            "arquivos": [
+              "NIKE.json"
+            ]
+          }
+        }
+      },
       "Roupas": {
         "slug": "unissex/roupas",
         "arquivos": [
@@ -2839,26 +2871,6 @@
           },
           "Meias": {
             "slug": "unissex/roupas/meias",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          }
-        }
-      },
-      "Calçados": {
-        "slug": "unissex/calcados",
-        "arquivos": [
-          "NIKE.json"
-        ],
-        "subcategorias": {
-          "Tênis": {
-            "slug": "unissex/calcados/tenis",
-            "arquivos": [
-              "NIKE.json"
-            ]
-          },
-          "Snkrs": {
-            "slug": "unissex/calcados/snkrs",
             "arquivos": [
               "NIKE.json"
             ]

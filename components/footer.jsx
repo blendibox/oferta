@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from  './FallbackImage';
+import Image from  'next/image';
 import { useRouter } from 'next/navigation';
 
 export default function Footer() {
@@ -42,10 +42,12 @@ export default function Footer() {
           <h3 className="text-sm font-semibold mb-2 uppercase text-gray-100">Navegação</h3>
           <ul className="space-y-1 text-sm">
             <li><button name='home' onClick={() => navegarComScroll('/')} className="hover:underline text-gray-100">Início</button></li>
-            <li><button name='busca' onClick={() => navegarComScroll('/busca')} className="hover:underline text-gray-100">Buscar Produtos</button></li>
-            <li><button name='cupom' onClick={() => navegarComScroll('/cupom')} className="hover:underline text-gray-100">Cupons</button></li>
-            <li><button name='make' onClick={() => navegarComScroll('/categoria/maquiagem')} className="hover:underline text-gray-100">Maquiagem</button></li>
-           <li><button name='busca' onClick={() => navegarComScroll('/busca?nike')} className="hover:underline text-gray-100">Nike</button></li>
+            <li><button name='cupom' onClick={() => navegarComScroll('https://comprar.blendibox.com.br/cupom')} className="hover:underline text-gray-100">Cupons</button></li>
+            <li><button name='moda feminina' onClick={() => navegarComScroll('https://modafeminina.blendibox.com.br/categoria/calca')} className="hover:underline text-gray-100">Moda Feminina</button></li>
+            <li><button name='moda masculina' onClick={() => navegarComScroll('https://modamasculina.blendibox.com.br/categoria/tenis')} className="hover:underline text-gray-100">Moda Masculina</button></li>
+            <li><button name='moda infantil' onClick={() => navegarComScroll('https://modakids.blendibox.com.br/categoria/tenis')} className="hover:underline text-gray-100">Moda Infantil</button>	</li>		
+		   <li><button name='make' onClick={() => navegarComScroll('https://comprar.blendibox.com.br//categoria/maquiagem')} className="hover:underline text-gray-100">Maquiagem</button></li>
+           <li><button name='busca' onClick={() => navegarComScroll('https://comprar.blendibox.com.br/busca?nike')} className="hover:underline text-gray-100">Nike</button></li>
            
 		  </ul>
         </div>
@@ -54,6 +56,8 @@ export default function Footer() {
           <ul className="space-y-1 text-sm">
             <li><Link name='cursos fitness' href="https://fitness.blendibox.com.br/" className="hover:underline text-gray-100">Cursos fitness</Link></li>
             <li><Link name='cursos confeitaria' href="https://cursoconfeitaria.blendibox.com.br/" className="hover:underline text-gray-100">Cursos Confeitaria</Link></li>
+		  <li><Link name='cursos confeitaria' href="https://cursoconfeitaria.blendibox.com.br/chefisisalvarez" className="hover:underline text-gray-100">Cursos Isis Alvarez</Link></li>
+		  <li><Link name='cursos confeitaria' href="https://cursoconfeitaria.blendibox.com.br/chefmarrarabortoloti" className="hover:underline text-gray-100">Cursos Marrara Bortoloti</Link></li>
 		  </ul>
         </div>
 

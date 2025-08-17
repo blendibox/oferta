@@ -24,10 +24,10 @@ function gerarSlug(texto, id) {
   }
 
   // 🔹 Adiciona o ID no final para unicidade
- /* if (id) {
+  if (id) {
     slug = `${slug}-${id}`;
   }
-*/
+
   return slug;
 }
 
