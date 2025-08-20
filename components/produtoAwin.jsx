@@ -20,7 +20,7 @@ export default function ProdutoAwin(props) {
       <head>		 
 		 <SchemaProduto
 		   title={produto['text']['name']}
-		   image={produto['uri']['mImage']} 
+		   image={produto['uri']?.['mImage'] || produto['uri']?.['alternateImageTwo'] || produto['uri']?.['awImage']   } 
 		   link ={linkUrl}
 		   brand={produto['brand']?.['brandName'] || mybrand}
 		   priceGoogle= {produto['price']['buynow']}

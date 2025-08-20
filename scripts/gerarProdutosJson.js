@@ -25,7 +25,8 @@ function gerarSlug(texto, id) {
 
   // 🔹 Adiciona o ID no final para unicidade
   if (id) {
-    slug = `${slug}-${id}`;
+	const _id = id.toString().toLowerCase().replace(/[^a-z0-9]/g, "");
+    slug = `${slug}-${_id}`;
   }
 
   return slug;
