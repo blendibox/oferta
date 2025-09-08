@@ -50,7 +50,8 @@ const router = useRouter();
       <div className="ml-4 border-l pl-2">
         {Object.entries(subcategorias).map(([nome, dados]) => (
           <div key={nome}>
-		  	  
+		  	 
+			 {nome?	 
 		  <button id={nome} title={nome}
 			  onClick={() => {
 				navegarComScroll(`/categoria/${dados.slug}`);
@@ -60,6 +61,10 @@ const router = useRouter();
 			>
 			  {nome}
 			</button>
+			 :
+			 <>
+			 </>
+			 }
 
             {dados.subcategorias && renderSubcategorias(dados.subcategorias)}
           </div>

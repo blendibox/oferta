@@ -74,11 +74,12 @@ export async function generateMetadata({ params }) {
   return {
     title: nomePagina,
     description: descricao,
+	robots: 'index, follow',
   };
 }
 
 
 export default function CategoriaPage() {
   // o layout + ResultadosFiltrados vai cuidar do resto
-  return null;
+  return <div id="categoria-page" />;
 }

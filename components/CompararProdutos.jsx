@@ -259,6 +259,15 @@ export default function CompararProdutos() {
                 />
 
                 <Link
+                  href={p._linkLocal || "#"}
+                  className="ml-2 p-2 text-white bg-emerald-700 rounded text-sm mt-2 inline-block hover:bg-emerald-500"
+                  target="_blank"
+                >
+				 {'ver produto'}
+                  
+                </Link>
+
+                <Link
                   href={p._linkAfilio || p._linkLocal || "#"}
                   className="text-blue-600 underline text-sm block mt-1"
                   target="_blank"

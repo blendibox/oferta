@@ -357,12 +357,6 @@
       }
     }
   },
-  "Oportunidades": {
-    "slug": "oportunidades",
-    "arquivos": [
-      "CALVINKLEIN.json"
-    ]
-  },
   "Feminino": {
     "slug": "feminino",
     "arquivos": [
@@ -509,6 +503,12 @@
         ]
       }
     }
+  },
+  "Oportunidades": {
+    "slug": "oportunidades",
+    "arquivos": [
+      "CALVINKLEIN.json"
+    ]
   },
   "Infantil": {
     "slug": "infantil",
@@ -676,74 +676,8 @@
       "DOLCEGUSTO.json"
     ]
   },
-  "Eletrodomésticos - Micro-ondas - Micro-ondas de bancada": {
-    "slug": "eletrodomesticos-micro-ondas-micro-ondas-de-bancada",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Geladeiras / Refrigeradores - Geladeira frost free": {
-    "slug": "eletrodomesticos-geladeiras-refrigeradores-geladeira-frost-free",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Coifas e Depuradores - Coifa": {
-    "slug": "eletrodomesticos-coifas-e-depuradores-coifa",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
   "Eletrodomésticos - Coifas e Depuradores - Depurador": {
     "slug": "eletrodomesticos-coifas-e-depuradores-depurador",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Fornos - Forno de embutir": {
-    "slug": "eletrodomesticos-fornos-forno-de-embutir",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Fogão - Fogão 4 bocas": {
-    "slug": "eletrodomesticos-fogao-fogao-4-bocas",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Fogão - Fogão mesa de vidro": {
-    "slug": "eletrodomesticos-fogao-fogao-mesa-de-vidro",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Fogão - Fogão 5 bocas": {
-    "slug": "eletrodomesticos-fogao-fogao-5-bocas",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Utilidades domésticas - Utensílios de cozinha - Potes herméticos": {
-    "slug": "utilidades-domesticas-utensilios-de-cozinha-potes-hermeticos",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Micro-ondas": {
-    "slug": "eletrodomesticos-micro-ondas",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Torre de cocção": {
-    "slug": "eletrodomesticos-torre-de-coccao",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Cooktops - Cooktop a gás": {
-    "slug": "eletrodomesticos-cooktops-cooktop-a-gas",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -754,14 +688,32 @@
       "ELETRO.json"
     ]
   },
+  "Eletrodomésticos - Geladeiras / Refrigeradores - Geladeira frost free": {
+    "slug": "eletrodomesticos-geladeiras-refrigeradores-geladeira-frost-free",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
   "Eletroportáteis - Aspirador de pó - Aspirador de pó e água": {
     "slug": "eletroportateis-aspirador-de-po-aspirador-de-po-e-agua",
     "arquivos": [
       "ELETRO.json"
     ]
   },
+  "Utilidades domésticas - Utensílios de cozinha - Potes herméticos": {
+    "slug": "utilidades-domesticas-utensilios-de-cozinha-potes-hermeticos",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
   "Eletroportáteis - Purificadores de água e Bebedouros - Purificador de água": {
     "slug": "eletroportateis-purificadores-de-agua-e-bebedouros-purificador-de-agua",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletrodomésticos - Micro-ondas - Micro-ondas de bancada": {
+    "slug": "eletrodomesticos-micro-ondas-micro-ondas-de-bancada",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -786,12 +738,6 @@
   },
   "Eletroportáteis - Aspirador de pó - Aspirador de pó sem saco": {
     "slug": "eletroportateis-aspirador-de-po-aspirador-de-po-sem-saco",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletroportáteis - Aspirador de pó - Aspirador de pó com saco": {
-    "slug": "eletroportateis-aspirador-de-po-aspirador-de-po-com-saco",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -826,6 +772,12 @@
       "ELETRO.json"
     ]
   },
+  "Eletroportáteis - Aspirador de pó - Aspirador de pó com saco": {
+    "slug": "eletroportateis-aspirador-de-po-aspirador-de-po-com-saco",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
   "Eletroportáteis - Aspirador de pó - Aspirador de pó vertical": {
     "slug": "eletroportateis-aspirador-de-po-aspirador-de-po-vertical",
     "arquivos": [
@@ -834,6 +786,12 @@
   },
   "Utilidades domésticas - Utensílios para casa - Utensílios para lavanderia": {
     "slug": "utilidades-domesticas-utensilios-para-casa-utensilios-para-lavanderia",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletrodomésticos - Coifas e Depuradores - Coifa": {
+    "slug": "eletrodomesticos-coifas-e-depuradores-coifa",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -868,6 +826,12 @@
       "ELETRO.json"
     ]
   },
+  "Eletrodomésticos - Cooktops - Cooktop vitroceramico": {
+    "slug": "eletrodomesticos-cooktops-cooktop-vitroceramico",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
   "Eletrodomésticos - Micro-ondas - Micro-ondas de embutir": {
     "slug": "eletrodomesticos-micro-ondas-micro-ondas-de-embutir",
     "arquivos": [
@@ -876,6 +840,18 @@
   },
   "Eletrodomésticos - Secadoras - Secadora de piso": {
     "slug": "eletrodomesticos-secadoras-secadora-de-piso",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletrodomésticos - Cooktops - Cooktop a gás": {
+    "slug": "eletrodomesticos-cooktops-cooktop-a-gas",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletrodomésticos - Fornos - Forno de embutir": {
+    "slug": "eletrodomesticos-fornos-forno-de-embutir",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -946,6 +922,12 @@
       "ELETRO.json"
     ]
   },
+  "Eletroportáteis - Panela elétrica - Panela de pressão": {
+    "slug": "eletroportateis-panela-eletrica-panela-de-pressao",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
   "Eletrodomésticos - Freezers - Freezer horizontal": {
     "slug": "eletrodomesticos-freezers-freezer-horizontal",
     "arquivos": [
@@ -970,8 +952,26 @@
       "ELETRO.json"
     ]
   },
+  "Eletroportáteis - Ferro de passar e Vaporizador - Vaporizador": {
+    "slug": "eletroportateis-ferro-de-passar-e-vaporizador-vaporizador",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletrodomésticos - Geladeiras / Refrigeradores": {
+    "slug": "eletrodomesticos-geladeiras-refrigeradores",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
   "Eletrodomésticos - Geladeiras / Refrigeradores - Geladeira 1 porta": {
     "slug": "eletrodomesticos-geladeiras-refrigeradores-geladeira-1-porta",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletrodomésticos - Torre de cocção": {
+    "slug": "eletrodomesticos-torre-de-coccao",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -994,6 +994,12 @@
       "ELETRO.json"
     ]
   },
+  "Eletrodomésticos - Fogão - Fogão 5 bocas": {
+    "slug": "eletrodomesticos-fogao-fogao-5-bocas",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
   "Eletrodomésticos - Cooktops": {
     "slug": "eletrodomesticos-cooktops",
     "arquivos": [
@@ -1012,20 +1018,8 @@
       "ELETRO.json"
     ]
   },
-  "Eletroportáteis - Ferro de passar e Vaporizador - Vaporizador": {
-    "slug": "eletroportateis-ferro-de-passar-e-vaporizador-vaporizador",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
   "Eletroportáteis - Liquidificador - Liquificador portátil": {
     "slug": "eletroportateis-liquidificador-liquificador-portatil",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletroportáteis - Panela elétrica - Panela de pressão": {
-    "slug": "eletroportateis-panela-eletrica-panela-de-pressao",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -1048,12 +1042,6 @@
       "ELETRO.json"
     ]
   },
-  "Eletrodomésticos - Geladeiras / Refrigeradores": {
-    "slug": "eletrodomesticos-geladeiras-refrigeradores",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
   "Eletroportáteis - Processador de alimentos": {
     "slug": "eletroportateis-processador-de-alimentos",
     "arquivos": [
@@ -1062,12 +1050,6 @@
   },
   "Eletroportáteis - Sanduicheira": {
     "slug": "eletroportateis-sanduicheira",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Eletrodomésticos - Fornos": {
-    "slug": "eletrodomesticos-fornos",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -1092,6 +1074,12 @@
   },
   "Eletrodomésticos - Frigobar": {
     "slug": "eletrodomesticos-frigobar",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletrodomésticos - Fogão - Fogão 4 bocas": {
+    "slug": "eletrodomesticos-fogao-fogao-4-bocas",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -1138,8 +1126,8 @@
       "ELETRO.json"
     ]
   },
-  "Eletrodomésticos - Ar condicionado - Ar condicionado portátil": {
-    "slug": "eletrodomesticos-ar-condicionado-ar-condicionado-portatil",
+  "Eletrodomésticos - Micro-ondas": {
+    "slug": "eletrodomesticos-micro-ondas",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -1158,6 +1146,12 @@
   },
   "Eletroportáteis - Ventilador": {
     "slug": "eletroportateis-ventilador",
+    "arquivos": [
+      "ELETRO.json"
+    ]
+  },
+  "Eletroportáteis - Liquidificador - Liquidificador copo de plástico": {
+    "slug": "eletroportateis-liquidificador-liquidificador-copo-de-plastico",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -1183,7 +1177,8 @@
   "Monitores": {
     "slug": "monitores",
     "arquivos": [
-      "ELETRO.json"
+      "ELETRO.json",
+      "LG.json"
     ]
   },
   "Eletrônicos": {
@@ -1215,7 +1210,8 @@
   "Projetores": {
     "slug": "projetores",
     "arquivos": [
-      "ELETRO.json"
+      "ELETRO.json",
+      "LG.json"
     ]
   },
   "Lavadoras de Roupa": {
@@ -1290,7 +1286,8 @@
   "Lavanderia": {
     "slug": "lavanderia",
     "arquivos": [
-      "ELETRO.json"
+      "ELETRO.json",
+      "LG.json"
     ]
   },
   "Arno": {
@@ -1319,39 +1316,8 @@
       "ELETRO.json"
     ]
   },
-  "Computadores": {
-    "slug": "computadores",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "TVs Telas Lifestyle": {
-    "slug": "tvs-telas-lifestyle",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "TVs e Soundbars": {
-    "slug": "tvs-e-soundbars",
-    "arquivos": [
-      "ELETRO.json",
-      "LG.json"
-    ]
-  },
-  "Lousa Digital": {
-    "slug": "lousa-digital",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Videoconferência Interativa": {
-    "slug": "videoconferencia-interativa",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Assinatura Digital": {
-    "slug": "assinatura-digital",
+  "Peças e Acessórios para Televisão": {
+    "slug": "pecas-e-acessorios-para-televisao",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -1366,13 +1332,8 @@
   "Peças e Acessórios de Informática": {
     "slug": "pecas-e-acessorios-de-informatica",
     "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Peças e Acessórios para Televisão": {
-    "slug": "pecas-e-acessorios-para-televisao",
-    "arquivos": [
-      "ELETRO.json"
+      "ELETRO.json",
+      "LG.json"
     ]
   },
   "Peças e Acessórios para Ar Condicionado": {
@@ -1396,30 +1357,19 @@
   "Ar-condicionado": {
     "slug": "ar-condicionado",
     "arquivos": [
-      "ELETRO.json"
+      "ELETRO.json",
+      "LG.json"
     ]
   },
   "TVs": {
     "slug": "tvs",
     "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Purificador de Ar": {
-    "slug": "purificador-de-ar",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Ar-Condicionado Comercial Leve": {
-    "slug": "ar-condicionado-comercial-leve",
-    "arquivos": [
       "ELETRO.json",
       "LG.json"
     ]
   },
-  "Áudio": {
-    "slug": "audio",
+  "Peças e Acessórios para Monitores": {
+    "slug": "pecas-e-acessorios-para-monitores",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -1430,14 +1380,8 @@
       "ELETRO.json"
     ]
   },
-  "Peças e Acessórios para Monitores": {
-    "slug": "pecas-e-acessorios-para-monitores",
-    "arquivos": [
-      "ELETRO.json"
-    ]
-  },
-  "Micro-Ondas": {
-    "slug": "micro-ondas",
+  "Peças e Acessórios para Notebook": {
+    "slug": "pecas-e-acessorios-para-notebook",
     "arquivos": [
       "ELETRO.json"
     ]
@@ -2681,6 +2625,66 @@
     "slug": "malas",
     "arquivos": [
       "KIPPLING.json"
+    ]
+  },
+  "Computadores": {
+    "slug": "computadores",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "TVs Telas Lifestyle": {
+    "slug": "tvs-telas-lifestyle",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "TVs e Soundbars": {
+    "slug": "tvs-e-soundbars",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "Lousa Digital": {
+    "slug": "lousa-digital",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "Videoconferência Interativa": {
+    "slug": "videoconferencia-interativa",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "Assinatura Digital": {
+    "slug": "assinatura-digital",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "Purificador de Ar": {
+    "slug": "purificador-de-ar",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "Ar-Condicionado Comercial Leve": {
+    "slug": "ar-condicionado-comercial-leve",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "Áudio": {
+    "slug": "audio",
+    "arquivos": [
+      "LG.json"
+    ]
+  },
+  "Micro-Ondas": {
+    "slug": "micro-ondas",
+    "arquivos": [
+      "LG.json"
     ]
   },
   "Ropa y accesorios": {
